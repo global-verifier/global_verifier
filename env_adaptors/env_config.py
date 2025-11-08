@@ -3,3 +3,4 @@ webshop_config = {
     "observation_mode": "text",
     "num_products": 100000,
 }
+

@@ -9,11 +9,8 @@ class Explorer:
         self.goal = None
 
 
-    def explore(self, goal: str):
+    def explore(self):
         # Digest the goal
-        self.goal = goal
         # rest the status
-        # input_ids = self.tokenizer.encode(prompt, return_tensors="pt")
-        # output = self.model.generate(input_ids, max_length=100)
-        # return self.tokenizer.decode(output[0], skip_special_tokens=True)
+        self.adaptor.initialize_env()
         for i in range(self.max_steps):

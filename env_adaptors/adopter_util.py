@@ -7,7 +7,7 @@ def extract_visible_text(html_content):
     """
     soup = BeautifulSoup(html_content, 'html.parser')
     
-    # 移除包含Instruction的元素（通过id="instruction-text"定位） 用于 webshop 环境
+    # 移除包含Instruction的元素（通过id="instruction-text"定位） 用于 webshop 环境 TODO: this is webshop specific, need to be generalized
     instruction_div = soup.find(id='instruction-text')
     if instruction_div:
         instruction_div.decompose()

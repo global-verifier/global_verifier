@@ -20,26 +20,25 @@ class Explorer:
                 break
             # get current state, t
             cur_state = self.adaptor.get_state()
-            # TODO: check if the episode is done
-            if self.adaptor.is_episode_done(cur_state):
+            # get action
+            action_status = self.adaptor.get_available_actions()
+            if self.adaptor.is_finished_state(cur_state, action_status):
                 is_episode_done = True
                 break
-            # get action
-            available_actions = self.adaptor.get_available_actions()
             # TODO: get experience
             # TODO inference and get next action, check if the action is valid
-            cur_action = self.explorer_model.get_next_action(self.instruction, self.state, `self.action)
+            todo_action = self.explorer_model.get_next_action(self.instruction, cur_state, action_status)
             action_valid =False
             for j in range(self.max_action_retries):
-                if self.adaptor.is_action_valid(cur_state, cur_action):
+                if self.adaptor.is_valid_action(action_status, todo_action):
                     action_valid = True
                     break
                 # not valid, re-inference and get new action
-                cur_action = self.explorer_model.get_next_action(self.instruction, self.state, self.action)
+                todo_action = self.explorer_model.get_next_action(self.instruction, cur_state, action_status)
             if not action_valid:
-                raise ValueError(f"cur_action {cur_action} is not valid after {self.max_action_retries} retries")
+                raise ValueError(f"todo_action {todo_action} is not valid after {self.max_action_retries} retries")
             # get new state, t+1
-            self.adaptor.step(cur_action)
+            self.adaptor.step(todo_action)
             # TODO: store experience
         # check if the episode is done
         if not is_episode_done:

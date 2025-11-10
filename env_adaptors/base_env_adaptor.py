@@ -5,5 +5,11 @@ class BaseEnvAdaptor:
     def initialize_env(self):
         pass
 
-    def convert_to_state(self, obs):
+    def step(self):
+        pass
+
+    def get_next_action_prompt(self, instruction: str, state: dict, available_actions: list) -> str:
+        pass
+
+    def check_action_valid(self, action, available_actions):
         pass

@@ -6,11 +6,41 @@ class Explorer:
         self.explorer_model = load_explorer_model(model_name)
         self.max_steps = explorer_settings["max_steps"]
         self.adaptor = load_adaptor(env_name)
-        self.goal = None
-
+        self.instruction = None
+        self.max_action_retries = explorer_settings["max_action_retries"]
 
     def explore(self):
-        # Digest the goal
         # rest the status
-        self.adaptor.initialize_env()
+        self.adaptor.initialize_env() 
+        # Get the instruction
+        self.instruction = self.adaptor.get_instruction()
+        is_episode_done = False
         for i in range(self.max_steps):
+            if is_episode_done:
+                break
+            # get current state, t
+            cur_state = self.adaptor.get_state()
+            # TODO: check if the episode is done
+            if self.adaptor.is_episode_done(cur_state):
+                is_episode_done = True
+                break
+            # get action
+            available_actions = self.adaptor.get_available_actions()
+            # TODO: get experience
+            # TODO inference and get next action, check if the action is valid
+            cur_action = self.explorer_model.get_next_action(self.instruction, self.state, `self.action)
+            action_valid =False
+            for j in range(self.max_action_retries):
+                if self.adaptor.is_action_valid(cur_state, cur_action):
+                    action_valid = True
+                    break
+                # not valid, re-inference and get new action
+                cur_action = self.explorer_model.get_next_action(self.instruction, self.state, self.action)
+            if not action_valid:
+                raise ValueError(f"cur_action {cur_action} is not valid after {self.max_action_retries} retries")
+            # get new state, t+1
+            self.adaptor.step(cur_action)
+            # TODO: store experience
+        # check if the episode is done
+        if not is_episode_done:
+            raise ValueError(f"episode is not done after {self.max_steps} steps")

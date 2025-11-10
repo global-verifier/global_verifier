@@ -7,6 +7,8 @@ from env_adaptors.webshop_adaptor import WebshopAdaptor
 def load_explorer_model(model_name: str) -> BaseExplorerModel:
     if model_name == "llama3":
         return Llama3ExplorerModel(model_path[model_name])
+    if model_name == "llama3.1":
+        return Llama3ExplorerModel(model_path[model_name])
     # elif model_name == "qwen2.5":
     #     pass
     # elif model_name == "qwen3":

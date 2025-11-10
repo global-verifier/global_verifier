@@ -12,6 +12,7 @@ env = gym.make('WebAgentTextEnv-v0', observation_mode='text', num_products=10000
 env.reset()
 env.state
 env.step("search[jacket]")
+env.step("click[search]")
 ```
 
 - webshop不支持链接直接navigate，看来需要硬点回访方式了

@@ -36,6 +36,7 @@ class Explorer:
             log_flush(self.logIO, f"- Current state: {cur_state}")
             # get action
             action_status = self.adaptor.get_available_actions()
+            print(f"Action status: {action_status}")
             log_flush(self.logIO, f"- Action status: {action_status}")
             if self.adaptor.is_finished_state(cur_state, action_status):
                 log_flush(self.logIO, f"- Episode is done at step {i}")
@@ -51,8 +52,10 @@ class Explorer:
                     action_valid = True
                     break
                 # not valid, re-inference and get new action
+                print(f"   - Action is not valid: {todo_action}")
                 log_flush(self.logIO, f"- Action is not valid: {todo_action}")
                 todo_action = self.get_next_action(cur_state, action_status)
+                print(f"   - new todo action: {todo_action}")
                 log_flush(self.logIO, f"- New todo action: {todo_action}")
             if not action_valid:
                 raise ValueError(f"todo_action {todo_action} is not valid after {self.max_action_retries} retries")

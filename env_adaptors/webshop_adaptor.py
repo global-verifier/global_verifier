@@ -19,7 +19,12 @@ SID_PLACEHOLDER = '<session_id>'
 class WebshopAdaptor(BaseEnvAdaptor):
     def __init__(self, env_name):
         super().__init__(env_name)
-        self.env = gym.make(webshop_config['id'], observation_mode=webshop_config['observation_mode'], num_products=webshop_config['num_products'])
+        self.env = gym.make(
+            webshop_config['id'],
+            observation_mode = webshop_config['observation_mode'],
+            num_products = webshop_config['num_products'],
+            human_goals = webshop_config['human_goals'],
+        )
         self.url_id = None
         self.instruction = None
 
@@ -75,7 +80,7 @@ class WebshopAdaptor(BaseEnvAdaptor):
     def is_valid_action(self, action_status, action):
         action = action.strip()
         # pattern: content[content]
-        pattern = r"^[^\[\]\s\"']+?\[[^\[\]\"']+?\]$"
+        pattern = r"^[^\[\]\s]+?\[[^\[\]]+?\]$"
         if not bool(re.match(pattern, action)):
             return False
         action = action[:-1].split("[")

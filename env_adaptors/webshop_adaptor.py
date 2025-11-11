@@ -5,6 +5,7 @@ from .base_env_adaptor import BaseEnvAdaptor
 from .env_config import webshop_config
 from .adopter_util import extract_visible_text
 import re
+import random
 
 _webshop_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'webshop')
 _webshop_path = os.path.abspath(_webshop_path)
@@ -29,7 +30,11 @@ class WebshopAdaptor(BaseEnvAdaptor):
         self.instruction = None
 
     def initialize_env(self):
-        self.env.reset()
+        if webshop_config['session'] is not None:
+            random.seed(webshop_config['random_seed'])
+            self.env.reset(session=webshop_config['session'])
+        else:
+            self.env.reset()
         self.url_id = self.env.state['url'].split('/')[-1]
         self.instruction = self._set_instruction()
 

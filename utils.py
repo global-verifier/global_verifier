@@ -3,6 +3,7 @@ from explorer_model.base_explorer_model import BaseExplorerModel
 from explorer_model.llama3_explorer_model import Llama3ExplorerModel
 from env_adaptors.base_env_adaptor import BaseEnvAdaptor
 from env_adaptors.webshop_adaptor import WebshopAdaptor
+from datetime import datetime
 
 def load_explorer_model(model_name: str) -> BaseExplorerModel:
     if model_name == "llama3":
@@ -21,3 +22,14 @@ def load_adaptor(env_name: str) -> BaseEnvAdaptor:
         return WebshopAdaptor(env_name)
     else:
         raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized.")
+
+def log_flush(fileIO, txt: str):
+    """
+    Write and flush to the disk.
+    """
+    fileIO.write(txt)
+    fileIO.write("\n")
+    fileIO.flush()
+
+def get_timestamp() -> str:
+    return datetime.now().strftime('%Y-%m-%d_%H:%M:%S')

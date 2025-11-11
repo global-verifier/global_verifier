@@ -21,10 +21,20 @@ class WebshopAdaptor(BaseEnvAdaptor):
         super().__init__(env_name)
         self.env = gym.make(webshop_config['id'], observation_mode=webshop_config['observation_mode'], num_products=webshop_config['num_products'])
         self.url_id = None
+        self.instruction = None
 
     def initialize_env(self):
         self.env.reset()
         self.url_id = self.env.state['url'].split('/')[-1]
+        self.instruction = self.get_instruction()
+
+    def get_env_description(self):
+        return f"""-----
+        Init new environment:
+        [ENV] Webshop
+        [URL ID]: {self.url_id}
+        [INSTRUCTION]: {self.instruction}
+        -----"""
 
     def get_instruction(self):
         """获取环境的 instruction，提取 "Instruction: " 之后的内容"""

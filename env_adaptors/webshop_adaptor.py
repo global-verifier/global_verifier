@@ -20,6 +20,9 @@ SID_PLACEHOLDER = '<session_id>'
 class WebshopAdaptor(BaseEnvAdaptor):
     def __init__(self, env_name):
         super().__init__(env_name)
+        seed = webshop_config.get('random_seed')
+        if seed is not None:
+            random.seed(seed)
         self.env = gym.make(
             webshop_config['id'],
             observation_mode = webshop_config['observation_mode'],
@@ -31,7 +34,6 @@ class WebshopAdaptor(BaseEnvAdaptor):
 
     def initialize_env(self):
         if webshop_config['session'] is not None:
-            random.seed(webshop_config['random_seed'])
             self.env.reset(session=webshop_config['session'])
         else:
             self.env.reset()

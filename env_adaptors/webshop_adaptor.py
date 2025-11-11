@@ -1,9 +1,9 @@
 import sys
 import os
 import gym
-from base_env_adaptor import BaseEnvAdaptor
-from env_config import webshop_config
-from adopter_util import extract_visible_text
+from .base_env_adaptor import BaseEnvAdaptor
+from .env_config import webshop_config
+from .adopter_util import extract_visible_text
 import re
 
 _webshop_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'webshop')

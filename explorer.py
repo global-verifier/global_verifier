@@ -26,7 +26,6 @@ class Explorer:
                 is_episode_done = True
                 break
             # TODO: get experience
-            # TODO inference and get next action, check if the action is valid
             todo_action = self.explorer_model.get_next_action(self.instruction, cur_state, action_status)
             action_valid =False
             for j in range(self.max_action_retries):

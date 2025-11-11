@@ -8,7 +8,7 @@ class BaseEnvAdaptor:
     def step(self):
         pass
 
-    def get_next_action_prompt(self, instruction: str, state: dict, available_actions: list) -> str:
+    def get_action_prompt(self, instruction: str, state: dict, available_actions: list) -> str:
         pass
 
     def check_action_valid(self, action, available_actions):

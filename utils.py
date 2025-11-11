@@ -3,6 +3,7 @@ from explorer_model.base_explorer_model import BaseExplorerModel
 from explorer_model.llama3_explorer_model import Llama3ExplorerModel
 from env_adaptors.base_env_adaptor import BaseEnvAdaptor
 from env_adaptors.webshop_adaptor import WebshopAdaptor
+from env_adaptors.webshop_llama_adaptor import WebshopLlamaAdaptor
 from datetime import datetime
 
 def load_explorer_model(model_name: str) -> BaseExplorerModel:
@@ -20,6 +21,8 @@ def load_explorer_model(model_name: str) -> BaseExplorerModel:
 def load_adaptor(env_name: str) -> BaseEnvAdaptor:
     if env_name == "webshop":
         return WebshopAdaptor(env_name)
+    elif env_name == "webshop_llama":
+        return WebshopLlamaAdaptor(env_name)
     else:
         raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized.")
 

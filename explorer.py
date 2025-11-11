@@ -7,20 +7,24 @@ class Explorer:
         self.explorer_model = load_explorer_model(model_name)
         self.max_steps = explorer_settings["max_steps"]
         self.adaptor = load_adaptor(env_name)
-        self.instruction = None
         self.max_action_retries = explorer_settings["max_action_retries"]
-        self.logIO = open(f'./log/explorerLog_{get_timestamp()}.txt', 'a')
+        self.logIO = open(f'./explorer_log/explorerLog_{get_timestamp()}.txt', 'a')
+
+    def get_next_action(self, state: dict, action_status: dict) -> str:
+        get_action_prompt = self.adaptor.get_action_prompt(self.adaptor.get_instruction(), state, action_status)
+        return self.explorer_model.get_next_action(get_action_prompt)
 
     def explore(self):
+        print(f"Start exploring at {get_timestamp()}")
         log_flush(self.logIO, f"########################################################")
         log_flush(self.logIO, f"Start exploring at {get_timestamp()}")
         # rest the status
         self.adaptor.initialize_env() 
         # Get the instruction
-        self.instruction = self.adaptor.get_instruction()
         log_flush(self.logIO, self.adaptor.get_env_description())
         is_episode_done = False
         for i in range(self.max_steps):
+            print(f"Step {i}")
             log_flush(self.logIO, f"--------------------------------------------------------")
             log_flush(self.logIO, f"Step {i}")
             if is_episode_done:
@@ -28,6 +32,7 @@ class Explorer:
                 break
             # get current state, t
             cur_state = self.adaptor.get_state()
+            print(f"Current state url: {cur_state['url']}")
             log_flush(self.logIO, f"- Current state: {cur_state}")
             # get action
             action_status = self.adaptor.get_available_actions()
@@ -37,7 +42,7 @@ class Explorer:
                 is_episode_done = True
                 break
             # TODO: get experience
-            todo_action = self.explorer_model.get_next_action(self.instruction, cur_state, action_status)
+            todo_action = self.get_next_action(cur_state, action_status)
             log_flush(self.logIO, f"- Todo action: {todo_action}")
             action_valid =False
             for j in range(self.max_action_retries):
@@ -47,12 +52,13 @@ class Explorer:
                     break
                 # not valid, re-inference and get new action
                 log_flush(self.logIO, f"- Action is not valid: {todo_action}")
-                todo_action = self.explorer_model.get_next_action(self.instruction, cur_state, action_status)
+                todo_action = self.get_next_action(cur_state, action_status)
                 log_flush(self.logIO, f"- New todo action: {todo_action}")
             if not action_valid:
                 raise ValueError(f"todo_action {todo_action} is not valid after {self.max_action_retries} retries")
             # get new state, t+1
             self.adaptor.step(todo_action)
+            print(f"Action '{todo_action}' is taken")
             # TODO: store experience
         # check if the episode is done
         if not is_episode_done:

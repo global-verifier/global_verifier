@@ -26,7 +26,12 @@ class WebshopAdaptor(BaseEnvAdaptor):
     def initialize_env(self):
         self.env.reset()
         self.url_id = self.env.state['url'].split('/')[-1]
-        self.instruction = self.get_instruction()
+        self.instruction = self._set_instruction()
+
+    def _set_instruction(self):
+        """获取环境的 instruction，提取 "Instruction: " 之后的内容"""
+        instruction_text = self.env.get_instruction_text()
+        return instruction_text.split("Instruction: ", 1)[1].strip()
 
     def get_env_description(self):
         return f"""-----
@@ -35,11 +40,9 @@ class WebshopAdaptor(BaseEnvAdaptor):
         [URL ID]: {self.url_id}
         [INSTRUCTION]: {self.instruction}
         -----"""
-
+    
     def get_instruction(self):
-        """获取环境的 instruction，提取 "Instruction: " 之后的内容"""
-        instruction_text = self.env.get_instruction_text()
-        return instruction_text.split("Instruction: ", 1)[1].strip()
+        return self.instruction
 
     def get_state(self):
         state = {}

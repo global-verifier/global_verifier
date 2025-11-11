@@ -2,11 +2,11 @@ from .webshop_adaptor import WebshopAdaptor
 
 LLAMA3_WEBSHOP_SYSTEM_PROMPT = "You are an intelligent exploration agent that navigates through environments to accomplish tasks. Your goal is to analyze the current state, understand the task instruction, and determine the next action to take. Respond with only the action you want to execute, without any additional explanation or formatting."
 
-class WebshopLlamaAtopter(WebshopAdaptor):
+class WebshopLlamaAdaptor(WebshopAdaptor):
     def __init__(self, env_name):
         super().__init__(env_name)
 
-    def get_next_action_prompt(self, instruction, state, action_status):
+    def get_action_prompt(self, instruction, state, action_status):
         """生成用于LLM获取下一个action的prompt"""
         # Construct the user prompt
         is_search = action_status["has_search_bar"]

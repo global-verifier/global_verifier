@@ -45,6 +45,8 @@ class Explorer:
                 is_episode_done = True
                 break
             # TODO: get experience
+
+            # get the todo action, the potential next action to step
             todo_action = self.get_next_action(cur_state, action_status)
             log_flush(self.logIO, f"- Todo action: {todo_action}")
             action_valid =False

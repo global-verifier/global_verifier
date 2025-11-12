@@ -4,12 +4,19 @@ from utils import log_flush, get_timestamp
 
 class Explorer:
     def __init__(self, model_name: str, env_name: str):
+        # Add input
         self.explorer_model = load_explorer_model(model_name)
-        self.max_steps = explorer_settings["max_steps"]
         self.adaptor = load_adaptor(env_name)
+        
+        # Add hyperparameter settings
+        self.max_steps = explorer_settings["max_steps"]
         self.max_action_retries = explorer_settings["max_action_retries"]
+        
+        # Add the recorders
+        self.action_path = []
+
+        # Add the logger    
         self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.txt', 'a')
-        self.
 
     def get_next_action(self, state: dict, action_status: dict) -> str:
         get_action_prompt = self.adaptor.get_action_prompt(self.adaptor.get_instruction(), state, action_status)
@@ -44,6 +51,7 @@ class Explorer:
             if self.adaptor.is_finished_state(cur_state, action_status):
                 log_flush(self.logIO, f"- Episode is done at step {i}")
                 is_episode_done = True
+                step_count = i + 1
                 break
             # TODO: get experience
 
@@ -67,8 +75,19 @@ class Explorer:
                 raise ValueError(f"todo_action {todo_action} is not valid after {self.max_action_retries} retries")
             # get new state, t+1
             self.adaptor.step(todo_action)
+            self.action_path.append(todo_action)
             print(f"Action '{todo_action}' is taken")
             # TODO: store experience
         # check if the episode is done
         if not is_episode_done:
+            log_flush(self.logIO, f"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
             raise ValueError(f"episode is not done after {self.max_steps} steps")
+        # get the final score
+        score = self.adaptor.extract_reward_score()
+
+        log_flush(self.logIO, f"Insturction: {self.adaptor.get_instruction()}")
+        log_flush(self.logIO, f"Step count: {step_count}")
+        log_flush(self.logIO, f"Final score: {score}")
+        log_flush(self.logIO, f"Action path: {self.action_path}")
+        log_flush(self.logIO, f"End exploring at {get_timestamp()}")
+        log_flush(self.logIO, f"########################################################")

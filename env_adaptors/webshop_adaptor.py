@@ -79,11 +79,6 @@ Init new environment:
     def step(self, action):
         self.env.step(action)
 
-    def is_finished_state(self, state, action_status):
-        if not action_status["has_search_bar"] and len(action_status["clickables"]) == 0:
-            return True
-        return False
-
     def format_action(self, action):
         return action.strip().lower()
     
@@ -105,6 +100,18 @@ Init new environment:
                 return True
             return False
         raise ValueError(f"Unrecognized action: {action}")
+
+    def is_finished_state(self, state, action_status):
+        if not action_status["has_search_bar"] and len(action_status["clickables"]) == 0:
+            return True
+        return False
+
+    def extract_reward_score(self) -> float:
+        html = self.env.state.get("html")
+        match = re.search(r'<h3[^>]*id="reward".*?<pre>\s*([0-9.]+)\s*</pre>', html, flags=re.DOTALL)
+        if not match:
+            raise ValueError(f"Reward score not found in the HTML")
+        return float(match.group(1))
 
     # Tobe implemented in the subclass
     def get_action_prompt(self, instruction, state, action_status):

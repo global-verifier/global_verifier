@@ -107,3 +107,5 @@ Init new environment:
         raise ValueError(f"Unrecognized action: {action}")
 
     # Tobe implemented in the subclass
+    def get_action_prompt(self, instruction, state, action_status):
+        raise NotImplementedError

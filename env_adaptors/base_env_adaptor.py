@@ -3,13 +3,17 @@ class BaseEnvAdaptor:
         self.env_name = env_name
 
     def initialize_env(self):
-        pass
+        raise NotImplementedError
+
 
     def step(self):
-        pass
+        raise NotImplementedError
+
 
     def get_action_prompt(self, instruction: str, state: dict, available_actions: list) -> str:
-        pass
+        raise NotImplementedError
+
 
     def check_action_valid(self, action, available_actions):
-        pass
+        raise NotImplementedError
+

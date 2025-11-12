@@ -9,6 +9,7 @@ class Explorer:
         self.adaptor = load_adaptor(env_name)
         self.max_action_retries = explorer_settings["max_action_retries"]
         self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.txt', 'a')
+        self.
 
     def get_next_action(self, state: dict, action_status: dict) -> str:
         get_action_prompt = self.adaptor.get_action_prompt(self.adaptor.get_instruction(), state, action_status)
@@ -45,6 +46,7 @@ class Explorer:
                 is_episode_done = True
                 break
             # TODO: get experience
+
 
             # get the todo action, the potential next action to step
             todo_action = self.get_next_action(cur_state, action_status)

@@ -1,1 +1,1 @@
-rm -rf ./explorer_log/*.txt
+rm -rf ./log/*.txt

@@ -1,6 +1,7 @@
 explorer_settings = {
     "max_steps": 20,
     "max_action_retries": 3,
+    "log_dir": "./log/",
 }
 model_path = {
     "llama3": "/home/xingkun/local_model/Meta-Llama-3-8B-Instruct",

@@ -47,11 +47,11 @@ class WebshopAdaptor(BaseEnvAdaptor):
 
     def get_env_description(self):
         return f"""-----
-        Init new environment:
-        [ENV] Webshop
-        [URL ID]: {self.url_id}
-        [INSTRUCTION]: {self.instruction}
-        -----"""
+Init new environment:
+[ENV] Webshop
+[URL ID]: {self.url_id}
+[INSTRUCTION]: {self.instruction}
+-----"""
     
     def get_instruction(self):
         return self.instruction
@@ -83,6 +83,9 @@ class WebshopAdaptor(BaseEnvAdaptor):
         if not action_status["has_search_bar"] and len(action_status["clickables"]) == 0:
             return True
         return False
+
+    def format_action(self, action):
+        return action.strip().lower()
     
     def is_valid_action(self, action_status, action):
         action = action.strip()

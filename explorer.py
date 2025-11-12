@@ -8,11 +8,13 @@ class Explorer:
         self.max_steps = explorer_settings["max_steps"]
         self.adaptor = load_adaptor(env_name)
         self.max_action_retries = explorer_settings["max_action_retries"]
-        self.logIO = open(f'./explorer_log/explorerLog_{get_timestamp()}.txt', 'a')
+        self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.txt', 'a')
 
     def get_next_action(self, state: dict, action_status: dict) -> str:
         get_action_prompt = self.adaptor.get_action_prompt(self.adaptor.get_instruction(), state, action_status)
-        return self.explorer_model.get_next_action(get_action_prompt)
+        raw_action = self.explorer_model.get_next_action(get_action_prompt)
+        formatted_action = self.adaptor.format_action(raw_action)
+        return formatted_action
 
     def explore(self):
         print(f"Start exploring at {get_timestamp()}")
@@ -34,7 +36,7 @@ class Explorer:
             cur_state = self.adaptor.get_state()
             print(f"Current state url: {cur_state['url']}")
             log_flush(self.logIO, f"- Current state: {cur_state}")
-            # get action
+            # get action status/options
             action_status = self.adaptor.get_available_actions()
             print(f"Action status: {action_status}")
             log_flush(self.logIO, f"- Action status: {action_status}")

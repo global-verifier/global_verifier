@@ -1,3 +1,6 @@
+import os
+
+from explorer_run_analyzer import ExplorerRunAnalyzer
 from utils import load_explorer_model, load_adaptor
 from config import explorer_settings
 from utils import log_flush, get_timestamp
@@ -7,6 +10,8 @@ class Explorer:
         # Add input
         self.explorer_model = load_explorer_model(model_name)
         self.adaptor = load_adaptor(env_name)
+        self.model_name = model_name
+        self.env_name = env_name
         
         # Add hyperparameter settings
         self.max_steps = explorer_settings["max_steps"]
@@ -17,6 +22,7 @@ class Explorer:
 
         # Add the logger    
         self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.txt', 'a')
+        self.run_analyzer = ExplorerRunAnalyzer(explorer_settings["log_dir"])
 
     def get_next_action(self, state: dict, action_status: dict) -> str:
         get_action_prompt = self.adaptor.get_action_prompt(self.adaptor.get_instruction(), state, action_status)
@@ -51,7 +57,7 @@ class Explorer:
             if self.adaptor.is_finished_state(cur_state, action_status):
                 log_flush(self.logIO, f"- Episode is done at step {i}")
                 is_episode_done = True
-                step_count = i + 1
+                step_count = i
                 break
             # TODO: get experience
 
@@ -89,5 +95,17 @@ class Explorer:
         log_flush(self.logIO, f"Step count: {step_count}")
         log_flush(self.logIO, f"Final score: {score}")
         log_flush(self.logIO, f"Action path: {self.action_path}")
-        log_flush(self.logIO, f"End exploring at {get_timestamp()}")
+        end_timestamp = get_timestamp()
+        log_flush(self.logIO, f"End exploring at {end_timestamp}")
         log_flush(self.logIO, f"########################################################")
+
+        self.run_analyzer.record_run(
+            timestamp=end_timestamp,
+            model_name=self.model_name,
+            env_name=self.env_name,
+            instruction=self.adaptor.get_instruction(),
+            action_path=self.action_path.copy(),
+            step_count=step_count,
+            final_score=score,
+        )
+        self.run_analyzer.save_to_csv()

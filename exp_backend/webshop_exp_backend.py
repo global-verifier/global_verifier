@@ -1,24 +1,60 @@
 from .base_exp_backend import BaseExpBackend
+import json
 
 class WebshopExpBackend(BaseExpBackend):
     def __init__(self, env_name, storage_path):
         super().__init__(env_name, storage_path)
 
+    def store_experience(self, exp):
+        if not self._is_valid_exp(exp):
+            raise ValueError(f"Invalid experience: {exp}")
+        self.exp_store[exp["id"]] = exp
+        self.save_store() # TODO: maybe should not save so frequent
+
+    def _is_valid_exp(self, exp) -> bool:
+        """
+        Check if an experience is valid.
+        """
+        if not isinstance(exp, dict):
+            return False
+        expected_fields = {
+            "id": str,
+            "action_path": list,
+            "st": dict,
+            "action": str,
+            "st1": dict,
+        }
+        for field, field_type in expected_fields.items():
+            if field not in exp:
+                return False
+            if not isinstance(exp[field], field_type):
+                return False
+        return True
+
     def _is_valid_exp_store(self) -> bool:
-        """
+        f"""
         Each experience should have
-        - id
-        - action_path
-        - st
-            - url
-            - html_text
-            - action_status
-        - action
-        - st1
-            - url
-            - html_text
-            - action_status
+        - id: str
+        - action_path: list[str]
+        - st: dict
+            - url: str
+            - html_text: str
+            # - action_status: dict
+        - action: str
+        - st1: dict
+            - url: str
+            - html_text: str
+            # - action_status: dict
         """
+        # Every experience should be valid
+        for exp_id in self.exp_store.keys():
+            exp = self.exp_store[exp_id]
+            # Id should match
+            if exp_id != exp["id"]:
+                return False
+            # Individual experience check
+            if not self._is_valid_exp(exp):
+                return False
         return True
 
     def _has_conflict(self, e1, e2) -> bool:
@@ -32,3 +68,9 @@ class WebshopExpBackend(BaseExpBackend):
             if e1['st1'] != e2['st1']:
                 return True
         return False
+
+    def two_states_equal(self, state1, state2) -> bool:
+        return self._get_state_str(state1) == self._get_state_str(state2)
+
+    def _get_state_str(self, state) -> str:
+        return json.dumps(state, ensure_ascii=False)

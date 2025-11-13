@@ -1,6 +1,6 @@
 import os
 
-from explorer_run_analyzer import ExplorerRunAnalyzer
+from analyzer.explorer_run_analyzer import ExplorerRunAnalyzer
 from utils import load_explorer_model, load_adaptor
 from config import explorer_settings
 from utils import log_flush, get_timestamp

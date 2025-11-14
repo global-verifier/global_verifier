@@ -52,9 +52,10 @@ Init new environment:
 
     def get_state(self):
         state = {}
-        # get clean url
+        # get clean url - replace session_id only when it appears as a complete path segment
         full_url = self.env.state['url']
-        clean_url = full_url.replace(self.url_id, SID_PLACEHOLDER)
+        # Replace /session_id/ or /session_id at the end to avoid replacing digits in product IDs
+        clean_url = re.sub(r'/' + re.escape(self.url_id) + r'(?=/|$)', '/' + SID_PLACEHOLDER, full_url)
         state['url'] = clean_url
 
         # get the html

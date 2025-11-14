@@ -1,5 +1,6 @@
 from .webshop_exp_backend import WebshopExpBackend
 from .backend_config import webshop_vanilla_config
+from utils import log_flush
 import json
 
 class WebshopExpVanillaBackend(WebshopExpBackend):
@@ -15,8 +16,10 @@ class WebshopExpVanillaBackend(WebshopExpBackend):
 
     def retrieve_experience_sameSt_1Step(self, state) -> list:
         results = []
+        log_flush(self.logIO, f"Retrieving experience for state: {state}")
         for exp_id in self.exp_store.keys():
             exp = self.exp_store[exp_id]
             if self.two_states_equal(state, exp['st']):
                 results.append(exp)
+        log_flush(self.logIO, f"Retrieved {len(results)} experiences, results ids: {[exp['id'] for exp in results]}")        
         return results

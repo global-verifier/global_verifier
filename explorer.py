@@ -30,67 +30,96 @@ class Explorer:
         formatted_action = self.adaptor.format_action(raw_action)
         return formatted_action
 
+    def record_experience(self):
+        """Record the current step's experience to the backend."""
+        new_exp = self.adaptor.get_experience()
+        self.exp_backend.store_experience(new_exp)
+        log_flush(self.logIO, f"- Experience stored: {new_exp['id']}")
+
+    def execute_step(self) -> bool:
+        """
+        Execute a single step in the exploration.
+            
+        Returns:
+            True if the episode is done, False otherwise
+        """
+
+        
+        # Get current state
+        cur_state = self.adaptor.get_state()
+        print(f"Current state url: {cur_state['url']}")
+        log_flush(self.logIO, f"- Current state: {cur_state}")
+        
+        # Get action status/options
+        print(f"Action status: {self.adaptor.get_available_actions()}")
+        log_flush(self.logIO, f"- Action status: {self.adaptor.get_available_actions()}")
+        
+        # Check if finished
+        if self.adaptor.is_finished_state(cur_state):
+            return True
+        
+        # Retrieve experience
+        retrieved_experiences = self.exp_backend.retrieve_experience(cur_state)
+        print(f"Retrieved experience: {retrieved_experiences}")
+        log_flush(self.logIO, f"- Retrieved experience: {retrieved_experiences}")
+        
+        # Get and validate action
+        todo_action = self.get_next_action(cur_state)
+        log_flush(self.logIO, f"- Todo action: {todo_action}")
+        action_valid = False
+        
+        for j in range(self.max_action_retries):
+            if self.adaptor.is_valid_action(todo_action):
+                log_flush(self.logIO, f"- Action is valid after {j} retries")
+                action_valid = True
+                break
+            # Not valid, re-inference and get new action
+            print(f"   - Action is not valid: {todo_action}")
+            log_flush(self.logIO, f"- Action is not valid: {todo_action}")
+            todo_action = self.get_next_action(cur_state)
+            print(f"   - new todo action: {todo_action}")
+            log_flush(self.logIO, f"- New todo action: {todo_action}")
+        
+        if not action_valid:
+            raise ValueError(f"todo_action {todo_action} is not valid after {self.max_action_retries} retries")
+        
+        # Execute action
+        self.adaptor.step(todo_action)
+        print(f"Action '{todo_action}' is taken")
+        
+        # Store experience
+        self.record_experience()
+        
+        return False
+
     def explore(self):
         print(f"Start exploring at {get_timestamp()}")
         log_flush(self.logIO, f"########################################################")
         log_flush(self.logIO, f"Start exploring at {get_timestamp()}")
-        # rest the status
+        # Reset the status
         self.adaptor.initialize_env() 
         # Get the instruction
         log_flush(self.logIO, self.adaptor.get_env_description())
+        
         is_episode_done = False
+        step_count = 0
+        
         for i in range(self.max_steps):
             print(f"Step {i}")
             log_flush(self.logIO, f"--------------------------------------------------------")
             log_flush(self.logIO, f"Step {i}")
+            is_episode_done = self.execute_step()
             if is_episode_done:
                 log_flush(self.logIO, f"- Episode is done at step {i}")
-                break
-            # get current state, t
-            cur_state = self.adaptor.get_state()
-            print(f"Current state url: {cur_state['url']}")
-            log_flush(self.logIO, f"- Current state: {cur_state}")
-            # get action status/options
-            print(f"Action status: {self.adaptor.get_available_actions()}")
-            log_flush(self.logIO, f"- Action status: {self.adaptor.get_available_actions()}")
-            if self.adaptor.is_finished_state(cur_state):
-                log_flush(self.logIO, f"- Episode is done at step {i}")
-                is_episode_done = True
                 step_count = i
                 break
-            # Get experience
-            retrieved_experiences = self.exp_backend.retrieve_experience(cur_state)
-            print(f"Retrieved experience: {retrieved_experiences}")
-            log_flush(self.logIO, f"- Retrieved experience: {retrieved_experiences}")
-
-            # get the todo action, the potential next action to step
-            todo_action = self.get_next_action(cur_state)
-            log_flush(self.logIO, f"- Todo action: {todo_action}")
-            action_valid =False
-            for j in range(self.max_action_retries):
-                if self.adaptor.is_valid_action(todo_action):
-                    log_flush(self.logIO, f"- Action is valid after {j} retries")
-                    action_valid = True
-                    break
-                # not valid, re-inference and get new action
-                print(f"   - Action is not valid: {todo_action}")
-                log_flush(self.logIO, f"- Action is not valid: {todo_action}")
-                todo_action = self.get_next_action(cur_state)
-                print(f"   - new todo action: {todo_action}")
-                log_flush(self.logIO, f"- New todo action: {todo_action}")
-            if not action_valid:
-                raise ValueError(f"todo_action {todo_action} is not valid after {self.max_action_retries} retries")
-            # get new state, t+1
-            self.adaptor.step(todo_action)
-            print(f"Action '{todo_action}' is taken")
-            # TODO: store experience
-            new_exp = self.adaptor.get_experience()
-            self.exp_backend.store_experience(new_exp)
-        # check if the episode is done
+        
+        # Check if the episode is done
         if not is_episode_done:
             log_flush(self.logIO, f"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
             raise ValueError(f"episode is not done after {self.max_steps} steps")
-        # get the final score
+        
+        # Get the final score
         score = self.adaptor.extract_reward_score()
 
         log_flush(self.logIO, f"Insturction: {self.adaptor.get_instruction()}")

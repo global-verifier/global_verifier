@@ -1,15 +1,17 @@
 from .webshop_exp_backend import WebshopExpBackend
+from .backend_config import webshop_vanilla_config
 import json
 
 class WebshopExpVanillaBackend(WebshopExpBackend):
-    def __init__(self, env_name, storage_path, algorithm: str):
+    def __init__(self, env_name, storage_path):
         super().__init__(env_name, storage_path)
-        self.algorithm = algorithm
+        self.algorithm = webshop_vanilla_config["algorithm"]
         
         # set the retrieve experience
-        if algorithm == "sameSt_1Step":
+        if self.algorithm == "sameSt_1Step":
             self.retrieve_experience = self.retrieve_experience_sameSt_1Step
-        raise NotImplementedError
+        else:
+            raise NotImplementedError(f"Algorithm {self.algorithm} is not supported.")
 
     def retrieve_experience_sameSt_1Step(self, state) -> list:
         results = []

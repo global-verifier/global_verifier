@@ -4,6 +4,8 @@ from explorer_model.llama3_explorer_model import Llama3ExplorerModel
 from env_adaptors.base_env_adaptor import BaseEnvAdaptor
 from env_adaptors.webshop_adaptor import WebshopAdaptor
 from env_adaptors.webshop_llama_adaptor import WebshopLlamaAdaptor
+from exp_backend.base_exp_backend import BaseExpBackend
+from exp_backend.webshop_exp_vanilla_backend import WebshopExpVanillaBackend
 from datetime import datetime
 
 def load_explorer_model(model_name: str) -> BaseExplorerModel:
@@ -25,6 +27,12 @@ def load_adaptor(env_name: str) -> BaseEnvAdaptor:
         return WebshopLlamaAdaptor(env_name)
     else:
         raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized.")
+
+def load_exp_backend(env_name: str, storage_path: str) -> BaseExpBackend:
+    if env_name == "webshop-vanilla":
+        return WebshopExpVanillaBackend(env_name, storage_path)
+    else:
+        raise Exception(f"In utils.py load_exp_backend(), env_name ({env_name}) is not recognized.")
 
 def log_flush(fileIO, txt: str):
     """

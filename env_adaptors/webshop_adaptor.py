@@ -31,6 +31,10 @@ class WebshopAdaptor(BaseEnvAdaptor):
         )
         self.url_id = None
         self.instruction = None
+        # history records
+        self.st_0 = None
+        self.prev_action = None
+        self.st = None
 
     def initialize_env(self):
         if webshop_config['session'] is not None:
@@ -39,6 +43,10 @@ class WebshopAdaptor(BaseEnvAdaptor):
             self.env.reset()
         self.url_id = self.env.state['url'].split('/')[-1]
         self.instruction = self._set_instruction()
+        # set new history
+        self.st_0 = None
+        self.prev_action = None
+        self.st = self.get_state()
 
     def _set_instruction(self):
         """获取环境的 instruction，提取 "Instruction: " 之后的内容"""
@@ -82,7 +90,8 @@ Init new environment:
     def format_action(self, action):
         return action.strip().lower()
     
-    def is_valid_action(self, action_status, action):
+    def is_valid_action(self, action):
+        action_status = self.get_available_actions()
         action = action.strip()
         # pattern: content[content]
         pattern = r"^[^\[\]\s]+?\[[^\[\]]+?\]$"
@@ -101,7 +110,8 @@ Init new environment:
             return False
         raise ValueError(f"Unrecognized action: {action}")
 
-    def is_finished_state(self, state, action_status):
+    def is_finished_state(self, state):
+        action_status = self.get_available_actions()
         if not action_status["has_search_bar"] and len(action_status["clickables"]) == 0:
             return True
         return False
@@ -114,5 +124,5 @@ Init new environment:
         return float(match.group(1))
 
     # Tobe implemented in the subclass
-    def get_action_prompt(self, instruction, state, action_status):
+    def get_action_prompt(self, instruction, state):
         raise NotImplementedError

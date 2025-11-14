@@ -6,9 +6,10 @@ class WebshopLlamaAdaptor(WebshopAdaptor):
     def __init__(self, env_name):
         super().__init__(env_name)
 
-    def get_action_prompt(self, instruction, state, action_status):
+    def get_action_prompt(self, instruction, state):
         """生成用于LLM获取下一个action的prompt"""
         # Construct the user prompt
+        action_status = self.get_available_actions()
         is_search = action_status["has_search_bar"]
         if is_search:
             available_actions = "[search]"

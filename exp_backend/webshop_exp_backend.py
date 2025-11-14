@@ -32,7 +32,7 @@ class WebshopExpBackend(BaseExpBackend):
         return True
 
     def _is_valid_exp_store(self) -> bool:
-        f"""
+        """
         Each experience should have
         - id: str
         - action_path: list[str]

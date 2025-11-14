@@ -1,21 +1,24 @@
 import os
 
 from analyzer.explorer_run_analyzer import ExplorerRunAnalyzer
-from utils import load_explorer_model, load_adaptor
+from utils import load_explorer_model, load_adaptor, load_exp_backend
 from config import explorer_settings
 from utils import log_flush, get_timestamp
 
 class Explorer:
-    def __init__(self, model_name: str, env_name: str):
-        # Add input
-        self.explorer_model = load_explorer_model(model_name)
-        self.adaptor = load_adaptor(env_name)
-        self.model_name = model_name
-        self.env_name = env_name
-        
+    def __init__(self):
         # Add hyperparameter settings
+        self.model_name = explorer_settings["model_name"]
+        self.env_name = explorer_settings["env_name"]
+        self.backend_env = explorer_settings["backend_env"]
+        self.storage_path = explorer_settings["storage_path"]
         self.max_steps = explorer_settings["max_steps"]
         self.max_action_retries = explorer_settings["max_action_retries"]
+        
+        # Add plug in
+        self.explorer_model = load_explorer_model(self.model_name)
+        self.adaptor = load_adaptor(self.env_name)
+        self.exp_backend = load_exp_backend(self.backend_env, self.storage_path)
         
         # Add the recorders
         self.action_path = []
@@ -24,8 +27,8 @@ class Explorer:
         self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.txt', 'a')
         self.run_analyzer = ExplorerRunAnalyzer(explorer_settings["log_dir"])
 
-    def get_next_action(self, state: dict, action_status: dict) -> str:
-        get_action_prompt = self.adaptor.get_action_prompt(self.adaptor.get_instruction(), state, action_status)
+    def get_next_action(self, state: dict) -> str:
+        get_action_prompt = self.adaptor.get_action_prompt(self.adaptor.get_instruction(), state)
         raw_action = self.explorer_model.get_next_action(get_action_prompt)
         formatted_action = self.adaptor.format_action(raw_action)
         return formatted_action
@@ -51,30 +54,31 @@ class Explorer:
             print(f"Current state url: {cur_state['url']}")
             log_flush(self.logIO, f"- Current state: {cur_state}")
             # get action status/options
-            action_status = self.adaptor.get_available_actions()
-            print(f"Action status: {action_status}")
-            log_flush(self.logIO, f"- Action status: {action_status}")
-            if self.adaptor.is_finished_state(cur_state, action_status):
+            print(f"Action status: {self.adaptor.get_available_actions()}")
+            log_flush(self.logIO, f"- Action status: {self.adaptor.get_available_actions()}")
+            if self.adaptor.is_finished_state(cur_state):
                 log_flush(self.logIO, f"- Episode is done at step {i}")
                 is_episode_done = True
                 step_count = i
                 break
-            # TODO: get experience
-
+            # Get experience
+            retrieved_experiences = self.exp_backend.retrieve_experience(cur_state)
+            print(f"Retrieved experience: {retrieved_experiences}")
+            log_flush(self.logIO, f"- Retrieved experience: {retrieved_experiences}")
 
             # get the todo action, the potential next action to step
-            todo_action = self.get_next_action(cur_state, action_status)
+            todo_action = self.get_next_action(cur_state)
             log_flush(self.logIO, f"- Todo action: {todo_action}")
             action_valid =False
             for j in range(self.max_action_retries):
-                if self.adaptor.is_valid_action(action_status, todo_action):
+                if self.adaptor.is_valid_action(todo_action):
                     log_flush(self.logIO, f"- Action is valid after {j} retries")
                     action_valid = True
                     break
                 # not valid, re-inference and get new action
                 print(f"   - Action is not valid: {todo_action}")
                 log_flush(self.logIO, f"- Action is not valid: {todo_action}")
-                todo_action = self.get_next_action(cur_state, action_status)
+                todo_action = self.get_next_action(cur_state)
                 print(f"   - new todo action: {todo_action}")
                 log_flush(self.logIO, f"- New todo action: {todo_action}")
             if not action_valid:
@@ -84,6 +88,8 @@ class Explorer:
             self.action_path.append(todo_action)
             print(f"Action '{todo_action}' is taken")
             # TODO: store experience
+            # new_exp = self.adaptor.get_experience(cur_state, todo_action, self.adaptor.get_state())
+            # self.exp_backend.store_experience(new_exp)
         # check if the episode is done
         if not is_episode_done:
             log_flush(self.logIO, f"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")

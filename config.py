@@ -2,6 +2,11 @@ explorer_settings = {
     "max_steps": 20,
     "max_action_retries": 3,
     "log_dir": "./log/",
+    # Plug-in settings
+    "model_name": "llama3.1",
+    "env_name": "webshop_llama",
+    "backend_env": "webshop-vanilla",
+    "storage_path": "./storage/exp_store.json",
 }
 model_path = {
     "llama3": "/data/xingkun/local_model/Meta-Llama-3-8B-Instruct",

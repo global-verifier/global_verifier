@@ -5,12 +5,18 @@ class WebshopExpBackend(BaseExpBackend):
     def __init__(self, env_name, storage_path):
         super().__init__(env_name, storage_path)
 
+    # Getters
+    def _get_state_str(self, state) -> str:
+        return json.dumps(state, ensure_ascii=False)
+
+    # Setters
     def store_experience(self, exp):
         if not self._is_valid_exp(exp):
             raise ValueError(f"Invalid experience: {exp}")
         self.exp_store[exp["id"]] = exp
         self.save_store() # TODO: maybe should not save so frequent
 
+    # Consultants
     def _is_valid_exp(self, exp) -> bool:
         """
         Check if an experience is valid.
@@ -71,6 +77,3 @@ class WebshopExpBackend(BaseExpBackend):
 
     def two_states_equal(self, state1, state2) -> bool:
         return self._get_state_str(state1) == self._get_state_str(state2)
-
-    def _get_state_str(self, state) -> str:
-        return json.dumps(state, ensure_ascii=False)

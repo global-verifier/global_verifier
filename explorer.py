@@ -1,7 +1,7 @@
 import os
 
 from analyzer.explorer_run_analyzer import ExplorerRunAnalyzer
-from utils import load_explorer_model, load_adaptor, load_exp_backend
+from plugin_loader import load_explorer_model, load_adaptor, load_exp_backend
 from config import explorer_settings
 from utils import log_flush, get_timestamp
 
@@ -19,12 +19,9 @@ class Explorer:
         self.explorer_model = load_explorer_model(self.model_name)
         self.adaptor = load_adaptor(self.env_name)
         self.exp_backend = load_exp_backend(self.backend_env, self.storage_path)
-        
-        # Add the recorders
-        self.action_path = []
 
-        # Add the logger    
-        self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.txt', 'a')
+        # Add the logger
+        self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.log', 'a')
         self.run_analyzer = ExplorerRunAnalyzer(explorer_settings["log_dir"])
 
     def get_next_action(self, state: dict) -> str:
@@ -85,11 +82,10 @@ class Explorer:
                 raise ValueError(f"todo_action {todo_action} is not valid after {self.max_action_retries} retries")
             # get new state, t+1
             self.adaptor.step(todo_action)
-            self.action_path.append(todo_action)
             print(f"Action '{todo_action}' is taken")
             # TODO: store experience
-            # new_exp = self.adaptor.get_experience(cur_state, todo_action, self.adaptor.get_state())
-            # self.exp_backend.store_experience(new_exp)
+            new_exp = self.adaptor.get_experience()
+            self.exp_backend.store_experience(new_exp)
         # check if the episode is done
         if not is_episode_done:
             log_flush(self.logIO, f"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
@@ -100,7 +96,7 @@ class Explorer:
         log_flush(self.logIO, f"Insturction: {self.adaptor.get_instruction()}")
         log_flush(self.logIO, f"Step count: {step_count}")
         log_flush(self.logIO, f"Final score: {score}")
-        log_flush(self.logIO, f"Action path: {self.action_path}")
+        log_flush(self.logIO, f"Action path: {self.adaptor.get_action_path()}")
         end_timestamp = get_timestamp()
         log_flush(self.logIO, f"End exploring at {end_timestamp}")
         log_flush(self.logIO, f"########################################################")
@@ -110,7 +106,7 @@ class Explorer:
             model_name=self.model_name,
             env_name=self.env_name,
             instruction=self.adaptor.get_instruction(),
-            action_path=self.action_path.copy(),
+            action_path=self.adaptor.get_action_path(),
             step_count=step_count,
             final_score=score,
         )

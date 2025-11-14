@@ -6,6 +6,7 @@ from .env_config import webshop_config
 from .adopter_util import extract_visible_text
 import re
 import random
+from utils import get_timestamp_ms
 
 _webshop_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'webshop')
 _webshop_path = os.path.abspath(_webshop_path)
@@ -32,27 +33,12 @@ class WebshopAdaptor(BaseEnvAdaptor):
         self.url_id = None
         self.instruction = None
         # history records
-        self.st_0 = None
-        self.prev_action = None
         self.st = None
-
-    def initialize_env(self):
-        if webshop_config['session'] is not None:
-            self.env.reset(session=webshop_config['session'])
-        else:
-            self.env.reset()
-        self.url_id = self.env.state['url'].split('/')[-1]
-        self.instruction = self._set_instruction()
-        # set new history
-        self.st_0 = None
         self.prev_action = None
-        self.st = self.get_state()
+        self.st1 = None
+        self.action_path = []
 
-    def _set_instruction(self):
-        """获取环境的 instruction，提取 "Instruction: " 之后的内容"""
-        instruction_text = self.env.get_instruction_text()
-        return instruction_text.split("Instruction: ", 1)[1].strip()
-
+    # Getters
     def get_env_description(self):
         return f"""-----
 Init new environment:
@@ -83,13 +69,29 @@ Init new environment:
     def get_available_actions(self):
         available_actions = self.env.get_available_actions()
         return available_actions
-    
-    def step(self, action):
-        self.env.step(action)
 
-    def format_action(self, action):
-        return action.strip().lower()
-    
+    def get_action_path(self):
+        return self.action_path.copy()
+
+    def get_experience(self):
+        if self.st is None or self.prev_action is None or self.st1 is None:
+            raise ValueError("[webshop_adaptor] In get_experience(), the history is not set, one of st0, a or st1 is None")
+        experience = {
+            "id": f"{get_timestamp_ms()}_{self.url_id}_{'-'.join(self.action_path)}",
+            "action_path": self.get_action_path(),  # Use copy() to avoid reference issue
+            "st": self.st,
+            "action": self.prev_action,
+            "st1": self.st1,
+        }
+        return experience
+
+    # Setters
+    def _set_instruction(self):
+        """获取环境的 instruction，提取 "Instruction: " 之后的内容"""
+        instruction_text = self.env.get_instruction_text()
+        return instruction_text.split("Instruction: ", 1)[1].strip()
+
+    # Consultants    
     def is_valid_action(self, action):
         action_status = self.get_available_actions()
         action = action.strip()
@@ -115,6 +117,32 @@ Init new environment:
         if not action_status["has_search_bar"] and len(action_status["clickables"]) == 0:
             return True
         return False
+    
+    # Modifiers
+    def initialize_env(self):
+        if webshop_config['session'] is not None:
+            self.env.reset(session=webshop_config['session'])
+        else:
+            self.env.reset()
+        self.url_id = self.env.state['url'].split('/')[-1]
+        self.instruction = self._set_instruction()
+        # set new history
+        self.st = None
+        self.prev_action = None
+        self.st1 = self.get_state()
+
+    def step(self, action):
+        # record history
+        self.st = self.st1
+        self.prev_action = action
+        self.action_path.append(action)
+        # make history
+        self.env.step(action)
+        # observe history
+        self.st1 = self.get_state()
+
+    def format_action(self, action):
+        return action.strip().lower()
 
     def extract_reward_score(self) -> float:
         html = self.env.state.get("html")

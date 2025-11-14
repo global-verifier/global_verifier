@@ -31,4 +31,3 @@ def extract_visible_text(html_content):
     text = text.strip()
     
     return text
-

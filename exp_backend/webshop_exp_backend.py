@@ -7,7 +7,8 @@ class WebshopExpBackend(BaseExpBackend):
 
     # Getters
     def _get_state_str(self, state) -> str:
-        return json.dumps(state, ensure_ascii=False)
+        # Use sort_keys=True to ensure consistent ordering regardless of key insertion order
+        return json.dumps(state, ensure_ascii=False, sort_keys=True)
 
     # Setters
     def store_experience(self, exp):

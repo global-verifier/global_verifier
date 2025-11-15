@@ -60,7 +60,7 @@ class Explorer:
         
         # Retrieve experience
         retrieved_experiences = self.exp_backend.retrieve_experience(cur_state)
-        print(f"Retrieved experience: {retrieved_experiences}")
+        print(f"Retrieved {len(retrieved_experiences)} experiences: {retrieved_experiences}")
         log_flush(self.logIO, f"- Retrieved experience: {retrieved_experiences}")
         
         # Get and validate action

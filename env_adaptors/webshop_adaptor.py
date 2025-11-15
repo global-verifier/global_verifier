@@ -17,6 +17,7 @@ if _webshop_path not in sys.path:
 from web_agent_site.envs import WebAgentTextEnv
 
 SID_PLACEHOLDER = '<session_id>'
+QUERY_PLACEHOLDER = '<query>'
 
 class WebshopAdaptor(BaseEnvAdaptor):
     def __init__(self, env_name):
@@ -52,10 +53,9 @@ Init new environment:
 
     def get_state(self):
         state = {}
-        # get clean url - replace session_id only when it appears as a complete path segment
+        # get clean url - normalize it by replacing session_id and search query
         full_url = self.env.state['url']
-        # Replace /session_id/ or /session_id at the end to avoid replacing digits in product IDs
-        clean_url = re.sub(r'/' + re.escape(self.url_id) + r'(?=/|$)', '/' + SID_PLACEHOLDER, full_url)
+        clean_url = self._normalize_url_query(full_url, self.url_id)
         state['url'] = clean_url
 
         # get the html
@@ -66,6 +66,37 @@ Init new environment:
         # TODO: whether to put available actions to the state
         
         return state
+    
+    def _normalize_url_query(self, url, url_id):
+        """
+        Normalize URL by replacing session_id and search query with placeholders.
+        
+        This enables experience matching across different sessions and search queries.
+        
+        URL patterns:
+        - search_results: http://host/search_results/<session_id>/<search_query>/<page_num>
+        - item_page: http://host/item_page/<session_id>/<product_id>/<search_query>/<page_num>/<options>
+        """
+        # Step 1: Replace session_id with placeholder
+        # Replace /session_id/ or /session_id at the end to avoid replacing digits in product IDs
+        normalized_url = re.sub(r'/' + re.escape(url_id) + r'(?=/|$)', '/' + SID_PLACEHOLDER, url)
+        
+        # Step 2: Replace search query with placeholder
+        parts = normalized_url.split('/')
+        
+        # search_results URL: replace the search query segment (index 5) with placeholder
+        if len(parts) > 4 and parts[3] == 'search_results':
+            # parts: ['http:', '', 'host', 'search_results', '<session_id>', '<search_query>', '<page_num>']
+            if len(parts) > 5:
+                parts[5] = QUERY_PLACEHOLDER
+        
+        # item_page URL: replace the search query segment (index 6) with placeholder
+        elif len(parts) > 5 and parts[3] == 'item_page':
+            # parts: ['http:', '', 'host', 'item_page', '<session_id>', '<product_id>', '<search_query>', '<page_num>', '<options>']
+            if len(parts) > 6:
+                parts[6] = QUERY_PLACEHOLDER
+        
+        return '/'.join(parts)
 
     def get_available_actions(self):
         available_actions = self.env.get_available_actions()

@@ -184,5 +184,5 @@ Init new environment:
         return float(match.group(1))
 
     # Tobe implemented in the subclass
-    def get_action_prompt(self, instruction, state):
+    def get_action_prompt(self, instruction, state, retrieved_experiences=None):
         raise NotImplementedError

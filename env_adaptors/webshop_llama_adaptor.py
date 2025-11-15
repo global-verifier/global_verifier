@@ -6,8 +6,11 @@ class WebshopLlamaAdaptor(WebshopAdaptor):
     def __init__(self, env_name):
         super().__init__(env_name)
 
-    def get_action_prompt(self, instruction, state):
+    def get_action_prompt(self, instruction, state, retrieved_experiences=None):
         """生成用于LLM获取下一个action的prompt"""
+        if retrieved_experiences is None:
+            retrieved_experiences = []
+            
         # Construct the user prompt
         action_status = self.get_available_actions()
         is_search = action_status["has_search_bar"]
@@ -27,6 +30,25 @@ Available Actions: {available_actions}
 """
         if not is_search:
             user_prompt += f"""Clickables: {action_status['clickables']}\n"""
+
+        # Add historical experiences if available
+        if retrieved_experiences:
+            user_prompt += f"""\n--- Historical Experience from Similar States ---
+You have visited this state before. Here are {len(retrieved_experiences)} previous experience(s):
+
+"""
+            for idx, exp in enumerate(retrieved_experiences, 1):
+                action_taken = exp.get('action', 'N/A')
+                next_url = exp.get('st1', {}).get('url', 'N/A')
+                user_prompt += f"""Experience {idx}:
+  Action taken: {action_taken}
+  Result URL: {next_url}
+
+"""
+            user_prompt += """Consider these experiences when deciding your next action.
+---
+
+"""
 
         user_prompt += """Based on the current state and task instruction, what is the next action you should take?
 

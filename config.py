@@ -2,6 +2,9 @@ explorer_settings = {
     "max_steps": 20,
     "max_action_retries": 3,
     "log_dir": "./log/",
+    # Experience settings
+    "use_experience": True,   # Whether to retrieve and use experiences in prompts
+    "save_experience": False,  # Whether to save new experiences to storage
     # Plug-in settings
     "model_name": "llama3.1",
     "env_name": "webshop_llama",

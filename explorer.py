@@ -14,6 +14,8 @@ class Explorer:
         self.storage_path = explorer_settings["storage_path"]
         self.max_steps = explorer_settings["max_steps"]
         self.max_action_retries = explorer_settings["max_action_retries"]
+        self.use_experience = explorer_settings.get("use_experience", True)  
+        self.save_experience = explorer_settings.get("save_experience", True)
         
         # Add plug in
         self.explorer_model = load_explorer_model(self.model_name)
@@ -24,8 +26,10 @@ class Explorer:
         self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.log', 'a')
         self.run_analyzer = ExplorerRunAnalyzer(explorer_settings["log_dir"])
 
-    def get_next_action(self, state: dict) -> str:
-        get_action_prompt = self.adaptor.get_action_prompt(self.adaptor.get_instruction(), state)
+    def get_next_action(self, state: dict, retrieved_experiences: list = None) -> str:
+        if retrieved_experiences is None:
+            retrieved_experiences = []
+        get_action_prompt = self.adaptor.get_action_prompt(self.adaptor.get_instruction(), state, retrieved_experiences)
         raw_action = self.explorer_model.get_next_action(get_action_prompt)
         formatted_action = self.adaptor.format_action(raw_action)
         return formatted_action
@@ -59,12 +63,16 @@ class Explorer:
             return True
         
         # Retrieve experience
-        retrieved_experiences = self.exp_backend.retrieve_experience(cur_state)
-        print(f"Retrieved {len(retrieved_experiences)} experiences: {retrieved_experiences}")
-        log_flush(self.logIO, f"- Retrieved experience: {retrieved_experiences}")
+        retrieved_experiences = []
+        if self.use_experience:
+            retrieved_experiences = self.exp_backend.retrieve_experience(cur_state)
+            print(f"Retrieved {len(retrieved_experiences)} experiences: {retrieved_experiences}")
+            log_flush(self.logIO, f"- Retrieved experience: {retrieved_experiences}")
+        else:
+            log_flush(self.logIO, f"- Experience retrieval disabled (use_experience=False), using empty experience list")
         
-        # Get and validate action
-        todo_action = self.get_next_action(cur_state)
+        # Get and validate action (pass retrieved experiences to the prompt if enabled)
+        todo_action = self.get_next_action(cur_state, retrieved_experiences)
         log_flush(self.logIO, f"- Todo action: {todo_action}")
         action_valid = False
         
@@ -76,7 +84,7 @@ class Explorer:
             # Not valid, re-inference and get new action
             print(f"   - Action is not valid: {todo_action}")
             log_flush(self.logIO, f"- Action is not valid: {todo_action}")
-            todo_action = self.get_next_action(cur_state)
+            todo_action = self.get_next_action(cur_state, retrieved_experiences)
             print(f"   - new todo action: {todo_action}")
             log_flush(self.logIO, f"- New todo action: {todo_action}")
         
@@ -88,7 +96,10 @@ class Explorer:
         print(f"Action '{todo_action}' is taken")
         
         # Store experience
-        self.record_experience()
+        if self.save_experience:
+            self.record_experience()
+        else:
+            log_flush(self.logIO, f"- Experience saving disabled (save_experience=False), skipping save")
         
         return False
 
@@ -114,13 +125,16 @@ class Explorer:
                 step_count = i
                 break
         
-        # Check if the episode is done
+        # Get the final score and step count
         if not is_episode_done:
+            # Episode didn't finish within max_steps
             log_flush(self.logIO, f"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-            raise ValueError(f"episode is not done after {self.max_steps} steps")
-        
-        # Get the final score
-        score = self.adaptor.extract_reward_score()
+            log_flush(self.logIO, f"- Episode is NOT done after {self.max_steps} steps")
+            score = -1  # Mark failed episodes with -1 score
+            step_count = self.max_steps
+        else:
+            # Episode finished successfully
+            score = self.adaptor.extract_reward_score()
 
         log_flush(self.logIO, f"Insturction: {self.adaptor.get_instruction()}")
         log_flush(self.logIO, f"Step count: {step_count}")
@@ -130,6 +144,7 @@ class Explorer:
         log_flush(self.logIO, f"End exploring at {end_timestamp}")
         log_flush(self.logIO, f"########################################################")
 
+        # Record to CSV regardless of success or failure
         self.run_analyzer.record_run(
             timestamp=end_timestamp,
             model_name=self.model_name,

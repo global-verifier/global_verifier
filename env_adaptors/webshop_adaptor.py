@@ -162,6 +162,7 @@ Init new environment:
         self.st = None
         self.prev_action = None
         self.st1 = self.get_state()
+        self.action_path = []
 
     def step(self, action):
         # record history

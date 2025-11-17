@@ -64,9 +64,13 @@ class BaseExpBackend:
         conflict_pairs = []
         exp_ids = self.exp_store.keys()
         exp_id_combinations = list(itertools.combinations(exp_ids, 2))
-        for exp_pair in exp_id_combinations:
+        log_flush(self.logIO, f"Number of experience combinations: {len(exp_id_combinations)}")
+        for i in range(len(exp_id_combinations)):
+            exp_pair = exp_id_combinations[i]
+            assert len(exp_pair) == 2
+            log_flush(self.logIO, f"{i}/{len(exp_id_combinations)}: {exp_pair[0]} and {exp_pair[1]})")
             if self._has_conflict(self.exp_store[exp_pair[0]], self.exp_store[exp_pair[1]]):
-                log_flush(self.logIO, f"Conflict pair detected: {exp_pair[0]['id']} and {exp_pair[1]['id']}")
+                log_flush(self.logIO, f"Conflict pair detected: {exp_pair[0]} and {exp_pair[1]}")
                 conflict_pairs.append(exp_pair)
         log_flush( self.logIO, f"Loop finish, num conflict pairs detected: {len(conflict_pairs)}")
         return conflict_pairs

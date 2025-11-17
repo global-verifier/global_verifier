@@ -5,8 +5,8 @@ from env_adaptors.webshop_adaptor import WebshopAdaptor
 import json
 
 class WebshopExpVanillaBackend(WebshopExpBackend):
-    def __init__(self, env_name, storage_path):
-        super().__init__(env_name, storage_path)
+    def __init__(self, env_name, storage_path, depreiciate_exp_store_path):
+        super().__init__(env_name, storage_path, depreiciate_exp_store_path)
         self.algorithm = webshop_vanilla_config["algorithm"]
         
         # set the retrieve experience

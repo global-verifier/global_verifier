@@ -27,8 +27,8 @@ def load_adaptor(env_name: str) -> BaseEnvAdaptor:
     else:
         raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized.")
 
-def load_exp_backend(env_name: str, storage_path: str) -> BaseExpBackend:
+def load_exp_backend(env_name: str, storage_path: str, depreiciate_exp_store_path: str) -> BaseExpBackend:
     if env_name == "webshop-vanilla":
-        return WebshopExpVanillaBackend(env_name, storage_path)
+        return WebshopExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path)
     else:
         raise Exception(f"In utils.py load_exp_backend(), env_name ({env_name}) is not recognized.")

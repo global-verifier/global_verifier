@@ -13,6 +13,7 @@ class Explorer:
         self.env_name = explorer_settings["env_name"]
         self.backend_env = explorer_settings["backend_env"]
         self.storage_path = explorer_settings["storage_path"]
+        self.depreiciate_exp_store_path = explorer_settings["depreiciate_exp_store_path"]
         self.max_steps = explorer_settings["max_steps"]
         self.max_action_retries = explorer_settings["max_action_retries"]
         self.use_experience = explorer_settings.get("use_experience", True)  
@@ -21,7 +22,7 @@ class Explorer:
         # Add plug in
         self.explorer_model = load_explorer_model(self.model_name)
         self.adaptor = load_adaptor(self.env_name)
-        self.exp_backend = load_exp_backend(self.backend_env, self.storage_path)
+        self.exp_backend = load_exp_backend(self.backend_env, self.storage_path, self.depreiciate_exp_store_path)
 
         # Add the logger
         self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.log', 'a')
@@ -136,8 +137,7 @@ class Explorer:
         # send result to backend, let it decide
         log_flush(self.logIO, f"- Result: e0_st_success: {e0_st_success}, e0_st1_success: {e0_st1_success}, e1_st_success: {e1_st_success}, e1_st1_success: {e1_st1_success}")
         print(f"- Result: e0_st_success: {e0_st_success}, e0_st1_success: {e0_st1_success}, e1_st_success: {e1_st_success}, e1_st1_success: {e1_st1_success}")
-        # TODO: Implement exp_backend.resolve_experience_conflict() 
-        # self.exp_backend.resolve_experience_conflict(conflict_pair_id=conflict_pair_id, examine_result=(e0_st_success, e0_st1_success, e1_st_success, e1_st1_success))
+        self.exp_backend.resolve_experience_conflict(conflict_pair_id=conflict_pair_id, examine_result=(e0_st_success, e0_st1_success, e1_st_success, e1_st1_success))
 
 
     def resolve_all_experience_conflict(self):

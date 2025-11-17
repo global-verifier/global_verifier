@@ -20,6 +20,8 @@ class BaseExpBackend:
         if not self._is_valid_exp_store():
             raise ValueError(f"Invalid experience store, did not pass the validation.")
 
+        self.depreiciate_exp_store = {}
+
     def _load_store(self):
         log_flush(self.logIO, f"########################################################")
         log_flush(self.logIO, f"Start loading the store at {get_timestamp()}")
@@ -55,6 +57,9 @@ class BaseExpBackend:
         with open(self.storage_path, 'w') as file:
             json.dump(self.exp_store, file)
         log_flush(self.logIO, f"Save store, path: {self.storage_path}, size: {len(self.exp_store)}, at {get_timestamp()}")
+        with open(self.depreiciate_exp_store_path, 'w') as file:
+            json.dump(self.depreiciate_exp_store, file)
+        log_flush(self.logIO, f"Save depreiciate store, path: {self.depreiciate_exp_store_path}, size: {len(self.depreiciate_exp_store)}, at {get_timestamp()}")
 
     def _loop_detect_exp_conflict(self):
         """
@@ -74,6 +79,10 @@ class BaseExpBackend:
                 conflict_pairs.append(exp_pair)
         log_flush( self.logIO, f"Loop finish, num conflict pairs detected: {len(conflict_pairs)}")
         return conflict_pairs
+
+    # Getters
+    def get_exp_by_id(self, exp_id) -> dict:
+        return self.exp_store[exp_id]
 
     # To be implemented in the subclass
     def _is_valid_exp(self, exp) -> bool:

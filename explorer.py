@@ -2,8 +2,9 @@ import os
 
 from analyzer.explorer_run_analyzer import ExplorerRunAnalyzer
 from plugin_loader import load_explorer_model, load_adaptor, load_exp_backend
-from config import explorer_settings
 from utils import log_flush, get_timestamp
+from config import explorer_settings
+import time
 
 class Explorer:
     def __init__(self):
@@ -25,6 +26,9 @@ class Explorer:
         # Add the logger
         self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.log', 'a')
         self.run_analyzer = ExplorerRunAnalyzer(explorer_settings["log_dir"])
+
+        # Add explorer status
+        self.in_process = False
 
     def get_next_action(self, state: dict, retrieved_experiences: list = None) -> str:
         if retrieved_experiences is None:
@@ -103,7 +107,56 @@ class Explorer:
         
         return False
 
+    # Detect and resolve conflict pairs
+    def _detect_experience_conflict(self):
+        """Check if the current experience is conflict with the existing experiences."""
+        conflict_pair_ids = self.exp_backend._loop_detect_exp_conflict()
+        return conflict_pair_ids
+
+    def solve_experience_conflict(self, conflict_pair_id):
+        log_flush(self.logIO, f"-- Resolve Conflict pair ID: {conflict_pair_id} ---")
+        e0 = self.exp_backend.get_exp_by_id(conflict_pair_id[0])
+        e1 = self.exp_backend.get_exp_by_id(conflict_pair_id[1])
+        # go to the st status for e0
+        e0_st_success, error_message = self.adaptor.reconstruct_state(e0)
+        e0_st1_success = False
+        if not e0_st_success:
+            log_flush(self.logIO, f"Error reconstructing st for e0: {error_message}")
+        else:
+            self.adaptor.step(e0['action'])
+            e0_st1_success = self.adaptor.is_same_state(self.adaptor.get_state(), e0['st1'])
+        # go to the st status for e1
+        e1_st1_success = False
+        e1_st_success, error_message = self.adaptor.reconstruct_state(e1)
+        if not e1_st_success:
+            log_flush(self.logIO, f"Error reconstructing st for e1: {error_message}")
+        else:
+            self.adaptor.step(e1['action'])
+            e1_st1_success = self.adaptor.is_same_state(self.adaptor.get_state(), e1['st1'])
+        # send result to backend, let it decide
+        log_flush(self.logIO, f"- Result: e0_st_success: {e0_st_success}, e0_st1_success: {e0_st1_success}, e1_st_success: {e1_st_success}, e1_st1_success: {e1_st1_success}")
+        print(f"- Result: e0_st_success: {e0_st_success}, e0_st1_success: {e0_st1_success}, e1_st_success: {e1_st_success}, e1_st1_success: {e1_st1_success}")
+        # TODO: Implement exp_backend.resolve_experience_conflict() 
+        # self.exp_backend.resolve_experience_conflict(conflict_pair_id=conflict_pair_id, examine_result=(e0_st_success, e0_st1_success, e1_st_success, e1_st1_success))
+
+
+    def resolve_all_experience_conflict(self):
+        """Resolve the conflict pairs."""
+
+        log_flush(self.logIO, f"---------------- Resolve Experience Conflict ----------------")
+        log_flush(self.logIO, f"Detecting experience conflict...")
+        conflict_pair_ids = self._detect_experience_conflict()
+        for conflict_pair_id in conflict_pair_ids:
+            while self.in_process:
+                time.sleep(1)
+            self.in_process = True
+            self.solve_experience_conflict(conflict_pair_id)
+            self.in_process = False
+        log_flush(self.logIO, f"---------------- Finished Resolve Experience Conflict ----------------")
+
+
     def explore(self):
+        self.in_process = True
         print(f"Start exploring at {get_timestamp()}")
         log_flush(self.logIO, f"########################################################")
         log_flush(self.logIO, f"Start exploring at {get_timestamp()}")
@@ -155,3 +208,5 @@ class Explorer:
             final_score=score,
         )
         self.run_analyzer.save_to_csv()
+
+        self.in_process = False

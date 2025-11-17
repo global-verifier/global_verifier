@@ -15,3 +15,9 @@ class BaseEnvAdaptor:
 
     def get_action_prompt(self, instruction: str, state: dict, available_actions: list) -> str:
         raise NotImplementedError
+
+    def reconstruct_state(self, exp):
+        raise NotImplementedError
+
+    def is_same_state(self, state1, state2):
+        raise NotImplementedError

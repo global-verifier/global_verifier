@@ -10,6 +10,7 @@ explorer_settings = {
     "env_name": "webshop_llama",
     "backend_env": "webshop-vanilla",
     "storage_path": "./storage/exp_store.json",
+    "depreiciate_exp_store_path": "./storage/depreiciate_exp_store.json",
 }
 model_path = {
     "llama3": "/data/xingkun/local_model/Meta-Llama-3-8B-Instruct",

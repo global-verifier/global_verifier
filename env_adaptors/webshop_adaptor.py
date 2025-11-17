@@ -7,6 +7,7 @@ from .adopter_util import extract_visible_text
 import re
 import random
 from utils import get_timestamp_ms
+import json
 
 _webshop_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'webshop')
 _webshop_path = os.path.abspath(_webshop_path)
@@ -149,6 +150,9 @@ Init new environment:
         if not action_status["has_search_bar"] and len(action_status["clickables"]) == 0:
             return True
         return False
+
+    def is_same_state(self, state1, state2):
+        return state1 == state2
     
     # Modifiers
     def initialize_env(self):
@@ -184,6 +188,44 @@ Init new environment:
             raise ValueError(f"Reward score not found in the HTML")
         return float(match.group(1))
 
+    def reconstruct_state(self, exp):
+        """Reconstruct the state from the experience."""
+        assert exp['action'] == exp['action_path'][-1]
+        assert len(exp['action_path']) > 1
+        self.initialize_env()
+        try:
+            for i in range(len(exp['action_path']) - 1):
+                action = exp['action_path'][i]
+                self.step(action)
+        except Exception as e:
+            return False, e
+        if self.get_state() != exp['st']:
+            return False, f"Reconstructed state differs, expected: {exp['st']}, got: {self.get_state()}"
+        return True, None
+
     # Tobe implemented in the subclass
     def get_action_prompt(self, instruction, state, retrieved_experiences=None):
         raise NotImplementedError
+
+    # Static
+    @staticmethod
+    def has_conflict(e1, e2) -> bool:
+        """
+        Check if two experiences have conflict.
+        - if same st, action
+            - different st1
+        # == actually works for dict, did not know that before
+        """
+        if e1['st'] == e2['st'] and e1['action'] == e2['action']:
+            if e1['st1'] != e2['st1']:
+                return True
+        return False
+
+    @staticmethod
+    def get_state_str(state) -> str:
+        # Use sort_keys=True to ensure consistent ordering regardless of key insertion order
+        return json.dumps(state, ensure_ascii=False, sort_keys=True)
+
+    @staticmethod
+    def two_states_equal(state1, state2) -> bool:
+        return WebshopAdaptor.get_state_str(state1) == WebshopAdaptor.get_state_str(state2)

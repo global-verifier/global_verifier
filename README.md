@@ -34,4 +34,7 @@ env.step("click[search]")
     ...
 }
 
+# 数据在这里：
+https://huggingface.co/datasets/YWZBrandon/webshop-data/blob/main/items_shuffle_1000.jsonr
+
 

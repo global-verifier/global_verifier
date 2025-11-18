@@ -72,6 +72,30 @@ class WebshopExpBackend(BaseExpBackend):
         """
         return WebshopAdaptor.has_conflict(e1, e2)
 
+    def _are_same_exp(self, e1, e2) -> bool:
+        """
+        Check if two experiences are the same.
+        """
+        return WebshopAdaptor.are_same_exp(e1, e2)
+
+    def get_most_optmized_path_exp_id(self, exp_id_group: set) -> str:
+        """
+        Given an iterable of experiences, return the ID whose action_path is shortest.
+        """
+        if not exp_id_group or len(exp_id_group) == 0:
+            raise ValueError("exp_id_group is empty")
+
+        best_id = None
+        best_len = None
+        for exp_id in exp_id_group:
+            exp = self.exp_store[exp_id]
+            action_path = exp.get("action_path")
+            path_len = len(action_path)
+            if best_len is None or path_len < best_len:
+                best_id = exp_id
+                best_len = path_len
+        return best_id
+
     def resolve_experience_conflict(self, **kwargs):
         """
         Resolve the conflict between two experiences.

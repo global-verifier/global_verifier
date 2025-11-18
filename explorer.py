@@ -112,6 +112,7 @@ class Explorer:
     def _detect_experience_conflict(self):
         """Check if the current experience is conflict with the existing experiences."""
         conflict_pair_ids = self.exp_backend._loop_detect_exp_conflict()
+        
         return conflict_pair_ids
 
     def solve_experience_conflict(self, conflict_pair_id):
@@ -144,7 +145,6 @@ class Explorer:
         """Resolve the conflict pairs."""
 
         log_flush(self.logIO, f"---------------- Resolve Experience Conflict ----------------")
-        log_flush(self.logIO, f"Detecting experience conflict...")
         conflict_pair_ids = self._detect_experience_conflict()
         for conflict_pair_id in conflict_pair_ids:
             while self.in_process:
@@ -153,6 +153,28 @@ class Explorer:
             self.solve_experience_conflict(conflict_pair_id)
             self.in_process = False
         log_flush(self.logIO, f"---------------- Finished Resolve Experience Conflict ----------------")
+
+    def remove_redundant_experiences(self):
+        """Remove redundant experiences."""
+        log_flush(self.logIO, f"---------------- Remove Redundant Experiences ----------------")
+        redundant_experience_groups = self.exp_backend.get_redundant_experience_groups()
+        print(f"Amount of redundant experience groups: {len(redundant_experience_groups)}")
+        print(f"Redundant experience groups: {redundant_experience_groups}")
+        for group in redundant_experience_groups:
+            best_exp_id = self.exp_backend.get_most_optmized_path_exp_id(group)
+            group.remove(best_exp_id)
+            for exp_id in group:
+                self.exp_backend._deprecate_experience(exp_id)
+        log_flush(self.logIO, f"---------------- Finished Remove Redundant Experiences ----------------")
+
+    def refine_experience(self):
+        """
+        Consist of two steps:
+        1. Remove redundant experiences
+        2. Resolve conflict pairs
+        """
+        self.remove_redundant_experiences()
+        self.resolve_all_experience_conflict()
 
 
     def explore(self):

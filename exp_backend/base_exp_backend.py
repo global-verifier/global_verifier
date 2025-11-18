@@ -111,6 +111,32 @@ class BaseExpBackend:
             raise ValueError(error_msg)
         log_flush(self.logIO, f"Store validation passed: No overlap between exp_store ({len(exp_store_keys)} items) and depreiciate_exp_store ({len(depreiciate_store_keys)} items)")
 
+    def get_redundant_experience_groups(self) -> list:
+        """Get the redundant experience ids."""
+        log_flush(self.logIO, f"Loop detecting redundant experiences")
+        redundant_experience_groups = []
+        exp_ids = list(self.exp_store.keys())
+        grouped_exp_ids = set()
+        for i in range(len(exp_ids)):
+            cur_redundant_group = set()
+            cur_id = exp_ids[i]
+            if cur_id in grouped_exp_ids:
+                continue
+            grouped_exp_ids.add(cur_id)
+            cur_redundant_group.add(cur_id)
+            for j in range(i+1, len(exp_ids)):
+                test_id = exp_ids[j]
+                if test_id in grouped_exp_ids:
+                    continue
+                if self._are_same_exp(self.exp_store[cur_id], self.exp_store[test_id]):
+                    cur_redundant_group.add(cur_id)
+                    cur_redundant_group.add(test_id)
+                    grouped_exp_ids.add(test_id)
+            if len(cur_redundant_group) > 1:
+                redundant_experience_groups.append(cur_redundant_group)
+        log_flush(self.logIO, f"Loop finish, num redundant experience groups detected: {len(redundant_experience_groups)}")
+        return redundant_experience_groups
+
     # To be implemented in the subclass
     def _is_valid_exp(self, exp) -> bool:
         raise NotImplementedError
@@ -128,4 +154,10 @@ class BaseExpBackend:
         raise NotImplementedError
 
     def resolve_experience_conflict(self, **kwargs):
+        raise NotImplementedError
+
+    def _are_same_exp(self, e1, e2) -> bool:
+        raise NotImplementedError
+
+    def get_most_optmized_path_exp(self, exp_group: set) -> str:
         raise NotImplementedError

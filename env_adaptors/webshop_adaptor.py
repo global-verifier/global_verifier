@@ -222,6 +222,13 @@ Init new environment:
         return False
 
     @staticmethod
+    def are_same_exp(e1, e2) -> bool:
+        """
+        Check if two experiences are the same.
+        """
+        return e1['st'] == e2['st'] and e1['action'] == e2['action'] and e1['st1'] == e2['st1']
+
+    @staticmethod
     def get_state_str(state) -> str:
         # Use sort_keys=True to ensure consistent ordering regardless of key insertion order
         return json.dumps(state, ensure_ascii=False, sort_keys=True)

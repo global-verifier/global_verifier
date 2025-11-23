@@ -139,13 +139,58 @@ class BaseExpBackend:
 
     # To be implemented in the subclass
     def _is_valid_exp(self, exp) -> bool:
-        raise NotImplementedError
+        """
+        Check if an experience is valid.
+        """
+        if not isinstance(exp, dict):
+            return False
+        expected_fields = {
+            "id": str,
+            "action_path": list,
+            "st": dict,
+            "action": str,
+            "st1": dict,
+        }
+        for field, field_type in expected_fields.items():
+            if field not in exp:
+                return False
+            if not isinstance(exp[field], field_type):
+                return False
+        return True
+
 
     def _is_valid_exp_store(self) -> bool:
-        raise NotImplementedError
+        """
+        Each experience should have
+        - id: str
+        - action_path: list[str]
+        - st: dict
+            - url: str
+            - html_text: str
+            # - action_status: dict
+        - action: str
+        - st1: dict
+            - url: str
+            - html_text: str
+            # - action_status: dict
+        """
+        # Every experience should be valid
+        for store in [self.exp_store, self.depreiciate_exp_store]:
+            for exp_id in store.keys():
+                exp = store[exp_id]
+                # Id should match
+                if exp_id != exp["id"]:
+                    return False
+                # Individual experience check
+                if not self._is_valid_exp(exp):
+                    return False
+        return True
 
     def store_experience(self, exp):
-        raise NotImplementedError
+        if not self._is_valid_exp(exp):
+            raise ValueError(f"Invalid experience: {exp}")
+        self.exp_store[exp["id"]] = exp
+        self.save_store() # TODO: maybe should not save so frequent
 
     def _has_conflict(self, e1, e2) -> bool:
         raise NotImplementedError

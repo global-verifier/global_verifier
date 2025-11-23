@@ -7,7 +7,6 @@ from .adopter_util import extract_visible_text
 import re
 import random
 from utils import get_timestamp_ms
-import json
 
 _webshop_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'webshop')
 _webshop_path = os.path.abspath(_webshop_path)
@@ -111,6 +110,7 @@ Init new environment:
             raise ValueError("[webshop_adaptor] In get_experience(), the history is not set, one of st0, a or st1 is None")
         experience = {
             "id": f"{get_timestamp_ms()}_{self.url_id}_{'-'.join(self.action_path)}",
+            "reproduce_method": "action_path",
             "action_path": self.get_action_path(),  # Use copy() to avoid reference issue
             "st": self.st,
             "action": self.prev_action,
@@ -206,33 +206,3 @@ Init new environment:
     # Tobe implemented in the subclass
     def get_action_prompt(self, instruction, state, retrieved_experiences=None):
         raise NotImplementedError
-
-    # Static
-    @staticmethod
-    def has_conflict(e1, e2) -> bool:
-        """
-        Check if two experiences have conflict.
-        - if same st, action
-            - different st1
-        # == actually works for dict, did not know that before
-        """
-        if e1['st'] == e2['st'] and e1['action'] == e2['action']:
-            if e1['st1'] != e2['st1']:
-                return True
-        return False
-
-    @staticmethod
-    def are_same_exp(e1, e2) -> bool:
-        """
-        Check if two experiences are the same.
-        """
-        return e1['st'] == e2['st'] and e1['action'] == e2['action'] and e1['st1'] == e2['st1']
-
-    @staticmethod
-    def get_state_str(state) -> str:
-        # Use sort_keys=True to ensure consistent ordering regardless of key insertion order
-        return json.dumps(state, ensure_ascii=False, sort_keys=True)
-
-    @staticmethod
-    def two_states_equal(state1, state2) -> bool:
-        return WebshopAdaptor.get_state_str(state1) == WebshopAdaptor.get_state_str(state2)

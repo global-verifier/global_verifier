@@ -31,10 +31,10 @@ class Explorer:
         # Add explorer status
         self.in_process = False
 
-    def get_next_action(self, state: dict, retrieved_experiences: list = None) -> str:
+    def get_next_action(self, retrieved_experiences: list = None) -> str:
         if retrieved_experiences is None:
             retrieved_experiences = []
-        get_action_prompt = self.adaptor.get_action_prompt(self.adaptor.get_instruction(), state, retrieved_experiences)
+        get_action_prompt = self.adaptor.get_action_prompt(retrieved_experiences)
         raw_action = self.explorer_model.get_next_action(get_action_prompt)
         formatted_action = self.adaptor.format_action(raw_action)
         return formatted_action
@@ -53,10 +53,8 @@ class Explorer:
             True if the episode is done, False otherwise
         """
 
-        
         # Get current state
         cur_state = self.adaptor.get_state()
-        print(f"Current state url: {cur_state['url']}")
         log_flush(self.logIO, f"- Current state: {cur_state}")
         
         # Get action status/options
@@ -77,7 +75,7 @@ class Explorer:
             log_flush(self.logIO, f"- Experience retrieval disabled (use_experience=False), using empty experience list")
         
         # Get and validate action (pass retrieved experiences to the prompt if enabled)
-        todo_action = self.get_next_action(cur_state, retrieved_experiences)
+        todo_action = self.get_next_action(retrieved_experiences)
         log_flush(self.logIO, f"- Todo action: {todo_action}")
         action_valid = False
         
@@ -89,7 +87,7 @@ class Explorer:
             # Not valid, re-inference and get new action
             print(f"   - Action is not valid: {todo_action}")
             log_flush(self.logIO, f"- Action is not valid: {todo_action}")
-            todo_action = self.get_next_action(cur_state, retrieved_experiences)
+            todo_action = self.get_next_action(retrieved_experiences)
             print(f"   - new todo action: {todo_action}")
             log_flush(self.logIO, f"- New todo action: {todo_action}")
         

@@ -1,6 +1,6 @@
 import sys
 import os
-import gym
+import gymnasium as gym
 from .base_env_adaptor import BaseEnvAdaptor
 from .env_config import webshop_config
 from .adopter_util import extract_visible_text
@@ -31,6 +31,7 @@ class WebshopAdaptor(BaseEnvAdaptor):
             num_products = webshop_config['num_products'],
             human_goals = webshop_config['human_goals'],
         )
+        self.reproduce_method = "action_path"
         self.url_id = None
         self.instruction = None
         # history records
@@ -110,7 +111,7 @@ Init new environment:
             raise ValueError("[webshop_adaptor] In get_experience(), the history is not set, one of st0, a or st1 is None")
         experience = {
             "id": f"{get_timestamp_ms()}_{self.url_id}_{'-'.join(self.action_path)}",
-            "reproduce_method": "action_path",
+            "reproduce_method": self.reproduce_method,
             "action_path": self.get_action_path(),  # Use copy() to avoid reference issue
             "st": self.st,
             "action": self.prev_action,
@@ -150,9 +151,6 @@ Init new environment:
         if not action_status["has_search_bar"] and len(action_status["clickables"]) == 0:
             return True
         return False
-
-    def is_same_state(self, state1, state2):
-        return state1 == state2
     
     # Modifiers
     def initialize_env(self):

@@ -7,8 +7,8 @@ explorer_settings = {
     "save_experience": False,  # Whether to save new experiences to storage
     # Plug-in settings
     "model_name": "llama3.1",
-    "env_name": "webshop_llama",
-    "backend_env": "webshop-vanilla",
+    "env_name": "frozenlake_llama",
+    "backend_env": "frozenlake-vanilla",
     "storage_path": "./storage/exp_store.json",
     "depreiciate_exp_store_path": "./storage/depreiciate_exp_store.json",
 }

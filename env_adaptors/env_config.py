@@ -10,3 +10,13 @@ webshop_config = {
     "random_seed": 0,
 }
 
+frozenlake_config = {
+    "id": "FrozenLake-v1",
+    "desc": None,
+    "random_seed": 0,
+    "map_name": "4x4",
+    "is_slippery": False,
+    "success_rate": 1,
+    "reward_schedule": (1, 0, 0),
+    "max_episode_steps": None,
+}

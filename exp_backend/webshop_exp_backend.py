@@ -11,22 +11,6 @@ class WebshopExpBackend(BaseExpBackend):
     # Setters
 
     # Consultants
-
-    def _has_conflict(self, e1, e2) -> bool:
-        """
-        Check if two experiences have conflict.
-        - if same st, action
-            - different st1
-        # == actually works for dict, did not know that before
-        """
-        return WebshopAdaptor.has_conflict(e1, e2)
-
-    def _are_same_exp(self, e1, e2) -> bool:
-        """
-        Check if two experiences are the same.
-        """
-        return WebshopAdaptor.are_same_exp(e1, e2)
-
     def get_most_optmized_path_exp_id(self, exp_id_group: set) -> str:
         """
         Given an iterable of experiences, return the ID whose action_path is shortest.

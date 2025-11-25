@@ -4,3 +4,6 @@ base_backend_config = {
 webshop_vanilla_config = {
     "algorithm": "sameSt_1Step",
 }
+frozenlake_vanilla_config = {
+    "algorithm": "sameSt_1Step",
+}

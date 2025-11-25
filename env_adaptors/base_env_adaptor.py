@@ -22,7 +22,10 @@ class BaseEnvAdaptor:
         raise NotImplementedError
 
     def is_same_state(self, state1, state2):
-        raise NotImplementedError
+        return state1 == state2
+
+    def format_action(self, action):
+        return action
 
     # Static
     @staticmethod

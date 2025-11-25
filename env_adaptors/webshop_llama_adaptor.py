@@ -6,10 +6,13 @@ class WebshopLlamaAdaptor(WebshopAdaptor):
     def __init__(self, env_name):
         super().__init__(env_name)
 
-    def get_action_prompt(self, instruction, state, retrieved_experiences=None):
+    def get_action_prompt(self, retrieved_experiences=None):
         """生成用于LLM获取下一个action的prompt"""
         if retrieved_experiences is None:
             retrieved_experiences = []
+
+        state = self.get_state()
+        instruction = self.get_instruction()
             
         # Construct the user prompt
         action_status = self.get_available_actions()

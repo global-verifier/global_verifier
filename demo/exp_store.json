@@ -1,128 +1,843 @@
 {
-    "11-15_14:15:24.809830_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]": {
-        "action": "search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]",
+    "11-25_15:56:30.337485_(3, 3)_0-2-2-2-2-2-2-2-1": {
+        "action": 1,
         "action_path": [
-            "search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]"
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1
         ],
-        "id": "11-15_14:15:24.809830_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]",
+        "id": "11-25_15:56:30.337485_(3, 3)_0-2-2-2-2-2-2-2-1",
+        "reproduce_method": "action_path",
         "st": {
-            "html": "WebShop Search",
-            "url": "http://127.0.0.1:3000/<session_id>"
+            "cur_pos": [
+                0,
+                3
+            ],
+            "tile_type": "F"
         },
         "st1": {
-            "html": "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09GLVMLMS Anniou Electric Heated Jacket Adjustable Temp USB Heated Coat Winter Hooded Jacket Men Women $64.99 to $114.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B000J3HZXS Laguna Floating Planting Bag, Aquatic Pond Planter $19.99 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B098XT346Y Fjackets Real Lambskin Sherpa Jacket - Mens Leather Jacket $187.0 to $219.0 B0957XW92M Giantex Faux Fur Vanity Stool Chair, Round Footstool Ottoman with Metal Legs for Living Room, Fluffy Chair with Furry Padded Seat, Makeup Stool for Bedroom, Decorative Furniture Footrest White $52.99",
-            "url": "http://127.0.0.1:3000/search_results/<session_id>/<query>/1"
+            "cur_pos": [
+                1,
+                3
+            ],
+            "tile_type": "H"
         }
     },
-    "11-15_14:15:34.576029_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]-click[b09kp78g37]": {
-        "action": "click[b09kp78g37]",
+    "11-25_15:56:31.678848_(3, 3)_2-2-2-2": {
+        "action": 2,
         "action_path": [
-            "search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]",
-            "click[b09kp78g37]"
+            2,
+            2,
+            2,
+            2
         ],
-        "id": "11-15_14:15:34.576029_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]-click[b09kp78g37]",
+        "id": "11-25_15:56:31.678848_(3, 3)_2-2-2-2",
+        "reproduce_method": "action_path",
         "st": {
-            "html": "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09GLVMLMS Anniou Electric Heated Jacket Adjustable Temp USB Heated Coat Winter Hooded Jacket Men Women $64.99 to $114.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B000J3HZXS Laguna Floating Planting Bag, Aquatic Pond Planter $19.99 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B098XT346Y Fjackets Real Lambskin Sherpa Jacket - Mens Leather Jacket $187.0 to $219.0 B0957XW92M Giantex Faux Fur Vanity Stool Chair, Round Footstool Ottoman with Metal Legs for Living Room, Fluffy Chair with Furry Padded Seat, Makeup Stool for Bedroom, Decorative Furniture Footrest White $52.99",
-            "url": "http://127.0.0.1:3000/search_results/<session_id>/<query>/1"
+            "cur_pos": [
+                0,
+                3
+            ],
+            "tile_type": "F"
         },
         "st1": {
-            "html": "Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now",
-            "url": "http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}"
+            "cur_pos": [
+                0,
+                3
+            ],
+            "tile_type": "F"
         }
     },
-    "11-15_14:15:38.745956_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]-click[b09kp78g37]-click[x-large]": {
-        "action": "click[x-large]",
+    "11-25_15:56:34.872423_(3, 3)_2-2-2-2-2-0-2-2-0-1-1-1-0": {
+        "action": 0,
         "action_path": [
-            "search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]",
-            "click[b09kp78g37]",
-            "click[x-large]"
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            2,
+            2,
+            0,
+            1,
+            1,
+            1,
+            0
         ],
-        "id": "11-15_14:15:38.745956_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]-click[b09kp78g37]-click[x-large]",
+        "id": "11-25_15:56:34.872423_(3, 3)_2-2-2-2-2-0-2-2-0-1-1-1-0",
+        "reproduce_method": "action_path",
         "st": {
-            "html": "Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now",
-            "url": "http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}"
+            "cur_pos": [
+                3,
+                2
+            ],
+            "tile_type": "F"
         },
         "st1": {
-            "html": "Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now",
-            "url": "http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{\"size\": \"x-large\"}"
+            "cur_pos": [
+                3,
+                1
+            ],
+            "tile_type": "F"
         }
     },
-    "11-15_14:15:42.985567_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]-click[b09kp78g37]-click[x-large]-click[x-large]": {
-        "action": "click[x-large]",
+    "11-25_15:56:35.133633_(3, 3)_2-2-2-2-2-0-2-2-0-1-1-1-0-3": {
+        "action": 3,
         "action_path": [
-            "search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]",
-            "click[b09kp78g37]",
-            "click[x-large]",
-            "click[x-large]"
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            2,
+            2,
+            0,
+            1,
+            1,
+            1,
+            0,
+            3
         ],
-        "id": "11-15_14:15:42.985567_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]-click[b09kp78g37]-click[x-large]-click[x-large]",
+        "id": "11-25_15:56:35.133633_(3, 3)_2-2-2-2-2-0-2-2-0-1-1-1-0-3",
+        "reproduce_method": "action_path",
         "st": {
-            "html": "Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now",
-            "url": "http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{\"size\": \"x-large\"}"
+            "cur_pos": [
+                3,
+                1
+            ],
+            "tile_type": "F"
         },
         "st1": {
-            "html": "Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now",
-            "url": "http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{\"size\": \"x-large\"}"
+            "cur_pos": [
+                2,
+                1
+            ],
+            "tile_type": "F"
         }
     },
-    "11-15_14:15:47.161072_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]-click[b09kp78g37]-click[x-large]-click[x-large]-click[x-large]": {
-        "action": "click[x-large]",
+    "11-25_15:56:35.726098_(3, 3)_2-2-2-2-2-0-2-2-0-1-1-1-0-3-2-2": {
+        "action": 2,
         "action_path": [
-            "search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]",
-            "click[b09kp78g37]",
-            "click[x-large]",
-            "click[x-large]",
-            "click[x-large]"
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            2,
+            2,
+            0,
+            1,
+            1,
+            1,
+            0,
+            3,
+            2,
+            2
         ],
-        "id": "11-15_14:15:47.161072_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]-click[b09kp78g37]-click[x-large]-click[x-large]-click[x-large]",
+        "id": "11-25_15:56:35.726098_(3, 3)_2-2-2-2-2-0-2-2-0-1-1-1-0-3-2-2",
+        "reproduce_method": "action_path",
         "st": {
-            "html": "Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now",
-            "url": "http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{\"size\": \"x-large\"}"
+            "cur_pos": [
+                2,
+                2
+            ],
+            "tile_type": "F"
         },
         "st1": {
-            "html": "Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now",
-            "url": "http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{\"size\": \"x-large\"}"
+            "cur_pos": [
+                2,
+                3
+            ],
+            "tile_type": "H"
         }
     },
-    "11-15_14:15:51.653937_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]-click[b09kp78g37]-click[x-large]-click[x-large]-click[x-large]-click[red]": {
-        "action": "click[red]",
+    "11-25_15:56:36.379009_(3, 3)_2-2": {
+        "action": 2,
         "action_path": [
-            "search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]",
-            "click[b09kp78g37]",
-            "click[x-large]",
-            "click[x-large]",
-            "click[x-large]",
-            "click[red]"
+            2,
+            2
         ],
-        "id": "11-15_14:15:51.653937_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]-click[b09kp78g37]-click[x-large]-click[x-large]-click[x-large]-click[red]",
+        "id": "11-25_15:56:36.379009_(3, 3)_2-2",
+        "reproduce_method": "action_path",
         "st": {
-            "html": "Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now",
-            "url": "http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{\"size\": \"x-large\"}"
+            "cur_pos": [
+                0,
+                1
+            ],
+            "tile_type": "F"
         },
         "st1": {
-            "html": "Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now",
-            "url": "http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{\"size\": \"x-large\", \"color\": \"red\"}"
+            "cur_pos": [
+                0,
+                2
+            ],
+            "tile_type": "F"
         }
     },
-    "11-15_14:15:56.273898_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]-click[b09kp78g37]-click[x-large]-click[x-large]-click[x-large]-click[red]-click[buy now]": {
-        "action": "click[buy now]",
+    "11-25_15:56:39.775243_(3, 3)_2-2-1-1-0-0-2-2-0-2-1-1": {
+        "action": 1,
         "action_path": [
-            "search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]",
-            "click[b09kp78g37]",
-            "click[x-large]",
-            "click[x-large]",
-            "click[x-large]",
-            "click[red]",
-            "click[buy now]"
+            2,
+            2,
+            1,
+            1,
+            0,
+            0,
+            2,
+            2,
+            0,
+            2,
+            1,
+            1
         ],
-        "id": "11-15_14:15:56.273898_9_search[x-large red women faux fur lined winter warm jacket coat price:lower than 90]-click[b09kp78g37]-click[x-large]-click[x-large]-click[x-large]-click[red]-click[buy now]",
+        "id": "11-25_15:56:39.775243_(3, 3)_2-2-1-1-0-0-2-2-0-2-1-1",
+        "reproduce_method": "action_path",
         "st": {
-            "html": "Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now",
-            "url": "http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{\"size\": \"x-large\", \"color\": \"red\"}"
+            "cur_pos": [
+                3,
+                2
+            ],
+            "tile_type": "F"
         },
         "st1": {
-            "html": "Thank you for shopping with us! Your code: None (Paste it in your MTurk interface.) Purchased asin B09KP78G37 options {\"color\": \"red\", \"size\": \"x-large\"} attrs None category None query None product category None Target asin options attrs price upper instuction text category product category query Goal None Reward Your score (min 0.0, max 1.0) 1.0 Reward Details None",
-            "url": "http://127.0.0.1:3000/done/<session_id>/B09KP78G37/{'size': 'x-large', 'color': 'red'}"
+            "cur_pos": [
+                3,
+                2
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:56:42.800495_(3, 3)_2-1": {
+        "action": 1,
+        "action_path": [
+            2,
+            1
+        ],
+        "id": "11-25_15:56:42.800495_(3, 3)_2-1",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                0,
+                1
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                1,
+                1
+            ],
+            "tile_type": "H"
+        }
+    },
+    "11-25_15:56:43.126785_(3, 3)_1": {
+        "action": 1,
+        "action_path": [
+            1
+        ],
+        "id": "11-25_15:56:43.126785_(3, 3)_1",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                0,
+                0
+            ],
+            "tile_type": "S"
+        },
+        "st1": {
+            "cur_pos": [
+                1,
+                0
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:56:46.499642_(3, 3)_2-2-1-2": {
+        "action": 2,
+        "action_path": [
+            2,
+            2,
+            1,
+            2
+        ],
+        "id": "11-25_15:56:46.499642_(3, 3)_2-2-1-2",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                1,
+                2
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                1,
+                3
+            ],
+            "tile_type": "H"
+        }
+    },
+    "11-25_15:56:52.341926_(3, 3)_1-2": {
+        "action": 2,
+        "action_path": [
+            1,
+            2
+        ],
+        "id": "11-25_15:56:52.341926_(3, 3)_1-2",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                1,
+                0
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                1,
+                1
+            ],
+            "tile_type": "H"
+        }
+    },
+    "11-25_15:56:53.410812_(3, 3)_2-2-2": {
+        "action": 2,
+        "action_path": [
+            2,
+            2,
+            2
+        ],
+        "id": "11-25_15:56:53.410812_(3, 3)_2-2-2",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                0,
+                2
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                0,
+                3
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:57:01.289964_(3, 3)_2-2-2-0-2-0-2-2-0-2-2-2-2-0-2-2-2-0-1-0": {
+        "action": 0,
+        "action_path": [
+            2,
+            2,
+            2,
+            0,
+            2,
+            0,
+            2,
+            2,
+            0,
+            2,
+            2,
+            2,
+            2,
+            0,
+            2,
+            2,
+            2,
+            0,
+            1,
+            0
+        ],
+        "id": "11-25_15:57:01.289964_(3, 3)_2-2-2-0-2-0-2-2-0-2-2-2-2-0-2-2-2-0-1-0",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                1,
+                2
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                1,
+                1
+            ],
+            "tile_type": "H"
+        }
+    },
+    "11-25_15:57:16.447041_(3, 3)_2": {
+        "action": 2,
+        "action_path": [
+            2
+        ],
+        "id": "11-25_15:57:16.447041_(3, 3)_2",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                0,
+                0
+            ],
+            "tile_type": "S"
+        },
+        "st1": {
+            "cur_pos": [
+                0,
+                1
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:57:24.908104_(3, 3)_1-1-2-1-2-2": {
+        "action": 2,
+        "action_path": [
+            1,
+            1,
+            2,
+            1,
+            2,
+            2
+        ],
+        "id": "11-25_15:57:24.908104_(3, 3)_1-1-2-1-2-2",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                3,
+                2
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                3,
+                3
+            ],
+            "tile_type": "G"
+        }
+    },
+    "11-25_15:57:30.891975_(3, 3)_1-1": {
+        "action": 1,
+        "action_path": [
+            1,
+            1
+        ],
+        "id": "11-25_15:57:30.891975_(3, 3)_1-1",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                1,
+                0
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                2,
+                0
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:57:31.213781_(3, 3)_1-1-1": {
+        "action": 1,
+        "action_path": [
+            1,
+            1,
+            1
+        ],
+        "id": "11-25_15:57:31.213781_(3, 3)_1-1-1",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                2,
+                0
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                3,
+                0
+            ],
+            "tile_type": "H"
+        }
+    },
+    "11-25_15:57:33.093844_(3, 3)_1-1-2-2-1": {
+        "action": 1,
+        "action_path": [
+            1,
+            1,
+            2,
+            2,
+            1
+        ],
+        "id": "11-25_15:57:33.093844_(3, 3)_1-1-2-2-1",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                2,
+                2
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                3,
+                2
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:57:42.200193_(3, 3)_1-1-2-1-2": {
+        "action": 2,
+        "action_path": [
+            1,
+            1,
+            2,
+            1,
+            2
+        ],
+        "id": "11-25_15:57:42.200193_(3, 3)_1-1-2-1-2",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                3,
+                1
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                3,
+                2
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:57:48.855439_(3, 3)_2-2-0": {
+        "action": 0,
+        "action_path": [
+            2,
+            2,
+            0
+        ],
+        "id": "11-25_15:57:48.855439_(3, 3)_2-2-0",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                0,
+                2
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                0,
+                1
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:57:53.152607_(3, 3)_1-1-2-1": {
+        "action": 1,
+        "action_path": [
+            1,
+            1,
+            2,
+            1
+        ],
+        "id": "11-25_15:57:53.152607_(3, 3)_1-1-2-1",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                2,
+                1
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                3,
+                1
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:57:54.998098_(3, 3)_2-2-1": {
+        "action": 1,
+        "action_path": [
+            2,
+            2,
+            1
+        ],
+        "id": "11-25_15:57:54.998098_(3, 3)_2-2-1",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                0,
+                2
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                1,
+                2
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:58:07.591234_(3, 3)_1-1-2-2-0": {
+        "action": 0,
+        "action_path": [
+            1,
+            1,
+            2,
+            2,
+            0
+        ],
+        "id": "11-25_15:58:07.591234_(3, 3)_1-1-2-2-0",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                2,
+                2
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                2,
+                1
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:58:10.720942_(3, 3)_1-0-1-2-0": {
+        "action": 0,
+        "action_path": [
+            1,
+            0,
+            1,
+            2,
+            0
+        ],
+        "id": "11-25_15:58:10.720942_(3, 3)_1-0-1-2-0",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                2,
+                1
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                2,
+                0
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:58:12.661182_(3, 3)_0": {
+        "action": 0,
+        "action_path": [
+            0
+        ],
+        "id": "11-25_15:58:12.661182_(3, 3)_0",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                0,
+                0
+            ],
+            "tile_type": "S"
+        },
+        "st1": {
+            "cur_pos": [
+                0,
+                0
+            ],
+            "tile_type": "S"
+        }
+    },
+    "11-25_15:58:23.499510_(3, 3)_2-2-1-1": {
+        "action": 1,
+        "action_path": [
+            2,
+            2,
+            1,
+            1
+        ],
+        "id": "11-25_15:58:23.499510_(3, 3)_2-2-1-1",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                1,
+                2
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                2,
+                2
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:58:25.848697_(3, 3)_2-2-2-0": {
+        "action": 0,
+        "action_path": [
+            2,
+            2,
+            2,
+            0
+        ],
+        "id": "11-25_15:58:25.848697_(3, 3)_2-2-2-0",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                0,
+                3
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                0,
+                2
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:58:31.243967_(3, 3)_1-0-1-2-3": {
+        "action": 3,
+        "action_path": [
+            1,
+            0,
+            1,
+            2,
+            3
+        ],
+        "id": "11-25_15:58:31.243967_(3, 3)_1-0-1-2-3",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                2,
+                1
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                1,
+                1
+            ],
+            "tile_type": "H"
+        }
+    },
+    "11-25_15:58:44.253169_(3, 3)_1-1-2": {
+        "action": 2,
+        "action_path": [
+            1,
+            1,
+            2
+        ],
+        "id": "11-25_15:58:44.253169_(3, 3)_1-1-2",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                2,
+                0
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                2,
+                1
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:58:52.119799_(3, 3)_1-1-2-2": {
+        "action": 2,
+        "action_path": [
+            1,
+            1,
+            2,
+            2
+        ],
+        "id": "11-25_15:58:52.119799_(3, 3)_1-1-2-2",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                2,
+                1
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                2,
+                2
+            ],
+            "tile_type": "F"
+        }
+    },
+    "11-25_15:59:01.501659_(3, 3)_2-0": {
+        "action": 0,
+        "action_path": [
+            2,
+            0
+        ],
+        "id": "11-25_15:59:01.501659_(3, 3)_2-0",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                0,
+                1
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                0,
+                0
+            ],
+            "tile_type": "S"
+        }
+    },
+    "11-25_15:59:07.490508_(3, 3)_1-0": {
+        "action": 0,
+        "action_path": [
+            1,
+            0
+        ],
+        "id": "11-25_15:59:07.490508_(3, 3)_1-0",
+        "reproduce_method": "action_path",
+        "st": {
+            "cur_pos": [
+                1,
+                0
+            ],
+            "tile_type": "F"
+        },
+        "st1": {
+            "cur_pos": [
+                1,
+                0
+            ],
+            "tile_type": "F"
         }
     }
 }

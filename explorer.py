@@ -55,6 +55,7 @@ class Explorer:
 
         # Get current state
         cur_state = self.adaptor.get_state()
+        print(f"Current state: {cur_state}")
         log_flush(self.logIO, f"- Current state: {cur_state}")
         
         # Get action status/options

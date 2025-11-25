@@ -12,7 +12,8 @@ webshop_config = {
 
 frozenlake_config = {
     "id": "FrozenLake-v1",
-    "desc": None,
+    # "desc": None,
+    "desc": ["SFFF","FHFH","FFFH","HFFG"],
     "random_seed": 0,
     "map_name": "4x4",
     "is_slippery": False,

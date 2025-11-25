@@ -4,7 +4,7 @@ explorer_settings = {
     "log_dir": "./log/",
     # Experience settings
     "use_experience": True,   # Whether to retrieve and use experiences in prompts
-    "save_experience": False,  # Whether to save new experiences to storage
+    "save_experience": True,  # Whether to save new experiences to storage
     # Plug-in settings
     "model_name": "llama3.1",
     "env_name": "frozenlake_llama",

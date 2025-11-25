@@ -28,6 +28,9 @@ class Explorer:
         self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.log', 'a')
         self.run_analyzer = ExplorerRunAnalyzer(explorer_settings["log_dir"])
 
+        # Add the state recorders
+        self.state_trace = None
+
         # Add explorer status
         self.in_process = False
 
@@ -55,6 +58,7 @@ class Explorer:
 
         # Get current state
         cur_state = self.adaptor.get_state()
+        self.state_trace.append(cur_state)
         print(f"Current state: {cur_state}")
         log_flush(self.logIO, f"- Current state: {cur_state}")
         
@@ -111,8 +115,12 @@ class Explorer:
     def _detect_experience_conflict(self):
         """Check if the current experience is conflict with the existing experiences."""
         conflict_pair_ids = self.exp_backend._loop_detect_exp_conflict()
-        
         return conflict_pair_ids
+
+    def _detect_experience_redundancy(self):
+        """Check if the current experience is conflict with the existing experiences."""
+        redundant_experience_groups = self.exp_backend.get_redundant_experience_groups()
+        return redundant_experience_groups
 
     def solve_experience_conflict(self, conflict_pair_id):
         log_flush(self.logIO, f"-- Resolve Conflict pair ID: {conflict_pair_id} ---")
@@ -145,6 +153,7 @@ class Explorer:
 
         log_flush(self.logIO, f"---------------- Resolve Experience Conflict ----------------")
         conflict_pair_ids = self._detect_experience_conflict()
+        print(f"Conflict pair ids: {conflict_pair_ids}")
         for conflict_pair_id in conflict_pair_ids:
             while self.in_process:
                 time.sleep(1)
@@ -156,8 +165,7 @@ class Explorer:
     def remove_redundant_experiences(self):
         """Remove redundant experiences."""
         log_flush(self.logIO, f"---------------- Remove Redundant Experiences ----------------")
-        redundant_experience_groups = self.exp_backend.get_redundant_experience_groups()
-        print(f"Amount of redundant experience groups: {len(redundant_experience_groups)}")
+        redundant_experience_groups = self._detect_experience_redundancy()
         print(f"Redundant experience groups: {redundant_experience_groups}")
         for group in redundant_experience_groups:
             best_exp_id = self.exp_backend.get_most_optmized_path_exp_id(group)
@@ -178,6 +186,7 @@ class Explorer:
 
     def explore(self):
         self.in_process = True
+        self.state_trace = []
         print(f"Start exploring at {get_timestamp()}")
         log_flush(self.logIO, f"########################################################")
         log_flush(self.logIO, f"Start exploring at {get_timestamp()}")
@@ -204,6 +213,8 @@ class Explorer:
             # Episode didn't finish within max_steps
             log_flush(self.logIO, f"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
             log_flush(self.logIO, f"- Episode is NOT done after {self.max_steps} steps")
+            print(f"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+            print(f"- Episode is NOT done after {self.max_steps} steps")
             score = -1  # Mark failed episodes with -1 score
             step_count = self.max_steps
         else:
@@ -216,7 +227,17 @@ class Explorer:
         log_flush(self.logIO, f"Action path: {self.adaptor.get_action_path()}")
         end_timestamp = get_timestamp()
         log_flush(self.logIO, f"End exploring at {end_timestamp}")
+        log_flush(self.logIO, f"State trace: {self.state_trace}")
         log_flush(self.logIO, f"########################################################")
+
+        print(f"Insturction: {self.adaptor.get_instruction()}")
+        print(f"Step count: {step_count}")
+        print(f"Final score: {score}")
+        print(f"Action path: {self.adaptor.get_action_path()}")
+        print(f"End exploring at {end_timestamp}")
+        print(f"State trace: {self.state_trace}")
+        print(f"########################################################")
+
 
         # Record to CSV regardless of success or failure
         self.run_analyzer.record_run(

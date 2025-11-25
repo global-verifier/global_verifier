@@ -6,6 +6,15 @@ import json
 
 class WebshopExpBackend(BaseExpBackend):
     def __init__(self, env_name, storage_path, depreiciate_exp_store_path):
+        # Must define expected_fields BEFORE calling super().__init__()
+        # because parent's __init__ calls _is_valid_exp_store() which uses this field
+        self.expected_fields = {
+            "id": str,
+            "action_path": list,
+            "st": dict,
+            "action": str,
+            "st1": dict,
+        }
         super().__init__(env_name, storage_path, depreiciate_exp_store_path)
 
     # Setters

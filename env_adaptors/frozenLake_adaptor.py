@@ -116,19 +116,6 @@ Init new environment:
         # TODO: whether to put destination into the state
         return state
 
-    def get_experience(self):
-        if self.st is None or self.prev_action is None or self.st1 is None:
-            raise ValueError("[webshop_adaptor] In get_experience(), the history is not set, one of st0, a or st1 is None")
-        experience = {
-            "id": f"{get_timestamp_ms()}_{self.url_id}_{'-'.join(self.action_path)}",
-            "reproduce_method": "action_path",
-            "action_path": self.get_action_path(),  # Use copy() to avoid reference issue
-            "st": self.st,
-            "action": self.prev_action,
-            "st1": self.st1,
-        }
-        return experience
-
     def get_cur_pos(self):
         flat_pos = int(self.env.unwrapped.s)
         return (flat_pos // self.env.unwrapped.ncol, flat_pos % self.env.unwrapped.ncol)
@@ -141,9 +128,9 @@ Init new environment:
 
     def get_experience(self):
         if self.st is None or self.prev_action is None or self.st1 is None:
-            raise ValueError("[webshop_adaptor] In get_experience(), the history is not set, one of st0, a or st1 is None")
+            raise ValueError("[frozenLake_adaptor] In get_experience(), the history is not set, one of st0, a or st1 is None")
         experience = {
-            "id": f"{get_timestamp_ms()}_{self.destination}_{'-'.join(self.action_path)}",
+            "id": f"{get_timestamp_ms()}_{self.destination}_{'-'.join(map(str, self.action_path))}",
             "reproduce_method": self.reproduce_method,
             "action_path": self.get_action_path(),  # Use copy() to avoid reference issue
             "st": self.st,

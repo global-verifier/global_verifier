@@ -1,4 +1,4 @@
-from .frozenLack_adaptor import FrozenLakeAdaptor
+from .frozenLake_adaptor import FrozenLakeAdaptor
 import re
 
 LLAMA3_FROZENLAKE_SYSTEM_PROMPT = "You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting."

@@ -145,14 +145,7 @@ class BaseExpBackend:
         """
         if not isinstance(exp, dict):
             return False
-        expected_fields = {
-            "id": str,
-            "action_path": list,
-            "st": dict,
-            "action": str,
-            "st1": dict,
-        }
-        for field, field_type in expected_fields.items():
+        for field, field_type in self.expected_fields.items():
             if field not in exp:
                 return False
             if not isinstance(exp[field], field_type):

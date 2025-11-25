@@ -40,21 +40,51 @@ Available Actions: {available_actions}
 You have been at this position before. Here are {len(retrieved_experiences)} previous experience(s):
 
 """
+            # Collect dangerous and successful actions
+            forbidden_actions = []
+            goal_actions = []
+            
             for exp in retrieved_experiences:
                 action_taken = exp.get('action', 'N/A')
                 next_pos = exp.get('st1', {}).get('cur_pos', 'N/A')
                 next_tile = exp.get('st1', {}).get('tile_type', 'N/A')
+                
+                # Add warning for holes
+                tile_warning = ""
+                if next_tile == 'H':
+                    tile_warning = " HOLE - AVOID THIS ACTION!"
+                    forbidden_actions.append(action_taken)
+                elif next_tile == 'G':
+                    tile_warning = " GOAL - TAKE THIS ACTION!"
+                    goal_actions.append(action_taken)
+                
                 user_prompt += f"""  Action taken: {action_taken}
   Result Position: {next_pos}
-  Result Tile: {next_tile}
+  Result Tile: {next_tile}{tile_warning}
 
 """
+            
+            # Add explicit warning section
+            if forbidden_actions or goal_actions:
+                user_prompt += "\n"
+                if goal_actions:
+                    user_prompt += f"""!!! BEST CHOICE: Action(s) {goal_actions} will reach the GOAL directly. Choose this!
+
+"""
+                if forbidden_actions:
+                    user_prompt += f"""!!! CRITICAL WARNING: Action(s) {forbidden_actions} lead to HOLES and will END THE GAME.
+YOU MUST NOT choose {forbidden_actions} from this position!
+
+"""
+            
             user_prompt += """Consider these experiences when deciding your next action.
 ---
 
 """
 
-        user_prompt += """Based on the current position and task instruction, what is the next action you should take?
+        user_prompt += """Based on the current position, task instruction, and past experiences, what is the next action you should take?
+
+REMEMBER: If certain actions lead to holes, you MUST avoid them. Choose the safest action that moves toward the destination.
 
 Respond with only the action number (0, 1, 2, or 3).
 """

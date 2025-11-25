@@ -118,7 +118,7 @@ Init new environment:
 
     def get_cur_pos(self):
         flat_pos = int(self.env.unwrapped.s)
-        return (flat_pos // self.env.unwrapped.ncol, flat_pos % self.env.unwrapped.ncol)
+        return [flat_pos // self.env.unwrapped.ncol, flat_pos % self.env.unwrapped.ncol]
 
     def get_available_actions(self):
         return [0, 1, 2, 3]
@@ -148,7 +148,7 @@ Init new environment:
     def reconstruct_state(self, exp):
         """Reconstruct the state from the experience."""
         assert exp['action'] == exp['action_path'][-1]
-        assert len(exp['action_path']) > 1
+        # assert len(exp['action_path']) > 1
         self.initialize_env()
         try:
             for i in range(len(exp['action_path']) - 1):

@@ -9,11 +9,9 @@ from utils import get_timestamp_ms
 class CartPoleAdaptor(BaseEnvAdaptor):
     def __init__(self, env_name):
         super().__init__(env_name)
-        seed = cartpole_config.get('random_seed')
-        if seed is not None:
-            random.seed(seed)
+        self.seed = cartpole_config.get('random_seed')
         
-        # Create CartPole environment
+        # Create CartPole environment with seed
         self.env = gym.make(cartpole_config['id'])
         
         # Apply custom physics parameters if provided
@@ -51,7 +49,7 @@ class CartPoleAdaptor(BaseEnvAdaptor):
 
     def initialize_env(self):
         """Reset environment for a new episode."""
-        observation, info = self.env.reset()
+        observation, info = self.env.reset(seed=self.seed)
         print(f"Observation: {observation}")
         print(f"Info: {info}")
         # Reset history

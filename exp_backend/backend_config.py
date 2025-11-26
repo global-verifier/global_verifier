@@ -7,3 +7,6 @@ webshop_vanilla_config = {
 frozenlake_vanilla_config = {
     "algorithm": "sameSt_1Step",
 }
+cartpole_vanilla_config = {
+    "algorithm": "sameSt_1Step",
+}

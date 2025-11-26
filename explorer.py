@@ -124,6 +124,9 @@ class Explorer:
 
     def solve_experience_conflict(self, conflict_pair_id):
         log_flush(self.logIO, f"-- Resolve Conflict pair ID: {conflict_pair_id} ---")
+        if self.exp_backend._exp_is_depreciated(conflict_pair_id[0]) or self.exp_backend._exp_is_depreciated(conflict_pair_id[1]):
+            log_flush(self.logIO, f"One of the experiences is deprecated, skipping conflict resolution")
+            return
         e0 = self.exp_backend.get_exp_by_id(conflict_pair_id[0])
         e1 = self.exp_backend.get_exp_by_id(conflict_pair_id[1])
         # go to the st status for e0

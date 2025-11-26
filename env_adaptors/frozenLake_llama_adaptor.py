@@ -67,7 +67,7 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
             # Add explicit warning section
             if forbidden_actions or goal_actions:
                 user_prompt += "\n"
-                if goal_actions:
+            if goal_actions:
                     user_prompt += f"""!!! BEST CHOICE: Action(s) {goal_actions} will reach the GOAL directly. Choose this!
 
 """

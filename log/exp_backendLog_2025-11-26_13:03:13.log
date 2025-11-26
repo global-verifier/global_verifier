@@ -1,0 +1,97 @@
+########################################################
+Start loading ./storage/exp_store.json the store at 2025-11-26_13:03:13
+Successfully loaded the store, path: ./storage/exp_store.json, size: 0, at 2025-11-26_13:03:13
+########################################################
+Start loading ./storage/depreiciate_exp_store.json the store at 2025-11-26_13:03:13
+Successfully loaded the store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:13
+Store validation passed: No overlap between exp_store (0 items) and depreiciate_exp_store (0 items)
+Retrieving experience for state: {'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': 0, 'theta_dot_sign': 0}
+Retrieved 0 experiences, results ids: []
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-11-26_13:03:14
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:14
+Retrieving experience for state: {'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': -1, 'theta_dot_sign': 1}
+Retrieved 0 experiences, results ids: []
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-11-26_13:03:15
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:15
+Retrieving experience for state: {'x_bin': 3, 'theta_bin': 4, 'x_dot_sign': 0, 'theta_dot_sign': 0}
+Retrieved 0 experiences, results ids: []
+Store validation passed: No overlap between exp_store (3 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 3, at 2025-11-26_13:03:16
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:16
+Retrieving experience for state: {'x_bin': 3, 'theta_bin': 4, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+Retrieved 0 experiences, results ids: []
+Store validation passed: No overlap between exp_store (4 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 4, at 2025-11-26_13:03:16
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:16
+Retrieving experience for state: {'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+Retrieved 0 experiences, results ids: []
+Store validation passed: No overlap between exp_store (5 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 5, at 2025-11-26_13:03:17
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:17
+Retrieving experience for state: {'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+Retrieved 1 experiences, results ids: ['11-26_13:03:17.480796_cartpole_0-1-1-1-1']
+Store validation passed: No overlap between exp_store (6 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 6, at 2025-11-26_13:03:18
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:18
+Retrieving experience for state: {'x_bin': 4, 'theta_bin': 3, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+Retrieved 0 experiences, results ids: []
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 7, at 2025-11-26_13:03:18
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:18
+Retrieving experience for state: {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+Retrieved 0 experiences, results ids: []
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 8, at 2025-11-26_13:03:19
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:19
+Retrieving experience for state: {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+Retrieved 1 experiences, results ids: ['11-26_13:03:19.523331_cartpole_0-1-1-1-1-1-0-0']
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 9, at 2025-11-26_13:03:20
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:20
+Retrieving experience for state: {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+Retrieved 2 experiences, results ids: ['11-26_13:03:19.523331_cartpole_0-1-1-1-1-1-0-0', '11-26_13:03:20.257718_cartpole_0-1-1-1-1-1-0-0-0']
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 10, at 2025-11-26_13:03:21
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:21
+Retrieving experience for state: {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 0, 'theta_dot_sign': -1}
+Retrieved 0 experiences, results ids: []
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 11, at 2025-11-26_13:03:21
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:21
+Retrieving experience for state: {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+Retrieved 3 experiences, results ids: ['11-26_13:03:19.523331_cartpole_0-1-1-1-1-1-0-0', '11-26_13:03:20.257718_cartpole_0-1-1-1-1-1-0-0-0', '11-26_13:03:21.026257_cartpole_0-1-1-1-1-1-0-0-0-0']
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 12, at 2025-11-26_13:03:22
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:22
+Retrieving experience for state: {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 0, 'theta_dot_sign': -1}
+Retrieved 0 experiences, results ids: []
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 13, at 2025-11-26_13:03:23
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:23
+Retrieving experience for state: {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+Retrieved 0 experiences, results ids: []
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 14, at 2025-11-26_13:03:23
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:23
+Retrieving experience for state: {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+Retrieved 1 experiences, results ids: ['11-26_13:03:23.746615_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1']
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 15, at 2025-11-26_13:03:24
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:24
+Retrieving experience for state: {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+Retrieved 2 experiences, results ids: ['11-26_13:03:23.746615_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1', '11-26_13:03:24.485100_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1']
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 16, at 2025-11-26_13:03:25
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:25
+Retrieving experience for state: {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+Retrieved 3 experiences, results ids: ['11-26_13:03:23.746615_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1', '11-26_13:03:24.485100_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1', '11-26_13:03:25.261745_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1-1']
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 17, at 2025-11-26_13:03:26
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:26
+Retrieving experience for state: {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+Retrieved 4 experiences, results ids: ['11-26_13:03:23.746615_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1', '11-26_13:03:24.485100_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1', '11-26_13:03:25.261745_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1-1', '11-26_13:03:26.097589_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1-1-1']
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 18, at 2025-11-26_13:03:26
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-11-26_13:03:26

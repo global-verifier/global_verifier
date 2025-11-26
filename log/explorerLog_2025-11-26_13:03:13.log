@@ -1,0 +1,165 @@
+########################################################
+Start exploring at 2025-11-26_13:03:13
+-----
+Init new environment:
+[ENV] CartPole-v1
+[Goal] Balance the pole on the cart for as long as possible
+[Max Steps] 500
+[Physics] force_mag=10.0, gravity=9.8
+-----
+--------------------------------------------------------
+Step 0
+- Current state: {'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': 0, 'theta_dot_sign': 0}
+- Action status: [0, 1]
+- Retrieved experience: []
+- Todo action: 0
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:14.872677_cartpole_0
+--------------------------------------------------------
+Step 1
+- Current state: {'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': -1, 'theta_dot_sign': 1}
+- Action status: [0, 1]
+- Retrieved experience: []
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:15.520618_cartpole_0-1
+--------------------------------------------------------
+Step 2
+- Current state: {'x_bin': 3, 'theta_bin': 4, 'x_dot_sign': 0, 'theta_dot_sign': 0}
+- Action status: [0, 1]
+- Retrieved experience: []
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:16.173162_cartpole_0-1-1
+--------------------------------------------------------
+Step 3
+- Current state: {'x_bin': 3, 'theta_bin': 4, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: []
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:16.826411_cartpole_0-1-1-1
+--------------------------------------------------------
+Step 4
+- Current state: {'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: []
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:17.480796_cartpole_0-1-1-1-1
+--------------------------------------------------------
+Step 5
+- Current state: {'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: [{'id': '11-26_13:03:17.480796_cartpole_0-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1], 'st': {'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 1, 'st1': {'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': 1, 'theta_dot_sign': -1}}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:18.216907_cartpole_0-1-1-1-1-1
+--------------------------------------------------------
+Step 6
+- Current state: {'x_bin': 4, 'theta_bin': 3, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: []
+- Todo action: 0
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:18.874348_cartpole_0-1-1-1-1-1-0
+--------------------------------------------------------
+Step 7
+- Current state: {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: []
+- Todo action: 0
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:19.523331_cartpole_0-1-1-1-1-1-0-0
+--------------------------------------------------------
+Step 8
+- Current state: {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: [{'id': '11-26_13:03:19.523331_cartpole_0-1-1-1-1-1-0-0', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0], 'st': {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 0, 'st1': {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}}]
+- Todo action: 0
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:20.257718_cartpole_0-1-1-1-1-1-0-0-0
+--------------------------------------------------------
+Step 9
+- Current state: {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: [{'id': '11-26_13:03:19.523331_cartpole_0-1-1-1-1-1-0-0', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0], 'st': {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 0, 'st1': {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}}, {'id': '11-26_13:03:20.257718_cartpole_0-1-1-1-1-1-0-0-0', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0, 0], 'st': {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 0, 'st1': {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}}]
+- Todo action: 0
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:21.026257_cartpole_0-1-1-1-1-1-0-0-0-0
+--------------------------------------------------------
+Step 10
+- Current state: {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 0, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: []
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:21.671635_cartpole_0-1-1-1-1-1-0-0-0-0-1
+--------------------------------------------------------
+Step 11
+- Current state: {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: [{'id': '11-26_13:03:19.523331_cartpole_0-1-1-1-1-1-0-0', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0], 'st': {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 0, 'st1': {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}}, {'id': '11-26_13:03:20.257718_cartpole_0-1-1-1-1-1-0-0-0', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0, 0], 'st': {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 0, 'st1': {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}}, {'id': '11-26_13:03:21.026257_cartpole_0-1-1-1-1-1-0-0-0-0', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0], 'st': {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 0, 'st1': {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 0, 'theta_dot_sign': -1}}]
+- Todo action: 0
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:22.444868_cartpole_0-1-1-1-1-1-0-0-0-0-1-0
+--------------------------------------------------------
+Step 12
+- Current state: {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 0, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: []
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:23.093876_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1
+--------------------------------------------------------
+Step 13
+- Current state: {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: []
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:23.746615_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1
+--------------------------------------------------------
+Step 14
+- Current state: {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: [{'id': '11-26_13:03:23.746615_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1], 'st': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 1, 'st1': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:24.485100_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1
+--------------------------------------------------------
+Step 15
+- Current state: {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: [{'id': '11-26_13:03:23.746615_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1], 'st': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 1, 'st1': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}}, {'id': '11-26_13:03:24.485100_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1], 'st': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 1, 'st1': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:25.261745_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1-1
+--------------------------------------------------------
+Step 16
+- Current state: {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: [{'id': '11-26_13:03:23.746615_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1], 'st': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 1, 'st1': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}}, {'id': '11-26_13:03:24.485100_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1], 'st': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 1, 'st1': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}}, {'id': '11-26_13:03:25.261745_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1], 'st': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 1, 'st1': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:26.097589_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1-1-1
+--------------------------------------------------------
+Step 17
+- Current state: {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Retrieved experience: [{'id': '11-26_13:03:23.746615_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1], 'st': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 1, 'st1': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}}, {'id': '11-26_13:03:24.485100_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1], 'st': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 1, 'st1': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}}, {'id': '11-26_13:03:25.261745_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1], 'st': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 1, 'st1': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}}, {'id': '11-26_13:03:26.097589_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1], 'st': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, 'action': 1, 'st1': {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 11-26_13:03:26.935122_cartpole_0-1-1-1-1-1-0-0-0-0-1-0-1-1-1-1-1-1
+--------------------------------------------------------
+Step 18
+- Current state: {'x_bin': 4, 'theta_bin': 0, 'x_dot_sign': 1, 'theta_dot_sign': -1}
+- Action status: [0, 1]
+- Episode is done at step 18
+Insturction: Balance the pole on the cart for as long as possible by moving left or right
+Step count: 18
+Final score: 18.0
+Action path: [0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1]
+End exploring at 2025-11-26_13:03:26
+State trace: [{'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': 0, 'theta_dot_sign': 0}, {'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': -1, 'theta_dot_sign': 1}, {'x_bin': 3, 'theta_bin': 4, 'x_dot_sign': 0, 'theta_dot_sign': 0}, {'x_bin': 3, 'theta_bin': 4, 'x_dot_sign': 1, 'theta_dot_sign': -1}, {'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': 1, 'theta_dot_sign': -1}, {'x_bin': 3, 'theta_bin': 3, 'x_dot_sign': 1, 'theta_dot_sign': -1}, {'x_bin': 4, 'theta_bin': 3, 'x_dot_sign': 1, 'theta_dot_sign': -1}, {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}, {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}, {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}, {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 0, 'theta_dot_sign': -1}, {'x_bin': 4, 'theta_bin': 2, 'x_dot_sign': 1, 'theta_dot_sign': -1}, {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 0, 'theta_dot_sign': -1}, {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, {'x_bin': 4, 'theta_bin': 1, 'x_dot_sign': 1, 'theta_dot_sign': -1}, {'x_bin': 4, 'theta_bin': 0, 'x_dot_sign': 1, 'theta_dot_sign': -1}]
+########################################################

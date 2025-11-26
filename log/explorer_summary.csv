@@ -1,0 +1,2 @@
+timestamp,model_name,env_name,instruction,action_path,step_count,final_score
+2025-11-26_13:03:26,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1]",18,18.0

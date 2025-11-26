@@ -21,3 +21,15 @@ frozenlake_config = {
     "reward_schedule": (1, 0, 0),
     "max_episode_steps": None,
 }
+
+cartpole_config = {
+    "id": "CartPole-v1",
+    "random_seed": 0,
+    # Optional: customize physics parameters
+    # "force_mag": 10.0,      # Default: 10.0 N (push force)
+    # "gravity": 9.8,         # Default: 9.8 m/s²
+    # "masscart": 1.0,        # Default: 1.0 kg
+    # "masspole": 0.1,        # Default: 0.1 kg
+    # "length": 0.5,          # Default: 0.5 m (half-pole length)
+    # "tau": 0.02,            # Default: 0.02 s (time step)
+}

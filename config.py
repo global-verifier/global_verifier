@@ -1,14 +1,14 @@
 explorer_settings = {
-    "max_steps": 20,
+    "max_steps": 50,
     "max_action_retries": 3,
     "log_dir": "./log/",
     # Experience settings
-    "use_experience": True,   # Whether to retrieve and use experiences in prompts
-    "save_experience": True,  # Whether to save new experiences to storage
+    "use_experience": False,   # Whether to retrieve and use experiences in prompts
+    "save_experience": False,  # Whether to save new experiences to storage
     # Plug-in settings
     "model_name": "llama3.1",
-    "env_name": "frozenlake_llama",
-    "backend_env": "frozenlake-vanilla",
+    "env_name": "cartpole_llama",
+    "backend_env": "cartpole-vanilla",
     "storage_path": "./storage/exp_store.json",
     "depreiciate_exp_store_path": "./storage/depreiciate_exp_store.json",
 }

@@ -49,7 +49,8 @@ class CartPoleAdaptor(BaseEnvAdaptor):
 
     def initialize_env(self):
         """Reset environment for a new episode."""
-        observation, info = self.env.reset(seed=self.seed)
+        # observation, info = self.env.reset(seed=self.seed)
+        observation, info = self.env.reset()
         print(f"Observation: {observation}")
         print(f"Info: {info}")
         # Reset history

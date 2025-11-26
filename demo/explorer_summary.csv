@@ -1,0 +1,21 @@
+timestamp,model_name,env_name,instruction,action_path,step_count,final_score
+2025-11-27_00:33:06,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",18,18.0
+2025-11-27_00:33:11,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:33:17,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:33:22,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:33:28,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:33:33,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:33:39,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:33:45,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:33:50,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:33:56,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:34:01,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:34:07,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:34:12,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:34:18,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:34:24,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:34:29,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:34:35,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:34:40,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:34:46,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0
+2025-11-27_00:34:51,llama3.1,cartpole_llama,Balance the pole on the cart for as long as possible by moving left or right,"[0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]",14,14.0

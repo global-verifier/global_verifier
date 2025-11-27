@@ -1,14 +1,14 @@
 explorer_settings = {
-    "max_steps": 50,
+    "max_steps": 200,  # Mountain Car needs more steps!
     "max_action_retries": 3,
     "log_dir": "./log/",
     # Experience settings
-    "use_experience": False,   # Whether to retrieve and use experiences in prompts
-    "save_experience": False,  # Whether to save new experiences to storage
+    "use_experience": False,   # Enable experience learning
+    "save_experience": False,  # Enable experience saving
     # Plug-in settings
     "model_name": "llama3.1",
-    "env_name": "cartpole_llama",
-    "backend_env": "cartpole-vanilla",
+    "env_name": "mountaincar_llama",
+    "backend_env": "mountaincar-vanilla",
     "storage_path": "./storage/exp_store.json",
     "depreiciate_exp_store_path": "./storage/depreiciate_exp_store.json",
 }

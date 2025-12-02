@@ -6,7 +6,7 @@ webshop_config = {
 
     # session
     # Deterministic goal index (0-based). 8 -> faux fur coat instruction.
-    "session": 8,
+    "session": 9,
     "random_seed": 0,
 }
 

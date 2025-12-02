@@ -1,6 +1,6 @@
 import sys
 import os
-import gymnasium as gym
+import gym
 from .base_env_adaptor import BaseEnvAdaptor
 from .env_config import webshop_config
 from .adopter_util import extract_visible_text
@@ -77,6 +77,8 @@ Init new environment:
         URL patterns:
         - search_results: http://host/search_results/<session_id>/<search_query>/<page_num>
         - item_page: http://host/item_page/<session_id>/<product_id>/<search_query>/<page_num>/<options>
+        - confirm_purchase: http://host/confirm_purchase/<session_id>/<product_id>/<search_query>/<page_num>/<options>
+        - item_sub_page: http://host/item_sub_page/<session_id>/<product_id>/<search_query>/<page_num>/<sub_page>/<options>
         """
         # Step 1: Replace session_id with placeholder
         # Replace /session_id/ or /session_id at the end to avoid replacing digits in product IDs
@@ -85,17 +87,15 @@ Init new environment:
         # Step 2: Replace search query with placeholder
         parts = normalized_url.split('/')
         
-        # search_results URL: replace the search query segment (index 5) with placeholder
-        if len(parts) > 4 and parts[3] == 'search_results':
-            # parts: ['http:', '', 'host', 'search_results', '<session_id>', '<search_query>', '<page_num>']
-            if len(parts) > 5:
-                parts[5] = QUERY_PLACEHOLDER
+        # search_results URL: query at index 5
+        # parts: ['http:', '', 'host', 'search_results', '<session_id>', '<search_query>', '<page_num>']
+        if len(parts) > 5 and parts[3] == 'search_results':
+            parts[5] = QUERY_PLACEHOLDER
         
-        # item_page URL: replace the search query segment (index 6) with placeholder
-        elif len(parts) > 5 and parts[3] == 'item_page':
-            # parts: ['http:', '', 'host', 'item_page', '<session_id>', '<product_id>', '<search_query>', '<page_num>', '<options>']
-            if len(parts) > 6:
-                parts[6] = QUERY_PLACEHOLDER
+        # item_page, confirm_purchase, item_sub_page: query at index 6
+        # parts: ['http:', '', 'host', '<page_type>', '<session_id>', '<product_id>', '<search_query>', ...]
+        elif len(parts) > 6 and parts[3] in ('item_page', 'confirm_purchase', 'item_sub_page'):
+            parts[6] = QUERY_PLACEHOLDER
         
         return '/'.join(parts)
 

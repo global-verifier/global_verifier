@@ -30,6 +30,7 @@ class WebshopAdaptor(BaseEnvAdaptor):
             observation_mode = webshop_config['observation_mode'],
             num_products = webshop_config['num_products'],
             human_goals = webshop_config['human_goals'],
+            enable_confirm_purchase = webshop_config['enable_confirm_purchase'],
         )
         self.reproduce_method = "action_path"
         self.url_id = None

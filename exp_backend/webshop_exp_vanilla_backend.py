@@ -20,6 +20,9 @@ class WebshopExpVanillaBackend(WebshopExpBackend):
         log_flush(self.logIO, f"Retrieving experience for state: {state}")
         for exp_id in self.exp_store.keys():
             exp = self.exp_store[exp_id]
+            # Skip ineffective experiences (where action didn't change state)
+            if exp['st'] == exp['st1']:
+                continue
             if WebshopAdaptor.two_states_equal(state, exp['st']):
                 results.append(exp)
         log_flush(self.logIO, f"Retrieved {len(results)} experiences, results ids: {[exp['id'] for exp in results]}")        

@@ -34,6 +34,14 @@ Available Actions: {available_actions}
         if not is_search:
             user_prompt += f"""Clickables: {action_status['clickables']}\n"""
 
+        # Add current episode's action history to avoid repeating ineffective actions
+        action_path = self.get_action_path()
+        if action_path:
+            user_prompt += f"""
+Actions you have already taken in this episode: {action_path}
+Do NOT repeat actions that didn't change the state. If you already clicked an option, try a different one.
+"""
+
         # Add historical experiences if available
         if retrieved_experiences:
             user_prompt += f"""\n--- Historical Experience from Similar States ---
@@ -53,7 +61,7 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
 
 """
 
-        user_prompt += """Based on the current state and task instruction, what is the next action you should take?
+        user_prompt += """You goal is to buy the most suitable product that satisfies the task instruction and get the maximum score (1.0). Based on the current state and task instruction, what is the next action you should take?
 
 If you want to search, response with "search[<search_query>]"
 If you want to click, response follow the format: "click[name of the clickable]"

@@ -75,7 +75,7 @@ class Explorer:
         if self.use_experience:
             retrieved_experiences = self.exp_backend.retrieve_experience(cur_state)
             print(f"Retrieved {len(retrieved_experiences)} experiences: {retrieved_experiences}")
-            log_flush(self.logIO, f"- Retrieved experience: {retrieved_experiences}")
+            log_flush(self.logIO, f"- Retrieved experience, len: {len(retrieved_experiences)}, ids: {retrieved_experiences}")
         else:
             log_flush(self.logIO, f"- Experience retrieval disabled (use_experience=False), using empty experience list")
         
@@ -97,7 +97,10 @@ class Explorer:
             log_flush(self.logIO, f"- New todo action: {todo_action}")
         
         if not action_valid:
-            raise ValueError(f"todo_action {todo_action} is not valid after {self.max_action_retries} retries")
+            # raise ValueError(f"todo_action {todo_action} is not valid after {self.max_action_retries} retries")
+            log_flush(self.logIO, f"todo_action {todo_action} is not valid after {self.max_action_retries} retries")
+            print(f"todo_action {todo_action} is not valid after {self.max_action_retries} retries")
+            return False
         
         # Execute action
         self.adaptor.step(todo_action)
@@ -156,7 +159,8 @@ class Explorer:
 
         log_flush(self.logIO, f"---------------- Resolve Experience Conflict ----------------")
         conflict_pair_ids = self._detect_experience_conflict()
-        print(f"Conflict pair ids: {conflict_pair_ids}")
+        print(f"Conflict pair len: {len(conflict_pair_ids)}, ids: {conflict_pair_ids}")
+        log_flush(self.logIO, f"Conflict pair len: {len(conflict_pair_ids)}, ids: {conflict_pair_ids}")
         for conflict_pair_id in conflict_pair_ids:
             while self.in_process:
                 time.sleep(1)
@@ -169,7 +173,8 @@ class Explorer:
         """Remove redundant experiences."""
         log_flush(self.logIO, f"---------------- Remove Redundant Experiences ----------------")
         redundant_experience_groups = self._detect_experience_redundancy()
-        print(f"Redundant experience groups: {redundant_experience_groups}")
+        print(f"Redundant experience len: {len(redundant_experience_groups)}, groups: {redundant_experience_groups}")
+        log_flush(self.logIO, f"Redundant experience len: {len(redundant_experience_groups)}, groups: {redundant_experience_groups}")
         for group in redundant_experience_groups:
             best_exp_id = self.exp_backend.get_most_optmized_path_exp_id(group)
             group.remove(best_exp_id)

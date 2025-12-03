@@ -186,6 +186,47 @@ class BaseExpBackend:
         self.exp_store[exp["id"]] = exp
         self.save_store() # TODO: maybe should not save so frequent
 
+    def get_exp_ids_by_state(self, st) -> list:
+        """Get all exp id that have the same st (starting state)."""
+        results = []
+        for exp_id in self.exp_store.keys():
+            exp = self.exp_store[exp_id]
+            if BaseEnvAdaptor.two_states_equal(st, exp['st']):
+                results.append(exp_id)
+        return results
+
+    def get_conflict_states(self, conflict_pair_ids: list) -> list:
+        """
+        Get all unique st from the conflict pairs.
+        Since conflicts have same st, we only need one from each pair.
+        """
+        unique_states = []
+        for pair in conflict_pair_ids:
+            exp = self.exp_store[pair[0]]  # Both have same st, just take first
+            st = exp['st']
+            # Check if already exists
+            is_duplicate = any(
+                BaseEnvAdaptor.two_states_equal(st, existing_st) 
+                for existing_st in unique_states
+            )
+            if not is_duplicate:
+                unique_states.append(st)
+        return unique_states
+
+    def get_all_expIds_from_conflict_st(self, conflict_pair_ids: list) -> list:
+        """
+        Get all experience ids that share the same states as the conflict pairs.
+        1. Get all unique states from conflict pairs
+        2. Get all exp ids at each state
+        3. Return all unique exp ids
+        """
+        conflict_states = self.get_conflict_states(conflict_pair_ids)
+        all_exp_ids = set()
+        for st in conflict_states:
+            exp_ids = self.get_exp_ids_by_state(st)
+            all_exp_ids.update(exp_ids)
+        return list(all_exp_ids)
+
     def _has_conflict(self, e1, e2) -> bool:
         return BaseEnvAdaptor.has_conflict(e1, e2)
 

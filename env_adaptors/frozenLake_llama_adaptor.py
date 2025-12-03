@@ -68,11 +68,11 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
             if forbidden_actions or goal_actions:
                 user_prompt += "\n"
             if goal_actions:
-                    user_prompt += f"""!!! BEST CHOICE: Action(s) {goal_actions} will reach the GOAL directly. Choose this!
+                user_prompt += f"""!!! BEST CHOICE: Action(s) {goal_actions} will reach the GOAL directly. Choose this!
 
 """
-                if forbidden_actions:
-                    user_prompt += f"""!!! CRITICAL WARNING: Action(s) {forbidden_actions} lead to HOLES and will END THE GAME.
+            if forbidden_actions:
+                user_prompt += f"""!!! CRITICAL WARNING: Action(s) {forbidden_actions} lead to HOLES and will END THE GAME.
 YOU MUST NOT choose {forbidden_actions} from this position!
 
 """

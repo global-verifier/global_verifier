@@ -18,8 +18,33 @@ class BaseEnvAdaptor:
     def get_action_prompt(self, instruction: str, state: dict, available_actions: list) -> str:
         raise NotImplementedError
 
-    def reconstruct_state(self, exp):
-        raise NotImplementedError
+    def reconstruct_st(self, exp):
+        """Reconstruct the state from the experience."""
+        assert exp['action'] == exp['action_path'][-1]
+        self.initialize_env()
+        try:
+            for i in range(len(exp['action_path']) - 1):
+                action = exp['action_path'][i]
+                self.step(action)
+        except Exception as e:
+            return False, e
+        if self.get_state() != exp['st']:
+            return False, f"Reconstructed state differs, expected: {exp['st']}, got: {self.get_state()}"
+        return True, None
+
+    def reconstruct_st1(self, exp):
+        """Reconstruct the state from the experience."""
+        assert exp['action'] == exp['action_path'][-1]
+        self.initialize_env()
+        try:
+            for i in range(len(exp['action_path'])):
+                action = exp['action_path'][i]
+                self.step(action)
+        except Exception as e:
+            return False, e
+        if self.get_state() != exp['st1']:
+            return False, f"Reconstructed state differs, expected: {exp['st1']}, got: {self.get_state()}"
+        return True, None
 
     def is_same_state(self, state1, state2):
         return state1 == state2

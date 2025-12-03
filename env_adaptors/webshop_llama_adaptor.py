@@ -62,7 +62,7 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
 """
 
         user_prompt += """You goal is to buy the most suitable product that satisfies the task instruction and get the maximum score (1.0).
-Please consider selecitng all required options (e.g., both size AND color) before buying.
+Please consider selecitng required options before buying.
 Based on the current state and task instruction, what is the next action you should take?
 
 If you want to search, response with "search[<search_query>]"

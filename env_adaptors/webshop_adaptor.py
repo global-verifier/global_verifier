@@ -187,21 +187,6 @@ Init new environment:
             raise ValueError(f"Reward score not found in the HTML")
         return float(match.group(1))
 
-    def reconstruct_state(self, exp):
-        """Reconstruct the state from the experience."""
-        assert exp['action'] == exp['action_path'][-1]
-        assert len(exp['action_path']) > 1
-        self.initialize_env()
-        try:
-            for i in range(len(exp['action_path']) - 1):
-                action = exp['action_path'][i]
-                self.step(action)
-        except Exception as e:
-            return False, e
-        if self.get_state() != exp['st']:
-            return False, f"Reconstructed state differs, expected: {exp['st']}, got: {self.get_state()}"
-        return True, None
-
     # Tobe implemented in the subclass
     def get_action_prompt(self, instruction, state, retrieved_experiences=None):
         raise NotImplementedError

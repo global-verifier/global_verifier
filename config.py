@@ -5,6 +5,7 @@ explorer_settings = {
     # Experience settings
     "use_experience": True,   # Whether to retrieve and use experiences in prompts
     "save_experience": True,  # Whether to save new experiences to storage
+    "conflict_soultion": "st", # "st" or "conflict"
     # Plug-in settings
     "model_name": "llama3.1",
     "env_name": "webshop_llama",

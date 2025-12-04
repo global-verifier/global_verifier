@@ -39,6 +39,7 @@ Available Actions: {available_actions}
         if action_path:
             user_prompt += f"""
 Actions you have already taken in this episode: {action_path}
+Try not repeat action already in the action path.
 Do NOT repeat actions that didn't change the state. If you already clicked an option, try a different one.
 """
 
@@ -51,12 +52,15 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
             for idx, exp in enumerate(retrieved_experiences, 1):
                 action_taken = exp.get('action', 'N/A')
                 next_url = exp.get('st1', {}).get('url', 'N/A')
+                max_score = exp.get('max_score', None)
                 user_prompt += f"""Experience {idx}:
   Action taken: {action_taken}
   Result URL: {next_url}
+  Max score achievable: {max_score if max_score is not None else 'Unknown (may not lead to success)'}
 
 """
-            user_prompt += """Consider these experiences when deciding your next action.
+            user_prompt += """IMPORTANT: Choose the action with the HIGHEST max_score! 
+Actions with max_score=None may not lead to success. Prefer actions with a known positive score.
 ---
 
 """

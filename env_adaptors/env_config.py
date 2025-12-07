@@ -34,3 +34,13 @@ cartpole_config = {
     # "length": 0.5,          # Default: 0.5 m (half-pole length)
     # "tau": 0.02,            # Default: 0.02 s (time step)
 }
+
+mountaincar_config = {
+    "id": "MountainCar-v0",
+    "random_seed": 0,
+    # Optional: customize environment parameters
+    # "goal_position": 0.5,   # Default: 0.5 (flag position)
+    # "goal_velocity": 0.0,   # Default: 0.0 (velocity at goal)
+    # "force": 0.001,         # Default: 0.001 (engine power)
+    # "gravity": 0.0025,      # Default: 0.0025 (gravity strength)
+}

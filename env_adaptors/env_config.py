@@ -3,10 +3,11 @@ webshop_config = {
     "observation_mode": "text",
     "num_products": 1000,
     "human_goals": 1,  # 使用人类标注的任务 (1=True, 0=False)
-
+    "enable_confirm_purchase": False,
     # session
     # Deterministic goal index (0-based). 8 -> faux fur coat instruction.
     "session": 8,
+    # "session": 9,
     "random_seed": 0,
 }
 

@@ -1,5 +1,5 @@
 explorer_settings = {
-    "max_steps": 20,
+    "max_steps": 200,  # Mountain Car needs more steps!
     "max_action_retries": 3,
     "log_dir": "./log/",
     # Experience settings
@@ -8,8 +8,8 @@ explorer_settings = {
     "conflict_soultion": "st", # "st" or "conflict"
     # Plug-in settings
     "model_name": "llama3.1",
-    "env_name": "webshop_llama",
-    "backend_env": "webshop-vanilla",
+    "env_name": "mountaincar_llama",
+    "backend_env": "mountaincar-vanilla",
     "storage_path": "./storage/exp_store.json",
     "depreiciate_exp_store_path": "./storage/depreiciate_exp_store.json",
 }

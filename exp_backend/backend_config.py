@@ -11,3 +11,6 @@ frozenlake_vanilla_config = {
 cartpole_vanilla_config = {
     "algorithm": "sameSt_1Step",
 }
+mountaincar_vanilla_config = {
+    "algorithm": "sameSt_1Step",
+}

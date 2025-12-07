@@ -26,6 +26,9 @@ def load_adaptor(env_name: str) -> BaseEnvAdaptor:
     elif env_name == "cartpole_llama":
         from env_adaptors.cartPole_llama_adaptor import CartPoleLlamaAdaptor
         return CartPoleLlamaAdaptor(env_name)
+    elif env_name == "mountaincar_llama":
+        from env_adaptors.mountainCar_llama_adaptor import MountainCarLlamaAdaptor
+        return MountainCarLlamaAdaptor(env_name)
     else:
         raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized.")
 
@@ -39,5 +42,8 @@ def load_exp_backend(env_name: str, storage_path: str, depreiciate_exp_store_pat
     elif env_name == "cartpole-vanilla":
         from exp_backend.cartPole_exp_vanilla_backend import CartPoleExpVanillaBackend
         return CartPoleExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path)
+    elif env_name == "mountaincar-vanilla":
+        from exp_backend.mountainCar_exp_vanilla_backend import MountainCarExpVanillaBackend
+        return MountainCarExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path)
     else:
         raise Exception(f"In utils.py load_exp_backend(), env_name ({env_name}) is not recognized.")

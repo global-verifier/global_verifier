@@ -33,6 +33,7 @@ class Explorer:
 
         # Add explorer status
         self.in_process = False
+        self.conflict_soultion = explorer_settings["conflict_soultion"]
 
     def get_next_action(self, retrieved_experiences: list = None) -> str:
         if retrieved_experiences is None:
@@ -133,7 +134,7 @@ class Explorer:
         e0 = self.exp_backend.get_exp_by_id(conflict_pair_id[0])
         e1 = self.exp_backend.get_exp_by_id(conflict_pair_id[1])
         # go to the st status for e0
-        e0_st_success, error_message = self.adaptor.reconstruct_state(e0)
+        e0_st_success, error_message = self.adaptor.reconstruct_st(e0)
         e0_st1_success = False
         if not e0_st_success:
             log_flush(self.logIO, f"Error reconstructing st for e0: {error_message}")
@@ -142,7 +143,7 @@ class Explorer:
             e0_st1_success = self.adaptor.is_same_state(self.adaptor.get_state(), e0['st1'])
         # go to the st status for e1
         e1_st1_success = False
-        e1_st_success, error_message = self.adaptor.reconstruct_state(e1)
+        e1_st_success, error_message = self.adaptor.reconstruct_st(e1)
         if not e1_st_success:
             log_flush(self.logIO, f"Error reconstructing st for e1: {error_message}")
         else:
@@ -169,6 +170,46 @@ class Explorer:
             self.in_process = False
         log_flush(self.logIO, f"---------------- Finished Resolve Experience Conflict ----------------")
 
+    def remove_false_exp(self, exp_id):
+        """
+        Verify if an experience's st1 can be reproduced.
+        If not, deprecate the experience.
+        """
+        log_flush(self.logIO, f"-- Verifying exp: {exp_id} ---")
+        
+        # Check if already deprecated
+        if self.exp_backend._exp_is_depreciated(exp_id):
+            log_flush(self.logIO, f"Experience {exp_id} already deprecated, skipping")
+            return
+        
+        exp = self.exp_backend.get_exp_by_id(exp_id)
+        
+        # Reconstruct to st1 state directly
+        st1_success, error_message = self.adaptor.reconstruct_st1(exp)
+        
+        if st1_success:
+            log_flush(self.logIO, f"[VALID] {exp_id} - st1 reproduced successfully")
+        else:
+            log_flush(self.logIO, f"[INVALID] {exp_id} - {error_message}")
+            log_flush(self.logIO, f"[DEPRECATE] {exp_id} - st1 cannot be reproduced")
+            self.exp_backend._deprecate_experience(exp_id)
+
+    def resolve_all_exp_conflict_st(self):
+        """Resolve the conflict pairs."""
+
+        log_flush(self.logIO, f"---------------- Resolve Experience Conflict ----------------")
+        conflict_pair_ids = self._detect_experience_conflict()
+        conflict_exp_ids = self.exp_backend.get_all_expIds_from_conflict_st(conflict_pair_ids)
+        print(f"Conflict exp len: {len(conflict_exp_ids)}, ids: {conflict_exp_ids}")
+        log_flush(self.logIO, f"Conflict exp len: {len(conflict_exp_ids)}, ids: {conflict_exp_ids}")
+        for conflict_exp_id in conflict_exp_ids:
+            while self.in_process:
+                time.sleep(1)
+            self.in_process = True
+            self.remove_false_exp(conflict_exp_id)
+            self.in_process = False
+        log_flush(self.logIO, f"---------------- Finished Resolve Experience Conflict ----------------")
+
     def remove_redundant_experiences(self):
         """Remove redundant experiences."""
         log_flush(self.logIO, f"---------------- Remove Redundant Experiences ----------------")
@@ -189,8 +230,12 @@ class Explorer:
         2. Resolve conflict pairs
         """
         self.remove_redundant_experiences()
-        self.resolve_all_experience_conflict()
-
+        if self.conflict_soultion == "conflict":
+            self.resolve_all_experience_conflict()
+        elif self.conflict_soultion == "st":
+            self.resolve_all_exp_conflict_st()
+        else:
+            raise ValueError(f"Invalid conflict solution: {self.conflict_soultion}")
 
     def explore(self):
         self.in_process = True

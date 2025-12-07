@@ -184,31 +184,3 @@ Init new environment:
     def is_valid_action(self, action):
         """Check if action is valid (0 or 1)."""
         return action in self.get_available_actions()
-
-    def reconstruct_state(self, exp):
-        """
-        Reconstruct state from experience by replaying actions.
-        Returns (success: bool, error_message: str)
-        """
-        assert exp['action'] == exp['action_path'][-1]
-        assert len(exp['action_path']) > 0
-        
-        self.initialize_env()
-        
-        try:
-            # Replay all actions except the last one
-            for i in range(len(exp['action_path']) - 1):
-                action = exp['action_path'][i]
-                self.step(action)
-                if self.is_finished_state(self.get_state()):
-                    return False, f"Episode terminated early at step {i}"
-        except Exception as e:
-            return False, str(e)
-        
-        # Check if reconstructed state matches expected state
-        current_state = self.get_state()
-        if current_state != exp['st']:
-            return False, f"State mismatch: expected {exp['st']}, got {current_state}"
-        
-        return True, None
-

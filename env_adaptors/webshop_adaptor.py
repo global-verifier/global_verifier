@@ -187,20 +187,38 @@ Init new environment:
             raise ValueError(f"Reward score not found in the HTML")
         return float(match.group(1))
 
-    def reconstruct_state(self, exp):
-        """Reconstruct the state from the experience."""
-        assert exp['action'] == exp['action_path'][-1]
-        assert len(exp['action_path']) > 1
-        self.initialize_env()
-        try:
-            for i in range(len(exp['action_path']) - 1):
-                action = exp['action_path'][i]
-                self.step(action)
-        except Exception as e:
-            return False, e
-        if self.get_state() != exp['st']:
-            return False, f"Reconstructed state differs, expected: {exp['st']}, got: {self.get_state()}"
-        return True, None
+    @staticmethod
+    def check_finished_and_get_score(state: dict) -> tuple:
+        """
+        Check if the state is a finished state (done page) and extract the score if so.
+        
+        Args:
+            state: A dict containing 'url' and 'html' keys
+            
+        Returns:
+            A tuple of (is_finished, score):
+            - is_finished: True if this is the done/finished page
+            - score: The reward score if finished, None otherwise
+        """
+        url = state.get('url', '')
+        
+        # Check if this is a finished page by parsing URL structure
+        # done URL: http://host/done/<session_id>/<product_id>/<options>
+        # parts: ['http:', '', 'host', 'done', '<session_id>', '<product_id>', '<options>']
+        parts = url.split('/')
+        if len(parts) < 4 or parts[3] != 'done':
+            return False, None
+        
+        # Extract score from HTML
+        html = state.get('html', '')
+        # Pattern: "Your score (min 0.0, max 1.0) <score>"
+        match = re.search(r'Your score \(min 0\.0, max 1\.0\)\s*([0-9.]+)', html)
+        if match:
+            score = float(match.group(1))
+            return True, score
+        
+        # If URL indicates done but score not found, still return finished but with None score
+        raise ValueError(f"Score not found in the HTML")
 
     # Tobe implemented in the subclass
     def get_action_prompt(self, instruction, state, retrieved_experiences=None):

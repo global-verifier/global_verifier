@@ -3,7 +3,7 @@ webshop_config = {
     "observation_mode": "text",
     "num_products": 1000,
     "human_goals": 1,  # 使用人类标注的任务 (1=True, 0=False)
-    "enable_confirm_purchase": False,
+    "enable_confirm_purchase": True,
     # session
     # Deterministic goal index (0-based). 8 -> faux fur coat instruction.
     "session": 8,
@@ -14,7 +14,10 @@ webshop_config = {
 frozenlake_config = {
     "id": "FrozenLake-v1",
     # "desc": None,
-    "desc": ["SFFF","FHFH","FFFH","HFFG"],
+    # env 0
+    # "desc": ["SHHH","FHHH","FFFF","HHHG"],
+    # env 1
+    "desc": ["SFHH","HFHH","FFFF","HHHG"],
     "random_seed": 0,
     "map_name": "4x4",
     "is_slippery": False,

@@ -3,8 +3,9 @@ explorer_settings = {
     "max_action_retries": 3,
     "log_dir": "./log/",
     # Experience settings
-    "use_experience": False,   # Enable experience learning
-    "save_experience": False,  # Enable experience saving
+    "use_experience": True,   # Whether to retrieve and use experiences in prompts
+    "save_experience": True,  # Whether to save new experiences to storage
+    "conflict_soultion": "st", # "st" or "conflict"
     # Plug-in settings
     "model_name": "llama3.1",
     "env_name": "mountaincar_llama",

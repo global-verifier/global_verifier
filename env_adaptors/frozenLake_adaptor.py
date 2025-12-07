@@ -145,21 +145,6 @@ Init new environment:
     def is_valid_action(self, action):
         return action in self.get_available_actions()
 
-    def reconstruct_state(self, exp):
-        """Reconstruct the state from the experience."""
-        assert exp['action'] == exp['action_path'][-1]
-        # assert len(exp['action_path']) > 1
-        self.initialize_env()
-        try:
-            for i in range(len(exp['action_path']) - 1):
-                action = exp['action_path'][i]
-                self.step(action)
-        except Exception as e:
-            return False, e
-        if self.get_state() != exp['st']:
-            return False, f"Reconstructed state differs, expected: {exp['st']}, got: {self.get_state()}"
-        return True, None
-
     # interal helper functions
     def _get_map(self):
         """

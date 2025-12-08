@@ -12,5 +12,7 @@ cartpole_vanilla_config = {
     "algorithm": "sameSt_1Step",
 }
 mountaincar_vanilla_config = {
-    "algorithm": "sameSt_1Step",
+    "algorithm": "sameSt_bfs_reachable",  # "sameSt_1Step" or "sameSt_bfs_reachable"
+    "max_bfs_depth": 200,  # Maximum BFS search depth (MountainCar may need many steps)
+    "goal_position": 0.5,  # Goal position threshold
 }

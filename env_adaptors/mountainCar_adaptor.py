@@ -22,6 +22,17 @@ class MountainCarAdaptor(BaseEnvAdaptor):
             self.env.unwrapped.force = mountaincar_config['force']
         if mountaincar_config.get('gravity'):
             self.env.unwrapped.gravity = mountaincar_config['gravity']
+        if mountaincar_config.get('max_speed'):
+            self.env.unwrapped.max_speed = mountaincar_config['max_speed']
+        
+        # Store environment parameters as attributes for later use
+        self.goal_position = self.env.unwrapped.goal_position
+        self.goal_velocity = self.env.unwrapped.goal_velocity
+        self.force = self.env.unwrapped.force
+        self.gravity = self.env.unwrapped.gravity
+        self.max_speed = self.env.unwrapped.max_speed
+        self.min_position = self.env.unwrapped.min_position  # -1.2
+        self.max_position = self.env.unwrapped.max_position  # 0.6
         
         self.reproduce_method = "action_path"
         
@@ -40,7 +51,7 @@ class MountainCarAdaptor(BaseEnvAdaptor):
     
     def initialize_env(self):
         """Reset environment for a new episode."""
-        observation, info = self.env.reset()
+        observation, info = self.env.reset(seed=self.seed)
         print(f"Observation: {observation}")
         print(f"Info: {info}")
         
@@ -79,41 +90,22 @@ class MountainCarAdaptor(BaseEnvAdaptor):
     
     def get_state(self):
         """
-        Get discretized state representation.
+        Get state representation using rounded numerical values.
         
         State consists of:
-        - position: car's position on the hill (-1.2 to 0.6)
-        - velocity: car's velocity (-0.07 to 0.07)
+        - position: car's position on the hill (-1.2 to 0.6), rounded to 3 decimal places
+        - velocity: car's velocity (-0.07 to 0.07), rounded to 4 decimal places
         
-        We discretize these into bins for easier learning.
+        Using fine-grained numerical values instead of bins for more precise state matching.
+        Experience retrieval uses approximate matching to find similar states.
         """
         obs = self.env.unwrapped.state
         position, velocity = obs
         
-        # Discretize position into bins
-        # Key positions: valley bottom (~-0.5), left edge (-1.2), goal (0.5+)
-        position_bins = [-1.2, -0.9, -0.7, -0.5, -0.3, -0.1, 0.1, 0.3, 0.45, 0.5, 0.6]
-        
-        # Discretize velocity into bins
-        # Negative = moving left, Positive = moving right, Zero = stationary
-        velocity_bins = [-0.07, -0.05, -0.03, -0.01, 0, 0.01, 0.03, 0.05, 0.07]
-        
-        position_bin = self._get_bin(position, position_bins)
-        velocity_bin = self._get_bin(velocity, velocity_bins)
-        
         return {
-            'position_bin': position_bin,
-            'velocity_bin': velocity_bin,
-            'position': round(position, 3),  # For debugging/display
-            'velocity': round(velocity, 4)   # For debugging/display
+            'position': round(position, 3),
+            'velocity': round(velocity, 4)
         }
-    
-    def _get_bin(self, value, bins):
-        """Helper to find which bin a value falls into."""
-        for i, threshold in enumerate(bins):
-            if value < threshold:
-                return i
-        return len(bins)
     
     def get_env_description(self):
         """Get environment description for LLM."""

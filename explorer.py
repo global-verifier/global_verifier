@@ -229,6 +229,8 @@ class Explorer:
         1. Remove redundant experiences
         2. Resolve conflict pairs
         """
+        log_flush(self.logIO, f"[BEFORE] number of experiences: {len(self.exp_backend.exp_store)}")
+        log_flush(self.logIO, f"[BEFORE] number of deprecated experiences: {len(self.exp_backend.depreiciate_exp_store)}")
         self.remove_redundant_experiences()
         if self.conflict_soultion == "conflict":
             self.resolve_all_experience_conflict()
@@ -236,6 +238,8 @@ class Explorer:
             self.resolve_all_exp_conflict_st()
         else:
             raise ValueError(f"Invalid conflict solution: {self.conflict_soultion}")
+        log_flush(self.logIO, f"[AFTER] number of experiences: {len(self.exp_backend.exp_store)}")
+        log_flush(self.logIO, f"[AFTER] number of deprecated experiences: {len(self.exp_backend.depreiciate_exp_store)}")
 
     def explore(self):
         self.in_process = True

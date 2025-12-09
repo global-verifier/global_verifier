@@ -55,78 +55,37 @@ Available Actions:
         
         # Add historical experiences if available
         if retrieved_experiences:
-            # Separate reachable and unreachable experiences
-            reachable_exps = [e for e in retrieved_experiences if e.get('reachable', False)]
-            unreachable_exps = [e for e in retrieved_experiences if not e.get('reachable', False)]
-            
             user_prompt += f"""\n--- Historical Experience from This Exact State ---
-Found {len(retrieved_experiences)} experience(s) starting from this state:
+You have been at this state before. Here are {len(retrieved_experiences)} previous experience(s):
 
 """
-        else:
-            # No experience - hint to explore
-            user_prompt += """
---- No Historical Experience ---
-No experience found for this exact state. Consider exploring different actions to discover the optimal strategy.
-
-"""
-            
-            # Show reachable paths (most important!)
-            if reachable_exps:
-                user_prompt += f"""GOAL-REACHABLE ACTIONS ({len(reachable_exps)} found):
-"""
-                for exp in reachable_exps[:3]:  # Show top 3 shortest paths
-                    action = exp['action']
-                    action_name = ["LEFT", "COAST", "RIGHT"][action]
-                    path_length = exp.get('path_length', '?')
-                    st1 = exp.get('st1', {})
-                    
-                    user_prompt += f"""  [REACHABLE] Action {action} ({action_name}) - Can reach GOAL in {path_length} steps
-     Next state: pos={st1.get('position', 0):.3f}, vel={st1.get('velocity', 0):.4f}
-"""
-                    # Show the action sequence if available
-                    path_to_goal = exp.get('path_to_goal', [])
-                    if path_to_goal:
-                        action_sequence = [step[1] for step in path_to_goal[:10]]  # First 10 actions
-                        action_names = ['L' if a==0 else ('C' if a==1 else 'R') for a in action_sequence]
-                        if len(path_to_goal) > 10:
-                            user_prompt += f"""     Action sequence: {' '.join(action_names)}... ({path_length} total)
-"""
-                        else:
-                            user_prompt += f"""     Action sequence: {' '.join(action_names)}
-"""
+            for idx, exp in enumerate(retrieved_experiences, 1):
+                action = exp.get('action', 'N/A')
+                st1 = exp.get('st1', {})
+                reachable = exp.get('reachable', None)
+                path_length = exp.get('path_length', None)
                 
-                # Strong recommendation
+                user_prompt += f"""Experience {idx}:
+  Action taken: {action}
+  Result state: pos={st1.get('position', 0):.3f}, vel={st1.get('velocity', 0):.4f}
+  Can reach goal: {reachable if reachable is not None else 'Unknown'}
+  Steps to goal: {path_length if path_length is not None else 'Unknown'}
+
+"""
+            # Check if there's a reachable action
+            reachable_exps = [e for e in retrieved_experiences if e.get('reachable', False)]
+            if reachable_exps:
                 best_action = reachable_exps[0]['action']
-                best_action_name = ["LEFT", "COAST", "RIGHT"][best_action]
-                best_path_length = reachable_exps[0].get('path_length', '?')
-                user_prompt += f"""
-BEST CHOICE: Action {best_action} ({best_action_name}) - reaches goal in {best_path_length} steps
+                user_prompt += f"""If an action can reach the goal, you MUST choose that action.
+Action {best_action} can reach the goal. You MUST choose {best_action}.
 
 """
-            
-            # Show unreachable actions (to avoid)
-            if unreachable_exps:
-                user_prompt += f"""DEAD-END ACTIONS ({len(unreachable_exps)} found - cannot reach goal):
-"""
-                for exp in unreachable_exps[:2]:  # Show max 2
-                    action = exp['action']
-                    action_name = ["LEFT", "COAST", "RIGHT"][action]
-                    st1 = exp.get('st1', {})
-                    user_prompt += f"""  [DEAD-END] Action {action} ({action_name}) - No known path to goal from here
-"""
-                user_prompt += f"""
-AVOID: Actions {set(e['action'] for e in unreachable_exps)} have no known path to goal
-
-"""
-            
-            user_prompt += """---
+            else:
+                user_prompt += """Choose the action that may lead to the goal.
 
 """
 
-        user_prompt += """Task: Choose the BEST action to reach the goal at position 0.5.
-
-Respond with only ONE action number (0, 1, or 2).
+        user_prompt += """Respond with only ONE action number (0, 1, or 2).
 """
         
         # Construct the prompt in Llama3 format

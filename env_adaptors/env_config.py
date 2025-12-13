@@ -40,10 +40,12 @@ cartpole_config = {
 
 mountaincar_config = {
     "id": "MountainCar-v0",
-    "random_seed": 0,
+    "random_seed": 1,
     # Optional: customize environment parameters
-    # "goal_position": 0.5,   # Default: 0.5 (flag position)
-    # "goal_velocity": 0.0,   # Default: 0.0 (velocity at goal)
-    # "force": 0.001,         # Default: 0.001 (engine power)
+    "max_speed": 1,           # Default: 0.07 (maximum velocity)
+    "force": 0.0016,         # Default: 0.001 (engine power) env0
+    # "force": 0.00158,         # Default: 0.001 (engine power) env1
+    "goal_position": 0.5,   # Default: 0.5 (flag position)
+    "goal_velocity": 0.0,   # Default: 0.0 (velocity at goal) 
     # "gravity": 0.0025,      # Default: 0.0025 (gravity strength)
 }

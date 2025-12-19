@@ -33,6 +33,7 @@ def load_adaptor(env_name: str) -> BaseEnvAdaptor:
         raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized.")
 
 def load_exp_backend(env_name: str, storage_path: str, depreiciate_exp_store_path: str) -> BaseExpBackend:
+    # Vanilla backends (original)
     if env_name == "webshop-vanilla":
         from exp_backend.webshop_exp_vanilla_backend import WebshopExpVanillaBackend
         return WebshopExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path)
@@ -45,5 +46,105 @@ def load_exp_backend(env_name: str, storage_path: str, depreiciate_exp_store_pat
     elif env_name == "mountaincar-vanilla":
         from exp_backend.mountainCar_exp_vanilla_backend import MountainCarExpVanillaBackend
         return MountainCarExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path)
+    
+    # Memory-enhanced backends - FrozenLake
+    elif env_name == "frozenlake-memorybank":
+        from exp_backend.frozenLake_memory_backends import FrozenLakeMemoryBankBackend
+        return FrozenLakeMemoryBankBackend(
+            env_name="FrozenLake",
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path
+        )
+    elif env_name == "frozenlake-generative":
+        from exp_backend.frozenLake_memory_backends import FrozenLakeGenerativeBackend
+        return FrozenLakeGenerativeBackend(
+            env_name="FrozenLake",
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path
+        )
+    elif env_name == "frozenlake-voyager":
+        from exp_backend.frozenLake_memory_backends import FrozenLakeVoyagerBackend
+        return FrozenLakeVoyagerBackend(
+            env_name="FrozenLake",
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path
+        )
+    
+    # Memory-enhanced backends - CartPole
+    elif env_name == "cartpole-memorybank":
+        from exp_backend.cartPole_memory_backends import CartPoleMemoryBankBackend
+        return CartPoleMemoryBankBackend(
+            env_name="CartPole",
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path
+        )
+    elif env_name == "cartpole-generative":
+        from exp_backend.cartPole_memory_backends import CartPoleGenerativeBackend
+        return CartPoleGenerativeBackend(
+            env_name="CartPole",
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path
+        )
+    elif env_name == "cartpole-voyager":
+        from exp_backend.cartPole_memory_backends import CartPoleVoyagerBackend
+        return CartPoleVoyagerBackend(
+            env_name="CartPole",
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path
+        )
+    
+    # Memory-enhanced backends - MountainCar
+    elif env_name == "mountaincar-memorybank":
+        from exp_backend.mountainCar_memory_backends import MountainCarMemoryBankBackend
+        return MountainCarMemoryBankBackend(
+            env_name="MountainCar",
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path
+        )
+    elif env_name == "mountaincar-generative":
+        from exp_backend.mountainCar_memory_backends import MountainCarGenerativeBackend
+        return MountainCarGenerativeBackend(
+            env_name="MountainCar",
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path
+        )
+    elif env_name == "mountaincar-voyager":
+        from exp_backend.mountainCar_memory_backends import MountainCarVoyagerBackend
+        return MountainCarVoyagerBackend(
+            env_name="MountainCar",
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path
+        )
+    
+    # Memory-enhanced backends - Webshop
+    elif env_name == "webshop-memorybank":
+        from exp_backend.webshop_memory_backends import WebshopMemoryBankBackend
+        return WebshopMemoryBankBackend(
+            env_name="Webshop",
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path
+        )
+    elif env_name == "webshop-generative":
+        from exp_backend.webshop_memory_backends import WebshopGenerativeBackend
+        return WebshopGenerativeBackend(
+            env_name="Webshop",
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path
+        )
+    elif env_name == "webshop-voyager":
+        from exp_backend.webshop_memory_backends import WebshopVoyagerBackend
+        return WebshopVoyagerBackend(
+            env_name="Webshop",
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path
+        )
+    
     else:
-        raise Exception(f"In utils.py load_exp_backend(), env_name ({env_name}) is not recognized.")
+        raise Exception(
+            f"In plugin_loader.py load_exp_backend(), env_name ({env_name}) is not recognized.\n"
+            f"Supported backends:\n"
+            f"  - Vanilla: webshop-vanilla, frozenlake-vanilla, cartpole-vanilla, mountaincar-vanilla\n"
+            f"  - MemoryBank: frozenlake-memorybank, cartpole-memorybank, mountaincar-memorybank, webshop-memorybank\n"
+            f"  - Generative: frozenlake-generative, cartpole-generative, mountaincar-generative, webshop-generative\n"
+            f"  - Voyager: frozenlake-voyager, cartpole-voyager, mountaincar-voyager, webshop-voyager"
+        )

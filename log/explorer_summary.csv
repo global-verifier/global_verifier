@@ -1,0 +1,2 @@
+timestamp,model_name,env_name,instruction,action_path,step_count,final_score
+2025-12-19_18:33:15,llama3.1,frozenlake_llama,"Destination: (3, 3); Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]","[0, 0, 1]",3,0

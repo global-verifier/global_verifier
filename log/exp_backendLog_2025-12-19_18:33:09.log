@@ -1,0 +1,32 @@
+########################################################
+Start loading ./storage/frozenlake_memorybank_exp_store.json the store at 2025-12-19_18:33:09
+Successfully loaded the store, path: ./storage/frozenlake_memorybank_exp_store.json, size: 0, at 2025-12-19_18:33:09
+########################################################
+Start loading ./storage/frozenlake_memorybank_deprecated_exp_store.json the store at 2025-12-19_18:33:09
+Successfully loaded the store, path: ./storage/frozenlake_memorybank_deprecated_exp_store.json, size: 0, at 2025-12-19_18:33:09
+Store validation passed: No overlap between exp_store (0 items) and depreiciate_exp_store (0 items)
+Memory-enhanced backend initialized with vector DB at ./storage/memory_db_FrozenLake
+Syncing 0 experiences to vector database...
+Vector database sync completed
+MemoryBank backend initialized with threshold=0.3
+Retrieved 0 successful and 0 failed experiences
+After forgetting filter: 0 successful, 0 failed (from 0 active)
+Retrieved 0 experiences via exact match
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/frozenlake_memorybank_exp_store.json, size: 1, at 2025-12-19_18:33:14
+Save depreiciate store, path: ./storage/frozenlake_memorybank_deprecated_exp_store.json, size: 0, at 2025-12-19_18:33:14
+Stored experience 12-19_18:33:14.334787_(3, 3)_0 at time 0
+Retrieved 0 successful and 0 failed experiences
+After forgetting filter: 0 successful, 0 failed (from 1 active)
+Retrieved 1 experiences via exact match
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/frozenlake_memorybank_exp_store.json, size: 2, at 2025-12-19_18:33:14
+Save depreiciate store, path: ./storage/frozenlake_memorybank_deprecated_exp_store.json, size: 0, at 2025-12-19_18:33:14
+Stored experience 12-19_18:33:14.676060_(3, 3)_0-0 at time 1
+Retrieved 0 successful and 0 failed experiences
+After forgetting filter: 0 successful, 0 failed (from 2 active)
+Retrieved 2 experiences via exact match
+Store validation passed: No overlap between exp_store (3 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/frozenlake_memorybank_exp_store.json, size: 3, at 2025-12-19_18:33:15
+Save depreiciate store, path: ./storage/frozenlake_memorybank_deprecated_exp_store.json, size: 0, at 2025-12-19_18:33:15
+Stored experience 12-19_18:33:15.016224_(3, 3)_0-0-1 at time 2

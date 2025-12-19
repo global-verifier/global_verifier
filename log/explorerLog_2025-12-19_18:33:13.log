@@ -1,0 +1,48 @@
+########################################################
+Start exploring at 2025-12-19_18:33:13
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destination]: (3, 3)
+[Map]:
+SFHH
+HFHH
+FFFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 0, ids: []
+- Todo action: 0
+- Action is valid after 0 retries
+- Experience stored: 12-19_18:33:14.334787_(3, 3)_0
+--------------------------------------------------------
+Step 1
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, ids: [{'id': '12-19_18:33:14.334787_(3, 3)_0', 'reproduce_method': 'action_path', 'action_path': [0], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 0, 'st1': {'cur_pos': [0, 0], 'tile_type': 'S'}}]
+- Todo action: 0
+- Action is valid after 0 retries
+- Experience stored: 12-19_18:33:14.676060_(3, 3)_0-0
+--------------------------------------------------------
+Step 2
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, ids: [{'id': '12-19_18:33:14.334787_(3, 3)_0', 'reproduce_method': 'action_path', 'action_path': [0], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 0, 'st1': {'cur_pos': [0, 0], 'tile_type': 'S'}}, {'id': '12-19_18:33:14.676060_(3, 3)_0-0', 'reproduce_method': 'action_path', 'action_path': [0, 0], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 0, 'st1': {'cur_pos': [0, 0], 'tile_type': 'S'}}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-19_18:33:15.016224_(3, 3)_0-0-1
+--------------------------------------------------------
+Step 3
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 3
+Insturction: Destination: (3, 3); Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [0, 0, 1]
+End exploring at 2025-12-19_18:33:15
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################

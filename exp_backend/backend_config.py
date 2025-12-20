@@ -20,3 +20,7 @@ memorybank_config = {
     "threshold": 0.3,      # 遗忘阈值，低于此值的记忆被过滤
     "decay_rate": 8,       # 衰减速率，越大记忆保持越久 (decay_rate=8 约 10 步后移除)
 }
+voyager_config = {
+    "model_path": None,    # LLM 模型路径，None 则使用外部传入的 llm_func
+    "max_new_tokens": 128, # 生成总结的最大 token 数
+}

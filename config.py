@@ -9,7 +9,7 @@ explorer_settings = {
     # Plug-in settings
     "model_name": "llama3.1",
     "env_name": "frozenlake_llama",  # Change env
-    "backend_env": "frozenlake-memorybank",  # Change backend
+    "backend_env": "frozenlake-voyager",  # Change backend
     "storage_path": "./storage/exp_store.json",
     "depreiciate_exp_store_path": "./storage/depreiciate_exp_store.json",
 }

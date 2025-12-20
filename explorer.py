@@ -22,7 +22,8 @@ class Explorer:
         # Add plug in
         self.explorer_model = load_explorer_model(self.model_name)
         self.adaptor = load_adaptor(self.env_name)
-        self.exp_backend = load_exp_backend(self.backend_env, self.storage_path, self.depreiciate_exp_store_path)
+        # 传入 explorer_model 给 backend（voyager backend 需要用它生成总结）
+        self.exp_backend = load_exp_backend(self.backend_env, self.storage_path, self.depreiciate_exp_store_path, self.explorer_model)
 
         # Add the logger
         self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.log', 'a')

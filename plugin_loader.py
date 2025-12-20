@@ -32,7 +32,7 @@ def load_adaptor(env_name: str) -> BaseEnvAdaptor:
     else:
         raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized.")
 
-def load_exp_backend(env_name: str, storage_path: str, depreiciate_exp_store_path: str) -> BaseExpBackend:
+def load_exp_backend(env_name: str, storage_path: str, depreiciate_exp_store_path: str, explorer_model=None) -> BaseExpBackend:
     if env_name == "webshop-vanilla":
         from exp_backend.webshop_exp_vanilla_backend import WebshopExpVanillaBackend
         return WebshopExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path)
@@ -54,5 +54,25 @@ def load_exp_backend(env_name: str, storage_path: str, depreiciate_exp_store_pat
     elif env_name == "webshop-memorybank":
         from exp_backend.webshop_exp_memorybank_backend import WebshopExpMemoryBankBackend
         return WebshopExpMemoryBankBackend(env_name, storage_path, depreiciate_exp_store_path)
+    # Voyager backends (需要 explorer_model 来生成总结)
+    elif env_name == "frozenlake-voyager":
+        from exp_backend.frozenLake_exp_voyager_backend import FrozenLakeExpVoyagerBackend
+        return FrozenLakeExpVoyagerBackend(env_name, storage_path, depreiciate_exp_store_path, explorer_model)
+    elif env_name == "mountaincar-voyager":
+        from exp_backend.mountainCar_exp_voyager_backend import MountainCarExpVoyagerBackend
+        return MountainCarExpVoyagerBackend(env_name, storage_path, depreiciate_exp_store_path, explorer_model)
+    elif env_name == "webshop-voyager":
+        from exp_backend.webshop_exp_voyager_backend import WebshopExpVoyagerBackend
+        return WebshopExpVoyagerBackend(env_name, storage_path, depreiciate_exp_store_path, explorer_model)
+    # Generative backends (需要 explorer_model 来检索时打分排序)
+    elif env_name == "frozenlake-generative":
+        from exp_backend.frozenLake_exp_generative_backend import FrozenLakeExpGenerativeBackend
+        return FrozenLakeExpGenerativeBackend(env_name, storage_path, depreiciate_exp_store_path, explorer_model)
+    elif env_name == "mountaincar-generative":
+        from exp_backend.mountainCar_exp_generative_backend import MountainCarExpGenerativeBackend
+        return MountainCarExpGenerativeBackend(env_name, storage_path, depreiciate_exp_store_path, explorer_model)
+    elif env_name == "webshop-generative":
+        from exp_backend.webshop_exp_generative_backend import WebshopExpGenerativeBackend
+        return WebshopExpGenerativeBackend(env_name, storage_path, depreiciate_exp_store_path, explorer_model)
     else:
         raise Exception(f"In utils.py load_exp_backend(), env_name ({env_name}) is not recognized.")

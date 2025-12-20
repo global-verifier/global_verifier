@@ -113,6 +113,9 @@ class Explorer:
         else:
             log_flush(self.logIO, f"- Experience saving disabled (save_experience=False), skipping save")
         
+        # For memory bank backend, step the memory bank
+        self.exp_backend.step()
+        
         return False
 
     # Detect and resolve conflict pairs

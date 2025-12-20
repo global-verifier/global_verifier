@@ -354,3 +354,6 @@ class BaseExpBackend:
             self.save_store()
         else:
             raise ValueError(f"Experience {exp_id} not found in in any store")
+
+    def step(self):
+        pass

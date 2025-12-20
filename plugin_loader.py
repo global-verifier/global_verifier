@@ -45,5 +45,14 @@ def load_exp_backend(env_name: str, storage_path: str, depreiciate_exp_store_pat
     elif env_name == "mountaincar-vanilla":
         from exp_backend.mountainCar_exp_vanilla_backend import MountainCarExpVanillaBackend
         return MountainCarExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path)
+    elif env_name == "frozenlake-memorybank":
+        from exp_backend.frozenLake_exp_memorybank_backend import FrozenLakeExpMemoryBankBackend
+        return FrozenLakeExpMemoryBankBackend(env_name, storage_path, depreiciate_exp_store_path)
+    elif env_name == "mountaincar-memorybank":
+        from exp_backend.mountainCar_exp_memorybank_backend import MountainCarExpMemoryBankBackend
+        return MountainCarExpMemoryBankBackend(env_name, storage_path, depreiciate_exp_store_path)
+    elif env_name == "webshop-memorybank":
+        from exp_backend.webshop_exp_memorybank_backend import WebshopExpMemoryBankBackend
+        return WebshopExpMemoryBankBackend(env_name, storage_path, depreiciate_exp_store_path)
     else:
         raise Exception(f"In utils.py load_exp_backend(), env_name ({env_name}) is not recognized.")

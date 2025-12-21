@@ -48,21 +48,29 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
                 action_taken = exp.get('action', 'N/A')
                 next_pos = exp.get('st1', {}).get('cur_pos', 'N/A')
                 next_tile = exp.get('st1', {}).get('tile_type', 'N/A')
+                summary = exp.get('voyager_summary')
+                gen_score = exp.get('generative_score')
                 
                 # Add warning for holes
                 tile_warning = ""
                 if next_tile == 'H':
-                    tile_warning = " HOLE - AVOID THIS ACTION!"
+                    tile_warning = f" HOLE - AVOID ACTION {action_taken}!"
                     forbidden_actions.append(action_taken)
                 elif next_tile == 'G':
-                    tile_warning = " GOAL - TAKE THIS ACTION!"
+                    tile_warning = f" GOAL - TAKE ACTION {action_taken}!"
                     goal_actions.append(action_taken)
                 
                 user_prompt += f"""  Action taken: {action_taken}
   Result Position: {next_pos}
   Result Tile: {next_tile}{tile_warning}
-
 """
+                if summary:
+                    user_prompt += f"""  Summary for this step is: {summary}
+"""
+                if gen_score is not None:
+                    user_prompt += f"""  LLM analyzed score for this action is: {gen_score}
+"""
+                user_prompt += "\n"
             
             # Add explicit warning section
             if forbidden_actions or goal_actions:
@@ -72,8 +80,9 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
 
 """
             if forbidden_actions:
-                user_prompt += f"""!!! CRITICAL WARNING: Action(s) {forbidden_actions} lead to HOLES and will END THE GAME.
-YOU MUST NOT choose {forbidden_actions} from this position!
+                forbidden_list = ", ".join(map(str, dict.fromkeys(forbidden_actions)))
+                user_prompt += f"""!!! CRITICAL WARNING: Action(s) {forbidden_list} lead to HOLES and will END THE GAME.
+YOU MUST NOT choose {forbidden_list} from this position!
 
 """
             

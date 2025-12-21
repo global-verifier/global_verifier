@@ -8,8 +8,8 @@ explorer_settings = {
     "conflict_soultion": "st", # "st" or "conflict"
     # Plug-in settings
     "model_name": "llama3.1",
-    "env_name": "frozenlake_llama",  # Change env
-    "backend_env": "frozenlake-voyager",  # Change backend
+    "env_name": "mountaincar_llama",  # Change env
+    "backend_env": "mountaincar-vanilla",  # Change backend
     "storage_path": "./storage/exp_store.json",
     "depreiciate_exp_store_path": "./storage/depreiciate_exp_store.json",
 }

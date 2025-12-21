@@ -64,6 +64,8 @@ You have been at this state before. Here are {len(retrieved_experiences)} previo
                 st1 = exp.get('st1', {})
                 reachable = exp.get('reachable', None)
                 path_length = exp.get('path_length', None)
+                summary = exp.get('voyager_summary')
+                gen_score = exp.get('generative_score')
                 
                 user_prompt += f"""Experience {idx}:
   Action taken: {action}
@@ -71,6 +73,12 @@ You have been at this state before. Here are {len(retrieved_experiences)} previo
   Can reach goal: {reachable if reachable is not None else 'Unknown'}
   Steps to goal: {path_length if path_length is not None else 'Unknown'}
 
+"""
+                if summary:
+                    user_prompt += f"""  Summary for this step is: {summary}
+"""
+                if gen_score is not None:
+                    user_prompt += f"""  LLM analyzed score for this action is: {gen_score}
 """
             # Check if there's a reachable action
             reachable_exps = [e for e in retrieved_experiences if e.get('reachable', False)]

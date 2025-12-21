@@ -23,7 +23,8 @@ class MemoryBankMixin:
     def init_memorybank(
         self, 
         threshold: float = None, 
-        decay_rate: float = None
+        decay_rate: float = None,
+        start_timestep: int = 0
     ) -> None:
         """
         初始化 Memory Bank 参数
@@ -31,13 +32,21 @@ class MemoryBankMixin:
         Args:
             threshold: 遗忘阈值，低于此值的记忆被过滤 (默认从 config 读取)
             decay_rate: 衰减速率，越大记忆保持越久 (默认从 config 读取)
+            start_timestep: 初始化时间步，支持外部（如 Explorer）传入
         """
         self.mb_threshold: float = threshold if threshold is not None else memorybank_config["threshold"]
         self.mb_decay_rate: float = decay_rate if decay_rate is not None else memorybank_config["decay_rate"]
-        self.mb_current_timestep: int = 0
+        self.mb_current_timestep: int = start_timestep
         self.mb_exp_timestamps: dict[str, int] = {}
         
-        log_flush(self.logIO, f"[MemoryBank] Initialized with threshold={threshold}, decay_rate={decay_rate}")
+        log_flush(
+            self.logIO, 
+            f"[MemoryBank] Initialized with threshold={self.mb_threshold}, "
+            f"decay_rate={self.mb_decay_rate}, start_timestep={self.mb_current_timestep}"
+        )
+
+    def export_status(self):
+        return {"mb_current_timestep": self.mb_current_timestep}
 
     def _forgetting_function(self, time_interval: int) -> float:
         """
@@ -81,7 +90,6 @@ class MemoryBankMixin:
                 exp_copy['retention'] = retention
                 exp_copy['timestep'] = exp_timestep
                 results.append(exp_copy)
-                log_flush(self.logIO, f"  [RETAIN] exp {exp_id}, retention={retention:.3f}, timestep={exp_timestep}")
             else:
                 log_flush(self.logIO, f"  [FORGET] exp {exp_id}, retention={retention:.3f}, timestep={exp_timestep}")
         

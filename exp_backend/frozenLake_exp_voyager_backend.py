@@ -8,14 +8,17 @@ FROZENLAKE_SUMMARY_PROMPT = """<|begin_of_text|><|start_header_id|>system<|end_h
 
 You are a helpful assistant that summarizes FrozenLake navigation experiences.
 1) Summarize in 1-2 sentences focusing on the position, action taken, and result.
-2) Mention if the agent reached the goal, fell into a hole, or moved safely.
+2) Explicitly state whether the move was SAFE (still on F/S), SUCCESS (G), or FAIL (H).
 3) Your response should be a single line of text.<|eot_id|><|start_header_id|>user<|end_header_id|>
 
 Summarize this FrozenLake experience:
 - Current Position: {position}
+- Current Tile: {tile_type}
 - Action: {action_name} ({action})
 - Next Position: {next_position}
+- Next Tile: {next_tile}
 - Action Path: {action_path}
+- Outcome Safety: {outcome_safety}
 
 Action meanings: 0=Left, 1=Down, 2=Right, 3=Up
 Grid: S=Start, F=Frozen(safe), H=Hole(fail), G=Goal(win)
@@ -56,6 +59,9 @@ class FrozenLakeExpVoyagerBackend(FrozenLakeExpVanillaBackend, VoyagerMixin):
         st1 = exp.get('st1', {})
         action = exp.get('action', 0)
         action_path = exp.get('action_path', [])
+        tile = st.get('tile_type', 'unknown')
+        next_tile = st1.get('tile_type', 'unknown')
+        outcome_safety = "FAIL (hole)" if next_tile == 'H' else ("SUCCESS (goal)" if next_tile == 'G' else "SAFE (on ice)")
         
         action_names = ['Left', 'Down', 'Right', 'Up']
         action_name = action_names[action] if 0 <= action <= 3 else 'unknown'
@@ -65,7 +71,10 @@ class FrozenLakeExpVoyagerBackend(FrozenLakeExpVanillaBackend, VoyagerMixin):
             action=action,
             action_name=action_name,
             next_position=st1.get('position', 0),
-            action_path=action_path
+            action_path=action_path,
+            tile_type=tile,
+            next_tile=next_tile,
+            outcome_safety=outcome_safety
         )
         
         summary = self.voyager_generate_summary(prompt)

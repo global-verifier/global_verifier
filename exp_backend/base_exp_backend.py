@@ -357,3 +357,6 @@ class BaseExpBackend:
 
     def step(self):
         pass
+
+    def export_status(self):
+        return None

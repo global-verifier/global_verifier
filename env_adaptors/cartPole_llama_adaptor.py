@@ -51,13 +51,15 @@ Available Actions:
             for exp in retrieved_experiences:
                 action = exp.get('action', 'N/A')
                 st1 = exp.get('st1', {})
+                summary = exp.get('voyager_summary')
+                gen_score = exp.get('generative_score')
                 
                 # Check if this action led to failure
                 # (We can infer failure if the next state is very different or episode ended)
                 if self._is_failure_state(st1):
-                    failure_actions.append((action, st1))
+                    failure_actions.append((action, st1, summary, gen_score))
                 else:
-                    success_actions.append((action, st1))
+                    success_actions.append((action, st1, summary, gen_score))
             
             user_prompt += f"""\n--- Historical Experience from Similar States ---
 Based on {len(retrieved_experiences)} previous attempt(s) from similar state:
@@ -67,24 +69,36 @@ Based on {len(retrieved_experiences)} previous attempt(s) from similar state:
             if failure_actions:
                 user_prompt += f"""DANGEROUS ACTIONS (led to failure):
 """
-                for action, st1 in failure_actions[:3]:  # Show top 3
+                for action, st1, summary, gen_score in failure_actions[:3]:  # Show top 3
                     user_prompt += f"""  Action {action} → Failed (pole fell or cart out of bounds)
 """
+                    if summary:
+                        user_prompt += f"""    Summary for this step is: {summary}
+"""
+                    if gen_score is not None:
+                        user_prompt += f"""    LLM analyzed score for this action is: {gen_score}
+"""
                 user_prompt += f"""
-⚠️ AVOID: Actions {set(a for a, _ in failure_actions)} have high failure rate from this state!
+AVOID: Actions {set(fa[0] for fa in failure_actions)} have high failure rate from this state!
 
 """
             
             if success_actions:
                 user_prompt += f"""SUCCESSFUL ACTIONS (kept pole balanced):
 """
-                for action, st1 in success_actions[:3]:  # Show top 3
+                for action, st1, summary, gen_score in success_actions[:3]:  # Show top 3
                     result_desc = self._get_position_description(st1.get('x_bin', 0))
                     result_angle = self._get_angle_description(st1.get('theta_bin', 0))
                     user_prompt += f"""  Action {action} → Cart: {result_desc}, Angle: {result_angle}
 """
+                    if summary:
+                        user_prompt += f"""    Summary for this step is: {summary}
+"""
+                    if gen_score is not None:
+                        user_prompt += f"""    LLM analyzed score for this action is: {gen_score}
+"""
                 user_prompt += f"""
-✓ RECOMMENDED: Actions {set(a for a, _ in success_actions)} worked well from similar states.
+RECOMMENDED: Actions {set(sa[0] for sa in success_actions)} worked well from similar states.
 
 """
             

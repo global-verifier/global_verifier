@@ -7,7 +7,10 @@ from config import explorer_settings
 import time
 
 class Explorer:
-    def __init__(self):
+    def __init__(
+        self,
+        start_timestep: int = 0
+        ):
         # Add hyperparameter settings
         self.model_name = explorer_settings["model_name"]
         self.env_name = explorer_settings["env_name"]
@@ -18,15 +21,25 @@ class Explorer:
         self.max_action_retries = explorer_settings["max_action_retries"]
         self.use_experience = explorer_settings.get("use_experience", True)  
         self.save_experience = explorer_settings.get("save_experience", True)
+        self.start_timestep = start_timestep
         
         # Add plug in
         self.explorer_model = load_explorer_model(self.model_name)
         self.adaptor = load_adaptor(self.env_name)
         # 传入 explorer_model 给 backend（voyager backend 需要用它生成总结）
-        self.exp_backend = load_exp_backend(self.backend_env, self.storage_path, self.depreiciate_exp_store_path, self.explorer_model)
+        self.exp_backend = load_exp_backend(
+            self.backend_env,
+            self.storage_path,
+            self.depreiciate_exp_store_path,
+            self.explorer_model,
+            start_timestep=self.start_timestep,
+        )
 
         # Add the logger
         self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.log', 'a')
+        self.promptLogIO = open(f'{explorer_settings["log_dir"]}/promptLog_{get_timestamp()}.log', 'a')
+        self.statusLogIO = open(f'{explorer_settings["log_dir"]}/statusLog_{get_timestamp()}.log', 'a')
+        
         self.run_analyzer = ExplorerRunAnalyzer(explorer_settings["log_dir"])
 
         # Add the state recorders
@@ -40,6 +53,7 @@ class Explorer:
         if retrieved_experiences is None:
             retrieved_experiences = []
         get_action_prompt = self.adaptor.get_action_prompt(retrieved_experiences)
+        log_flush(self.promptLogIO, f"Action prompt: [{get_timestamp()}] - {get_action_prompt}")
         raw_action = self.explorer_model.get_next_action(get_action_prompt)
         formatted_action = self.adaptor.format_action(raw_action)
         return formatted_action
@@ -262,8 +276,11 @@ class Explorer:
         for i in range(self.max_steps):
             print(f"Step {i}")
             log_flush(self.logIO, f"--------------------------------------------------------")
-            log_flush(self.logIO, f"Step {i}")
+            log_flush(self.logIO, f"Step {i} / {self.max_steps}")
             is_episode_done = self.execute_step()
+            status = self.exp_backend.export_status()
+            log_flush(self.statusLogIO, f"Step {i} export_status: {status}")
+            
             if is_episode_done:
                 log_flush(self.logIO, f"- Episode is done at step {i}")
                 step_count = i

@@ -8,9 +8,13 @@ class WebshopExpMemoryBankBackend(WebshopExpVanillaBackend, MemoryBankMixin):
     Webshop 带时间戳遗忘机制的 Memory Bank Backend
     继承 VanillaBackend 以复用其检索算法（如 BFS max_score）
     """
-    def __init__(self, env_name, storage_path, depreiciate_exp_store_path):
+    def __init__(self, env_name, storage_path, depreiciate_exp_store_path, **kwargs):
         super().__init__(env_name, storage_path, depreiciate_exp_store_path)
-        self.init_memorybank()
+        self.init_memorybank(
+            threshold=kwargs.get("threshold"),
+            decay_rate=kwargs.get("decay_rate"),
+            start_timestep=kwargs.get("start_timestep", 0),
+        )
         
         # 保存原始检索方法，然后包装
         self._base_retrieve = self.retrieve_experience
@@ -41,3 +45,7 @@ class WebshopExpMemoryBankBackend(WebshopExpVanillaBackend, MemoryBankMixin):
     def step(self):
         self.mb_cleanup_forgotten()
         self.mb_tick()
+        log_flush(self.logIO, f"[MemoryBank] Status: {self.export_status()}")
+
+    def export_status(self):
+        return {"mb_current_timestep": self.mb_current_timestep}

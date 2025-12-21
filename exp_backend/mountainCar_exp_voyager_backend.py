@@ -8,13 +8,14 @@ MOUNTAINCAR_SUMMARY_PROMPT = """<|begin_of_text|><|start_header_id|>system<|end_
 
 You are a helpful assistant that summarizes MountainCar state transitions.
 1) Summarize in 1-2 sentences focusing on position, velocity, and action effects.
-2) Describe whether the car is gaining momentum or losing it.
+2) Describe whether the car is gaining momentum or losing it, and whether the step is SAFE or reaches the goal.
 3) Your response should be a single line of text.<|eot_id|><|start_header_id|>user<|end_header_id|>
 
 Summarize this MountainCar experience:
 - Position: {position:.3f}, Velocity: {velocity:.4f}
 - Action: {action_name} ({action})
 - Next Position: {next_position:.3f}, Next Velocity: {next_velocity:.4f}
+- Outcome Safety: {outcome_safety}
 
 Action meanings: 0=push left, 1=no push (coast), 2=push right
 Goal: reach position >= 0.5
@@ -54,6 +55,8 @@ class MountainCarExpVoyagerBackend(MountainCarExpVanillaBackend, VoyagerMixin):
         st = exp.get('st', {})
         st1 = exp.get('st1', {})
         action = exp.get('action', 1)
+        goal_reached = st1.get('position', 0) >= 0.5
+        outcome_safety = "SUCCESS (goal reached)" if goal_reached else "SAFE (episode continues)"
         
         action_names = ['push left', 'coast', 'push right']
         action_name = action_names[action] if 0 <= action <= 2 else 'unknown'
@@ -64,7 +67,8 @@ class MountainCarExpVoyagerBackend(MountainCarExpVanillaBackend, VoyagerMixin):
             action=action,
             action_name=action_name,
             next_position=st1.get('position', 0),
-            next_velocity=st1.get('velocity', 0)
+            next_velocity=st1.get('velocity', 0),
+            outcome_safety=outcome_safety
         )
         
         summary = self.voyager_generate_summary(prompt)

@@ -53,11 +53,19 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
                 action_taken = exp.get('action', 'N/A')
                 next_url = exp.get('st1', {}).get('url', 'N/A')
                 max_score = exp.get('max_score', None)
+                summary = exp.get('voyager_summary')
+                gen_score = exp.get('generative_score')
                 user_prompt += f"""Experience {idx}:
   Action taken: {action_taken}
   Result URL: {next_url}
   Max score achievable: {max_score if max_score is not None else 'Unknown (may not lead to success)'}
 
+"""
+                if summary:
+                    user_prompt += f"""  Summary for this step is: {summary}
+"""
+                if gen_score is not None:
+                    user_prompt += f"""  LLM analyzed score for this action is: {gen_score}
 """
             user_prompt += """IMPORTANT: Choose the action with the HIGHEST max_score! 
 Actions with max_score=None may not lead to success. Prefer actions with a known positive score.

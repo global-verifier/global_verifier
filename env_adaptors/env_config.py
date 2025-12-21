@@ -21,7 +21,7 @@ frozenlake_config = {
     "is_slippery": False,
     "success_rate": 1,
     "reward_schedule": (1, 0, 0),
-    "max_episode_steps": None,
+    "max_episode_steps": None, 
 }
 
 cartpole_config = {

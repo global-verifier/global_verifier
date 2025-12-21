@@ -8,14 +8,16 @@ WEBSHOP_SUMMARY_PROMPT = """<|begin_of_text|><|start_header_id|>system<|end_head
 
 You are a helpful assistant that summarizes web shopping navigation experiences.
 1) Summarize in 1-2 sentences focusing on the page type, action taken, and result.
-2) Highlight key information like product names, search queries, or purchase decisions.
-3) Your response should be a single line of text.<|eot_id|><|start_header_id|>user<|end_header_id|>
+2) Note whether this step reached a done/checkout page (finished) or is still navigating (safe/ongoing).
+3) Highlight key information like product names, search queries, or purchase decisions.
+4) Your response should be a single line of text.<|eot_id|><|start_header_id|>user<|end_header_id|>
 
 Summarize this web shopping experience:
 - Current URL: {url}
 - Action taken: {action}
 - Next URL: {next_url}
 - Action path so far: {action_path}
+- Outcome Status: {outcome_status}
 
 Your summary:<|eot_id|><|start_header_id|>assistant<|end_header_id|>
 
@@ -54,11 +56,15 @@ class WebshopExpVoyagerBackend(WebshopExpVanillaBackend, VoyagerMixin):
         action = exp.get('action', '')
         action_path = exp.get('action_path', [])
         
+        next_url = st1.get('url', 'unknown')
+        outcome_status = "finished (done/checkout page)" if 'done' in next_url else "safe/ongoing"
+        
         prompt = WEBSHOP_SUMMARY_PROMPT.format(
             url=st.get('url', 'unknown'),
             action=action,
-            next_url=st1.get('url', 'unknown'),
-            action_path=action_path
+            next_url=next_url,
+            action_path=action_path,
+            outcome_status=outcome_status
         )
         
         summary = self.voyager_generate_summary(prompt)

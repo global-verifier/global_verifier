@@ -7,9 +7,9 @@ explorer_settings = {
     "save_experience": True,  # Whether to save new experiences to storage
     "conflict_soultion": "st", # "st" or "conflict"
     # Plug-in settings
-    "model_name": "llama3.1",
-    "env_name": "mountaincar_llama",  # Change env
-    "backend_env": "mountaincar-vanilla",  # Change backend
+    "model_name": "qwen2.5",
+    "env_name": "frozenlake_llama",  # Change env
+    "backend_env": "frozenlake-vanilla",  # Change backend
     "storage_path": "./storage/exp_store.json",
     "depreiciate_exp_store_path": "./storage/depreiciate_exp_store.json",
 }

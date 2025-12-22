@@ -175,10 +175,10 @@ Actions:
         """
         if self.terminated:
             # Reached goal - return negative step count (closer to 0 is better)
-            return -self.episode_length
+            return 1
         else:
             # Failed to reach goal - return large negative number
-            return -200  # Max episode length penalty
+            return -1  # Max episode length penalty
     
     def reconstruct_state(self, exp):
         """

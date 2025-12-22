@@ -2,7 +2,7 @@ import os
 
 from analyzer.explorer_run_analyzer import ExplorerRunAnalyzer
 from plugin_loader import load_explorer_model, load_adaptor, load_exp_backend
-from utils import log_flush, get_timestamp
+from utils import log_flush, get_timestamp, is_success_trail, extract_exp_ids
 from config import explorer_settings
 import time
 
@@ -60,6 +60,7 @@ class Explorer:
         self.state_trace = None
 
         # Add explorer status
+        self.used_exp_ids = set()
         self.in_process = False
         self.conflict_soultion = explorer_settings["conflict_soultion"]
 
@@ -105,7 +106,8 @@ class Explorer:
         if self.use_experience:
             retrieved_experiences = self.exp_backend.retrieve_experience(cur_state)
             print(f"Retrieved {len(retrieved_experiences)} experiences: {retrieved_experiences}")
-            log_flush(self.logIO, f"- Retrieved experience, len: {len(retrieved_experiences)}, ids: {retrieved_experiences}")
+            log_flush(self.logIO, f"- Retrieved experience, len: {len(retrieved_experiences)}, exps: {retrieved_experiences}")
+            self.used_exp_ids.update(extract_exp_ids(retrieved_experiences))
         else:
             log_flush(self.logIO, f"- Experience retrieval disabled (use_experience=False), using empty experience list")
         
@@ -273,10 +275,16 @@ class Explorer:
         log_flush(self.logIO, f"[AFTER] number of experiences: {len(self.exp_backend.exp_store)}")
         log_flush(self.logIO, f"[AFTER] number of deprecated experiences: {len(self.exp_backend.depreiciate_exp_store)}")
 
-    def explore(self):
+    def _reset_exploration_state(self):
+        """Reset the exploration state for a new episode."""
         self.in_process = True
         self.state_trace = []
-        print(f"Start exploring at {get_timestamp()}")
+        self.used_exp_ids.clear()
+
+    def explore(self):
+        # Reset the exploration state
+        self._reset_exploration_state()
+
         log_flush(self.logIO, f"########################################################")
         log_flush(self.logIO, f"Start exploring at {get_timestamp()}")
         # Reset the status
@@ -312,6 +320,11 @@ class Explorer:
         else:
             # Episode finished successfully
             score = self.adaptor.extract_reward_score()
+            # if is_success_trail(score):
+            #     # 成功的 trail，更新使用过的经验的时间戳
+            #     exp_ids_list = list(self.used_exp_ids)
+            #     self.exp_backend.finish_explore_trail(exp_ids=exp_ids_list)
+            #     log_flush(self.logIO, f"- Success trail! Updated timestamps for {len(exp_ids_list)} experiences")
 
         log_flush(self.logIO, f"Insturction: {self.adaptor.get_instruction()}")
         log_flush(self.logIO, f"Step count: {step_count}")

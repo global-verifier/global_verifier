@@ -360,3 +360,9 @@ class BaseExpBackend:
 
     def export_status(self):
         return None
+
+    def finish_explore_trail(self, **kwargs):
+        """
+        Finish a explore trail.
+        """
+        pass

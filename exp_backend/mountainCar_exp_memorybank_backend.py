@@ -22,8 +22,8 @@ class MountainCarExpMemoryBankBackend(MountainCarExpVanillaBackend, MemoryBankMi
 
     def store_experience(self, exp) -> None:
         """存储经验并记录时间戳"""
-        super().store_experience(exp)
         self.mb_store_experience(exp)
+        super().store_experience(exp)
 
     def retrieve_experience_with_forgetting(self, state) -> list:
         """检索经验，应用遗忘机制过滤"""
@@ -49,3 +49,7 @@ class MountainCarExpMemoryBankBackend(MountainCarExpVanillaBackend, MemoryBankMi
 
     def export_status(self):
         return {"mb_current_timestep": self.mb_current_timestep}
+
+    def finish_explore_trail(self, exp_ids: list[str]) -> None:
+        """完成一次成功的探索轨迹，调用 mixin 的方法"""
+        self.mb_finish_explore_trail(exp_ids)

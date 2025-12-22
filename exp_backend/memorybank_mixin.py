@@ -37,7 +37,6 @@ class MemoryBankMixin:
         self.mb_threshold: float = threshold if threshold is not None else memorybank_config["threshold"]
         self.mb_decay_rate: float = decay_rate if decay_rate is not None else memorybank_config["decay_rate"]
         self.mb_current_timestep: int = start_timestep
-        self.mb_exp_timestamps: dict[str, int] = {}
         
         log_flush(
             self.logIO, 
@@ -61,11 +60,11 @@ class MemoryBankMixin:
         """
         存储经验并记录时间戳
         
-        注意：需要先调用父类的 store_experience()
+        注意：这个方法应该在父类的 store_experience() 之前调用，
+        这样经验对象在存储时就已经包含了时间戳信息
         """
-        self.mb_exp_timestamps[exp["id"]] = self.mb_current_timestep
-        self.mb_current_timestep += 1
-        log_flush(self.logIO, f"[MemoryBank] Stored exp {exp['id']} at timestep {self.mb_current_timestep - 1}")
+        exp["mb_timestep"] = self.mb_current_timestep
+        log_flush(self.logIO, f"[MemoryBank] Stored exp {exp['id']} at timestep {exp['mb_timestep']}")
 
     def mb_filter_by_forgetting(self, experiences: list) -> list:
         """
@@ -75,20 +74,19 @@ class MemoryBankMixin:
             experiences: 原始经验列表
             
         Returns:
-            过滤后的经验列表，按保留度降序排列，每个经验附加 'retention' 和 'timestep' 字段
+            过滤后的经验列表，按保留度降序排列，每个经验附加 'retention' 字段
         """
         results = []
         
         for exp in experiences:
             exp_id = exp["id"]
-            exp_timestep = self.mb_exp_timestamps.get(exp_id, 0)
+            exp_timestep = exp.get("mb_timestep")
             time_interval = self.mb_current_timestep - exp_timestep
             retention = self._forgetting_function(time_interval)
             
             if retention >= self.mb_threshold:
                 exp_copy = copy.deepcopy(exp)
                 exp_copy['retention'] = retention
-                exp_copy['timestep'] = exp_timestep
                 results.append(exp_copy)
             else:
                 log_flush(self.logIO, f"  [FORGET] exp {exp_id}, retention={retention:.3f}, timestep={exp_timestep}")
@@ -105,7 +103,6 @@ class MemoryBankMixin:
     def mb_reset_time(self) -> None:
         """重置时间戳（新 episode 开始时调用）"""
         self.mb_current_timestep = 0
-        self.mb_exp_timestamps.clear()
         log_flush(self.logIO, f"[MemoryBank] Time reset")
 
     def mb_set_params(self, threshold: float = None, decay_rate: float = None) -> None:
@@ -118,9 +115,11 @@ class MemoryBankMixin:
 
     def mb_get_stats(self) -> dict:
         """获取 Memory Bank 统计信息"""
+        # 统计有时间戳的经验数量
+        total_tracked = sum(1 for exp in self.exp_store.values() if "mb_timestep" in exp)
         return {
             "current_timestep": self.mb_current_timestep,
-            "total_tracked": len(self.mb_exp_timestamps),
+            "total_tracked": total_tracked,
             "threshold": self.mb_threshold,
             "decay_rate": self.mb_decay_rate,
         }
@@ -135,8 +134,8 @@ class MemoryBankMixin:
         forgotten_ids = []
         
         # 遍历所有经验，找出被遗忘的
-        for exp_id in list(self.exp_store.keys()):
-            exp_timestep = self.mb_exp_timestamps.get(exp_id, 0)
+        for exp_id, exp in list(self.exp_store.items()):
+            exp_timestep = exp.get("mb_timestep", 0)
             time_interval = self.mb_current_timestep - exp_timestep
             retention = self._forgetting_function(time_interval)
             
@@ -147,9 +146,24 @@ class MemoryBankMixin:
         for exp_id in forgotten_ids:
             log_flush(self.logIO, f"[MemoryBank] Cleanup: deprecating forgotten exp {exp_id}")
             self._deprecate_experience(exp_id)
-            # 同时清理时间戳记录
-            if exp_id in self.mb_exp_timestamps:
-                del self.mb_exp_timestamps[exp_id]
         
         log_flush(self.logIO, f"[MemoryBank] Cleanup done: {len(forgotten_ids)} experiences deprecated")
         return forgotten_ids
+
+    def mb_finish_explore_trail(self, exp_ids: list[str]) -> None:
+        """
+        完成一次成功的探索轨迹，将使用过的经验的时间戳重置到当前时间
+        
+        Args:
+            exp_ids: 在这次探索中使用过的经验 ID 列表
+        """
+        updated_count = 0
+        for exp_id in exp_ids:
+            if exp_id in self.exp_store:
+                exp = self.exp_store[exp_id]
+                old_timestep = exp.get("mb_timestep", 0)
+                exp["mb_timestep"] = self.mb_current_timestep
+                updated_count += 1
+                log_flush(self.logIO, f"[MemoryBank] Updated exp {exp_id} timestep: {old_timestep} -> {self.mb_current_timestep}")
+        
+        log_flush(self.logIO, f"[MemoryBank] finish_explore_trail: updated {updated_count}/{len(exp_ids)} experiences to timestep {self.mb_current_timestep}")

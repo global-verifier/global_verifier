@@ -6,7 +6,7 @@ from .env_config import mountaincar_config
 from utils import get_timestamp_ms
 
 class MountainCarAdaptor(BaseEnvAdaptor):
-    def __init__(self, env_name):
+    def __init__(self, env_name, force=None):
         super().__init__(env_name)
         self.seed = mountaincar_config.get('random_seed')
         
@@ -18,8 +18,9 @@ class MountainCarAdaptor(BaseEnvAdaptor):
             self.env.unwrapped.goal_position = mountaincar_config['goal_position']
         if mountaincar_config.get('goal_velocity'):
             self.env.unwrapped.goal_velocity = mountaincar_config['goal_velocity']
-        if mountaincar_config.get('force'):
-            self.env.unwrapped.force = mountaincar_config['force']
+        force_to_use = force if force is not None else mountaincar_config.get('force')
+        if force_to_use is not None:
+            self.env.unwrapped.force = force_to_use
         if mountaincar_config.get('gravity'):
             self.env.unwrapped.gravity = mountaincar_config['gravity']
         if mountaincar_config.get('max_speed'):

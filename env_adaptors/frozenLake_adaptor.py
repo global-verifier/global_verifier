@@ -7,14 +7,15 @@ from .env_config import frozenlake_config
 from utils import get_timestamp_ms
 
 class FrozenLakeAdaptor(BaseEnvAdaptor):
-    def __init__(self, env_name):
+    def __init__(self, env_name, desc=None):
         super().__init__(env_name)
         seed = frozenlake_config.get('random_seed')
         if seed is not None:
             random.seed(seed)
+        desc_to_use = desc if desc is not None else frozenlake_config.get('desc')
         self.env = gym.make(
             frozenlake_config['id'],
-            desc=frozenlake_config['desc'],
+            desc=desc_to_use,
             map_name=frozenlake_config['map_name'],
             is_slippery=frozenlake_config['is_slippery'],
             success_rate=frozenlake_config['success_rate'],

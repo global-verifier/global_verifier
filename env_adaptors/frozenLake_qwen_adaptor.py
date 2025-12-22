@@ -5,8 +5,8 @@ QWEN_FROZENLAKE_SYSTEM_PROMPT = "You are an intelligent exploration agent naviga
 
 
 class FrozenLakeQwenAdaptor(FrozenLakeAdaptor):
-    def __init__(self, env_name):
-        super().__init__(env_name)
+    def __init__(self, env_name, desc=None):
+        super().__init__(env_name, desc=desc)
 
     def get_action_prompt(self, retrieved_experiences=None):
         if retrieved_experiences is None:

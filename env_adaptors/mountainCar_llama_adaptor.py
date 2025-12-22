@@ -19,8 +19,8 @@ RULES:
 2. Respond with only the action number (0, 1, or 2) without explanation"""
 
 class MountainCarLlamaAdaptor(MountainCarAdaptor):
-    def __init__(self, env_name):
-        super().__init__(env_name)
+    def __init__(self, env_name, force=None):
+        super().__init__(env_name, force=force)
 
     def get_action_prompt(self, retrieved_experiences=None):
         if retrieved_experiences is None:

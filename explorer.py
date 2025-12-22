@@ -9,23 +9,37 @@ import time
 class Explorer:
     def __init__(
         self,
-        start_timestep: int = 0
+        start_timestep: int = 0,
+        model_name: str = None,
+        env_name: str = None,
+        backend_env: str = None,
+        max_steps: int = None,
+        use_experience: bool = None,
+        save_experience: bool = None,
+        desc=None,
+        force=None,
         ):
-        # Add hyperparameter settings
-        self.model_name = explorer_settings["model_name"]
-        self.env_name = explorer_settings["env_name"]
-        self.backend_env = explorer_settings["backend_env"]
+        # Add hyperparameter settings (prefer provided args, else config defaults)
+        self.model_name = model_name or explorer_settings["model_name"]
+        self.env_name = env_name or explorer_settings["env_name"]
+        self.backend_env = backend_env or explorer_settings["backend_env"]
+        self.max_steps = max_steps if max_steps is not None else explorer_settings["max_steps"]
+        self.use_experience = use_experience if use_experience is not None else explorer_settings.get("use_experience", True)  
+        self.save_experience = save_experience if save_experience is not None else explorer_settings.get("save_experience", True)
+
         self.storage_path = explorer_settings["storage_path"]
         self.depreiciate_exp_store_path = explorer_settings["depreiciate_exp_store_path"]
-        self.max_steps = explorer_settings["max_steps"]
         self.max_action_retries = explorer_settings["max_action_retries"]
-        self.use_experience = explorer_settings.get("use_experience", True)  
-        self.save_experience = explorer_settings.get("save_experience", True)
         self.start_timestep = start_timestep
         
         # Add plug in
         self.explorer_model = load_explorer_model(self.model_name)
-        self.adaptor = load_adaptor(self.env_name)
+        adaptor_kwargs = {}
+        if "frozenlake" in self.env_name:
+            adaptor_kwargs["desc"] = desc
+        if "mountaincar" in self.env_name:
+            adaptor_kwargs["force"] = force
+        self.adaptor = load_adaptor(self.env_name, **adaptor_kwargs)
         # 传入 explorer_model 给 backend（voyager backend 需要用它生成总结）
         self.exp_backend = load_exp_backend(
             self.backend_env,

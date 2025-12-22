@@ -11,6 +11,8 @@ def load_explorer_model(model_name: str) -> BaseExplorerModel:
         return Llama3ExplorerModel(model_path[model_name])
     if model_name == "llama3.1":
         return Llama3ExplorerModel(model_path[model_name])
+    if model_name == "llama3.2":
+        return Llama3ExplorerModel(model_path[model_name])
     if model_name == "qwen2.5":
         return QwenExplorerModel(model_path[model_name])
     if model_name == "qwen3":
@@ -19,7 +21,7 @@ def load_explorer_model(model_name: str) -> BaseExplorerModel:
         raise Exception(f"In utils.py load_model(), model_name ({model_name}) is not recognized.")
 
 
-def load_adaptor(env_name: str) -> BaseEnvAdaptor:
+def load_adaptor(env_name: str, **kwargs) -> BaseEnvAdaptor:
     if env_name == "webshop_llama":
         from env_adaptors.webshop_llama_adaptor import WebshopLlamaAdaptor
         return WebshopLlamaAdaptor(env_name)
@@ -28,10 +30,10 @@ def load_adaptor(env_name: str) -> BaseEnvAdaptor:
         return WebshopQwenAdaptor(env_name)
     elif env_name == "frozenlake_llama":
         from env_adaptors.frozenLake_llama_adaptor import FrozenLakeLlamaAdaptor
-        return FrozenLakeLlamaAdaptor(env_name)
+        return FrozenLakeLlamaAdaptor(env_name, desc=kwargs.get("desc"))
     elif env_name == "frozenlake_qwen":
         from env_adaptors.frozenLake_qwen_adaptor import FrozenLakeQwenAdaptor
-        return FrozenLakeQwenAdaptor(env_name)
+        return FrozenLakeQwenAdaptor(env_name, desc=kwargs.get("desc"))
     elif env_name == "cartpole_llama":
         from env_adaptors.cartPole_llama_adaptor import CartPoleLlamaAdaptor
         return CartPoleLlamaAdaptor(env_name)
@@ -40,10 +42,10 @@ def load_adaptor(env_name: str) -> BaseEnvAdaptor:
         return CartPoleQwenAdaptor(env_name)
     elif env_name == "mountaincar_llama":
         from env_adaptors.mountainCar_llama_adaptor import MountainCarLlamaAdaptor
-        return MountainCarLlamaAdaptor(env_name)
+        return MountainCarLlamaAdaptor(env_name, force=kwargs.get("force"))
     elif env_name == "mountaincar_qwen":
         from env_adaptors.mountainCar_qwen_adaptor import MountainCarQwenAdaptor
-        return MountainCarQwenAdaptor(env_name)
+        return MountainCarQwenAdaptor(env_name, force=kwargs.get("force"))
     else:
         raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized.")
 

@@ -1,3 +1,4 @@
+from typing import List
 from .frozenLake_exp_vanilla_backend import FrozenLakeExpVanillaBackend
 from .memorybank_mixin import MemoryBankMixin
 from utils import log_flush
@@ -51,6 +52,6 @@ class FrozenLakeExpMemoryBankBackend(FrozenLakeExpVanillaBackend, MemoryBankMixi
     def export_status(self):
         return {"mb_current_timestep": self.mb_current_timestep}
 
-    def finish_explore_trail(self, exp_ids: list[str]) -> None:
+    def finish_explore_trail(self, exp_ids: List[str]) -> None:
         """完成一次成功的探索轨迹，调用 mixin 的方法"""
         self.mb_finish_explore_trail(exp_ids)

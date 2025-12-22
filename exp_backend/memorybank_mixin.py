@@ -3,6 +3,7 @@ Memory Bank Mixin - 带时间戳遗忘机制的通用模块
 """
 import math
 import copy
+from typing import List
 from utils import log_flush
 from .backend_config import memorybank_config
 
@@ -124,7 +125,7 @@ class MemoryBankMixin:
             "decay_rate": self.mb_decay_rate,
         }
 
-    def mb_cleanup_forgotten(self) -> list[str]:
+    def mb_cleanup_forgotten(self) -> List[str]:
         """
         清理被遗忘的经验：删除所有 retention < threshold 的经验
         
@@ -150,7 +151,7 @@ class MemoryBankMixin:
         log_flush(self.logIO, f"[MemoryBank] Cleanup done: {len(forgotten_ids)} experiences deprecated")
         return forgotten_ids
 
-    def mb_finish_explore_trail(self, exp_ids: list[str]) -> None:
+    def mb_finish_explore_trail(self, exp_ids: List[str]) -> None:
         """
         完成一次成功的探索轨迹，将使用过的经验的时间戳重置到当前时间
         

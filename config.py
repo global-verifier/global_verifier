@@ -1,5 +1,5 @@
 explorer_settings = {
-    "max_steps": 200,  # Mountain Car needs more steps!
+    "max_steps": 20,  # Mountain Car needs more steps!
     "max_action_retries": 3,
     "log_dir": "./log/",
     # Experience settings
@@ -7,9 +7,9 @@ explorer_settings = {
     "save_experience": True,  # Whether to save new experiences to storage
     "conflict_soultion": "st", # "st" or "conflict"
     # Plug-in settings
-    "model_name": "qwen2.5",
-    "env_name": "frozenlake_llama",  # Change env
-    "backend_env": "frozenlake-vanilla",  # Change backend
+    "model_name": "llama3.1",
+    "env_name": "webshop_llama",  # Change env
+    "backend_env": "webshop-memorybank",  # Change backend
     "storage_path": "./storage/exp_store.json",
     "depreiciate_exp_store_path": "./storage/depreiciate_exp_store.json",
 }

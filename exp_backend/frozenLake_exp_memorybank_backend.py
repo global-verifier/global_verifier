@@ -11,7 +11,7 @@ class FrozenLakeExpMemoryBankBackend(FrozenLakeExpVanillaBackend, MemoryBankMixi
     继承 VanillaBackend 以复用其检索算法
     """
     def __init__(self, env_name, storage_path, depreiciate_exp_store_path, **kwargs):
-        super().__init__(env_name, storage_path, depreiciate_exp_store_path)
+        super().__init__(env_name, storage_path, depreiciate_exp_store_path, log_dir=kwargs.get("log_dir"))
         self.init_memorybank(
             threshold=kwargs.get("threshold"),
             decay_rate=kwargs.get("decay_rate"),

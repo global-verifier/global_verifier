@@ -6,8 +6,8 @@ from collections import deque
 import copy
 
 class WebshopExpVanillaBackend(WebshopExpBackend):
-    def __init__(self, env_name, storage_path, depreiciate_exp_store_path):
-        super().__init__(env_name, storage_path, depreiciate_exp_store_path)
+    def __init__(self, env_name, storage_path, depreiciate_exp_store_path, log_dir=None):
+        super().__init__(env_name, storage_path, depreiciate_exp_store_path, log_dir=log_dir)
         self.algorithm = webshop_vanilla_config["algorithm"]
         self.max_bfs_depth = webshop_vanilla_config.get("max_bfs_depth", 10)
         

@@ -8,13 +8,13 @@ from utils import log_flush
 from env_adaptors.base_env_adaptor import BaseEnvAdaptor
 
 class BaseExpBackend:
-    def __init__(self, env_name: str, storage_path: str ="./storage/exp_store.json", depreiciate_exp_store_path: str ="./storage/depreiciate_exp_store.json") -> None:
+    def __init__(self, env_name: str, storage_path: str ="./storage/exp_store.json", depreiciate_exp_store_path: str ="./storage/depreiciate_exp_store.json", log_dir: str = None) -> None:
         self.env_name = env_name
         self.storage_path = storage_path
         self.depreiciate_exp_store_path = depreiciate_exp_store_path
 
         # Add the logger (must be created before _load_store() since it uses logIO)
-        log_dir = base_backend_config["log_dir"]
+        log_dir = log_dir or base_backend_config["log_dir"]
         os.makedirs(log_dir, exist_ok=True)
         self.logIO = open(f'{log_dir}/exp_backendLog_{get_timestamp()}.log', 'a')
         

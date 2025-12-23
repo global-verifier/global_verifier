@@ -31,7 +31,7 @@ class MountainCarExpVoyagerBackend(MountainCarExpVanillaBackend, VoyagerMixin):
     
     简易版 Voyager：在存储经验时生成 LLM 总结，检索逻辑保持不变（包括 BFS reachability）。
     """
-    def __init__(self, env_name, storage_path, depreiciate_exp_store_path, explorer_model=None):
+    def __init__(self, env_name, storage_path, depreiciate_exp_store_path, explorer_model=None, log_dir=None):
         """
         Args:
             env_name: 环境名称
@@ -39,7 +39,7 @@ class MountainCarExpVoyagerBackend(MountainCarExpVanillaBackend, VoyagerMixin):
             depreiciate_exp_store_path: 废弃经验存储路径
             explorer_model: Explorer 模型实例，用于生成总结
         """
-        super().__init__(env_name, storage_path, depreiciate_exp_store_path)
+        super().__init__(env_name, storage_path, depreiciate_exp_store_path, log_dir=log_dir)
         self.init_voyager(explorer_model=explorer_model)
 
     def store_experience(self, exp) -> None:

@@ -19,6 +19,10 @@ class Explorer:
         use_global_verifier: bool = None,
         threshold: float = None,
         decay_rate: float = None,
+        log_dir: str = None,
+        backend_log_dir: str = None,
+        storage_path: str = None,
+        depreiciate_exp_store_path: str = None,
         desc=None,
         force=None,
         ):
@@ -35,6 +39,10 @@ class Explorer:
             start_timestep=start_timestep,
             threshold=threshold,
             decay_rate=decay_rate,
+            log_dir=log_dir,
+            backend_log_dir=backend_log_dir,
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path,
             desc=desc,
             force=force,
         )
@@ -51,6 +59,10 @@ class Explorer:
         use_global_verifier=None,
         threshold=None,
         decay_rate=None,
+        log_dir=None,
+        backend_log_dir=None,
+        storage_path=None,
+        depreiciate_exp_store_path=None,
         desc=None,
         force=None,
     ):
@@ -75,8 +87,18 @@ class Explorer:
             self.use_global_verifier if use_global_verifier is None else use_global_verifier
         ) if hasattr(self, "use_global_verifier") else (use_global_verifier if use_global_verifier is not None else explorer_settings.get("use_global_verifier", False))
 
-        self.storage_path = explorer_settings["storage_path"]
-        self.depreiciate_exp_store_path = explorer_settings["depreiciate_exp_store_path"]
+        self.log_dir = log_dir or getattr(self, "log_dir", None) or explorer_settings["log_dir"]
+        self.backend_log_dir = (
+            backend_log_dir
+            or getattr(self, "backend_log_dir", None)
+            or self.log_dir
+        )
+        self.storage_path = (
+            self.storage_path if storage_path is None else storage_path
+        ) if hasattr(self, "storage_path") else (storage_path if storage_path is not None else explorer_settings["storage_path"])
+        self.depreiciate_exp_store_path = (
+            self.depreiciate_exp_store_path if depreiciate_exp_store_path is None else depreiciate_exp_store_path
+        ) if hasattr(self, "depreiciate_exp_store_path") else (depreiciate_exp_store_path if depreiciate_exp_store_path is not None else explorer_settings["depreiciate_exp_store_path"])
         self.max_action_retries = explorer_settings["max_action_retries"]
         self.start_timestep = (
             getattr(self, "start_timestep", start_timestep)
@@ -106,17 +128,19 @@ class Explorer:
             self.storage_path,
             self.depreiciate_exp_store_path,
             self.explorer_model,
+            log_dir=self.backend_log_dir,
             start_timestep=self.start_timestep,
             threshold=self.threshold,
             decay_rate=self.decay_rate,
         )
 
         # Add the logger
-        self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.log', 'a')
-        self.promptLogIO = open(f'{explorer_settings["log_dir"]}/promptLog_{get_timestamp()}.log', 'a')
-        self.statusLogIO = open(f'{explorer_settings["log_dir"]}/statusLog_{get_timestamp()}.log', 'a')
+        os.makedirs(self.log_dir, exist_ok=True)
+        self.logIO = open(f'{self.log_dir}/explorerLog_{get_timestamp()}.log', 'a')
+        self.promptLogIO = open(f'{self.log_dir}/promptLog_{get_timestamp()}.log', 'a')
+        self.statusLogIO = open(f'{self.log_dir}/statusLog_{get_timestamp()}.log', 'a')
         
-        self.run_analyzer = ExplorerRunAnalyzer(explorer_settings["log_dir"])
+        self.run_analyzer = ExplorerRunAnalyzer(self.log_dir)
 
         # Add the state recorders
         self.state_trace = None

@@ -30,7 +30,7 @@ class FrozenLakeExpGenerativeBackend(FrozenLakeExpVanillaBackend, GenerativeMixi
     
     简易版 Generative：检索时用 LLM 对候选经验打分排序，存储逻辑不变。
     """
-    def __init__(self, env_name, storage_path, depreiciate_exp_store_path, explorer_model=None):
+    def __init__(self, env_name, storage_path, depreiciate_exp_store_path, explorer_model=None, log_dir=None):
         """
         Args:
             env_name: 环境名称
@@ -38,7 +38,7 @@ class FrozenLakeExpGenerativeBackend(FrozenLakeExpVanillaBackend, GenerativeMixi
             depreiciate_exp_store_path: 废弃经验存储路径
             explorer_model: Explorer 模型实例，用于打分
         """
-        super().__init__(env_name, storage_path, depreiciate_exp_store_path)
+        super().__init__(env_name, storage_path, depreiciate_exp_store_path, log_dir=log_dir)
         self.init_generative(explorer_model=explorer_model)
         
         # 保存原始检索方法

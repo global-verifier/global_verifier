@@ -51,46 +51,121 @@ def load_adaptor(env_name: str, **kwargs) -> BaseEnvAdaptor:
 
 
 def load_exp_backend(env_name: str, storage_path: str, depreiciate_exp_store_path: str, explorer_model=None, **kwargs) -> BaseExpBackend:
+    # Extract common optional kwargs
+    log_dir = kwargs.pop("log_dir", None)
+    start_timestep = kwargs.pop("start_timestep", None)
+    threshold = kwargs.pop("threshold", None)
+    decay_rate = kwargs.pop("decay_rate", None)
+
     if env_name == "webshop-vanilla":
         from exp_backend.webshop_exp_vanilla_backend import WebshopExpVanillaBackend
-        return WebshopExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path)
+        return WebshopExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path, log_dir=log_dir)
     elif env_name == "frozenlake-vanilla":
         from exp_backend.frozenLake_exp_vanilla_backend import FrozenLakeExpVanillaBackend
-        return FrozenLakeExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path)
+        return FrozenLakeExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path, log_dir=log_dir)
     elif env_name == "cartpole-vanilla":
         from exp_backend.cartPole_exp_vanilla_backend import CartPoleExpVanillaBackend
-        return CartPoleExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path)
+        return CartPoleExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path, log_dir=log_dir)
     elif env_name == "mountaincar-vanilla":
         from exp_backend.mountainCar_exp_vanilla_backend import MountainCarExpVanillaBackend
-        return MountainCarExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path)
+        return MountainCarExpVanillaBackend(env_name, storage_path, depreiciate_exp_store_path, log_dir=log_dir)
     elif env_name == "frozenlake-memorybank":
         from exp_backend.frozenLake_exp_memorybank_backend import FrozenLakeExpMemoryBankBackend
-        return FrozenLakeExpMemoryBankBackend(env_name, storage_path, depreiciate_exp_store_path, **kwargs)
+        return FrozenLakeExpMemoryBankBackend(
+            env_name,
+            storage_path,
+            depreiciate_exp_store_path,
+            log_dir=log_dir,
+            start_timestep=start_timestep,
+            threshold=threshold,
+            decay_rate=decay_rate,
+            **kwargs,
+        )
     elif env_name == "mountaincar-memorybank":
         from exp_backend.mountainCar_exp_memorybank_backend import MountainCarExpMemoryBankBackend
-        return MountainCarExpMemoryBankBackend(env_name, storage_path, depreiciate_exp_store_path, **kwargs)
+        return MountainCarExpMemoryBankBackend(
+            env_name,
+            storage_path,
+            depreiciate_exp_store_path,
+            log_dir=log_dir,
+            start_timestep=start_timestep,
+            threshold=threshold,
+            decay_rate=decay_rate,
+            **kwargs,
+        )
     elif env_name == "webshop-memorybank":
         from exp_backend.webshop_exp_memorybank_backend import WebshopExpMemoryBankBackend
-        return WebshopExpMemoryBankBackend(env_name, storage_path, depreiciate_exp_store_path, **kwargs)
+        return WebshopExpMemoryBankBackend(
+            env_name,
+            storage_path,
+            depreiciate_exp_store_path,
+            log_dir=log_dir,
+            start_timestep=start_timestep,
+            threshold=threshold,
+            decay_rate=decay_rate,
+            **kwargs,
+        )
     # Voyager backends (需要 explorer_model 来生成总结)
     elif env_name == "frozenlake-voyager":
         from exp_backend.frozenLake_exp_voyager_backend import FrozenLakeExpVoyagerBackend
-        return FrozenLakeExpVoyagerBackend(env_name, storage_path, depreiciate_exp_store_path, explorer_model)
+        return FrozenLakeExpVoyagerBackend(
+            env_name,
+            storage_path,
+            depreiciate_exp_store_path,
+            explorer_model,
+            log_dir=log_dir,
+            **kwargs,
+        )
     elif env_name == "mountaincar-voyager":
         from exp_backend.mountainCar_exp_voyager_backend import MountainCarExpVoyagerBackend
-        return MountainCarExpVoyagerBackend(env_name, storage_path, depreiciate_exp_store_path, explorer_model)
+        return MountainCarExpVoyagerBackend(
+            env_name,
+            storage_path,
+            depreiciate_exp_store_path,
+            explorer_model,
+            log_dir=log_dir,
+            **kwargs,
+        )
     elif env_name == "webshop-voyager":
         from exp_backend.webshop_exp_voyager_backend import WebshopExpVoyagerBackend
-        return WebshopExpVoyagerBackend(env_name, storage_path, depreiciate_exp_store_path, explorer_model)
+        return WebshopExpVoyagerBackend(
+            env_name,
+            storage_path,
+            depreiciate_exp_store_path,
+            explorer_model,
+            log_dir=log_dir,
+            **kwargs,
+        )
     # Generative backends (需要 explorer_model 来检索时打分排序)
     elif env_name == "frozenlake-generative":
         from exp_backend.frozenLake_exp_generative_backend import FrozenLakeExpGenerativeBackend
-        return FrozenLakeExpGenerativeBackend(env_name, storage_path, depreiciate_exp_store_path, explorer_model)
+        return FrozenLakeExpGenerativeBackend(
+            env_name,
+            storage_path,
+            depreiciate_exp_store_path,
+            explorer_model,
+            log_dir=log_dir,
+            **kwargs,
+        )
     elif env_name == "mountaincar-generative":
         from exp_backend.mountainCar_exp_generative_backend import MountainCarExpGenerativeBackend
-        return MountainCarExpGenerativeBackend(env_name, storage_path, depreiciate_exp_store_path, explorer_model)
+        return MountainCarExpGenerativeBackend(
+            env_name,
+            storage_path,
+            depreiciate_exp_store_path,
+            explorer_model,
+            log_dir=log_dir,
+            **kwargs,
+        )
     elif env_name == "webshop-generative":
         from exp_backend.webshop_exp_generative_backend import WebshopExpGenerativeBackend
-        return WebshopExpGenerativeBackend(env_name, storage_path, depreiciate_exp_store_path, explorer_model)
+        return WebshopExpGenerativeBackend(
+            env_name,
+            storage_path,
+            depreiciate_exp_store_path,
+            explorer_model,
+            log_dir=log_dir,
+            **kwargs,
+        )
     else:
         raise Exception(f"In utils.py load_exp_backend(), env_name ({env_name}) is not recognized.")

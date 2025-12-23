@@ -6,12 +6,20 @@ from explorer import Explorer
 model_name = "llama3.1"
 env_name = "mountaincar_llama"
 backend_env = "mountaincar-vanilla"
-max_steps = 20
+
+max_steps = 200
+forces = [0.0016, 0.00159, 0.00158]
+
 use_global_verifier = True
 use_experience = True
 save_experience = True
 
-forces = [0.0016, 0.00159, 0.00158]
+cur_name =f"log_{model_name}_{env_name}_{backend_env}"
+log_dir=f"./{cur_name}/log/"
+backend_log_dir=log_dir
+storage_path=f"./{cur_name}/storage/exp_store.json"
+depreiciate_exp_store_path=f"./{cur_name}/storage/depreiciate_exp_store.json"
+
 
 e = Explorer(
     model_name = model_name,
@@ -21,6 +29,10 @@ e = Explorer(
     use_global_verifier = use_global_verifier,
     use_experience = use_experience,
     save_experience = save_experience,
+    log_dir=log_dir,
+    backend_log_dir=backend_log_dir,
+    storage_path=storage_path,
+    depreiciate_exp_store_path=depreiciate_exp_store_path,
 )
 for force in forces:
     e.init_after_model(
@@ -31,6 +43,10 @@ for force in forces:
         use_global_verifier = use_global_verifier,
         use_experience = use_experience,
         save_experience = save_experience,
+        log_dir=log_dir,
+        backend_log_dir=backend_log_dir,
+        storage_path=storage_path,
+        depreiciate_exp_store_path=depreiciate_exp_store_path,
         force = force,
     )
 

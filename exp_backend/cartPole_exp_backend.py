@@ -2,7 +2,7 @@ from .base_exp_backend import BaseExpBackend
 from utils import log_flush
 
 class CartPoleExpBackend(BaseExpBackend):
-    def __init__(self, env_name, storage_path, depreiciate_exp_store_path):
+    def __init__(self, env_name, storage_path, depreiciate_exp_store_path, log_dir=None):
         # Must define expected_fields BEFORE calling super().__init__()
         # because parent's __init__ calls _is_valid_exp_store() which uses this field
         self.expected_fields = {
@@ -12,7 +12,7 @@ class CartPoleExpBackend(BaseExpBackend):
             "action": int,  # CartPole action is int (0 or 1)
             "st1": dict,
         }
-        super().__init__(env_name, storage_path, depreiciate_exp_store_path)
+        super().__init__(env_name, storage_path, depreiciate_exp_store_path, log_dir=log_dir)
 
 
     def resolve_experience_conflict(self, **kwargs):

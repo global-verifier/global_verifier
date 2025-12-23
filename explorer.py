@@ -16,24 +16,84 @@ class Explorer:
         max_steps: int = None,
         use_experience: bool = None,
         save_experience: bool = None,
+        use_global_verifier: bool = None,
+        threshold: float = None,
+        decay_rate: float = None,
         desc=None,
         force=None,
         ):
-        # Add hyperparameter settings (prefer provided args, else config defaults)
-        self.model_name = model_name or explorer_settings["model_name"]
-        self.env_name = env_name or explorer_settings["env_name"]
-        self.backend_env = backend_env or explorer_settings["backend_env"]
-        self.max_steps = max_steps if max_steps is not None else explorer_settings["max_steps"]
-        self.use_experience = use_experience if use_experience is not None else explorer_settings.get("use_experience", True)  
-        self.save_experience = save_experience if save_experience is not None else explorer_settings.get("save_experience", True)
+        # Add plug in
+        self.explorer_model = load_explorer_model(model_name or explorer_settings["model_name"])
+        self.init_after_model(
+            model_name=model_name,
+            env_name=env_name,
+            backend_env=backend_env,
+            max_steps=max_steps,
+            use_experience=use_experience,
+            save_experience=save_experience,
+            use_global_verifier=use_global_verifier,
+            start_timestep=start_timestep,
+            threshold=threshold,
+            decay_rate=decay_rate,
+            desc=desc,
+            force=force,
+        )
+
+    def init_after_model(
+        self,
+        start_timestep=None,
+        model_name=None,
+        env_name=None,
+        backend_env=None,
+        max_steps=None,
+        use_experience=None,
+        save_experience=None,
+        use_global_verifier=None,
+        threshold=None,
+        decay_rate=None,
+        desc=None,
+        force=None,
+    ):
+        """
+        Finish initialization steps that do not require reloading the explorer_model.
+        Separated for reuse when re-running init logic while keeping the same model.
+        """
+        # Update hyperparameters (prefer provided args, else config defaults or existing values)
+        self.model_name = model_name or getattr(self, "model_name", None) or explorer_settings["model_name"]
+        self.env_name = env_name or getattr(self, "env_name", None) or explorer_settings["env_name"]
+        self.backend_env = backend_env or getattr(self, "backend_env", None) or explorer_settings["backend_env"]
+        self.max_steps = (
+            self.max_steps if max_steps is None else max_steps
+        ) if hasattr(self, "max_steps") else (max_steps if max_steps is not None else explorer_settings["max_steps"])
+        self.use_experience = (
+            self.use_experience if use_experience is None else use_experience
+        ) if hasattr(self, "use_experience") else (use_experience if use_experience is not None else explorer_settings.get("use_experience", True))
+        self.save_experience = (
+            self.save_experience if save_experience is None else save_experience
+        ) if hasattr(self, "save_experience") else (save_experience if save_experience is not None else explorer_settings.get("save_experience", True))
+        self.use_global_verifier = (
+            self.use_global_verifier if use_global_verifier is None else use_global_verifier
+        ) if hasattr(self, "use_global_verifier") else (use_global_verifier if use_global_verifier is not None else explorer_settings.get("use_global_verifier", False))
 
         self.storage_path = explorer_settings["storage_path"]
         self.depreiciate_exp_store_path = explorer_settings["depreiciate_exp_store_path"]
         self.max_action_retries = explorer_settings["max_action_retries"]
-        self.start_timestep = start_timestep
-        
-        # Add plug in
-        self.explorer_model = load_explorer_model(self.model_name)
+        self.start_timestep = (
+            getattr(self, "start_timestep", start_timestep)
+            if start_timestep is None
+            else start_timestep
+        )
+        self.threshold = (
+            getattr(self, "threshold", threshold)
+            if threshold is None
+            else threshold
+        )
+        self.decay_rate = (
+            getattr(self, "decay_rate", decay_rate)
+            if decay_rate is None
+            else decay_rate
+        )
+
         adaptor_kwargs = {}
         if "frozenlake" in self.env_name:
             adaptor_kwargs["desc"] = desc
@@ -47,6 +107,8 @@ class Explorer:
             self.depreiciate_exp_store_path,
             self.explorer_model,
             start_timestep=self.start_timestep,
+            threshold=self.threshold,
+            decay_rate=self.decay_rate,
         )
 
         # Add the logger
@@ -315,16 +377,16 @@ class Explorer:
             log_flush(self.logIO, f"- Episode is NOT done after {self.max_steps} steps")
             print(f"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
             print(f"- Episode is NOT done after {self.max_steps} steps")
-            score = -1  # Mark failed episodes with -1 score
+            score = 0  # Mark failed episodes with -1 score
             step_count = self.max_steps
         else:
             # Episode finished successfully
             score = self.adaptor.extract_reward_score()
-            # if is_success_trail(score):
-            #     # 成功的 trail，更新使用过的经验的时间戳
-            #     exp_ids_list = list(self.used_exp_ids)
-            #     self.exp_backend.finish_explore_trail(exp_ids=exp_ids_list)
-            #     log_flush(self.logIO, f"- Success trail! Updated timestamps for {len(exp_ids_list)} experiences")
+            if "memorybank" in self.backend_env and is_success_trail(score):
+                # 成功的 trail，更新使用过的经验的时间戳
+                exp_ids_list = list(self.used_exp_ids)
+                self.exp_backend.finish_explore_trail(exp_ids=exp_ids_list)
+                log_flush(self.logIO, f"- Success trail! Updated timestamps for {len(exp_ids_list)} experiences")
 
         log_flush(self.logIO, f"Insturction: {self.adaptor.get_instruction()}")
         log_flush(self.logIO, f"Step count: {step_count}")
@@ -356,4 +418,13 @@ class Explorer:
         )
         self.run_analyzer.save_to_csv()
 
+        # Reset in_process before refining (to avoid deadlock)
         self.in_process = False
+
+        # Refine experiences after each exploration
+        if self.use_global_verifier:
+            log_flush(self.logIO, f"[POST-EXPLORE] Running global verifier (refine_experience)")
+            self.refine_experience()
+        else:
+            log_flush(self.logIO, f"[POST-EXPLORE] Running redundancy removal only")
+            self.remove_redundant_experiences()

@@ -54,7 +54,7 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
                 # Add warning for holes
                 tile_warning = ""
                 if next_tile == 'H':
-                    tile_warning = f" HOLE - AVOID ACTION {action_taken}!"
+                    tile_warning = f" HOLE - do not choose action: {action_taken}!"
                     forbidden_actions.append(action_taken)
                 elif next_tile == 'G':
                     tile_warning = f" GOAL - TAKE ACTION {action_taken}!"

@@ -16,7 +16,7 @@ frozenlake_config = {
     # "desc": None,
     "desc": ["SHHH","FHHH","FFFF","HHHG"],  # env 0
     # "desc": ["SFHH","HFHH","FFFF","HHHG"],  # env 1
-    "desc": ["SFFH","HHFH","FFFF","HHHG"],  # env 2
+    # "desc": ["SFFH","HHFH","FFFF","HHHG"],  # env 2
     "random_seed": 0,
     "map_name": "4x4",
     "is_slippery": False,

@@ -5,11 +5,12 @@ explorer_settings = {
     # Experience settings
     "use_experience": True,   # Whether to retrieve and use experiences in prompts
     "save_experience": True,  # Whether to save new experiences to storage
+    "use_global_verifier": False,  # Whether to use global verifier (refine_experience) after each explore
     "conflict_soultion": "st", # "st" or "conflict"
     # Plug-in settings
     "model_name": "llama3.1",
-    "env_name": "webshop_llama",  # Change env
-    "backend_env": "webshop-memorybank",  # Change backend
+    "env_name": "frozenlake_llama",  # Change env
+    "backend_env": "frozenlake-memorybank",  # Change backend
     "storage_path": "./storage/exp_store.json",
     "depreiciate_exp_store_path": "./storage/depreiciate_exp_store.json",
 }

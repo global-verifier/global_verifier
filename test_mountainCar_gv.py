@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "4"
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 from explorer import Explorer
 
 # start_timestep = 0
@@ -14,7 +14,7 @@ use_global_verifier = True
 use_experience = True
 save_experience = True
 
-cur_name =f"log_{model_name}_{env_name}_{backend_env}"
+cur_name =f"log_{use_global_verifier}_{model_name}_{env_name}_{backend_env}"
 log_dir=f"./{cur_name}/log/"
 backend_log_dir=log_dir
 storage_path=f"./{cur_name}/storage/exp_store.json"

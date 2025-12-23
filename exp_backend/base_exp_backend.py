@@ -38,6 +38,10 @@ class BaseExpBackend:
             storage_path = os.fspath(exp_storage_path)
         except TypeError as exc:
             raise TypeError("storage_path must be a path-like object or string.") from exc
+        # Ensure parent directory exists
+        storage_dir = os.path.dirname(storage_path)
+        if storage_dir:
+            os.makedirs(storage_dir, exist_ok=True)
         # Make sure point to a file a path for a new file to be created
         if os.path.isdir(storage_path):
             raise ValueError(f"Storage path '{storage_path}' is a directory; expected a file.")

@@ -2,8 +2,8 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 from explorer import Explorer
 
-model_name = "qwen2.5"
-env_name = "frozenlake_qwen"
+model_name = "llama3-8b"
+env_name = "frozenlake_llama"
 backend_env = "frozenlake-vanilla"
 max_steps = 20
 use_global_verifier = True

@@ -7,7 +7,7 @@ from exp_backend.base_exp_backend import BaseExpBackend
 
 
 def load_explorer_model(model_name: str) -> BaseExplorerModel:
-    if model_name == "llama3":
+    if model_name == "llama3-8b":
         return Llama3ExplorerModel(model_path[model_name])
     if model_name == "llama3.1":
         return Llama3ExplorerModel(model_path[model_name])
@@ -15,7 +15,9 @@ def load_explorer_model(model_name: str) -> BaseExplorerModel:
         return Llama3ExplorerModel(model_path[model_name])
     if model_name == "qwen2.5":
         return QwenExplorerModel(model_path[model_name])
-    if model_name == "qwen3":
+    if model_name == "qwen3-8B":
+        return QwenExplorerModel(model_path[model_name])
+    if model_name == "qwen3-30B":
         return QwenExplorerModel(model_path[model_name])
     else:
         raise Exception(f"In utils.py load_model(), model_name ({model_name}) is not recognized.")

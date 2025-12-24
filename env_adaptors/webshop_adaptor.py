@@ -178,7 +178,13 @@ Init new environment:
         self.st1 = self.get_state()
 
     def format_action(self, action):
-        return action.strip().lower()
+        """
+        规范化模型输出；若缺少右括号（常见错误：`click[red`），自动补齐以避免因格式问题卡死。
+        """
+        action = action.strip().lower()
+        if action and '[' in action and ']' not in action and action.count('[') == 1:
+            action = action + ']'
+        return action
 
     def extract_reward_score(self) -> float:
         html = self.env.state.get("html")

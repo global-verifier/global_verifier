@@ -1,9 +1,37 @@
 import os
+import sys
+
+# JVM/Pyserini bootstrap：使用完整 JDK21，解决 jdk.incubator.vector 与类版本问题
+_JDK_HOME = "/usr/lib/jvm/java-21-openjdk-amd64"
+_JVM_PATH = os.path.join(_JDK_HOME, "lib", "server", "libjvm.so")
+if os.path.exists(_JVM_PATH):
+    os.environ["JAVA_HOME"] = _JDK_HOME
+    os.environ["JDK_HOME"] = _JDK_HOME
+    os.environ["PATH"] = f"{_JDK_HOME}/bin:" + os.environ.get("PATH", "")
+    os.environ["LD_LIBRARY_PATH"] = f"{_JDK_HOME}/lib/server"
+    os.environ["JVM_PATH"] = _JVM_PATH
+    try:
+        import jnius_config
+
+        jnius_config.set_options(
+            "--add-modules=jdk.incubator.vector",
+            f"-Djava.home={_JDK_HOME}",
+            f"-Djava.library.path={_JDK_HOME}/lib/server",
+        )
+        print(
+            f"[pyserini jvm setup] JAVA_HOME={_JDK_HOME}, "
+            f"JVM_PATH={_JVM_PATH}, python_prefix={sys.prefix}"
+        )
+    except Exception as e:
+        print(f"[pyserini jvm setup] failed to set jnius_config: {e}")
+else:
+    print(f"[pyserini jvm setup] expected JVM at {_JVM_PATH} not found")
+
 os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 from explorer import Explorer
 
 # start_timestep = 0
-model_name = "qwen2.5"
+model_name = "qwen3-30B"
 env_name = "webshop_qwen"
 backend_env = "webshop-vanilla"
 

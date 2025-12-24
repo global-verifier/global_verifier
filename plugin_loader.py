@@ -11,8 +11,10 @@ def load_explorer_model(model_name: str) -> BaseExplorerModel:
         return Llama3ExplorerModel(model_path[model_name])
     if model_name == "llama3.1":
         return Llama3ExplorerModel(model_path[model_name])
-    if model_name == "llama3.2":
+    if model_name == "llama3.2-3b":
         return Llama3ExplorerModel(model_path[model_name])
+    if model_name == "qwen2-7b":
+        return QwenExplorerModel(model_path[model_name])
     if model_name == "qwen2.5-7b":
         return QwenExplorerModel(model_path[model_name])
     if model_name == "qwen3-8b":

@@ -71,7 +71,7 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
                 if gen_score is not None:
                     user_prompt += f"""  LLM analyzed score for this action is: {gen_score}
 """
-            user_prompt += """IMPORTANT: The highest score is 1 and the lowest score is 0. You should try to get high score.
+            user_prompt += """IMPORTANT: The highest score is 1 and the lowest score is 0. You should try to get HIGHEST score.
 Actions with max_score=None may not lead to success. Prefer actions with a known positive score.
 ---
 

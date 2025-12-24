@@ -4,8 +4,8 @@ from utils import log_flush
 from env_adaptors.base_env_adaptor import BaseEnvAdaptor
 
 class CartPoleExpVanillaBackend(CartPoleExpBackend):
-    def __init__(self, env_name, storage_path, depreiciate_exp_store_path):
-        super().__init__(env_name, storage_path, depreiciate_exp_store_path)
+    def __init__(self, env_name, storage_path, depreiciate_exp_store_path, log_dir=None):
+        super().__init__(env_name, storage_path, depreiciate_exp_store_path, log_dir=log_dir)
         self.algorithm = cartpole_vanilla_config["algorithm"]
         
         # Set the retrieve experience method

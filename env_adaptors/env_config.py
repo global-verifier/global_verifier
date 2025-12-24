@@ -14,16 +14,15 @@ webshop_config = {
 frozenlake_config = {
     "id": "FrozenLake-v1",
     # "desc": None,
-    # env 0
-    # "desc": ["SHHH","FHHH","FFFF","HHHG"],
-    # env 1
-    "desc": ["SFHH","HFHH","FFFF","HHHG"],
+    "desc": ["SHHH","FHHH","FFFF","HHHG"],  # env 0
+    # "desc": ["SFHH","HFHH","FFFF","HHHG"],  # env 1
+    # "desc": ["SFFH","HHFH","FFFF","HHHG"],  # env 2
     "random_seed": 0,
     "map_name": "4x4",
     "is_slippery": False,
     "success_rate": 1,
     "reward_schedule": (1, 0, 0),
-    "max_episode_steps": None,
+    "max_episode_steps": None, 
 }
 
 cartpole_config = {
@@ -44,7 +43,8 @@ mountaincar_config = {
     # Optional: customize environment parameters
     "max_speed": 1,           # Default: 0.07 (maximum velocity)
     "force": 0.0016,         # Default: 0.001 (engine power) env0
-    # "force": 0.00158,         # Default: 0.001 (engine power) env1
+    # "force": 0.00159,         # Default: 0.001 (engine power) env1
+    # "force": 0.00158,         # Default: 0.001 (engine power) env2
     "goal_position": 0.5,   # Default: 0.5 (flag position)
     "goal_velocity": 0.0,   # Default: 0.0 (velocity at goal) 
     # "gravity": 0.0025,      # Default: 0.0025 (gravity strength)

@@ -8,13 +8,13 @@ from utils import log_flush
 from env_adaptors.base_env_adaptor import BaseEnvAdaptor
 
 class BaseExpBackend:
-    def __init__(self, env_name: str, storage_path: str ="./storage/exp_store.json", depreiciate_exp_store_path: str ="./storage/depreiciate_exp_store.json") -> None:
+    def __init__(self, env_name: str, storage_path: str ="./storage/exp_store.json", depreiciate_exp_store_path: str ="./storage/depreiciate_exp_store.json", log_dir: str = None) -> None:
         self.env_name = env_name
         self.storage_path = storage_path
         self.depreiciate_exp_store_path = depreiciate_exp_store_path
 
         # Add the logger (must be created before _load_store() since it uses logIO)
-        log_dir = base_backend_config["log_dir"]
+        log_dir = log_dir or base_backend_config["log_dir"]
         os.makedirs(log_dir, exist_ok=True)
         self.logIO = open(f'{log_dir}/exp_backendLog_{get_timestamp()}.log', 'a')
         
@@ -38,6 +38,10 @@ class BaseExpBackend:
             storage_path = os.fspath(exp_storage_path)
         except TypeError as exc:
             raise TypeError("storage_path must be a path-like object or string.") from exc
+        # Ensure parent directory exists
+        storage_dir = os.path.dirname(storage_path)
+        if storage_dir:
+            os.makedirs(storage_dir, exist_ok=True)
         # Make sure point to a file a path for a new file to be created
         if os.path.isdir(storage_path):
             raise ValueError(f"Storage path '{storage_path}' is a directory; expected a file.")
@@ -354,3 +358,15 @@ class BaseExpBackend:
             self.save_store()
         else:
             raise ValueError(f"Experience {exp_id} not found in in any store")
+
+    def step(self):
+        pass
+
+    def export_status(self):
+        return None
+
+    def finish_explore_trail(self, **kwargs):
+        """
+        Finish a explore trail.
+        """
+        pass

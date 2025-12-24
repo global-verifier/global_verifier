@@ -1,7 +1,7 @@
 from .mountainCar_adaptor import MountainCarAdaptor
 import re
 
-LLAMA3_MOUNTAINCAR_SYSTEM_PROMPT = """You are an intelligent control agent for the Mountain Car environment.
+QWEN_MOUNTAINCAR_SYSTEM_PROMPT = """You are an intelligent control agent for the Mountain Car environment.
 
 ENVIRONMENT:
 - The car is in a valley between two hills
@@ -18,25 +18,26 @@ RULES:
 1. Learn from past experiences to find the optimal strategy
 2. Respond with only the action number (0, 1, or 2) without explanation"""
 
-class MountainCarLlamaAdaptor(MountainCarAdaptor):
+
+class MountainCarQwenAdaptor(MountainCarAdaptor):
     def __init__(self, env_name, force=None):
         super().__init__(env_name, force=force)
 
     def get_action_prompt(self, retrieved_experiences=None):
         if retrieved_experiences is None:
             retrieved_experiences = []
-            
+
         # Get current state information
         available_actions = self.get_available_actions()
         state = self.get_state()
-        
+
         # Build state description using numerical values
         position = state['position']
         velocity = state['velocity']
         position_desc = self._get_position_description(position)
         velocity_desc = self._get_velocity_description(velocity)
         progress_desc = self._get_progress_description(position)
-        
+
         user_prompt = f"""
 Current Episode Steps: {self.episode_length}
 Current Total Reward: {self.episode_reward}
@@ -52,7 +53,7 @@ Available Actions:
   2 = Push RIGHT (accelerate towards right hill/goal)
 
 """
-        
+
         # Add historical experiences if available
         if retrieved_experiences:
             user_prompt += f"""\n--- Historical Experience from This Exact State ---
@@ -66,7 +67,7 @@ You have been at this state before. Here are {len(retrieved_experiences)} previo
                 path_length = exp.get('path_length', None)
                 summary = exp.get('voyager_summary')
                 gen_score = exp.get('generative_score')
-                
+
                 user_prompt += f"""Experience {idx}:
   Action taken: {action}
   Result state: pos={st1.get('position', 0):.3f}, vel={st1.get('velocity', 0):.4f}
@@ -95,16 +96,13 @@ Action {best_action} can reach the goal. You MUST choose {best_action}.
 
         user_prompt += """Respond with only ONE action number (0, 1, or 2).
 """
-        
-        # Construct the prompt in Llama3 format
-        prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
-{LLAMA3_MOUNTAINCAR_SYSTEM_PROMPT} 
-<|eot_id|>
-<|start_header_id|>user<|end_header_id|>
-{user_prompt}
-<|eot_id|> 
-<|start_header_id|>assistant<|end_header_id|>
-"""
+
+        # Construct the prompt in Qwen ChatML format
+        prompt = (
+            f"<|im_start|>system\n{QWEN_MOUNTAINCAR_SYSTEM_PROMPT}\n<|im_end|>\n"
+            f"<|im_start|>user\n{user_prompt}\n<|im_end|>\n"
+            f"<|im_start|>assistant\n"
+        )
         return prompt
 
     def _get_position_description(self, position):
@@ -131,16 +129,16 @@ Action {best_action} can reach the goal. You MUST choose {best_action}.
             desc = "LEFT hill (lower)"
         else:
             desc = "FAR LEFT (left edge)"
-        
+
         # Add distance to goal info
         distance_to_goal = 0.5 - position
         if distance_to_goal > 0:
             desc += f" [{distance_to_goal:.2f} to goal]"
         else:
             desc += " [GOAL REACHED!]"
-        
+
         return desc
-    
+
     def _get_velocity_description(self, velocity):
         """Convert velocity value to human-readable description."""
         if velocity < -0.04:
@@ -157,7 +155,7 @@ Action {best_action} can reach the goal. You MUST choose {best_action}.
             return "Moving RIGHT (moderate)"
         else:
             return "Moving RIGHT (fast)"
-    
+
     def _get_progress_description(self, position):
         """Describe overall progress towards goal."""
         if position >= 0.5:
@@ -172,7 +170,7 @@ Action {best_action} can reach the goal. You MUST choose {best_action}.
             return "Left side of valley"
         else:
             return "On left hill"
-    
+
     def _is_good_transition(self, pos_before, pos_after, vel_before, vel_after):
         """
         Check if a state transition represents good progress.
@@ -181,21 +179,21 @@ Action {best_action} can reach the goal. You MUST choose {best_action}.
         # Reached goal
         if pos_after >= 0.5:
             return True
-        
+
         # Made progress towards goal (moved right)
         if pos_after > pos_before and pos_after > -0.3:
             return True
-        
+
         # Building momentum on left side (good strategy)
         if pos_before < -0.5 and abs(vel_after) > abs(vel_before):
             return True
-        
+
         # Strong rightward velocity
         if vel_after > 0.03:
             return True
-        
+
         return False
-    
+
     def format_action(self, action):
         """
         Format the action from LLM output to valid action integer.
@@ -204,11 +202,12 @@ Action {best_action} can reach the goal. You MUST choose {best_action}.
         action = action.strip()
         # Find all numbers that are 0, 1, or 2
         matches = re.findall(r'[0-2]', action)
-        
+
         if len(matches) == 0:
             raise ValueError(f"Could not extract valid action (0, 1, or 2) from: {action}")
         elif len(matches) > 1:
             raise ValueError(f"Multiple actions found ({matches}) in: {action}")
         else:
             return int(matches[0])
+
 

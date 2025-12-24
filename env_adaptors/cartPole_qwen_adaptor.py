@@ -1,7 +1,7 @@
 from .cartPole_adaptor import CartPoleAdaptor
 import re
 
-LLAMA3_CARTPOLE_SYSTEM_PROMPT = """You are an intelligent control agent for the CartPole environment. Your goal is to balance a pole on a moving cart by choosing to push the cart left or right.
+QWEN_CARTPOLE_SYSTEM_PROMPT = """You are an intelligent control agent for the CartPole environment. Your goal is to balance a pole on a moving cart by choosing to push the cart left or right.
 
 CRITICAL RULES:
 1. The pole falls if the angle exceeds ±12 degrees
@@ -10,23 +10,24 @@ CRITICAL RULES:
 4. The goal is to keep the pole balanced for as long as possible
 5. Respond with only the action number (0 or 1) without explanation"""
 
-class CartPoleLlamaAdaptor(CartPoleAdaptor):
+
+class CartPoleQwenAdaptor(CartPoleAdaptor):
     def __init__(self, env_name):
         super().__init__(env_name)
 
     def get_action_prompt(self, retrieved_experiences=None):
         if retrieved_experiences is None:
             retrieved_experiences = []
-            
+
         # Get current state information
         available_actions = self.get_available_actions()
         state = self.get_state()
-        
+
         # Build state description
         position_desc = self._get_position_description(state['x_bin'])
         angle_desc = self._get_angle_description(state['theta_bin'])
         velocity_desc = self._get_velocity_description(state['x_dot_sign'], state['theta_dot_sign'])
-        
+
         user_prompt = f"""
 Current Episode Steps: {self.episode_length}
 Current Total Reward: {self.episode_reward}
@@ -41,31 +42,31 @@ Available Actions:
   1 = Push cart to the RIGHT
 
 """
-        
+
         # Add historical experiences if available
         if retrieved_experiences:
             # Categorize experiences
             failure_actions = []
             success_actions = []
-            
+
             for exp in retrieved_experiences:
                 action = exp.get('action', 'N/A')
                 st1 = exp.get('st1', {})
                 summary = exp.get('voyager_summary')
                 gen_score = exp.get('generative_score')
-                
+
                 # Check if this action led to failure
                 # (We can infer failure if the next state is very different or episode ended)
                 if self._is_failure_state(st1):
                     failure_actions.append((action, st1, summary, gen_score))
                 else:
                     success_actions.append((action, st1, summary, gen_score))
-            
+
             user_prompt += f"""\n--- Historical Experience from Similar States ---
 Based on {len(retrieved_experiences)} previous attempt(s) from similar state:
 
 """
-            
+
             if failure_actions:
                 user_prompt += f"""DANGEROUS ACTIONS (led to failure):
 """
@@ -82,7 +83,7 @@ Based on {len(retrieved_experiences)} previous attempt(s) from similar state:
 AVOID: Actions {set(fa[0] for fa in failure_actions)} have high failure rate from this state!
 
 """
-            
+
             if success_actions:
                 user_prompt += f"""SUCCESSFUL ACTIONS (kept pole balanced):
 """
@@ -101,7 +102,7 @@ AVOID: Actions {set(fa[0] for fa in failure_actions)} have high failure rate fro
 RECOMMENDED: Actions {set(sa[0] for sa in success_actions)} worked well from similar states.
 
 """
-            
+
             user_prompt += """Consider these experiences when deciding your next action.
 ---
 
@@ -115,16 +116,13 @@ RECOMMENDED: Actions {set(sa[0] for sa in success_actions)} worked well from sim
 
 Respond with only ONE action number (0 or 1).
 """
-        
-        # Construct the prompt in Llama3 format
-        prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
-{LLAMA3_CARTPOLE_SYSTEM_PROMPT} 
-<|eot_id|>
-<|start_header_id|>user<|end_header_id|>
-{user_prompt}
-<|eot_id|> 
-<|start_header_id|>assistant<|end_header_id|>
-"""
+
+        # Construct the prompt in Qwen ChatML format
+        prompt = (
+            f"<|im_start|>system\n{QWEN_CARTPOLE_SYSTEM_PROMPT}\n<|im_end|>\n"
+            f"<|im_start|>user\n{user_prompt}\n<|im_end|>\n"
+            f"<|im_start|>assistant\n"
+        )
         return prompt
 
     def _get_position_description(self, x_bin):
@@ -134,13 +132,13 @@ Respond with only ONE action number (0 or 1).
             "LEFT edge",
             "Slightly left",
             "CENTER",
-            "Slightly right", 
+            "Slightly right",
             "RIGHT edge",
             "FAR RIGHT (near edge!)",
             "OUT OF BOUNDS"
         ]
         return descriptions[min(x_bin, len(descriptions)-1)]
-    
+
     def _get_angle_description(self, theta_bin):
         """Convert angle bin to human-readable description."""
         descriptions = [
@@ -154,13 +152,13 @@ Respond with only ONE action number (0 or 1).
             "FALLEN"
         ]
         return descriptions[min(theta_bin, len(descriptions)-1)]
-    
+
     def _get_velocity_description(self, x_dot_sign, theta_dot_sign):
         """Describe movement direction."""
         cart_dir = "moving LEFT" if x_dot_sign < 0 else ("moving RIGHT" if x_dot_sign > 0 else "stationary")
         pole_dir = "falling LEFT" if theta_dot_sign < 0 else ("falling RIGHT" if theta_dot_sign > 0 else "stable")
         return f"Cart: {cart_dir}, Pole: {pole_dir}"
-    
+
     def _is_failure_state(self, state):
         """Check if a state indicates failure."""
         x_bin = state.get('x_bin', 0)
@@ -176,11 +174,12 @@ Respond with only ONE action number (0 or 1).
         action = action.strip()
         # Find all numbers that are 0 or 1
         matches = re.findall(r'[0-1]', action)
-        
+
         if len(matches) == 0:
             raise ValueError(f"Could not extract valid action (0 or 1) from: {action}")
         elif len(matches) > 1:
             raise ValueError(f"Multiple actions found ({matches}) in: {action}")
         else:
             return int(matches[0])
+
 

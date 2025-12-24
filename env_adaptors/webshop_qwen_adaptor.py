@@ -1,8 +1,9 @@
 from .webshop_adaptor import WebshopAdaptor
 
-LLAMA3_WEBSHOP_SYSTEM_PROMPT = "You are an intelligent exploration agent that navigates through environments to accomplish tasks. Your goal is to analyze the current state, understand the task instruction, and determine the next action to take. Respond with only the action you want to execute, without any additional explanation or formatting."
+QWEN_WEBSHOP_SYSTEM_PROMPT = "You are an intelligent exploration agent that navigates through environments to accomplish tasks. Your goal is to analyze the current state, understand the task instruction, and determine the next action to take. Respond with only the action you want to execute, without any additional explanation or formatting."
 
-class WebshopLlamaAdaptor(WebshopAdaptor):
+
+class WebshopQwenAdaptor(WebshopAdaptor):
     def __init__(self, env_name):
         super().__init__(env_name)
 
@@ -13,7 +14,7 @@ class WebshopLlamaAdaptor(WebshopAdaptor):
 
         state = self.get_state()
         instruction = self.get_instruction()
-            
+
         # Construct the user prompt
         action_status = self.get_available_actions()
         is_search = action_status["has_search_bar"]
@@ -21,7 +22,7 @@ class WebshopLlamaAdaptor(WebshopAdaptor):
             available_actions = "[search]"
         else:
             available_actions = "[click]"
-        
+
         user_prompt = f"""Task Instruction: {instruction}
 
 Current URL: {state['url']}
@@ -33,6 +34,9 @@ Available Actions: {available_actions}
 """
         if not is_search:
             user_prompt += f"""Clickables: {action_status['clickables']}\n"""
+            if "buy now" in action_status['clickables']:
+                user_prompt += f"""If you think you have meet the requirement, you can click the 'buy now' button to buy the product."""
+            user_prompt += f"""You can only click one button at a time."""
 
         # Add current episode's action history to avoid repeating ineffective actions
         action_path = self.get_action_path()
@@ -67,7 +71,7 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
                 if gen_score is not None:
                     user_prompt += f"""  LLM analyzed score for this action is: {gen_score}
 """
-            user_prompt += """IMPORTANT: Choose the action with the HIGHEST max_score! 
+            user_prompt += """IMPORTANT: The highest score is 1 and the lowest score is 0. You should try to get high score.
 Actions with max_score=None may not lead to success. Prefer actions with a known positive score.
 ---
 
@@ -80,13 +84,12 @@ Based on the current state and task instruction, what is the next action you sho
 If you want to search, response with "search[<search_query>]"
 If you want to click, response follow the format: "click[name of the clickable]"
 """
-        # Construct the prompt
-        prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
-{LLAMA3_WEBSHOP_SYSTEM_PROMPT} 
-<|eot_id|>
-<|start_header_id|>user<|end_header_id|>
-{user_prompt}
-<|eot_id|> 
-<|start_header_id|>assistant<|end_header_id|>
-"""
+        # Construct the prompt in Qwen ChatML format
+        prompt = (
+            f"<|im_start|>system\n{QWEN_WEBSHOP_SYSTEM_PROMPT}\n<|im_end|>\n"
+            f"<|im_start|>user\n{user_prompt}\n<|im_end|>\n"
+            f"<|im_start|>assistant\n"
+        )
         return prompt
+
+

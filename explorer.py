@@ -2,36 +2,151 @@ import os
 
 from analyzer.explorer_run_analyzer import ExplorerRunAnalyzer
 from plugin_loader import load_explorer_model, load_adaptor, load_exp_backend
-from utils import log_flush, get_timestamp
+from utils import log_flush, get_timestamp, is_success_trail, extract_exp_ids
 from config import explorer_settings
 import time
 
 class Explorer:
-    def __init__(self):
-        # Add hyperparameter settings
-        self.model_name = explorer_settings["model_name"]
-        self.env_name = explorer_settings["env_name"]
-        self.backend_env = explorer_settings["backend_env"]
-        self.storage_path = explorer_settings["storage_path"]
-        self.depreiciate_exp_store_path = explorer_settings["depreiciate_exp_store_path"]
-        self.max_steps = explorer_settings["max_steps"]
-        self.max_action_retries = explorer_settings["max_action_retries"]
-        self.use_experience = explorer_settings.get("use_experience", True)  
-        self.save_experience = explorer_settings.get("save_experience", True)
-        
+    def __init__(
+        self,
+        start_timestep: int = 0,
+        model_name: str = None,
+        env_name: str = None,
+        backend_env: str = None,
+        max_steps: int = None,
+        use_experience: bool = None,
+        save_experience: bool = None,
+        use_global_verifier: bool = None,
+        threshold: float = None,
+        decay_rate: float = None,
+        log_dir: str = None,
+        backend_log_dir: str = None,
+        storage_path: str = None,
+        depreiciate_exp_store_path: str = None,
+        desc=None,
+        force=None,
+        ):
         # Add plug in
-        self.explorer_model = load_explorer_model(self.model_name)
-        self.adaptor = load_adaptor(self.env_name)
-        self.exp_backend = load_exp_backend(self.backend_env, self.storage_path, self.depreiciate_exp_store_path)
+        self.explorer_model = load_explorer_model(model_name or explorer_settings["model_name"])
+        self.init_after_model(
+            model_name=model_name,
+            env_name=env_name,
+            backend_env=backend_env,
+            max_steps=max_steps,
+            use_experience=use_experience,
+            save_experience=save_experience,
+            use_global_verifier=use_global_verifier,
+            start_timestep=start_timestep,
+            threshold=threshold,
+            decay_rate=decay_rate,
+            log_dir=log_dir,
+            backend_log_dir=backend_log_dir,
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path,
+            desc=desc,
+            force=force,
+        )
+
+    def init_after_model(
+        self,
+        start_timestep=None,
+        model_name=None,
+        env_name=None,
+        backend_env=None,
+        max_steps=None,
+        use_experience=None,
+        save_experience=None,
+        use_global_verifier=None,
+        threshold=None,
+        decay_rate=None,
+        log_dir=None,
+        backend_log_dir=None,
+        storage_path=None,
+        depreiciate_exp_store_path=None,
+        desc=None,
+        force=None,
+    ):
+        """
+        Finish initialization steps that do not require reloading the explorer_model.
+        Separated for reuse when re-running init logic while keeping the same model.
+        """
+        # Update hyperparameters (prefer provided args, else config defaults or existing values)
+        self.model_name = model_name or getattr(self, "model_name", None) or explorer_settings["model_name"]
+        self.env_name = env_name or getattr(self, "env_name", None) or explorer_settings["env_name"]
+        self.backend_env = backend_env or getattr(self, "backend_env", None) or explorer_settings["backend_env"]
+        self.max_steps = (
+            self.max_steps if max_steps is None else max_steps
+        ) if hasattr(self, "max_steps") else (max_steps if max_steps is not None else explorer_settings["max_steps"])
+        self.use_experience = (
+            self.use_experience if use_experience is None else use_experience
+        ) if hasattr(self, "use_experience") else (use_experience if use_experience is not None else explorer_settings.get("use_experience", True))
+        self.save_experience = (
+            self.save_experience if save_experience is None else save_experience
+        ) if hasattr(self, "save_experience") else (save_experience if save_experience is not None else explorer_settings.get("save_experience", True))
+        self.use_global_verifier = (
+            self.use_global_verifier if use_global_verifier is None else use_global_verifier
+        ) if hasattr(self, "use_global_verifier") else (use_global_verifier if use_global_verifier is not None else explorer_settings.get("use_global_verifier", False))
+
+        self.log_dir = log_dir or getattr(self, "log_dir", None) or explorer_settings["log_dir"]
+        self.backend_log_dir = (
+            backend_log_dir
+            or getattr(self, "backend_log_dir", None)
+            or self.log_dir
+        )
+        self.storage_path = (
+            self.storage_path if storage_path is None else storage_path
+        ) if hasattr(self, "storage_path") else (storage_path if storage_path is not None else explorer_settings["storage_path"])
+        self.depreiciate_exp_store_path = (
+            self.depreiciate_exp_store_path if depreiciate_exp_store_path is None else depreiciate_exp_store_path
+        ) if hasattr(self, "depreiciate_exp_store_path") else (depreiciate_exp_store_path if depreiciate_exp_store_path is not None else explorer_settings["depreiciate_exp_store_path"])
+        self.max_action_retries = explorer_settings["max_action_retries"]
+        self.start_timestep = (
+            getattr(self, "start_timestep", start_timestep)
+            if start_timestep is None
+            else start_timestep
+        )
+        self.threshold = (
+            getattr(self, "threshold", threshold)
+            if threshold is None
+            else threshold
+        )
+        self.decay_rate = (
+            getattr(self, "decay_rate", decay_rate)
+            if decay_rate is None
+            else decay_rate
+        )
+
+        adaptor_kwargs = {}
+        if "frozenlake" in self.env_name:
+            adaptor_kwargs["desc"] = desc
+        if "mountaincar" in self.env_name:
+            adaptor_kwargs["force"] = force
+        self.adaptor = load_adaptor(self.env_name, **adaptor_kwargs)
+        # 传入 explorer_model 给 backend（voyager backend 需要用它生成总结）
+        self.exp_backend = load_exp_backend(
+            self.backend_env,
+            self.storage_path,
+            self.depreiciate_exp_store_path,
+            self.explorer_model,
+            log_dir=self.backend_log_dir,
+            start_timestep=self.start_timestep,
+            threshold=self.threshold,
+            decay_rate=self.decay_rate,
+        )
 
         # Add the logger
-        self.logIO = open(f'{explorer_settings["log_dir"]}/explorerLog_{get_timestamp()}.log', 'a')
-        self.run_analyzer = ExplorerRunAnalyzer(explorer_settings["log_dir"])
+        os.makedirs(self.log_dir, exist_ok=True)
+        self.logIO = open(f'{self.log_dir}/explorerLog_{get_timestamp()}.log', 'a')
+        self.promptLogIO = open(f'{self.log_dir}/promptLog_{get_timestamp()}.log', 'a')
+        self.statusLogIO = open(f'{self.log_dir}/statusLog_{get_timestamp()}.log', 'a')
+        
+        self.run_analyzer = ExplorerRunAnalyzer(self.log_dir)
 
         # Add the state recorders
         self.state_trace = None
 
         # Add explorer status
+        self.used_exp_ids = set()
         self.in_process = False
         self.conflict_soultion = explorer_settings["conflict_soultion"]
 
@@ -39,6 +154,7 @@ class Explorer:
         if retrieved_experiences is None:
             retrieved_experiences = []
         get_action_prompt = self.adaptor.get_action_prompt(retrieved_experiences)
+        log_flush(self.promptLogIO, f"Action prompt: [{get_timestamp()}] - {get_action_prompt}")
         raw_action = self.explorer_model.get_next_action(get_action_prompt)
         formatted_action = self.adaptor.format_action(raw_action)
         return formatted_action
@@ -76,7 +192,8 @@ class Explorer:
         if self.use_experience:
             retrieved_experiences = self.exp_backend.retrieve_experience(cur_state)
             print(f"Retrieved {len(retrieved_experiences)} experiences: {retrieved_experiences}")
-            log_flush(self.logIO, f"- Retrieved experience, len: {len(retrieved_experiences)}, ids: {retrieved_experiences}")
+            log_flush(self.logIO, f"- Retrieved experience, len: {len(retrieved_experiences)}, exps: {retrieved_experiences}")
+            self.used_exp_ids.update(extract_exp_ids(retrieved_experiences))
         else:
             log_flush(self.logIO, f"- Experience retrieval disabled (use_experience=False), using empty experience list")
         
@@ -112,6 +229,9 @@ class Explorer:
             self.record_experience()
         else:
             log_flush(self.logIO, f"- Experience saving disabled (save_experience=False), skipping save")
+        
+        # For memory bank backend, step the memory bank
+        self.exp_backend.step()
         
         return False
 
@@ -241,10 +361,16 @@ class Explorer:
         log_flush(self.logIO, f"[AFTER] number of experiences: {len(self.exp_backend.exp_store)}")
         log_flush(self.logIO, f"[AFTER] number of deprecated experiences: {len(self.exp_backend.depreiciate_exp_store)}")
 
-    def explore(self):
+    def _reset_exploration_state(self):
+        """Reset the exploration state for a new episode."""
         self.in_process = True
         self.state_trace = []
-        print(f"Start exploring at {get_timestamp()}")
+        self.used_exp_ids.clear()
+
+    def explore(self):
+        # Reset the exploration state
+        self._reset_exploration_state()
+
         log_flush(self.logIO, f"########################################################")
         log_flush(self.logIO, f"Start exploring at {get_timestamp()}")
         # Reset the status
@@ -258,8 +384,11 @@ class Explorer:
         for i in range(self.max_steps):
             print(f"Step {i}")
             log_flush(self.logIO, f"--------------------------------------------------------")
-            log_flush(self.logIO, f"Step {i}")
+            log_flush(self.logIO, f"Step {i} / {self.max_steps}")
             is_episode_done = self.execute_step()
+            status = self.exp_backend.export_status()
+            log_flush(self.statusLogIO, f"Step {i} export_status: {status}")
+            
             if is_episode_done:
                 log_flush(self.logIO, f"- Episode is done at step {i}")
                 step_count = i
@@ -272,11 +401,16 @@ class Explorer:
             log_flush(self.logIO, f"- Episode is NOT done after {self.max_steps} steps")
             print(f"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
             print(f"- Episode is NOT done after {self.max_steps} steps")
-            score = -1  # Mark failed episodes with -1 score
+            score = 0  # Mark failed episodes with -1 score
             step_count = self.max_steps
         else:
             # Episode finished successfully
             score = self.adaptor.extract_reward_score()
+            if "memorybank" in self.backend_env and is_success_trail(score):
+                # 成功的 trail，更新使用过的经验的时间戳
+                exp_ids_list = list(self.used_exp_ids)
+                self.exp_backend.finish_explore_trail(exp_ids=exp_ids_list)
+                log_flush(self.logIO, f"- Success trail! Updated timestamps for {len(exp_ids_list)} experiences")
 
         log_flush(self.logIO, f"Insturction: {self.adaptor.get_instruction()}")
         log_flush(self.logIO, f"Step count: {step_count}")
@@ -308,4 +442,13 @@ class Explorer:
         )
         self.run_analyzer.save_to_csv()
 
+        # Reset in_process before refining (to avoid deadlock)
         self.in_process = False
+
+        # Refine experiences after each exploration
+        if self.use_global_verifier:
+            log_flush(self.logIO, f"[POST-EXPLORE] Running global verifier (refine_experience)")
+            self.refine_experience()
+        else:
+            log_flush(self.logIO, f"[POST-EXPLORE] Running redundancy removal only")
+            self.remove_redundant_experiences()

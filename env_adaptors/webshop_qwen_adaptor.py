@@ -71,6 +71,27 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
                 if gen_score is not None:
                     user_prompt += f"""  LLM analyzed score for this action is: {gen_score}
 """
+# TODO: this is a temporary fix to avoid the issue that the LLM always clicks the same action and gets a score of 0.0.
+            # In confirm_purchase, explicitly blacklist actions confirmed to yield 0.0 in this state.
+            # This is common when only one option completes purchase and all other options lead to 0.
+            if "confirm_purchase" in str(state.get("url", "")):
+                blacklisted_actions = []
+                for exp in retrieved_experiences:
+                    max_score = exp.get("max_score", None)
+                    action = exp.get("action", None)
+                    if max_score in (0, 0.0) and isinstance(action, str) and action.startswith("click["):
+                        if action not in blacklisted_actions:
+                            blacklisted_actions.append(action)
+                if blacklisted_actions:
+                    user_prompt += """IMPORTANT: BLACKLISTED ACTIONS
+The following actions have been confirmed to result in a score of 0.0 in this specific state. You MUST NOT select them:
+
+"""
+                    for action in blacklisted_actions:
+                        user_prompt += f"""{action} (Score: 0.0) Please choose a different action from the remaining Clickables to explore potential success.
+"""
+                    user_prompt += "\n"
+# end of temporary fix
             user_prompt += """IMPORTANT: The highest score is 1 and the lowest score is 0. You should try to get HIGHEST score.
 Actions with max_score=None may not lead to success. Prefer actions with a known positive score.
 ---

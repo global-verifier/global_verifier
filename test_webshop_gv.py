@@ -1,14 +1,16 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 from explorer import Explorer
 
 # start_timestep = 0
 model_name = "qwen2.5"
-env_name = "mountaincar_qwen"
-backend_env = "mountaincar-vanilla"
+env_name = "webshop_qwen"
+backend_env = "webshop-vanilla"
 
-max_steps = 200
-forces = [0.0016, 0.00159, 0.00158]
+max_steps = 20
+threshold =  0.25
+decay_rate =  300
+start_timestep = 0
 
 use_global_verifier = True
 use_experience = True
@@ -29,28 +31,15 @@ e = Explorer(
     use_global_verifier = use_global_verifier,
     use_experience = use_experience,
     save_experience = save_experience,
+    start_timestep = start_timestep,
+    threshold = threshold,
+    decay_rate = decay_rate,
     log_dir=log_dir,
     backend_log_dir=backend_log_dir,
     storage_path=storage_path,
     depreiciate_exp_store_path=depreiciate_exp_store_path,
 )
-for force in forces:
-    e.init_after_model(
-        model_name = model_name,
-        env_name = env_name,
-        backend_env = backend_env,
-        max_steps = max_steps,
-        use_global_verifier = use_global_verifier,
-        use_experience = use_experience,
-        save_experience = save_experience,
-        log_dir=log_dir,
-        backend_log_dir=backend_log_dir,
-        storage_path=storage_path,
-        depreiciate_exp_store_path=depreiciate_exp_store_path,
-        force = force,
-    )
 
-    for i in range(20):
-        print(f"--- {i}/20 ---")
-        e.explore()
-        # Experience refinement is now handled automatically inside explore()
+for i in range(20):
+    print(f"--- {i}/20 ---")
+    e.explore()

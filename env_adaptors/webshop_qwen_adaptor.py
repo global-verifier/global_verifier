@@ -34,6 +34,9 @@ Available Actions: {available_actions}
 """
         if not is_search:
             user_prompt += f"""Clickables: {action_status['clickables']}\n"""
+            if "buy now" in action_status['clickables']:
+                user_prompt += f"""If you think you have meet the requirement, you can click the 'buy now' button to buy the product."""
+            user_prompt += f"""You can only click one button at a time."""
 
         # Add current episode's action history to avoid repeating ineffective actions
         action_path = self.get_action_path()

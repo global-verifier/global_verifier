@@ -27,11 +27,11 @@ if os.path.exists(_JVM_PATH):
 else:
     print(f"[pyserini jvm setup] expected JVM at {_JVM_PATH} not found")
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "4"
+os.environ["CUDA_VISIBLE_DEVICES"] = "7"
 from explorer import Explorer
 
 # start_timestep = 0
-model_name = "qwen3-30B"
+model_name = "qwen2.5"
 env_name = "webshop_qwen"
 backend_env = "webshop-vanilla"
 

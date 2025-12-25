@@ -1,20 +1,18 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "6"
 from explorer import Explorer
 
-model_name = "llama3-8b"
-env_name = "frozenlake_llama"
-backend_env = "frozenlake-vanilla"
-max_steps = 20
-use_global_verifier = True
+# start_timestep = 0
+model_name = "qwen3-30b"
+env_name = "mountaincar_qwen"
+backend_env = "mountaincar-voyager"
+
+max_steps = 200
+forces = [0.0016, 0.00159, 0.00158]
+
+use_global_verifier = False
 use_experience = True
 save_experience = True
-threshold =  0.25
-decay_rate =  100
-ts = 0
-map_0 = ["SHHH","FHHH","FFFF","HHHG"]
-map_1 = ["SFHH","HFHH","FFFF","HHHG"]
-map_2 = ["SFFH","HHFH","FFFF","HHHG"]
 
 cur_name =f"log_{use_global_verifier}_{model_name}_{env_name}_{backend_env}"
 log_dir=f"./{cur_name}/log/"
@@ -24,7 +22,6 @@ depreiciate_exp_store_path=f"./{cur_name}/storage/depreiciate_exp_store.json"
 
 
 e = Explorer(
-    start_timestep = ts,
     model_name = model_name,
     env_name = env_name,
     backend_env = backend_env,
@@ -32,11 +29,12 @@ e = Explorer(
     use_global_verifier = use_global_verifier,
     use_experience = use_experience,
     save_experience = save_experience,
-    threshold = threshold,
-    decay_rate = decay_rate,
-    desc = map_0,
+    log_dir=log_dir,
+    backend_log_dir=backend_log_dir,
+    storage_path=storage_path,
+    depreiciate_exp_store_path=depreiciate_exp_store_path,
 )
-for map in [map_0, map_1, map_2]:
+for force in forces:
     e.init_after_model(
         model_name = model_name,
         env_name = env_name,
@@ -45,14 +43,11 @@ for map in [map_0, map_1, map_2]:
         use_global_verifier = use_global_verifier,
         use_experience = use_experience,
         save_experience = save_experience,
-        start_timestep = ts,
-        threshold = threshold,
-        decay_rate = decay_rate,
         log_dir=log_dir,
         backend_log_dir=backend_log_dir,
         storage_path=storage_path,
         depreiciate_exp_store_path=depreiciate_exp_store_path,
-        desc = map,
+        force = force,
     )
 
     for i in range(20):

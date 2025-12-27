@@ -1,10 +1,10 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 from explorer import Explorer
 
 # start_timestep = 0
-model_name = "qwen2.5"
-env_name = "mountaincar_qwen"
+model_name = "llama3.1"
+env_name = "mountaincar_llama"
 backend_env = "mountaincar-vanilla"
 
 max_steps = 200

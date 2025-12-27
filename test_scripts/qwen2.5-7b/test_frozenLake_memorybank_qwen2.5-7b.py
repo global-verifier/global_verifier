@@ -37,6 +37,8 @@ e = Explorer(
     desc = map_0,
 )
 for map in [map_0, map_1, map_2]:
+    if "memorybank" in backend_env:
+        ts = e.exp_backend.export_status()['mb_current_timestep']
     e.init_after_model(
         model_name = model_name,
         env_name = env_name,

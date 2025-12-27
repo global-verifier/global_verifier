@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "7"
 from explorer import Explorer
 
 model_name = "qwen3-30b"
@@ -12,9 +12,24 @@ save_experience = True
 threshold =  0.25
 decay_rate =  100
 ts = 0
-map_0 = ["SHHH","FHHH","FFFF","HHHG"]
-map_1 = ["SFHH","HFHH","FFFF","HHHG"]
-map_2 = ["SFFH","HHFH","FFFF","HHHG"]
+map_0 = [
+    "SFHH",
+    "HFFH",
+    "HHFF",
+    "HHHG"
+    ]
+map_1 = [
+    "SHHH",
+    "FFHH",
+    "HFFH",
+    "HHFG"
+    ]
+map_2 = [
+    "SFHH",
+    "HFHH",
+    "HFHH",
+    "HFFG"
+    ]
 
 cur_name =f"log_{use_global_verifier}_{model_name}_{env_name}_{backend_env}"
 log_dir=f"./{cur_name}/log/"

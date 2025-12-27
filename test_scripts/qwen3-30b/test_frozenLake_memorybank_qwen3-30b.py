@@ -12,9 +12,24 @@ save_experience = True
 threshold =  0.61
 decay_rate =  100
 ts = 0
-map_0 = ["SHHH","FHHH","FFFF","HHHG"]
-map_1 = ["SFHH","HFHH","FFFF","HHHG"]
-map_2 = ["SFFH","HHFH","FFFF","HHHG"]
+map_0 = [
+    "SFHH",
+    "HFFH",
+    "HHFF",
+    "HHHG"
+    ]
+map_1 = [
+    "SHHH",
+    "FFHH",
+    "HFFH",
+    "HHFG"
+    ]
+map_2 = [
+    "SFHH",
+    "HFHH",
+    "HFHH",
+    "HFFG"
+    ]
 
 cur_name =f"log_{use_global_verifier}_{model_name}_{env_name}_{backend_env}"
 log_dir=f"./{cur_name}/log/"
@@ -37,6 +52,8 @@ e = Explorer(
     desc = map_0,
 )
 for map in [map_0, map_1, map_2]:
+    if "memorybank" in backend_env:
+        ts = e.exp_backend.export_status()['mb_current_timestep']
     e.init_after_model(
         model_name = model_name,
         env_name = env_name,

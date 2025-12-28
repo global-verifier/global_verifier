@@ -39,7 +39,10 @@ class FrozenLakeQwenAdaptor(FrozenLakeAdaptor):
                 moves.append(f"{right_steps} column right")
 
             move_str = ", ".join(moves) + " step(s)" if moves else "Already at destination (0 moves)."
-            dest_detail_lines.append(f"- Destination {i}: ({r}, {c}). It is {move_str} compare to current position ({cur_r}, {cur_c})")
+            dest_detail_lines.append(
+                f"- Destination {i}: ({r}, {c}). It is {move_str} compare to current position ({cur_r}, {cur_c}). "
+                f"You do NOT have to go directly; always avoid holes. Explore more and take detours to find a safe way around."
+            )
         destinations_detail_str = "\n".join(dest_detail_lines) if dest_detail_lines else "- (none)"
         map_rows = self.env.unwrapped.nrow
         map_cols = self.env.unwrapped.ncol

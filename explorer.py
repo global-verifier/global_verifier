@@ -25,6 +25,7 @@ class Explorer:
         depreiciate_exp_store_path: str = None,
         desc=None,
         force=None,
+        goal_rewards=None,
         ):
         # Add plug in
         self.explorer_model = load_explorer_model(model_name or explorer_settings["model_name"])
@@ -45,6 +46,7 @@ class Explorer:
             depreiciate_exp_store_path=depreiciate_exp_store_path,
             desc=desc,
             force=force,
+            goal_rewards=goal_rewards,
         )
 
     def init_after_model(
@@ -65,6 +67,7 @@ class Explorer:
         depreiciate_exp_store_path=None,
         desc=None,
         force=None,
+        goal_rewards=None,
     ):
         """
         Finish initialization steps that do not require reloading the explorer_model.
@@ -119,6 +122,7 @@ class Explorer:
         adaptor_kwargs = {}
         if "frozenlake" in self.env_name:
             adaptor_kwargs["desc"] = desc
+            adaptor_kwargs["goal_rewards"] = goal_rewards
         if "mountaincar" in self.env_name:
             adaptor_kwargs["force"] = force
         self.adaptor = load_adaptor(self.env_name, **adaptor_kwargs)

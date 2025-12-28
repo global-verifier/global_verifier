@@ -4,8 +4,8 @@ import re
 LLAMA3_FROZENLAKE_SYSTEM_PROMPT = "You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting."
 
 class FrozenLakeLlamaAdaptor(FrozenLakeAdaptor):
-    def __init__(self, env_name, desc=None):
-        super().__init__(env_name, desc=desc)
+    def __init__(self, env_name, desc=None, goal_rewards=None):
+        super().__init__(env_name, desc=desc, goal_rewards=goal_rewards)
 
     def get_action_prompt(self, retrieved_experiences=None):
         if retrieved_experiences is None:
@@ -16,13 +16,13 @@ class FrozenLakeLlamaAdaptor(FrozenLakeAdaptor):
         state = self.get_state()
         cur_pos = state['cur_pos']
         tile_type = state['tile_type']
-        destination = self.destination
+        destinations = self.destinations
         map_rows = self.env.unwrapped.nrow
         map_cols = self.env.unwrapped.ncol
         
         user_prompt = f"""
 Map Size: {map_rows} rows x {map_cols} columns
-Destination: {destination}
+Destinations: {destinations}
 Current Position: {cur_pos}
 Current Tile Type: {tile_type} (S=Start, F=Frozen, H=Hole, G=Goal)
 

@@ -34,10 +34,18 @@ def load_adaptor(env_name: str, **kwargs) -> BaseEnvAdaptor:
         return WebshopQwenAdaptor(env_name)
     elif env_name == "frozenlake_llama":
         from env_adaptors.frozenLake_llama_adaptor import FrozenLakeLlamaAdaptor
-        return FrozenLakeLlamaAdaptor(env_name, desc=kwargs.get("desc"))
+        return FrozenLakeLlamaAdaptor(
+            env_name,
+            desc=kwargs.get("desc"),
+            goal_rewards=kwargs.get("goal_rewards"),
+        )
     elif env_name == "frozenlake_qwen":
         from env_adaptors.frozenLake_qwen_adaptor import FrozenLakeQwenAdaptor
-        return FrozenLakeQwenAdaptor(env_name, desc=kwargs.get("desc"))
+        return FrozenLakeQwenAdaptor(
+            env_name,
+            desc=kwargs.get("desc"),
+            goal_rewards=kwargs.get("goal_rewards"),
+        )
     elif env_name == "cartpole_llama":
         from env_adaptors.cartPole_llama_adaptor import CartPoleLlamaAdaptor
         return CartPoleLlamaAdaptor(env_name)

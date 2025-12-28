@@ -114,7 +114,7 @@ YOU MUST NOT choose {forbidden_list} from this position!
 1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
 2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
 3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
-4. DO NOT satisfy with low scores (e.g. 0.5). AIM for the HIGHEST SCORE (1.0).
+4. DO NOT satisfy with low scores (e.g. 0.5). Aim for the HIGHEST SCORE (1.0). Explore unexplored areas to search for best score.
 5. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
 
 Which action effectively moves you closer to the HIGHEST SCORE goal? Respond with only the action number (0, 1, 2, or 3).

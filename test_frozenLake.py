@@ -18,7 +18,7 @@ big_map = [
     "HFFFFF",
     "HFHHHF",
     "GFHHHF",
-    "HHHHHG",
+    "HHHHHF",
 ]
 # goal_rewards = {
 #     (4, 0): 0.5,
@@ -26,7 +26,7 @@ big_map = [
 # }
 goal_rewards = {
     (4, 0): 1.0,
-    (5, 5): 0.5,
+    # (5, 5): 0.5,
 }
 
 cur_name =f"log_{use_global_verifier}_{model_name}_{env_name}_{backend_env}"

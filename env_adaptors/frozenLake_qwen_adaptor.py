@@ -24,8 +24,10 @@ class FrozenLakeQwenAdaptor(FrozenLakeAdaptor):
 
         user_prompt = f"""
 Map Size: {map_rows} rows x {map_cols} columns
-Destinations are: {destinations_str}
-Highest Score: 1
+
+There are a total of {len(destinations)} destinations, they are: {destinations_str}
+The highest possible score achievable from these destinations is 1.0.
+
 Current Position: {cur_pos}
 Current Tile Type: {tile_type} (S=Start, F=Frozen, H=Hole, G=Goal)
 
@@ -51,18 +53,26 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
                 action_taken = exp.get('action', 'N/A')
                 next_pos = exp.get('st1', {}).get('cur_pos', 'N/A')
                 next_tile = exp.get('st1', {}).get('tile_type', 'N/A')
+                # Extract the score achieved in the next state (default to 0 if not present)
+                achieved_score = exp.get('st1', {}).get('score', 0)
+                
                 summary = exp.get('voyager_summary')
                 max_score = exp.get('max_score')
                 gen_score = exp.get('generative_score')
 
-                # Add warning for holes
+                # Add warning/success logic
                 tile_warning = ""
                 if next_tile == 'H':
                     tile_warning = f" HOLE - AVOID ACTION {action_taken}!"
                     forbidden_actions.append(action_taken)
                 elif next_tile == 'G':
-                    tile_warning = f" GOAL - TAKE ACTION {action_taken}!"
-                    goal_actions.append(action_taken)
+                    # Only treat MAX score (>= 1.0) as the true target for BEST CHOICE
+                    if achieved_score >= 1.0:
+                        tile_warning = f" MAX REWARD GOAL (Score: {achieved_score}) - TAKE ACTION {action_taken}!"
+                        goal_actions.append(action_taken)
+                    else:
+                        # For sub-optimal goals (e.g., 0.5), do NOT add to goal_actions
+                        tile_warning = f" SUB-OPTIMAL GOAL (Score: {achieved_score}) - Can you find a better one?"
 
                 user_prompt += f"""  Action taken: {action_taken}
   Result Position: {next_pos}
@@ -82,8 +92,10 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
             # Add explicit warning section
             if forbidden_actions or goal_actions:
                 user_prompt += "\n"
+            
+            # This triggers only if a 1.0 score goal was found
             if goal_actions:
-                user_prompt += f"""!!! BEST CHOICE: Action(s) {goal_actions} will reach the GOAL directly. Choose this!
+                user_prompt += f"""!!! BEST CHOICE: Action(s) {goal_actions} will reach the HIGHEST SCORE GOAL directly. Choose this!
 
 """
             if forbidden_actions:
@@ -102,9 +114,10 @@ YOU MUST NOT choose {forbidden_list} from this position!
 1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
 2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
 3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
-4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+4. DO NOT satisfy with low scores (e.g. 0.5). AIM for the HIGHEST SCORE (1.0).
+5. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
 
-Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+Which action effectively moves you closer to the HIGHEST SCORE goal? Respond with only the action number (0, 1, 2, or 3).
 """
 
         # Construct the prompt in Qwen ChatML format
@@ -131,5 +144,3 @@ Which action effectively reduces the distance to the goal? Respond with only the
             raise ValueError(f"Multiple actions found ({matches}) in: {action}")
         else:
             return int(matches[0])
-
-

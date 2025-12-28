@@ -20,6 +20,10 @@ big_map = [
     "GFHHHF",
     "HHHHHG",
 ]
+# goal_rewards = {
+#     (4, 0): 0.5,
+#     (5, 5): 1.0,
+# }
 goal_rewards = {
     (4, 0): 1.0,
     (5, 5): 0.5,

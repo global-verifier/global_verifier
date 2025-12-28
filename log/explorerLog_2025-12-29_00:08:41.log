@@ -1,0 +1,900 @@
+########################################################
+Start exploring at 2025-12-29_00:08:41
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 0, exps: []
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:08:43.543702_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:08:43
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 1
+[BEFORE] number of deprecated experiences: 0
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 0, groups: []
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 0
+########################################################
+Start exploring at 2025-12-29_00:08:43
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:08:45.195535_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:08:45
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 0
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:08:45.195535_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 1
+########################################################
+Start exploring at 2025-12-29_00:08:45
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:08:46.827159_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:08:46
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 1
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:08:46.827159_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 2
+########################################################
+Start exploring at 2025-12-29_00:08:46
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:08:48.448019_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:08:48
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 2
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:08:48.448019_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 3
+########################################################
+Start exploring at 2025-12-29_00:08:48
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:08:50.075884_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:08:50
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 3
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:08:50.075884_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 4
+########################################################
+Start exploring at 2025-12-29_00:08:50
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:08:51.702258_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:08:51
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 4
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:08:51.702258_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 5
+########################################################
+Start exploring at 2025-12-29_00:08:51
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:08:53.327033_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:08:53
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 5
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:08:53.327033_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 6
+########################################################
+Start exploring at 2025-12-29_00:08:53
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:08:54.968589_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:08:54
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 6
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:08:54.968589_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 7
+########################################################
+Start exploring at 2025-12-29_00:08:54
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:08:56.610282_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:08:56
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 7
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:08:56.610282_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 8
+########################################################
+Start exploring at 2025-12-29_00:08:56
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:08:58.249569_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:08:58
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 8
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:08:58.249569_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 9
+########################################################
+Start exploring at 2025-12-29_00:08:58
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:08:59.891064_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:08:59
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 9
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:08:59.891064_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 10
+########################################################
+Start exploring at 2025-12-29_00:08:59
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:09:01.531601_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:09:01
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 10
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:09:01.531601_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 11
+########################################################
+Start exploring at 2025-12-29_00:09:01
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:09:03.172096_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:09:03
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 11
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:09:03.172096_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 12
+########################################################
+Start exploring at 2025-12-29_00:09:03
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:09:04.809499_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:09:04
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 12
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:09:04.809499_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 13
+########################################################
+Start exploring at 2025-12-29_00:09:04
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:09:06.442757_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:09:06
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 13
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:09:06.442757_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 14
+########################################################
+Start exploring at 2025-12-29_00:09:06
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:09:08.068945_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:09:08
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 14
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:09:08.068945_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 15
+########################################################
+Start exploring at 2025-12-29_00:09:08
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:09:09.696709_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:09:09
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 15
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:09:09.696709_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 16
+########################################################
+Start exploring at 2025-12-29_00:09:09
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:09:11.319407_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:09:11
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 16
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:09:11.319407_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 17
+########################################################
+Start exploring at 2025-12-29_00:09:11
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:09:12.938442_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:09:12
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 17
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:09:12.938442_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 18
+########################################################
+Start exploring at 2025-12-29_00:09:12
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(4, 0)]
+[Map]:
+SFFFHH
+HHHFHH
+HFFFFF
+HFHHHF
+GFHHHF
+HHHHHF
+-----
+--------------------------------------------------------
+Step 0 / 40
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '12-29_00:08:43.543702_4-0_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'max_score': 0.0}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 12-29_00:09:14.559357_4-0_1
+--------------------------------------------------------
+Step 1 / 40
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(4, 0)]; Map: [['S', 'F', 'F', 'F', 'H', 'H'], ['H', 'H', 'H', 'F', 'H', 'H'], ['H', 'F', 'F', 'F', 'F', 'F'], ['H', 'F', 'H', 'H', 'H', 'F'], ['G', 'F', 'H', 'H', 'H', 'F'], ['H', 'H', 'H', 'H', 'H', 'F']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2025-12-29_00:09:14
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running global verifier (refine_experience)
+[BEFORE] number of experiences: 2
+[BEFORE] number of deprecated experiences: 18
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 1, groups: [{'12-29_00:08:43.543702_4-0_1', '12-29_00:09:14.559357_4-0_1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+---------------- Resolve Experience Conflict ----------------
+Conflict exp len: 0, ids: []
+---------------- Finished Resolve Experience Conflict ----------------
+[AFTER] number of experiences: 1
+[AFTER] number of deprecated experiences: 19

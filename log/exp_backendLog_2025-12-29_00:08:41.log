@@ -1,0 +1,304 @@
+########################################################
+Start loading ./storage/exp_store.json the store at 2025-12-29_00:08:41
+Store not exists, creating a new one at ./storage/exp_store.json, at 2025-12-29_00:08:41
+########################################################
+Start loading ./storage/depreiciate_exp_store.json the store at 2025-12-29_00:08:41
+Store not exists, creating a new one at ./storage/depreiciate_exp_store.json, at 2025-12-29_00:08:41
+Store validation passed: No overlap between exp_store (0 items) and depreiciate_exp_store (0 items)
+Using algorithm: sameSt_bfs_maxScore
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:08:43
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-12-29_00:08:43
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 0
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (0 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:08:45
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 0, at 2025-12-29_00:08:45
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:08:45.195535_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (1 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:08:45
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 1, at 2025-12-29_00:08:45
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (1 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:08:46
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 1, at 2025-12-29_00:08:46
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:08:46.827159_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (2 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:08:46
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 2, at 2025-12-29_00:08:46
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (2 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:08:48
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 2, at 2025-12-29_00:08:48
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:08:48.448019_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (3 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:08:48
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 3, at 2025-12-29_00:08:48
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (3 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:08:50
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 3, at 2025-12-29_00:08:50
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:08:50.075884_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (4 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:08:50
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 4, at 2025-12-29_00:08:50
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (4 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:08:51
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 4, at 2025-12-29_00:08:51
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:08:51.702258_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (5 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:08:51
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 5, at 2025-12-29_00:08:51
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (5 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:08:53
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 5, at 2025-12-29_00:08:53
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:08:53.327033_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (6 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:08:53
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 6, at 2025-12-29_00:08:53
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (6 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:08:54
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 6, at 2025-12-29_00:08:54
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:08:54.968589_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (7 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:08:54
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 7, at 2025-12-29_00:08:54
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (7 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:08:56
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 7, at 2025-12-29_00:08:56
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:08:56.610282_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (8 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:08:56
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 8, at 2025-12-29_00:08:56
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (8 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:08:58
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 8, at 2025-12-29_00:08:58
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:08:58.249569_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (9 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:08:58
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 9, at 2025-12-29_00:08:58
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (9 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:08:59
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 9, at 2025-12-29_00:08:59
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:08:59.891064_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (10 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:08:59
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 10, at 2025-12-29_00:08:59
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (10 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:09:01
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 10, at 2025-12-29_00:09:01
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:09:01.531601_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (11 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:09:01
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 11, at 2025-12-29_00:09:01
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (11 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:09:03
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 11, at 2025-12-29_00:09:03
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:09:03.172096_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (12 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:09:03
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 12, at 2025-12-29_00:09:03
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (12 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:09:04
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 12, at 2025-12-29_00:09:04
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:09:04.809499_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (13 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:09:04
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 13, at 2025-12-29_00:09:04
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (13 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:09:06
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 13, at 2025-12-29_00:09:06
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:09:06.442757_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (14 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:09:06
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 14, at 2025-12-29_00:09:06
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (14 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:09:08
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 14, at 2025-12-29_00:09:08
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:09:08.068945_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (15 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:09:08
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 15, at 2025-12-29_00:09:08
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (15 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:09:09
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 15, at 2025-12-29_00:09:09
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:09:09.696709_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (16 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:09:09
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 16, at 2025-12-29_00:09:09
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (16 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:09:11
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 16, at 2025-12-29_00:09:11
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:09:11.319407_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (17 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:09:11
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 17, at 2025-12-29_00:09:11
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (17 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:09:12
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 17, at 2025-12-29_00:09:12
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:09:12.938442_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (18 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:09:12
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 18, at 2025-12-29_00:09:12
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['12-29_00:08:43.543702_4-0_1']
+[BFS] Max scores: [('12-29_00:08:43.543702_4-0_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (18 items)
+Save store, path: ./storage/exp_store.json, size: 2, at 2025-12-29_00:09:14
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 18, at 2025-12-29_00:09:14
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 1
+[DEPRECIATE] Experience 12-29_00:09:14.559357_4-0_1 moved to deprecated store
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (19 items)
+Save store, path: ./storage/exp_store.json, size: 1, at 2025-12-29_00:09:14
+Save depreiciate store, path: ./storage/depreiciate_exp_store.json, size: 19, at 2025-12-29_00:09:14
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0

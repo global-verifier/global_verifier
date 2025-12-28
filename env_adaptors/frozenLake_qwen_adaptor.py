@@ -19,16 +19,41 @@ class FrozenLakeQwenAdaptor(FrozenLakeAdaptor):
         tile_type = state['tile_type']
         destinations = self.destinations
         destinations_str = ", ".join([f"({r}, {c})" for r, c in destinations])
+        # Build per-destination guidance: how many steps to move in each direction
+        # from current position to reach each destination.
+        dest_detail_lines = []
+        cur_r, cur_c = cur_pos
+        for i, (r, c) in enumerate(destinations, start=1):
+            up_steps = max(cur_r - r, 0)
+            down_steps = max(r - cur_r, 0)
+            left_steps = max(cur_c - c, 0)
+            right_steps = max(c - cur_c, 0)
+            moves = []
+            if up_steps > 0:
+                moves.append(f"{up_steps} line up")
+            if down_steps > 0:
+                moves.append(f"{down_steps} line down")
+            if left_steps > 0:
+                moves.append(f"{left_steps} column left")
+            if right_steps > 0:
+                moves.append(f"{right_steps} column right")
+
+            move_str = ", ".join(moves) + " step(s)" if moves else "Already at destination (0 moves)."
+            dest_detail_lines.append(f"- Destination {i}: ({r}, {c}). It is {move_str} compare to current position ({cur_r}, {cur_c})")
+        destinations_detail_str = "\n".join(dest_detail_lines) if dest_detail_lines else "- (none)"
         map_rows = self.env.unwrapped.nrow
         map_cols = self.env.unwrapped.ncol
 
         user_prompt = f"""
 Map Size: {map_rows} rows x {map_cols} columns
+Current Position: {cur_pos}
 
-There are a total of {len(destinations)} destinations, they are: {destinations_str}
+There are a total of {len(destinations)} destination(s).
+Destinations: {destinations_str}
+For each destination, the steps below describe how many moves are needed in each direction from your CURRENT position:
+{destinations_detail_str}
 The highest possible score achievable from these destinations is 1.0.
 
-Current Position: {cur_pos}
 Current Tile Type: {tile_type} (S=Start, F=Frozen, H=Hole, G=Goal)
 
 Available Actions: {available_actions}

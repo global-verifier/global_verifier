@@ -1,7 +1,7 @@
 from .frozenLake_adaptor import FrozenLakeAdaptor
 import re
 
-QWEN_FROZENLAKE_SYSTEM_PROMPT = "You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting."
+QWEN_FROZENLAKE_SYSTEM_PROMPT = "You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting."
 
 
 class FrozenLakeQwenAdaptor(FrozenLakeAdaptor):
@@ -18,20 +18,22 @@ class FrozenLakeQwenAdaptor(FrozenLakeAdaptor):
         cur_pos = state['cur_pos']
         tile_type = state['tile_type']
         destinations = self.destinations
+        destinations_str = ", ".join([f"({r}, {c})" for r, c in destinations])
         map_rows = self.env.unwrapped.nrow
         map_cols = self.env.unwrapped.ncol
 
         user_prompt = f"""
 Map Size: {map_rows} rows x {map_cols} columns
-Destinations: {destinations}
+Destinations are: {destinations_str}
+Highest Score: 1
 Current Position: {cur_pos}
 Current Tile Type: {tile_type} (S=Start, F=Frozen, H=Hole, G=Goal)
 
 Available Actions: {available_actions}
-  0 = Move Left
-  1 = Move Down
-  2 = Move Right
-  3 = Move Up
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
 
 """
 
@@ -50,6 +52,7 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
                 next_pos = exp.get('st1', {}).get('cur_pos', 'N/A')
                 next_tile = exp.get('st1', {}).get('tile_type', 'N/A')
                 summary = exp.get('voyager_summary')
+                max_score = exp.get('max_score')
                 gen_score = exp.get('generative_score')
 
                 # Add warning for holes
@@ -64,6 +67,9 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
                 user_prompt += f"""  Action taken: {action_taken}
   Result Position: {next_pos}
   Result Tile: {next_tile}{tile_warning}
+"""
+                if max_score is not None and max_score > 0:
+                    user_prompt += f"""  Max score achievable from this path: {max_score}
 """
                 if summary:
                     user_prompt += f"""  Summary for this step is: {summary}
@@ -92,11 +98,13 @@ YOU MUST NOT choose {forbidden_list} from this position!
 
 """
 
-        user_prompt += """Based on the current position, task instruction, and past experiences, what is the next action you should take?
+        user_prompt += """Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
 
-REMEMBER: If certain actions lead to holes, you MUST avoid them. Choose the safest action that moves toward the destination.
-
-Respond with only the action number (0, 1, 2, or 3).
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
 """
 
         # Construct the prompt in Qwen ChatML format

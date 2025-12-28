@@ -1,0 +1,2366 @@
+Action prompt: [2025-12-28_21:28:35] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 0]
+Current Tile Type: S (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 0]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 1]
+  Result Tile: F
+  Max score achievable from this path: 1.0
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:37] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 1]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 1]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 2]
+  Result Tile: F
+  Max score achievable from this path: 1.0
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:39] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 2]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 2]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 3]
+  Result Tile: F
+  Max score achievable from this path: 1.0
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:40] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 3]
+  Result Tile: F
+  Max score achievable from this path: 1.0
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:42] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [1, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [2, 3]
+  Result Tile: F
+  Max score achievable from this path: 1.0
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:43] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 3]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [2, 4]
+  Result Tile: F
+  Max score achievable from this path: 1.0
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:45] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 4]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 4]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [2, 5]
+  Result Tile: F
+  Max score achievable from this path: 1.0
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:47] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 5]
+  Result Tile: F
+  Max score achievable from this path: 1.0
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:48] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [3, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [4, 5]
+  Result Tile: F
+  Max score achievable from this path: 1.0
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:50] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [4, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 3 previous experience(s):
+
+  Action taken: 3
+  Result Position: [3, 5]
+  Result Tile: F
+
+  Action taken: 0
+  Result Position: [4, 4]
+  Result Tile: H HOLE - AVOID ACTION 0!
+
+  Action taken: 1
+  Result Position: [5, 5]
+  Result Tile: G GOAL - TAKE ACTION 1!
+  Max score achievable from this path: 1.0
+
+
+!!! BEST CHOICE: Action(s) [1] will reach the GOAL directly. Choose this!
+
+!!! CRITICAL WARNING: Action(s) 0 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 0 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:51] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 0]
+Current Tile Type: S (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 0]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 1]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:53] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 1]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 1]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 2]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:55] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 2]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 2]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 3]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:56] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 3]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:58] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [1, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [2, 3]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:28:59] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 3]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [2, 4]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:01] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 4]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 4]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [2, 5]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:03] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 5]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:04] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [3, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [4, 5]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:06] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [4, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 3 previous experience(s):
+
+  Action taken: 3
+  Result Position: [3, 5]
+  Result Tile: F
+
+  Action taken: 0
+  Result Position: [4, 4]
+  Result Tile: H HOLE - AVOID ACTION 0!
+
+  Action taken: 1
+  Result Position: [5, 5]
+  Result Tile: G GOAL - TAKE ACTION 1!
+  Max score achievable from this path: 0.5
+
+
+!!! BEST CHOICE: Action(s) [1] will reach the GOAL directly. Choose this!
+
+!!! CRITICAL WARNING: Action(s) 0 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 0 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:07] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 0]
+Current Tile Type: S (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 0]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 1]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:09] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 1]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 1]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 2]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:10] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 2]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 2]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 3]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:12] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 3]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:14] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [1, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [2, 3]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:15] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 3]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [2, 4]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:17] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 4]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 4]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [2, 5]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:18] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 5]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:20] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [3, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [4, 5]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:22] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [4, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 3 previous experience(s):
+
+  Action taken: 3
+  Result Position: [3, 5]
+  Result Tile: F
+
+  Action taken: 0
+  Result Position: [4, 4]
+  Result Tile: H HOLE - AVOID ACTION 0!
+
+  Action taken: 1
+  Result Position: [5, 5]
+  Result Tile: G GOAL - TAKE ACTION 1!
+  Max score achievable from this path: 0.5
+
+
+!!! BEST CHOICE: Action(s) [1] will reach the GOAL directly. Choose this!
+
+!!! CRITICAL WARNING: Action(s) 0 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 0 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:23] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 0]
+Current Tile Type: S (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 0]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 1]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:25] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 1]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 1]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 2]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:26] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 2]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 2]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 3]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:28] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 3]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:29] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [1, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [2, 3]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:31] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 3]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [2, 4]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:33] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 4]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 4]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [2, 5]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:34] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 5]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:36] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [3, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [4, 5]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:37] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [4, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 3 previous experience(s):
+
+  Action taken: 3
+  Result Position: [3, 5]
+  Result Tile: F
+
+  Action taken: 0
+  Result Position: [4, 4]
+  Result Tile: H HOLE - AVOID ACTION 0!
+
+  Action taken: 1
+  Result Position: [5, 5]
+  Result Tile: G GOAL - TAKE ACTION 1!
+  Max score achievable from this path: 0.5
+
+
+!!! BEST CHOICE: Action(s) [1] will reach the GOAL directly. Choose this!
+
+!!! CRITICAL WARNING: Action(s) 0 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 0 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:39] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 0]
+Current Tile Type: S (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 0]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 1]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:40] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 1]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 1]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 2]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:42] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 2]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 2]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 3]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:44] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 3]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:45] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [1, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [2, 3]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:47] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 3]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 3]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [2, 4]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:48] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 4]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 4]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [2, 5]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:50] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [2, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [3, 5]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:51] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [3, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 1 previous experience(s):
+
+  Action taken: 1
+  Result Position: [4, 5]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:53] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [4, 5]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 3 previous experience(s):
+
+  Action taken: 3
+  Result Position: [3, 5]
+  Result Tile: F
+
+  Action taken: 0
+  Result Position: [4, 4]
+  Result Tile: H HOLE - AVOID ACTION 0!
+
+  Action taken: 1
+  Result Position: [5, 5]
+  Result Tile: G GOAL - TAKE ACTION 1!
+  Max score achievable from this path: 0.5
+
+
+!!! BEST CHOICE: Action(s) [1] will reach the GOAL directly. Choose this!
+
+!!! CRITICAL WARNING: Action(s) 0 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 0 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:55] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 0]
+Current Tile Type: S (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 0]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 1]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+
+Action prompt: [2025-12-28_21:29:56] - <|im_start|>system
+You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting.
+<|im_end|>
+<|im_start|>user
+
+Map Size: 6 rows x 6 columns
+Destinations are: (4, 0), (5, 5)
+Highest Score: 1
+Current Position: [0, 1]
+Current Tile Type: F (S=Start, F=Frozen, H=Hole, G=Goal)
+
+Available Actions: [0, 1, 2, 3]
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
+
+
+--- Historical Experience from Similar States ---
+You have been at this position before. Here are 2 previous experience(s):
+
+  Action taken: 1
+  Result Position: [1, 1]
+  Result Tile: H HOLE - AVOID ACTION 1!
+
+  Action taken: 2
+  Result Position: [0, 2]
+  Result Tile: F
+  Max score achievable from this path: 0.5
+
+
+!!! CRITICAL WARNING: Action(s) 1 lead to HOLES and will END THE GAME.
+YOU MUST NOT choose 1 from this position!
+
+Consider these experiences when deciding your next action.
+---
+
+Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
+
+Which action effectively reduces the distance to the goal? Respond with only the action number (0, 1, 2, or 3).
+
+<|im_end|>
+<|im_start|>assistant
+

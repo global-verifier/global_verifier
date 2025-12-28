@@ -29,6 +29,8 @@ class FrozenLakeAdaptor(BaseEnvAdaptor):
         self.destination_label = None
         # optional custom rewards per goal coordinate, e.g. {(r, c): 0.5, (r2, c2): 1.0}
         self.goal_rewards = goal_rewards
+        if not any(value == 1.0 for value in self.goal_rewards.values()):
+            raise ValueError("goal_rewards must include at least one reward equal to 1.0")
 
         # history records
         self.action_path = []
@@ -106,6 +108,8 @@ class FrozenLakeAdaptor(BaseEnvAdaptor):
             else:
                 raise ValueError(f"Reward problem: terminated: {self.terminated}, reward: {self.reward}")
         else:
+            if self.reward is None:
+                return 0
             if self.reward > 0:
                 raise ValueError(f"Reward cannot be 1 when not on the goal: terminated: {self.terminated}, reward: {self.reward}")
             return 0

@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "4"
+os.environ["CUDA_VISIBLE_DEVICES"] = "7"
 from explorer import Explorer
 
 # start_timestep = 0
@@ -10,8 +10,8 @@ backend_env = "mountaincar-memorybank"
 max_steps = 200
 forces = [0.0016, 0.00159, 0.00158]
 threshold =  0.25
-decay_rate =  300
-start_timestep = 0
+decay_rate =  900
+ts = 0
 
 use_global_verifier = False
 use_experience = True
@@ -32,7 +32,7 @@ e = Explorer(
     use_global_verifier = use_global_verifier,
     use_experience = use_experience,
     save_experience = save_experience,
-    start_timestep = start_timestep,
+    start_timestep = ts,
     threshold = threshold,
     decay_rate = decay_rate,
     log_dir=log_dir,
@@ -52,7 +52,7 @@ for force in forces:
         use_global_verifier = use_global_verifier,
         use_experience = use_experience,
         save_experience = save_experience,
-        start_timestep = start_timestep,
+        start_timestep = ts,
         threshold = threshold,
         decay_rate = decay_rate,
         log_dir=log_dir,

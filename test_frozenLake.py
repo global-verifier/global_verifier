@@ -24,10 +24,30 @@ big_map = [
     "HHFFFG",
 ]
 
-goal_rewards = {
-    (3, 5): 1.0,
-    (5, 5): 0.5,
-}
+gr_group_0 = [
+    {
+        (3, 5): 1.0,
+        (5, 5): 0.5,
+    },
+    {
+        (3, 5): 0.5,
+        (5, 5): 1.0,
+    }
+]
+
+gr_group_1= [
+    {
+        (3, 5): 0.5,
+        (5, 5): 1.0,
+    },
+    {
+        (3, 5): 1.0,
+        (5, 5): 0.5,
+    }
+]
+
+# TODO: To Change
+gr_group = gr_group_1
 
 
 cur_name =f"log_{use_global_verifier}_{model_name}_{env_name}_{backend_env}"
@@ -49,17 +69,12 @@ e = Explorer(
     threshold = threshold,
     decay_rate = decay_rate,
     desc = big_map,
-    goal_rewards=goal_rewards,
+    goal_rewards=gr_group[0],
 )
 for i in range(20):
     print(f"--- {i}/20 ---")
     e.explore()
     # Experience refinement is now handled automatically inside explore()
-
-goal_rewards = {
-    (3, 5): 0.5,
-    (5, 5): 1.0,
-}
 
 e.init_after_model(
     start_timestep = ts,
@@ -73,7 +88,7 @@ e.init_after_model(
     threshold = threshold,
     decay_rate = decay_rate,
     desc = big_map,
-    goal_rewards=goal_rewards,
+    goal_rewards=gr_group[1],
 )
 for i in range(20):
     print(f"--- {i}/20 ---")

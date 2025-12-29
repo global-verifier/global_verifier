@@ -2,10 +2,10 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 from explorer import Explorer
 
-# model_name = "llama3.1"
-# env_name = "frozenlake_llama"
-model_name = "qwen2.5-7b"
-env_name = "frozenlake_qwen"
+model_name = "llama3.1"
+env_name = "frozenlake_llama"
+# model_name = "qwen2.5-7b"
+# env_name = "frozenlake_qwen"
 # model_name = "qwen3-30b"
 # env_name = "frozenlake_qwen"
 backend_env = "frozenlake-vanilla"

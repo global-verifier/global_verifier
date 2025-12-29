@@ -31,7 +31,9 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "7"
 from explorer import Explorer
 
 # start_timestep = 0
-model_name = "qwen3-30b"
+model_name = "qwen2.5-7b"
+# model_name = "qwen3-30b"
+# model_name = "llama3.1"
 env_name = "webshop"
 backend_env = "webshop-vanilla"
 
@@ -52,8 +54,8 @@ depreiciate_exp_store_path=f"./storage/depreiciate_exp_store.json"
 
 
 enable_confirm_purchase= True
-session = 9  # warm color
-# session = 8  # red color
+# session = 9  # warm color
+session = 8  # red color
 
 e = Explorer(
     model_name = model_name,

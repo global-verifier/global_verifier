@@ -1,6 +1,6 @@
 from .webshop_adaptor import WebshopAdaptor
 
-QWEN_WEBSHOP_SYSTEM_PROMPT = "You are an intelligent exploration agent that navigates through environments to accomplish tasks. Your goal is to analyze the current state, understand the task instruction, and determine the next action to take. Respond with only the action you want to execute, without any additional explanation or formatting."
+QWEN_WEBSHOP_SYSTEM_PROMPT = "You are an intelligent exploration agent navigating a web shop. Your goal is to understand the task instruction and buy the correct product with the highest possible score of (1.0). Respond with only the action you want to execute, without any additional explanation or formatting."
 
 
 class WebshopQwenAdaptor(WebshopAdaptor):
@@ -66,18 +66,25 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
                 user_prompt += f"""Experience {idx}:
   Action taken: {action_taken}
   Result URL: {next_url}
-  Max score achievable: {max_score if max_score is not None else 'Unknown (may not lead to success)'}
+"""
+                if max_score is None or max_score == 0:
+                    user_prompt += f"""\n"""
+                elif max_score == 1:
+                    user_prompt += f"""  Max score this action can achieve is 1.0, you should take the same action: {action_taken}.
 
 """
+                else:
+                    user_prompt += f"""  Max score this action can achieve is {max_score}. This means you chose the correct item but incorect or incomplete options (ie, color, size, etc.). You must select the different options to get the maximum score (1.0).
+
+"""
+
                 if summary:
                     user_prompt += f"""  Summary for this step is: {summary}
 """
                 if gen_score is not None:
                     user_prompt += f"""  LLM analyzed score for this action is: {gen_score}
 """
-# TODO: this is a temporary fix to avoid the issue that the LLM always clicks the same action and gets a score of 0.0.
-            # In confirm_purchase, explicitly blacklist actions confirmed to yield 0.0 in this state.
-            # This is common when only one option completes purchase and all other options lead to 0.
+
             if "confirm_purchase" in str(state.get("url", "")):
                 blacklisted_actions = []
                 for exp in retrieved_experiences:
@@ -95,9 +102,8 @@ The following actions have been confirmed to result in a score of 0.0 in this sp
                         user_prompt += f"""{action} (Score: 0.0) Please choose a different action from the remaining Clickables to explore potential success.
 """
                     user_prompt += "\n"
-# end of temporary fix
+
             user_prompt += """IMPORTANT: The highest score is 1 and the lowest score is 0. You should try to get HIGHEST score.
-Actions with max_score=None may not lead to success. Prefer actions with a known positive score.
 ---
 
 """

@@ -1,10 +1,16 @@
-from bs4 import BeautifulSoup, Comment
 import re
+try:
+    from bs4 import BeautifulSoup, Comment
+except ImportError:  # pragma: no cover
+    BeautifulSoup = None
+    Comment = None
 
 def extract_visible_text(html_content):
     """
     从HTML内容中提取可见文本
     """
+    if BeautifulSoup is None or Comment is None:
+        raise ImportError("bs4 is required for extract_visible_text(). Please install beautifulsoup4.")
     soup = BeautifulSoup(html_content, 'html.parser')
     
     # 移除包含Instruction的元素（通过id="instruction-text"定位） 用于 webshop 环境 TODO: this is webshop specific, need to be generalized
@@ -31,3 +37,36 @@ def extract_visible_text(html_content):
     text = text.strip()
     
     return text
+
+
+def frozenlake_goal_positions(desc):
+    """
+    输入 FrozenLake 的 desc，输出所有 'G' 的坐标列表 [(r, c), ...]。
+
+    兼容常见 desc 格式：
+    - list[str]，例如 ["SFFF", "FHFH", "FFFH", "HFFG"]
+    - gymnasium 内部 desc（通常为 numpy array / list，元素为 bytes）
+    """
+    if desc is None:
+        raise ValueError("desc cannot be None")
+
+    goals = []
+    for r, row in enumerate(desc):
+        # row may be a string (e.g. "SFFFHG") or an iterable of bytes (gym's internal desc)
+        if isinstance(row, bytes):
+            row_iter = row.decode("utf-8")
+        else:
+            row_iter = row
+
+        if isinstance(row_iter, str):
+            for c, ch in enumerate(row_iter):
+                if ch == "G":
+                    goals.append((r, c))
+        else:
+            for c, cell in enumerate(row_iter):
+                ch = cell.decode("utf-8") if isinstance(cell, bytes) else str(cell)
+                if ch == "G":
+                    goals.append((r, c))
+
+    return goals
+

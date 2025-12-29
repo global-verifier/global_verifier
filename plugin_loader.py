@@ -25,19 +25,49 @@ def load_explorer_model(model_name: str) -> BaseExplorerModel:
         raise Exception(f"In utils.py load_model(), model_name ({model_name}) is not recognized.")
 
 
-def load_adaptor(env_name: str, **kwargs) -> BaseEnvAdaptor:
+def load_adaptor(env_name: str, model_name: str, **kwargs) -> BaseEnvAdaptor:
+    # check env
+    if "_" in env_name:
+        env_name = env_name.split("_")[0]
+    if env_name not in ["webshop", "frozenlake", "mountaincar"]:
+        raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized, must be one of [webshop, frozenlake, mountaincar].")
+    # check model
+    if "llama" in model_name:
+        env_name = env_name + "_llama"
+    elif "qwen" in model_name:
+        env_name = env_name + "_qwen"
+    else:
+        raise Exception(f"In utils.py load_adaptor(), model_name ({model_name}) is not recognized, must be one of [llama, qwen].")
+
+    # load adaptor
     if env_name == "webshop_llama":
         from env_adaptors.webshop_llama_adaptor import WebshopLlamaAdaptor
-        return WebshopLlamaAdaptor(env_name)
+        return WebshopLlamaAdaptor(
+            env_name,
+            enable_confirm_purchase=kwargs.get("enable_confirm_purchase"),
+            session=kwargs.get("session"),
+        )
     if env_name == "webshop_qwen":
         from env_adaptors.webshop_qwen_adaptor import WebshopQwenAdaptor
-        return WebshopQwenAdaptor(env_name)
+        return WebshopQwenAdaptor(
+            env_name,
+            enable_confirm_purchase=kwargs.get("enable_confirm_purchase"),
+            session=kwargs.get("session"),
+        )
     elif env_name == "frozenlake_llama":
         from env_adaptors.frozenLake_llama_adaptor import FrozenLakeLlamaAdaptor
-        return FrozenLakeLlamaAdaptor(env_name, desc=kwargs.get("desc"))
+        return FrozenLakeLlamaAdaptor(
+            env_name,
+            desc=kwargs.get("desc"),
+            goal_rewards=kwargs.get("goal_rewards"),
+        )
     elif env_name == "frozenlake_qwen":
         from env_adaptors.frozenLake_qwen_adaptor import FrozenLakeQwenAdaptor
-        return FrozenLakeQwenAdaptor(env_name, desc=kwargs.get("desc"))
+        return FrozenLakeQwenAdaptor(
+            env_name,
+            desc=kwargs.get("desc"),
+            goal_rewards=kwargs.get("goal_rewards"),
+        )
     elif env_name == "cartpole_llama":
         from env_adaptors.cartPole_llama_adaptor import CartPoleLlamaAdaptor
         return CartPoleLlamaAdaptor(env_name)

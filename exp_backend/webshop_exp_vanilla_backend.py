@@ -101,20 +101,22 @@ class WebshopExpVanillaBackend(WebshopExpBackend):
                 
                 next_state = next_exp['st1']
                 next_key = self._get_state_key(next_state)
-                
-                if next_key in visited:
-                    continue
-                
+
+                # Evaluate finished states BEFORE visited-dedup to avoid missing higher
+                # rewards that land on the same URL but with different scores.
                 if self._is_search_page(next_state):
                     continue
-                
+
                 is_finished, score = WebshopAdaptor.check_finished_and_get_score(next_state)
                 if is_finished:
                     if max_score is None or score > max_score:
                         max_score = score
                     visited.add(next_key)
                     continue
-                
+
+                if next_key in visited:
+                    continue
+
                 visited.add(next_key)
                 queue.append((next_state, current_depth + 1))
         

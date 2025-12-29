@@ -1,12 +1,12 @@
 from .frozenLake_adaptor import FrozenLakeAdaptor
 import re
 
-QWEN_FROZENLAKE_SYSTEM_PROMPT = "You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting."
+QWEN_FROZENLAKE_SYSTEM_PROMPT = "You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting."
 
 
 class FrozenLakeQwenAdaptor(FrozenLakeAdaptor):
-    def __init__(self, env_name, desc=None):
-        super().__init__(env_name, desc=desc)
+    def __init__(self, env_name, desc=None, goal_rewards=None):
+        super().__init__(env_name, desc=desc, goal_rewards=goal_rewards)
 
     def get_action_prompt(self, retrieved_experiences=None):
         if retrieved_experiences is None:
@@ -17,21 +17,61 @@ class FrozenLakeQwenAdaptor(FrozenLakeAdaptor):
         state = self.get_state()
         cur_pos = state['cur_pos']
         tile_type = state['tile_type']
-        destination = self.destination
+        destinations = self.destinations
+        destinations_str = ", ".join([f"({r}, {c})" for r, c in destinations])
+        # Build per-destination guidance: how many steps to move in each direction
+        # from current position to reach each destination.
+        dest_detail_lines = []
+        cur_r, cur_c = cur_pos
+        for i, (r, c) in enumerate(destinations, start=1):
+            up_steps = max(cur_r - r, 0)
+            down_steps = max(r - cur_r, 0)
+            left_steps = max(cur_c - c, 0)
+            right_steps = max(c - cur_c, 0)
+            moves = []
+            if up_steps > 0:
+                moves.append(f"{up_steps} line up")
+            if down_steps > 0:
+                moves.append(f"{down_steps} line down")
+            if left_steps > 0:
+                moves.append(f"{left_steps} column left")
+            if right_steps > 0:
+                moves.append(f"{right_steps} column right")
+
+            move_str = ", ".join(moves) + " step(s)" if moves else "Already at destination (0 moves)."
+            assert len(self.goal_rewards) > 0
+            if len(self.goal_rewards) == 1:
+                dest_detail_lines.append(
+                    f"- Destination {i}: ({r}, {c})."
+                    # f"- Destination {i}: ({r}, {c}). It is {move_str} compare to current position ({cur_r}, {cur_c}). "
+                    # f"You do NOT have to go directly; always avoid holes. Explore more and take detours to find a safe way around."
+                )
+            else:
+                dest_detail_lines.append(
+                    f"- Destination {i}: ({r}, {c}). It is {move_str} compare to current position ({cur_r}, {cur_c}). "
+                    f"You do NOT have to go directly; always avoid holes. Explore more and take detours to find a safe way around."
+                )
+        destinations_detail_str = "\n".join(dest_detail_lines) if dest_detail_lines else "- (none)"
         map_rows = self.env.unwrapped.nrow
         map_cols = self.env.unwrapped.ncol
 
         user_prompt = f"""
 Map Size: {map_rows} rows x {map_cols} columns
-Destination: {destination}
 Current Position: {cur_pos}
+
+There are a total of {len(destinations)} destination(s).
+Destinations: {destinations_str}
+For each destination, the steps below describe how many moves are needed in each direction from your CURRENT position:
+{destinations_detail_str}
+The highest possible score achievable from these destinations is 1.0.
+
 Current Tile Type: {tile_type} (S=Start, F=Frozen, H=Hole, G=Goal)
 
 Available Actions: {available_actions}
-  0 = Move Left
-  1 = Move Down
-  2 = Move Right
-  3 = Move Up
+  0 = Move Left (Column - 1)
+  1 = Move Down (Row + 1)
+  2 = Move Right (Column + 1)
+  3 = Move Up (Row - 1)
 
 """
 
@@ -49,21 +89,33 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
                 action_taken = exp.get('action', 'N/A')
                 next_pos = exp.get('st1', {}).get('cur_pos', 'N/A')
                 next_tile = exp.get('st1', {}).get('tile_type', 'N/A')
+                # Extract the score achieved in the next state (default to 0 if not present)
+                achieved_score = exp.get('st1', {}).get('score', 0)
+                
                 summary = exp.get('voyager_summary')
+                max_score = exp.get('max_score')
                 gen_score = exp.get('generative_score')
 
-                # Add warning for holes
+                # Add warning/success logic
                 tile_warning = ""
                 if next_tile == 'H':
                     tile_warning = f" HOLE - AVOID ACTION {action_taken}!"
                     forbidden_actions.append(action_taken)
                 elif next_tile == 'G':
-                    tile_warning = f" GOAL - TAKE ACTION {action_taken}!"
-                    goal_actions.append(action_taken)
+                    # Only treat MAX score (>= 1.0) as the true target for BEST CHOICE
+                    if achieved_score >= 1.0:
+                        tile_warning = f" MAX REWARD GOAL (Score: {achieved_score}) - TAKE ACTION {action_taken}!"
+                        goal_actions.append(action_taken)
+                    else:
+                        # For sub-optimal goals (e.g., 0.5), do NOT add to goal_actions
+                        tile_warning = f" SUB-OPTIMAL GOAL (Score: {achieved_score}) - Can you find a better one?"
 
                 user_prompt += f"""  Action taken: {action_taken}
   Result Position: {next_pos}
   Result Tile: {next_tile}{tile_warning}
+"""
+                if max_score is not None and max_score > 0:
+                    user_prompt += f"""  Max score achievable from this path: {max_score}
 """
                 if summary:
                     user_prompt += f"""  Summary for this step is: {summary}
@@ -76,8 +128,10 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
             # Add explicit warning section
             if forbidden_actions or goal_actions:
                 user_prompt += "\n"
+            
+            # This triggers only if a 1.0 score goal was found
             if goal_actions:
-                user_prompt += f"""!!! BEST CHOICE: Action(s) {goal_actions} will reach the GOAL directly. Choose this!
+                user_prompt += f"""!!! BEST CHOICE: Action(s) {goal_actions} will reach the HIGHEST SCORE GOAL directly. Choose this!
 
 """
             if forbidden_actions:
@@ -92,11 +146,14 @@ YOU MUST NOT choose {forbidden_list} from this position!
 
 """
 
-        user_prompt += """Based on the current position, task instruction, and past experiences, what is the next action you should take?
+        user_prompt += """Based on the current position and the destination coordinates:
+1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
+2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
+3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
+4. DO NOT satisfy with low scores (e.g. 0.5). Aim for the HIGHEST SCORE (1.0). Explore unexplored areas to search for best score.
+5. AVOID actions strictly forbidden (leading to Holes). Never take actions that lead to holes.
 
-REMEMBER: If certain actions lead to holes, you MUST avoid them. Choose the safest action that moves toward the destination.
-
-Respond with only the action number (0, 1, 2, or 3).
+Which action effectively moves you closer to the HIGHEST SCORE goal? Respond with only the action number (0, 1, 2, or 3).
 """
 
         # Construct the prompt in Qwen ChatML format
@@ -123,5 +180,3 @@ Respond with only the action number (0, 1, 2, or 3).
             raise ValueError(f"Multiple actions found ({matches}) in: {action}")
         else:
             return int(matches[0])
-
-

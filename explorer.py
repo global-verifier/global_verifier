@@ -25,6 +25,9 @@ class Explorer:
         depreiciate_exp_store_path: str = None,
         desc=None,
         force=None,
+        goal_rewards=None,
+        enable_confirm_purchase=None,
+        session=None,
         ):
         # Add plug in
         self.explorer_model = load_explorer_model(model_name or explorer_settings["model_name"])
@@ -45,6 +48,9 @@ class Explorer:
             depreiciate_exp_store_path=depreiciate_exp_store_path,
             desc=desc,
             force=force,
+            goal_rewards=goal_rewards,
+            enable_confirm_purchase=enable_confirm_purchase,
+            session=session,
         )
 
     def init_after_model(
@@ -65,6 +71,9 @@ class Explorer:
         depreiciate_exp_store_path=None,
         desc=None,
         force=None,
+        goal_rewards=None,
+        enable_confirm_purchase=None,
+        session=None,
     ):
         """
         Finish initialization steps that do not require reloading the explorer_model.
@@ -115,13 +124,28 @@ class Explorer:
             if decay_rate is None
             else decay_rate
         )
+        # Webshop-specific overrides
+        self.enable_confirm_purchase = (
+            enable_confirm_purchase
+            if enable_confirm_purchase is not None
+            else getattr(self, "enable_confirm_purchase", None)
+        )
+        self.session = (
+            session
+            if session is not None
+            else getattr(self, "session", None)
+        )
 
         adaptor_kwargs = {}
         if "frozenlake" in self.env_name:
             adaptor_kwargs["desc"] = desc
+            adaptor_kwargs["goal_rewards"] = goal_rewards
         if "mountaincar" in self.env_name:
             adaptor_kwargs["force"] = force
-        self.adaptor = load_adaptor(self.env_name, **adaptor_kwargs)
+        if "webshop" in self.env_name:
+            adaptor_kwargs["enable_confirm_purchase"] = self.enable_confirm_purchase
+            adaptor_kwargs["session"] = self.session
+        self.adaptor = load_adaptor(self.env_name, self.model_name, **adaptor_kwargs)
         # 传入 explorer_model 给 backend（voyager backend 需要用它生成总结）
         self.exp_backend = load_exp_backend(
             self.backend_env,

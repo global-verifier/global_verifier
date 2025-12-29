@@ -1,3 +1,6 @@
+import json
+import urllib.parse
+
 from .webshop_adaptor import WebshopAdaptor
 
 LLAMA3_WEBSHOP_SYSTEM_PROMPT = "You are an intelligent exploration agent that navigates through environments to accomplish tasks. Your goal is to analyze the current state, understand the task instruction, and determine the next action to take. Respond with only the action you want to execute, without any additional explanation or formatting."
@@ -37,6 +40,9 @@ Available Actions: {available_actions}
 """
         if not is_search:
             user_prompt += f"""Clickables: {action_status['clickables']}\n"""
+            if "buy now" in action_status["clickables"]:
+                user_prompt += """If you think you have meet the requirement, you can click the 'buy now' button to buy the product."""
+            user_prompt += """You can only click one button at a time."""
 
         # Add current episode's action history to avoid repeating ineffective actions
         action_path = self.get_action_path()
@@ -62,7 +68,19 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
                 user_prompt += f"""Experience {idx}:
   Action taken: {action_taken}
   Result URL: {next_url}
-  Max score achievable: {max_score if max_score is not None else 'Unknown (may not lead to success)'}
+"""
+                if max_score is None or max_score == 0:
+                    # user_prompt += f"""  Result: Score 0.0 (Failed). \n"""
+                    user_prompt += f""" \n"""
+                elif max_score == 1:
+                    user_prompt += f"""  Result: Score 1.0 (PERFECT).
+  Max score this action can achieve is 1.0. You SHOULD take the same action: {action_taken}.
+
+"""
+                else:
+                    user_prompt += f"""  Result: Score {max_score} (SUBOPTIMAL).
+  Max score is {max_score}, which is NOT 1.0. This means '{action_taken}' is NOT the best choice (e.g. wrong color or size).
+  Do NOT repeat '{action_taken}'. You MUST select a different option to aim for score 1.0!
 
 """
                 if summary:
@@ -71,8 +89,50 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
                 if gen_score is not None:
                     user_prompt += f"""  LLM analyzed score for this action is: {gen_score}
 """
-            user_prompt += """IMPORTANT: Choose the action with the HIGHEST max_score! 
-Actions with max_score=None may not lead to success. Prefer actions with a known positive score.
+            if "confirm_purchase" in str(state.get("url", "")):
+                blacklisted_actions = []
+                for exp in retrieved_experiences:
+                    max_score = exp.get("max_score", None)
+                    action = exp.get("action", None)
+                    if max_score in (0, 0.0) and isinstance(action, str) and action.startswith("click["):
+                        if action not in blacklisted_actions:
+                            blacklisted_actions.append(action)
+                if blacklisted_actions:
+                    user_prompt += """IMPORTANT: BLACKLISTED ACTIONS
+The following actions have been confirmed to result in a score of 0.0 in this specific state. You MUST NOT select them:
+
+"""
+                    for action in blacklisted_actions:
+                        user_prompt += f"""{action} (Score: 0.0) Please choose a different action from the remaining Clickables to explore potential success.
+"""
+                    user_prompt += "\n"
+
+        # 对 item_page 做选项黑名单，避免重复选择已选项
+        if "item_page" in str(state.get("url", "")):
+            selected_option_blacklist = []
+            selected_part = str(state.get("url", "")).rsplit("/", 1)[-1]
+            decoded_part = urllib.parse.unquote(selected_part)
+            selected_dict = json.loads(decoded_part)
+            assert isinstance(selected_dict, dict), "selected_dict is not a dict"
+            for value in selected_dict.values():
+                action = f"click[{str(value).lower()}]"
+                if action not in selected_option_blacklist:
+                    selected_option_blacklist.append(action)
+            if selected_option_blacklist:
+                user_prompt += """IMPORTANT: CURRENTLY SELECTED OPTIONS
+The following options are already selected on this item page. Do NOT click them again; pick a different option to progress:
+
+"""
+                for action in selected_option_blacklist:
+                    user_prompt += f"""{action} (already selected). Choose another option from Clickables.
+"""
+                user_prompt += "\n"
+
+        # 增强结尾的指令
+        user_prompt += """IMPORTANT STRATEGY:
+1. SCORE 1.0 IS THE ONLY GOAL.
+2. If a previous action got 1.0 -> REPEAT IT.
+3. If a previous action got anything less than 1.0 (e.g. 0.5, 0.75) -> IT IS WRONG. DO NOT REPEAT IT. CHOOSE A DIFFERENT OPTION.
 ---
 
 """

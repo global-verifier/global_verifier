@@ -31,9 +31,9 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "7"
 from explorer import Explorer
 
 # start_timestep = 0
-model_name = "qwen2.5-7b"
+model_name = "llama3.1"
 # model_name = "qwen3-30b"
-# model_name = "llama3.1"
+# model_name = "qwen2.5-7b"
 env_name = "webshop"
 backend_env = "webshop-vanilla"
 

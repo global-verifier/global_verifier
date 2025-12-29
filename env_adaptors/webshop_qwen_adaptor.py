@@ -4,8 +4,12 @@ QWEN_WEBSHOP_SYSTEM_PROMPT = "You are an intelligent exploration agent that navi
 
 
 class WebshopQwenAdaptor(WebshopAdaptor):
-    def __init__(self, env_name):
-        super().__init__(env_name)
+    def __init__(self, env_name, enable_confirm_purchase=None, session=None):
+        super().__init__(
+            env_name,
+            enable_confirm_purchase=enable_confirm_purchase,
+            session=session,
+        )
 
     def get_action_prompt(self, retrieved_experiences=None):
         """生成用于LLM获取下一个action的prompt"""

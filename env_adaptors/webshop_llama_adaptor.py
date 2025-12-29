@@ -3,8 +3,12 @@ from .webshop_adaptor import WebshopAdaptor
 LLAMA3_WEBSHOP_SYSTEM_PROMPT = "You are an intelligent exploration agent that navigates through environments to accomplish tasks. Your goal is to analyze the current state, understand the task instruction, and determine the next action to take. Respond with only the action you want to execute, without any additional explanation or formatting."
 
 class WebshopLlamaAdaptor(WebshopAdaptor):
-    def __init__(self, env_name):
-        super().__init__(env_name)
+    def __init__(self, env_name, enable_confirm_purchase=None, session=None):
+        super().__init__(
+            env_name,
+            enable_confirm_purchase=enable_confirm_purchase,
+            session=session,
+        )
 
     def get_action_prompt(self, retrieved_experiences=None):
         """生成用于LLM获取下一个action的prompt"""

@@ -7,22 +7,27 @@ from exp_backend.base_exp_backend import BaseExpBackend
 
 
 def load_explorer_model(model_name: str) -> BaseExplorerModel:
-    if model_name == "llama3-8b":
+    if "llama" in model_name:
         return Llama3ExplorerModel(model_path[model_name])
-    if model_name == "llama3.1":
-        return Llama3ExplorerModel(model_path[model_name])
-    if model_name == "llama3.2-3b":
-        return Llama3ExplorerModel(model_path[model_name])
-    if model_name == "qwen2-7b":
+    if "qwen" in model_name:
         return QwenExplorerModel(model_path[model_name])
-    if model_name == "qwen2.5-7b":
-        return QwenExplorerModel(model_path[model_name])
-    if model_name == "qwen3-8b":
-        return QwenExplorerModel(model_path[model_name])
-    if model_name == "qwen3-30b":
-        return QwenExplorerModel(model_path[model_name])
-    else:
-        raise Exception(f"In utils.py load_model(), model_name ({model_name}) is not recognized.")
+    raise Exception(f"In utils.py load_model(), model_name ({model_name}) is not recognized.")
+    # if model_name == "llama3-8b":
+    #     return Llama3ExplorerModel(model_path[model_name])
+    # if model_name == "llama3.1":
+    #     return Llama3ExplorerModel(model_path[model_name])
+    # if model_name == "llama3.2-3b":
+    #     return Llama3ExplorerModel(model_path[model_name])
+    # if model_name == "qwen2-7b":
+    #     return QwenExplorerModel(model_path[model_name])
+    # if model_name == "qwen2.5-7b":
+    #     return QwenExplorerModel(model_path[model_name])
+    # if model_name == "qwen3-8b":
+    #     return QwenExplorerModel(model_path[model_name])
+    # if model_name == "qwen3-30b":
+    #     return QwenExplorerModel(model_path[model_name])
+    # else:
+    #     raise Exception(f"In utils.py load_model(), model_name ({model_name}) is not recognized.")
 
 
 def load_adaptor(env_name: str, model_name: str, **kwargs) -> BaseEnvAdaptor:

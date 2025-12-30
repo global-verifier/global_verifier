@@ -1,0 +1,5 @@
+transformers>=4.57.0
+accelerate>=1.12.0
+# WebShop env deps
+spacy>=3.7.0
+

@@ -1,5 +1,7 @@
 transformers>=4.57.0
 accelerate>=1.12.0
+# Needed for Mistral3 Tekken tokenizer support (tekken.json)
+mistral-common
 # WebShop env deps
 spacy>=3.7.0
 

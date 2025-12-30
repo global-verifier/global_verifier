@@ -2,6 +2,7 @@ from config import model_path
 from explorer_model.base_explorer_model import BaseExplorerModel
 from explorer_model.llama3_explorer_model import Llama3ExplorerModel
 from explorer_model.qwen_explorer_model import QwenExplorerModel
+from explorer_model.mistral_explorer_model import MistralExplorerModel
 from env_adaptors.base_env_adaptor import BaseEnvAdaptor
 from exp_backend.base_exp_backend import BaseExpBackend
 
@@ -11,6 +12,8 @@ def load_explorer_model(model_name: str) -> BaseExplorerModel:
         return Llama3ExplorerModel(model_path[model_name])
     if "qwen" in model_name:
         return QwenExplorerModel(model_path[model_name])
+    if "mistral" in model_name:
+        return MistralExplorerModel(model_path[model_name])
     raise Exception(f"In utils.py load_model(), model_name ({model_name}) is not recognized.")
     # if model_name == "llama3-8b":
     #     return Llama3ExplorerModel(model_path[model_name])
@@ -41,6 +44,8 @@ def load_adaptor(env_name: str, model_name: str, **kwargs) -> BaseEnvAdaptor:
         env_name = env_name + "_llama"
     elif "qwen" in model_name:
         env_name = env_name + "_qwen"
+    elif "mistral" in model_name:
+        env_name = env_name + "_mistral"
     else:
         raise Exception(f"In utils.py load_adaptor(), model_name ({model_name}) is not recognized, must be one of [llama, qwen].")
 
@@ -52,9 +57,16 @@ def load_adaptor(env_name: str, model_name: str, **kwargs) -> BaseEnvAdaptor:
             enable_confirm_purchase=kwargs.get("enable_confirm_purchase"),
             session=kwargs.get("session"),
         )
-    if env_name == "webshop_qwen":
+    elif env_name == "webshop_qwen":
         from env_adaptors.webshop_qwen_adaptor import WebshopQwenAdaptor
         return WebshopQwenAdaptor(
+            env_name,
+            enable_confirm_purchase=kwargs.get("enable_confirm_purchase"),
+            session=kwargs.get("session"),
+        )
+    elif env_name == "webshop_mistral":
+        from env_adaptors.webshop_mistral_adaptor import WebshopMistralAdaptor
+        return WebshopMistralAdaptor(
             env_name,
             enable_confirm_purchase=kwargs.get("enable_confirm_purchase"),
             session=kwargs.get("session"),
@@ -73,18 +85,22 @@ def load_adaptor(env_name: str, model_name: str, **kwargs) -> BaseEnvAdaptor:
             desc=kwargs.get("desc"),
             goal_rewards=kwargs.get("goal_rewards"),
         )
-    elif env_name == "cartpole_llama":
-        from env_adaptors.cartPole_llama_adaptor import CartPoleLlamaAdaptor
-        return CartPoleLlamaAdaptor(env_name)
-    elif env_name == "cartpole_qwen":
-        from env_adaptors.cartPole_qwen_adaptor import CartPoleQwenAdaptor
-        return CartPoleQwenAdaptor(env_name)
+    elif env_name == "frozenlake_mistral":
+        from env_adaptors.frozenLake_mistral_adaptor import FrozenLakeMistralAdaptor
+        return FrozenLakeMistralAdaptor(
+            env_name,
+            desc=kwargs.get("desc"),
+            goal_rewards=kwargs.get("goal_rewards"),
+        )
     elif env_name == "mountaincar_llama":
         from env_adaptors.mountainCar_llama_adaptor import MountainCarLlamaAdaptor
         return MountainCarLlamaAdaptor(env_name, force=kwargs.get("force"))
     elif env_name == "mountaincar_qwen":
         from env_adaptors.mountainCar_qwen_adaptor import MountainCarQwenAdaptor
         return MountainCarQwenAdaptor(env_name, force=kwargs.get("force"))
+    elif env_name == "mountaincar_mistral":
+        from env_adaptors.mountainCar_mistral_adaptor import MountainCarMistralAdaptor
+        return MountainCarMistralAdaptor(env_name, force=kwargs.get("force"))
     else:
         raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized.")
 

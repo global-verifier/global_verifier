@@ -141,8 +141,9 @@ Init new environment:
     def is_valid_action(self, action):
         action_status = self.get_available_actions()
         action = action.strip()
-        # pattern: content[content]
-        pattern = r"^[^\[\]\s]+?\[[^\[\]]+?\]$"
+        # pattern: must start with "search[" or "click["
+        # Examples: search[winter jacket], click[search], click[buy now]
+        pattern = r"^(search|click)\[[^\[\]]+?\]$"
         if not bool(re.match(pattern, action)):
             return False
         action = action[:-1].split("[")

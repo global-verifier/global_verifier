@@ -213,3 +213,19 @@ Init new environment:
             if reward_keys != found_keys:
                 raise ValueError(f"goal_rewards keys {reward_keys} do not match goal positions {found_keys}")
         return goal_positions
+
+    def format_action(self, action):
+        """
+        Format the action from LLM output to valid action integer.
+        Extracts exactly one digit (0-3) from the response.
+        Raises error if zero or multiple valid actions found.
+        """
+        action = action.strip()
+        # Find all numbers in the range 0-3
+        matches = re.findall(r'[0-3]', action)
+        if len(matches) == 0:
+            raise ValueError(f"Could not extract valid action (0-3) from: {action}")
+        elif len(matches) > 1:
+            raise ValueError(f"Multiple actions found ({matches}) in: {action}")
+        else:
+            return int(matches[0])

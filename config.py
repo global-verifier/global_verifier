@@ -19,7 +19,7 @@ model_path = {
     "llama3.1-8b": "/data/xingkun/local_model/Meta-Llama-3.1-8B-Instruct",
     "llama3.2-3b": "/data/xingkun/local_model/Llama-3.2-3B-Instruct",
     "llama3.3-70b": "/data/xingkun/local_model/Llama-3.3-70B-Instruct",
-    "llama4-17b": "/data/xingkun/local_model/Llama-4-Maverick-17B-128E-Instruct",
+    # "llama4-17b": "/data/xingkun/local_model/Llama-4-Maverick-17B-128E-Instruct",
     "qwen2-7b": "/data/xingkun/local_model/Qwen2-7B-Instruct",
     "qwen2.5-7b": "/data/xingkun/local_model/Qwen2.5-7B-Instruct",
     # "qwen3-8B": "/data/xingkun/local_model/Qwen3-8B",

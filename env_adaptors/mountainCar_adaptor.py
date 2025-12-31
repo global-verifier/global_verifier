@@ -5,11 +5,28 @@ from .base_env_adaptor import BaseEnvAdaptor
 from .env_config import mountaincar_config
 from utils import get_timestamp_ms
 import re
+from .adopter_util import (
+    format_full_llama_prompt,
+    format_full_mistral_prompt,
+    format_full_qwen_prompt,
+)
+from .adaptor_prompt_factory import (
+    MOUNTAINCAR_SYSTEM_PROMPT,
+    build_mountaincar_user_prompt,
+)
 
 class MountainCarAdaptor(BaseEnvAdaptor):
-    def __init__(self, env_name, force=None):
-        super().__init__(env_name)
+    def __init__(self, env_name, model_name, force=None):
+        super().__init__(env_name, model_name)
         self.seed = mountaincar_config.get('random_seed')
+        if "llama" in model_name:
+            self.format_full_prompt = format_full_llama_prompt
+        elif "mistral" in model_name:
+            self.format_full_prompt = format_full_mistral_prompt
+        elif "qwen" in model_name:
+            self.format_full_prompt = format_full_qwen_prompt
+        else:
+            raise ValueError(f"Invalid model name: {model_name}")
         
         # Create MountainCar environment
         self.env = gym.make(mountaincar_config['id'])
@@ -241,3 +258,19 @@ Actions:
             raise ValueError(f"Multiple actions found ({matches}) in: {action}")
         else:
             return int(matches[0])
+
+    # get action prompt
+    def get_action_prompt(self, retrieved_experiences=None):
+        if retrieved_experiences is None:
+            retrieved_experiences = []
+
+        state = self.get_state()
+        user_prompt = build_mountaincar_user_prompt(
+            episode_length=self.episode_length,
+            episode_reward=self.episode_reward,
+            state=state,
+            retrieved_experiences=retrieved_experiences,
+        )
+
+        prompt = self.format_full_prompt(MOUNTAINCAR_SYSTEM_PROMPT, user_prompt)
+        return prompt

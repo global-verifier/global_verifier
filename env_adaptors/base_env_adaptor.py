@@ -3,6 +3,7 @@ import json
 class BaseEnvAdaptor:
     def __init__(self, env_name, model_name):
         self.env_name = env_name
+        self.model_name = model_name
 
     # Consultants
     def check_action_valid(self, action, available_actions):

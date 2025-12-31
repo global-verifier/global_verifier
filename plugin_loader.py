@@ -18,65 +18,37 @@ def load_explorer_model(model_name: str) -> BaseExplorerModel:
 
 
 def load_adaptor(env_name: str, model_name: str, **kwargs) -> BaseEnvAdaptor:
-    # check env
-    if "_" in env_name:
-        env_name = env_name.split("_")[0]
-    if env_name not in ["webshop", "frozenlake", "mountaincar"]:
-        raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized, must be one of [webshop, frozenlake, mountaincar].")
-    # # check model
-    # if "llama" in model_name:
-    #     model_name = "llama"
-    #     # env_name = env_name + "_llama"
-    # elif "qwen" in model_name:
-    #     model_name = "qwen"
-    #     # env_name = env_name + "_qwen"
-    # elif "mistral" in model_name:
-    #     model_name = "mistral"
-    #     # env_name = env_name + "_mistral"
-    # else:
-    #     raise Exception(f"In utils.py load_adaptor(), model_name ({model_name}) is not recognized, must be one of [llama, qwen].")
+    env_name_raw = env_name
+    env_parts = env_name_raw.split("_", 1)
+    base_env = env_parts[0]
+
+    if base_env not in ["webshop", "frozenlake", "mountaincar"]:
+        raise Exception(f"In utils.py load_adaptor(), env_name ({env_name_raw}) is not recognized, must be one of [webshop, frozenlake, mountaincar].")
+    if model_name is None:
+        raise Exception(f"In utils.py load_adaptor(), model_name is None and env_name ({env_name_raw}) does not encode a model.")
 
     # load adaptor
-    if env_name == "webshop_llama":
-        from env_adaptors.webshop_llama_adaptor import WebshopLlamaAdaptor
-        return WebshopLlamaAdaptor(
-            env_name,
+    if base_env == "webshop":
+        from env_adaptors.webshop_adaptor import WebshopAdaptor
+        return WebshopAdaptor(
+            base_env,
+            model_name,
             enable_confirm_purchase=kwargs.get("enable_confirm_purchase"),
             session=kwargs.get("session"),
         )
-    elif env_name == "webshop_qwen":
-        from env_adaptors.webshop_qwen_adaptor import WebshopQwenAdaptor
-        return WebshopQwenAdaptor(
-            env_name,
-            enable_confirm_purchase=kwargs.get("enable_confirm_purchase"),
-            session=kwargs.get("session"),
-        )
-    elif env_name == "webshop_mistral":
-        from env_adaptors.webshop_mistral_adaptor import WebshopMistralAdaptor
-        return WebshopMistralAdaptor(
-            env_name,
-            enable_confirm_purchase=kwargs.get("enable_confirm_purchase"),
-            session=kwargs.get("session"),
-        )
-    elif env_name == "frozenlake":
+    elif base_env == "frozenlake":
         from env_adaptors.frozenLake_adaptor import FrozenLakeAdaptor
         return FrozenLakeAdaptor(
-            env_name,
+            base_env,
             model_name,
             desc=kwargs.get("desc"),
             goal_rewards=kwargs.get("goal_rewards"),
         )
-    elif env_name == "mountaincar_llama":
-        from env_adaptors.mountainCar_llama_adaptor import MountainCarLlamaAdaptor
-        return MountainCarLlamaAdaptor(env_name, force=kwargs.get("force"))
-    elif env_name == "mountaincar_qwen":
-        from env_adaptors.mountainCar_qwen_adaptor import MountainCarQwenAdaptor
-        return MountainCarQwenAdaptor(env_name, force=kwargs.get("force"))
-    elif env_name == "mountaincar_mistral":
-        from env_adaptors.mountainCar_mistral_adaptor import MountainCarMistralAdaptor
-        return MountainCarMistralAdaptor(env_name, force=kwargs.get("force"))
+    elif base_env == "mountaincar":
+        from env_adaptors.mountainCar_adaptor import MountainCarAdaptor
+        return MountainCarAdaptor(base_env, model_name, force=kwargs.get("force"))
     else:
-        raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized.")
+        raise Exception(f"In utils.py load_adaptor(), env_name ({env_name_raw}) is not recognized.")
 
 
 def load_exp_backend(env_name: str, storage_path: str, depreiciate_exp_store_path: str, explorer_model=None, **kwargs) -> BaseExpBackend:

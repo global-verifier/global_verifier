@@ -3,11 +3,12 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 from explorer import Explorer
 
 # model_name = "llama3.1-8b"
-env_name = "frozenlake"
 # model_name = "qwen2.5-7b"
-# env_name = "frozenlake_qwen"
-model_name = "qwen3-30b"
-# env_name = "frozenlake_qwen"
+# model_name = "qwen3-30b"
+# model_name = "internlm3-8b"
+# model_name = "deepseek-v2"
+model_name = "openai-gpt-3.5-turbo-instruct"
+env_name = "frozenlake"
 backend_env = "frozenlake-vanilla"
 max_steps = 20
 use_global_verifier = True

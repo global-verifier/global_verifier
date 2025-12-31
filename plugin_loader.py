@@ -5,6 +5,9 @@ from explorer_model.qwen_explorer_model import QwenExplorerModel
 from explorer_model.mistral_explorer_model import MistralExplorerModel
 from env_adaptors.base_env_adaptor import BaseEnvAdaptor
 from exp_backend.base_exp_backend import BaseExpBackend
+from explorer_model.internlm_explorer_model import InternLMExplorerModel
+from explorer_model.deepseek_explorer_model import DeepSeekExplorerModel
+from explorer_model.openai_explorer_model import OpenAIExplorerModel
 
 
 def load_explorer_model(model_name: str) -> BaseExplorerModel:
@@ -14,6 +17,12 @@ def load_explorer_model(model_name: str) -> BaseExplorerModel:
         return QwenExplorerModel(model_path[model_name])
     if "mistral" in model_name:
         return MistralExplorerModel(model_path[model_name])
+    if "internlm" in model_name:
+        return InternLMExplorerModel(model_path[model_name])
+    if "deepseek" in model_name:
+        return DeepSeekExplorerModel(model_path[model_name])
+    if "openai" in model_name:
+        return OpenAIExplorerModel(model_path[model_name])
     raise Exception(f"In utils.py load_model(), model_name ({model_name}) is not recognized.")
 
 

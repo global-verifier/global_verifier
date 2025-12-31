@@ -27,4 +27,13 @@ model_path = {
     # mistral models
     "mistral3-14b": "/data/xingkun/local_model/Ministral-3-14B-Instruct-2512",
     "mistral3.2-24b": "/data/xingkun/local_model/Mistral-Small-3.2-24B-Instruct-2506",
+    # internlm models
+    "internlm3-8b": "/data/xingkun/local_model/internlm3-8b-instruct",
+    # deepseek models
+    "deepseek-v2": "/data/xingkun/local_model/DeepSeek-Coder-V2-Lite-Instruct",
+    # openai models
+    "openai-gpt-3.5-turbo-instruct": "gpt-3.5-turbo-instruct",
+}
+api = {
+    "base_url": "https://hk.yi-zhan.top/v1",
 }

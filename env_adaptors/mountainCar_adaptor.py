@@ -6,9 +6,7 @@ from .env_config import mountaincar_config
 from utils import get_timestamp_ms
 import re
 from .adopter_util import (
-    format_full_llama_prompt,
-    format_full_mistral_prompt,
-    format_full_qwen_prompt,
+    choose_format_full_prompt,
 )
 from .adaptor_prompt_factory import (
     MOUNTAINCAR_SYSTEM_PROMPT,
@@ -19,15 +17,8 @@ class MountainCarAdaptor(BaseEnvAdaptor):
     def __init__(self, env_name, model_name, force=None):
         super().__init__(env_name, model_name)
         self.seed = mountaincar_config.get('random_seed')
-        if "llama" in model_name:
-            self.format_full_prompt = format_full_llama_prompt
-        elif "mistral" in model_name:
-            self.format_full_prompt = format_full_mistral_prompt
-        elif "qwen" in model_name:
-            self.format_full_prompt = format_full_qwen_prompt
-        else:
-            raise ValueError(f"Invalid model name: {model_name}")
-        
+
+        self.format_full_prompt = choose_format_full_prompt(model_name)
         # Create MountainCar environment
         self.env = gym.make(mountaincar_config['id'])
         

@@ -92,3 +92,46 @@ def format_full_qwen_prompt(system_prompt, user_prompt):
             f"<|im_start|>assistant\n"
         )
         return prompt
+
+def format_full_internlm_prompt(system_prompt, user_prompt):
+    """
+    InternLM3-8B-Instruct 采用 ChatML 格式。
+    参考: https://huggingface.co/internlm/internlm3-8b-instruct
+    """
+    prompt = (
+        f"<|im_start|>system\n{system_prompt}<|im_end|>\n"
+        f"<|im_start|>user\n{user_prompt}<|im_end|>\n"
+        f"<|im_start|>assistant\n"
+    )
+    return prompt
+
+def format_full_deepseek_prompt(system_prompt, user_prompt):
+    """
+    DeepSeek-Coder-V2-Lite-Instruct 格式。
+    参考: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+    """
+    # DeepSeek Coder V2 通常以 <｜begin▁of▁sentence｜> 开始，使用 User/Assistant 角色标记
+    prompt = f"<｜begin▁of▁sentence｜>{system_prompt}\n\nUser: {user_prompt}\n\nAssistant: "
+    return prompt
+
+def format_full_openai_prompt(system_prompt, user_prompt):
+    prompt = f"{system_prompt}\n\n{user_prompt}"
+    return prompt
+
+def choose_format_full_prompt(model_name):
+    # choose the format_full_xxx_prompt function
+    if "llama" in model_name:
+        return format_full_llama_prompt
+    elif "mistral" in model_name:
+        return format_full_mistral_prompt
+    elif "qwen" in model_name:
+        return format_full_qwen_prompt
+    elif "internlm" in model_name:
+        return format_full_internlm_prompt
+    elif "deepseek" in model_name:
+        return format_full_deepseek_prompt
+    elif "openai" in model_name:
+        return format_full_openai_prompt
+    else:
+        raise ValueError(f"Invalid model name: {model_name}")
+

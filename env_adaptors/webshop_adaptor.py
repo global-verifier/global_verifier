@@ -5,9 +5,7 @@ from .base_env_adaptor import BaseEnvAdaptor
 from .env_config import webshop_config
 from .adopter_util import (
     extract_visible_text,
-    format_full_llama_prompt,
-    format_full_mistral_prompt,
-    format_full_qwen_prompt,
+    choose_format_full_prompt,
 )
 import re
 import random
@@ -32,14 +30,8 @@ class WebshopAdaptor(BaseEnvAdaptor):
         if seed is not None:
             random.seed(seed)
         # choose the format_full_xxx_prompt function
-        if "llama" in model_name:
-            self.format_full_prompt = format_full_llama_prompt
-        elif "mistral" in model_name:
-            self.format_full_prompt = format_full_mistral_prompt
-        elif "qwen" in model_name:
-            self.format_full_prompt = format_full_qwen_prompt
-        else:
-            raise ValueError(f"Invalid model name: {model_name}")
+        self.format_full_prompt = choose_format_full_prompt(model_name)
+
             
         # Prefer caller-provided overrides; fall back to webshop_config defaults
         self.enable_confirm_purchase = (

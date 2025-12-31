@@ -3,7 +3,7 @@ import os
 import random
 import gymnasium as gym
 from .base_env_adaptor import BaseEnvAdaptor
-from .adopter_util import frozenlake_goal_positions, format_full_llama_prompt, format_full_mistral_prompt, format_full_qwen_prompt
+from .adopter_util import frozenlake_goal_positions, choose_format_full_prompt
 from .env_config import frozenlake_config
 from utils import get_timestamp_ms
 import re
@@ -52,15 +52,8 @@ class FrozenLakeAdaptor(BaseEnvAdaptor):
         self.terminated = False
         self.reward = None
 
-        # choose the format_full_xxx_prompt function
-        if "llama" in model_name:
-            self.format_full_prompt = format_full_llama_prompt
-        elif "mistral" in model_name:
-            self.format_full_prompt = format_full_mistral_prompt
-        elif "qwen" in model_name:
-            self.format_full_prompt = format_full_qwen_prompt
-        else:
-            raise ValueError(f"Invalid model name: {model_name}")
+        self.format_full_prompt = choose_format_full_prompt(model_name)
+
 
     def initialize_env(self):
         self.env.reset()

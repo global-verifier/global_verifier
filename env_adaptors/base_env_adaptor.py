@@ -1,7 +1,7 @@
 import json
 
 class BaseEnvAdaptor:
-    def __init__(self, env_name):
+    def __init__(self, env_name, model_name):
         self.env_name = env_name
 
     # Consultants

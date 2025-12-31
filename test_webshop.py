@@ -29,15 +29,15 @@ else:
 
 # Don't force CUDA_VISIBLE_DEVICES here; it prevents multi-GPU sharding (device_map="auto")
 # for large models like 70B. If you want to pin GPUs, export CUDA_VISIBLE_DEVICES externally.
-os.environ.setdefault("CUDA_VISIBLE_DEVICES", "6")
+os.environ.setdefault("CUDA_VISIBLE_DEVICES", "4")
 from explorer import Explorer
 
 # start_timestep = 0
 # model_name = "llama3.1-8b"
 # model_name = "llama3.2-3b"
-# model_name = "llama3.3-70b"
+model_name = "llama3.3-70b"
 # model_name = "qwen2-7b"
-model_name = "qwen2.5-7b"
+# model_name = "qwen2.5-7b"
 # model_name = "qwen3-30b"
 # model_name = "mistral3-14b"
 # model_name = "mistral3.2-24b"

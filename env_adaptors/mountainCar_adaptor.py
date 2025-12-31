@@ -4,6 +4,7 @@ import gymnasium as gym
 from .base_env_adaptor import BaseEnvAdaptor
 from .env_config import mountaincar_config
 from utils import get_timestamp_ms
+import re
 
 class MountainCarAdaptor(BaseEnvAdaptor):
     def __init__(self, env_name, force=None):

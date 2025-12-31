@@ -3,13 +3,15 @@ import os
 import random
 import gymnasium as gym
 from .base_env_adaptor import BaseEnvAdaptor
-from .adopter_util import frozenlake_goal_positions
+from .adopter_util import frozenlake_goal_positions, format_full_llama_prompt, format_full_mistral_prompt, format_full_qwen_prompt
 from .env_config import frozenlake_config
 from utils import get_timestamp_ms
+import re
+from .adaptor_prompt_factory import build_frozenlake_user_prompt, FROZENLAKE_SYSTEM_PROMPT
 
 class FrozenLakeAdaptor(BaseEnvAdaptor):
-    def __init__(self, env_name, desc=None, goal_rewards=None):
-        super().__init__(env_name)
+    def __init__(self, env_name, model_name, desc=None, goal_rewards=None):
+        super().__init__(env_name, model_name)
         seed = frozenlake_config.get('random_seed')
         if seed is not None:
             random.seed(seed)
@@ -49,6 +51,16 @@ class FrozenLakeAdaptor(BaseEnvAdaptor):
         self.st1 = None
         self.terminated = False
         self.reward = None
+
+        # choose the format_full_xxx_prompt function
+        if "llama" in model_name:
+            self.format_full_prompt = format_full_llama_prompt
+        elif "mistral" in model_name:
+            self.format_full_prompt = format_full_mistral_prompt
+        elif "qwen" in model_name:
+            self.format_full_prompt = format_full_qwen_prompt
+        else:
+            raise ValueError(f"Invalid model name: {model_name}")
 
     def initialize_env(self):
         self.env.reset()
@@ -229,3 +241,22 @@ Init new environment:
             raise ValueError(f"Multiple actions found ({matches}) in: {action}")
         else:
             return int(matches[0])
+
+    # get action prompt
+    def get_action_prompt(self, retrieved_experiences=None):
+        if retrieved_experiences is None:
+            retrieved_experiences = []
+        state = self.get_state()
+        user_prompt = build_frozenlake_user_prompt(
+            state=state,
+            available_actions=self.get_available_actions(),
+            destinations=self.destinations,
+            goal_rewards=self.goal_rewards,
+            map_rows=self.env.unwrapped.nrow,
+            map_cols=self.env.unwrapped.ncol,
+            retrieved_experiences=retrieved_experiences,
+        )
+        
+        # Construct the prompt in Llama3 format
+        prompt = self.format_full_prompt(FROZENLAKE_SYSTEM_PROMPT, user_prompt)
+        return prompt

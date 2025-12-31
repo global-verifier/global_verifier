@@ -15,22 +15,6 @@ def load_explorer_model(model_name: str) -> BaseExplorerModel:
     if "mistral" in model_name:
         return MistralExplorerModel(model_path[model_name])
     raise Exception(f"In utils.py load_model(), model_name ({model_name}) is not recognized.")
-    # if model_name == "llama3-8b":
-    #     return Llama3ExplorerModel(model_path[model_name])
-    # if model_name == "llama3.1":
-    #     return Llama3ExplorerModel(model_path[model_name])
-    # if model_name == "llama3.2-3b":
-    #     return Llama3ExplorerModel(model_path[model_name])
-    # if model_name == "qwen2-7b":
-    #     return QwenExplorerModel(model_path[model_name])
-    # if model_name == "qwen2.5-7b":
-    #     return QwenExplorerModel(model_path[model_name])
-    # if model_name == "qwen3-8b":
-    #     return QwenExplorerModel(model_path[model_name])
-    # if model_name == "qwen3-30b":
-    #     return QwenExplorerModel(model_path[model_name])
-    # else:
-    #     raise Exception(f"In utils.py load_model(), model_name ({model_name}) is not recognized.")
 
 
 def load_adaptor(env_name: str, model_name: str, **kwargs) -> BaseEnvAdaptor:
@@ -39,15 +23,18 @@ def load_adaptor(env_name: str, model_name: str, **kwargs) -> BaseEnvAdaptor:
         env_name = env_name.split("_")[0]
     if env_name not in ["webshop", "frozenlake", "mountaincar"]:
         raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized, must be one of [webshop, frozenlake, mountaincar].")
-    # check model
-    if "llama" in model_name:
-        env_name = env_name + "_llama"
-    elif "qwen" in model_name:
-        env_name = env_name + "_qwen"
-    elif "mistral" in model_name:
-        env_name = env_name + "_mistral"
-    else:
-        raise Exception(f"In utils.py load_adaptor(), model_name ({model_name}) is not recognized, must be one of [llama, qwen].")
+    # # check model
+    # if "llama" in model_name:
+    #     model_name = "llama"
+    #     # env_name = env_name + "_llama"
+    # elif "qwen" in model_name:
+    #     model_name = "qwen"
+    #     # env_name = env_name + "_qwen"
+    # elif "mistral" in model_name:
+    #     model_name = "mistral"
+    #     # env_name = env_name + "_mistral"
+    # else:
+    #     raise Exception(f"In utils.py load_adaptor(), model_name ({model_name}) is not recognized, must be one of [llama, qwen].")
 
     # load adaptor
     if env_name == "webshop_llama":
@@ -71,24 +58,11 @@ def load_adaptor(env_name: str, model_name: str, **kwargs) -> BaseEnvAdaptor:
             enable_confirm_purchase=kwargs.get("enable_confirm_purchase"),
             session=kwargs.get("session"),
         )
-    elif env_name == "frozenlake_llama":
-        from env_adaptors.frozenLake_llama_adaptor import FrozenLakeLlamaAdaptor
-        return FrozenLakeLlamaAdaptor(
+    elif env_name == "frozenlake":
+        from env_adaptors.frozenLake_adaptor import FrozenLakeAdaptor
+        return FrozenLakeAdaptor(
             env_name,
-            desc=kwargs.get("desc"),
-            goal_rewards=kwargs.get("goal_rewards"),
-        )
-    elif env_name == "frozenlake_qwen":
-        from env_adaptors.frozenLake_qwen_adaptor import FrozenLakeQwenAdaptor
-        return FrozenLakeQwenAdaptor(
-            env_name,
-            desc=kwargs.get("desc"),
-            goal_rewards=kwargs.get("goal_rewards"),
-        )
-    elif env_name == "frozenlake_mistral":
-        from env_adaptors.frozenLake_mistral_adaptor import FrozenLakeMistralAdaptor
-        return FrozenLakeMistralAdaptor(
-            env_name,
+            model_name,
             desc=kwargs.get("desc"),
             goal_rewards=kwargs.get("goal_rewards"),
         )

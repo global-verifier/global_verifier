@@ -70,3 +70,25 @@ def frozenlake_goal_positions(desc):
 
     return goals
 
+def format_full_llama_prompt(system_prompt, user_prompt):
+        prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+{system_prompt} 
+<|eot_id|>
+<|start_header_id|>user<|end_header_id|>
+{user_prompt}
+<|eot_id|> 
+<|start_header_id|>assistant<|end_header_id|>
+"""
+        return prompt
+
+def format_full_mistral_prompt(system_prompt, user_prompt):
+    prompt = f"<s>[INST] {system_prompt}\n\n{user_prompt} [/INST]"
+    return prompt
+
+def format_full_qwen_prompt(system_prompt, user_prompt):
+        prompt = (
+            f"<|im_start|>system\n{system_prompt}\n<|im_end|>\n"
+            f"<|im_start|>user\n{user_prompt}\n<|im_end|>\n"
+            f"<|im_start|>assistant\n"
+        )
+        return prompt

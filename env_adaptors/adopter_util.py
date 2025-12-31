@@ -130,8 +130,6 @@ def choose_format_full_prompt(model_name):
         return format_full_internlm_prompt
     elif "deepseek" in model_name:
         return format_full_deepseek_prompt
-    elif "openai" in model_name:
-        return format_full_openai_prompt
     else:
-        raise ValueError(f"Invalid model name: {model_name}")
+        return format_full_openai_prompt
 

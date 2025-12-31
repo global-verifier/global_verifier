@@ -3,13 +3,15 @@ explorer_settings = {
     "max_action_retries": 3,
     "log_dir": "./log/",
     # Experience settings
+    # Unified memory toggle (preferred)
+    "use_memory": True,
     "use_experience": True,   # Whether to retrieve and use experiences in prompts
     "save_experience": True,  # Whether to save new experiences to storage
     "use_global_verifier": False,  # Whether to use global verifier (refine_experience) after each explore
     "conflict_soultion": "st", # "st" or "conflict"
     # Plug-in settings
     "model_name": "llama3.1",
-    "env_name": "frozenlake_llama",  # Change env
+    "env_name": "frozenlake",  # Change env
     "backend_env": "frozenlake-memorybank",  # Change backend
     "storage_path": "./storage/exp_store.json",
     "depreiciate_exp_store_path": "./storage/depreiciate_exp_store.json",
@@ -31,8 +33,22 @@ model_path = {
     "internlm3-8b": "/data/xingkun/local_model/internlm3-8b-instruct",
     # deepseek models
     "deepseek-v2": "/data/xingkun/local_model/DeepSeek-Coder-V2-Lite-Instruct",
+}
+api_model_name = {
     # openai models
-    "openai-gpt-3.5-turbo-instruct": "gpt-3.5-turbo-instruct",
+    "gpt-4o": "gpt-4o",
+    # llama
+    "llama-3-70b-instruct": "llama-3-70b-instruct",
+    "llama-3.1-8b-instruct": "llama-3.1-8b-instruct",
+    # gemini
+    "gemini-2.0-flash": "gemini-2.0-flash",
+    # deepseek
+    "deepseek-chat": "deepseek-chat",
+    "deepseek-r1": "deepseek-r1",  # ok, but slow
+    # claude models
+    "claude-3-5-haiku-20241022": "claude-3-5-haiku-20241022",
+    # "gpt-5-nano": "gpt-5-nano",  # no
+    # "deepseek-v3": "deepseek-v3",
 }
 api = {
     "base_url": "https://hk.yi-zhan.top/v1",

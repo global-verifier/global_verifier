@@ -5,7 +5,7 @@ from config import api
 
 
 class OpenAIExplorerModel(BaseExplorerModel):
-    def __init__(self, model_path, max_new_tokens: int = 64):
+    def __init__(self, model_name, max_new_tokens: int = 64):
         """
         初始化 OpenAI 模型。
         支持 Chat 模型 (gpt-4o, gpt-3.5-turbo) 和 Instruct 模型 (gpt-3.5-turbo-instruct)
@@ -15,7 +15,8 @@ class OpenAIExplorerModel(BaseExplorerModel):
             raise ValueError("Environment variable OPENAI_API_KEY is not set.")
             
         self.client = OpenAI(api_key=api_key, base_url=api["base_url"])
-        self.model_name = model_path
+        self.model_name = model_name
+        # self.model_name = "gpt-4o"
         self.max_new_tokens = max_new_tokens
 
     def digest_goal(self, goal: str) -> None:

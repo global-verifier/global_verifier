@@ -1,4 +1,4 @@
-from config import model_path
+from config import model_path, api_model_name
 from explorer_model.base_explorer_model import BaseExplorerModel
 from explorer_model.llama3_explorer_model import Llama3ExplorerModel
 from explorer_model.qwen_explorer_model import QwenExplorerModel
@@ -10,7 +10,11 @@ from explorer_model.deepseek_explorer_model import DeepSeekExplorerModel
 from explorer_model.openai_explorer_model import OpenAIExplorerModel
 
 
-def load_explorer_model(model_name: str) -> BaseExplorerModel:
+def load_explorer_model(model_name: str, use_api: bool = False) -> BaseExplorerModel:
+    # use api model
+    if use_api:
+        return OpenAIExplorerModel(api_model_name[model_name])
+    # use local model
     if "llama" in model_name:
         return Llama3ExplorerModel(model_path[model_name])
     if "qwen" in model_name:
@@ -21,8 +25,6 @@ def load_explorer_model(model_name: str) -> BaseExplorerModel:
         return InternLMExplorerModel(model_path[model_name])
     if "deepseek" in model_name:
         return DeepSeekExplorerModel(model_path[model_name])
-    if "openai" in model_name:
-        return OpenAIExplorerModel(model_path[model_name])
     raise Exception(f"In utils.py load_model(), model_name ({model_name}) is not recognized.")
 
 

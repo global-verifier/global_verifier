@@ -12,11 +12,11 @@ class Explorer:
         start_timestep: int = 0,
         model_name: str = None,
         env_name: str = None,
-        backend_env: str = None,
+        memory_env: str = None,
         max_steps: int = None,
-        use_experience: bool = None,
-        save_experience: bool = None,
-        use_global_verifier: bool = None,
+        use_memory: bool = True,
+        # use_experience: bool = None,
+        # save_experience: bool = None,
         threshold: float = None,
         decay_rate: float = None,
         log_dir: str = None,
@@ -28,17 +28,18 @@ class Explorer:
         goal_rewards=None,
         enable_confirm_purchase=None,
         session=None,
+        use_api=False,
         ):
         # Add plug in
-        self.explorer_model = load_explorer_model(model_name or explorer_settings["model_name"])
+        self.explorer_model = load_explorer_model(model_name or explorer_settings["model_name"], use_api=use_api)
         self.init_after_model(
             model_name=model_name,
             env_name=env_name,
-            backend_env=backend_env,
+            memory_env=memory_env,
             max_steps=max_steps,
-            use_experience=use_experience,
-            save_experience=save_experience,
-            use_global_verifier=use_global_verifier,
+            use_memory=use_memory,
+            # use_experience=use_experience,
+            # save_experience=save_experience,
             start_timestep=start_timestep,
             threshold=threshold,
             decay_rate=decay_rate,
@@ -58,11 +59,9 @@ class Explorer:
         start_timestep=None,
         model_name=None,
         env_name=None,
-        backend_env=None,
+        memory_env=None,
         max_steps=None,
-        use_experience=None,
-        save_experience=None,
-        use_global_verifier=None,
+        use_memory=None,
         threshold=None,
         decay_rate=None,
         log_dir=None,
@@ -81,20 +80,13 @@ class Explorer:
         """
         # Update hyperparameters (prefer provided args, else config defaults or existing values)
         self.model_name = model_name or getattr(self, "model_name", None) or explorer_settings["model_name"]
+        if env_name not in ["frozenlake", "mountaincar", "webshop"]:
+            raise ValueError(f"Invalid environment name: {env_name}")
         self.env_name = env_name or getattr(self, "env_name", None) or explorer_settings["env_name"]
-        self.backend_env = backend_env or getattr(self, "backend_env", None) or explorer_settings["backend_env"]
+        self.process_memory_env(memory_env)
         self.max_steps = (
             self.max_steps if max_steps is None else max_steps
         ) if hasattr(self, "max_steps") else (max_steps if max_steps is not None else explorer_settings["max_steps"])
-        self.use_experience = (
-            self.use_experience if use_experience is None else use_experience
-        ) if hasattr(self, "use_experience") else (use_experience if use_experience is not None else explorer_settings.get("use_experience", True))
-        self.save_experience = (
-            self.save_experience if save_experience is None else save_experience
-        ) if hasattr(self, "save_experience") else (save_experience if save_experience is not None else explorer_settings.get("save_experience", True))
-        self.use_global_verifier = (
-            self.use_global_verifier if use_global_verifier is None else use_global_verifier
-        ) if hasattr(self, "use_global_verifier") else (use_global_verifier if use_global_verifier is not None else explorer_settings.get("use_global_verifier", False))
 
         self.log_dir = log_dir or getattr(self, "log_dir", None) or explorer_settings["log_dir"]
         self.backend_log_dir = (
@@ -136,6 +128,14 @@ class Explorer:
             else getattr(self, "session", None)
         )
 
+        assert use_memory is not None, "use_memory must be provided"
+        if use_memory:
+            self.use_experience = True
+            self.save_experience = True
+        else:
+            self.use_experience = False
+            self.save_experience = False
+
         adaptor_kwargs = {}
         if "frozenlake" in self.env_name:
             adaptor_kwargs["desc"] = desc
@@ -173,6 +173,16 @@ class Explorer:
         self.used_exp_ids = set()
         self.in_process = False
         self.conflict_soultion = explorer_settings["conflict_soultion"]
+
+    def process_memory_env(self, memory_env: str):
+        if memory_env not in ["vanilla", "generative", "memorybank", "voyager", "glove"]:
+            raise ValueError(f"Invalid memory environment: {memory_env}")
+        self.use_global_verifier = False
+        self.backend_env = f"{self.env_name}-{memory_env}"
+        if memory_env == "glove":
+            self.use_global_verifier = True
+            self.backend_env = f"{self.env_name}-vanilla"
+        
 
     def get_next_action(self, retrieved_experiences: list = None) -> str:
         if retrieved_experiences is None:

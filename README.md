@@ -15,6 +15,14 @@ env.step("search[jacket]")
 env.step("click[search]")
 ```
 
+- WebShop 依赖 `spacy` + 语言模型 `en_core_web_sm`，否则会报 `ModuleNotFoundError: No module named 'spacy'`
+  - 安装（在你的 conda env 里执行）：
+
+```bash
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+```
+
 - webshop不支持链接直接navigate，看来需要硬点回访方式了
     - 记录一个完整的路径
 

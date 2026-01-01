@@ -3,13 +3,15 @@ import os
 import random
 import gymnasium as gym
 from .base_env_adaptor import BaseEnvAdaptor
-from .adopter_util import frozenlake_goal_positions
+from .adopter_util import frozenlake_goal_positions, choose_format_full_prompt
 from .env_config import frozenlake_config
 from utils import get_timestamp_ms
+import re
+from .adaptor_prompt_factory import build_frozenlake_user_prompt, FROZENLAKE_SYSTEM_PROMPT
 
 class FrozenLakeAdaptor(BaseEnvAdaptor):
-    def __init__(self, env_name, desc=None, goal_rewards=None):
-        super().__init__(env_name)
+    def __init__(self, env_name, model_name, desc=None, goal_rewards=None):
+        super().__init__(env_name, model_name)
         seed = frozenlake_config.get('random_seed')
         if seed is not None:
             random.seed(seed)
@@ -49,6 +51,9 @@ class FrozenLakeAdaptor(BaseEnvAdaptor):
         self.st1 = None
         self.terminated = False
         self.reward = None
+
+        self.format_full_prompt = choose_format_full_prompt(model_name)
+
 
     def initialize_env(self):
         self.env.reset()
@@ -213,3 +218,38 @@ Init new environment:
             if reward_keys != found_keys:
                 raise ValueError(f"goal_rewards keys {reward_keys} do not match goal positions {found_keys}")
         return goal_positions
+
+    def format_action(self, action):
+        """
+        Format the action from LLM output to valid action integer.
+        Extracts exactly one digit (0-3) from the response.
+        Raises error if zero or multiple valid actions found.
+        """
+        action = action.strip()
+        # Find all numbers in the range 0-3
+        matches = re.findall(r'[0-3]', action)
+        if len(matches) == 0:
+            raise ValueError(f"Could not extract valid action (0-3) from: {action}")
+        elif len(matches) > 1:
+            raise ValueError(f"Multiple actions found ({matches}) in: {action}")
+        else:
+            return int(matches[0])
+
+    # get action prompt
+    def get_action_prompt(self, retrieved_experiences=None):
+        if retrieved_experiences is None:
+            retrieved_experiences = []
+        state = self.get_state()
+        user_prompt = build_frozenlake_user_prompt(
+            state=state,
+            available_actions=self.get_available_actions(),
+            destinations=self.destinations,
+            goal_rewards=self.goal_rewards,
+            map_rows=self.env.unwrapped.nrow,
+            map_cols=self.env.unwrapped.ncol,
+            retrieved_experiences=retrieved_experiences,
+        )
+        
+        # Construct the prompt in Llama3 format
+        prompt = self.format_full_prompt(FROZENLAKE_SYSTEM_PROMPT, user_prompt)
+        return prompt

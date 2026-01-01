@@ -49,7 +49,7 @@ class QwenExplorerModel(BaseExplorerModel):
     def __init__(self, model_path: str, max_new_tokens: int = 64):
         self.model = AutoModelForCausalLM.from_pretrained(
             model_path,
-            torch_dtype="auto",
+            dtype="auto",
             device_map="auto"
         )
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)

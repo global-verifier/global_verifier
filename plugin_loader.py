@@ -1,87 +1,65 @@
-from config import model_path
+from config import model_path, api_model_name
 from explorer_model.base_explorer_model import BaseExplorerModel
 from explorer_model.llama3_explorer_model import Llama3ExplorerModel
 from explorer_model.qwen_explorer_model import QwenExplorerModel
+from explorer_model.mistral_explorer_model import MistralExplorerModel
 from env_adaptors.base_env_adaptor import BaseEnvAdaptor
 from exp_backend.base_exp_backend import BaseExpBackend
+from explorer_model.internlm_explorer_model import InternLMExplorerModel
+from explorer_model.deepseek_explorer_model import DeepSeekExplorerModel
+from explorer_model.openai_explorer_model import OpenAIExplorerModel
 
 
-def load_explorer_model(model_name: str) -> BaseExplorerModel:
-    if model_name == "llama3-8b":
+def load_explorer_model(model_name: str, use_api: bool = False) -> BaseExplorerModel:
+    # use api model
+    if use_api:
+        return OpenAIExplorerModel(api_model_name[model_name])
+    # use local model
+    if "llama" in model_name:
         return Llama3ExplorerModel(model_path[model_name])
-    if model_name == "llama3.1":
-        return Llama3ExplorerModel(model_path[model_name])
-    if model_name == "llama3.2-3b":
-        return Llama3ExplorerModel(model_path[model_name])
-    if model_name == "qwen2-7b":
+    if "qwen" in model_name:
         return QwenExplorerModel(model_path[model_name])
-    if model_name == "qwen2.5-7b":
-        return QwenExplorerModel(model_path[model_name])
-    if model_name == "qwen3-8b":
-        return QwenExplorerModel(model_path[model_name])
-    if model_name == "qwen3-30b":
-        return QwenExplorerModel(model_path[model_name])
-    else:
-        raise Exception(f"In utils.py load_model(), model_name ({model_name}) is not recognized.")
+    if "mistral" in model_name:
+        return MistralExplorerModel(model_path[model_name])
+    if "internlm" in model_name:
+        return InternLMExplorerModel(model_path[model_name])
+    if "deepseek" in model_name:
+        return DeepSeekExplorerModel(model_path[model_name])
+    raise Exception(f"In utils.py load_model(), model_name ({model_name}) is not recognized.")
 
 
 def load_adaptor(env_name: str, model_name: str, **kwargs) -> BaseEnvAdaptor:
-    # check env
-    if "_" in env_name:
-        env_name = env_name.split("_")[0]
-    if env_name not in ["webshop", "frozenlake", "mountaincar"]:
-        raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized, must be one of [webshop, frozenlake, mountaincar].")
-    # check model
-    if "llama" in model_name:
-        env_name = env_name + "_llama"
-    elif "qwen" in model_name:
-        env_name = env_name + "_qwen"
-    else:
-        raise Exception(f"In utils.py load_adaptor(), model_name ({model_name}) is not recognized, must be one of [llama, qwen].")
+    env_name_raw = env_name
+    env_parts = env_name_raw.split("_", 1)
+    base_env = env_parts[0]
+
+    if base_env not in ["webshop", "frozenlake", "mountaincar"]:
+        raise Exception(f"In utils.py load_adaptor(), env_name ({env_name_raw}) is not recognized, must be one of [webshop, frozenlake, mountaincar].")
+    if model_name is None:
+        raise Exception(f"In utils.py load_adaptor(), model_name is None and env_name ({env_name_raw}) does not encode a model.")
 
     # load adaptor
-    if env_name == "webshop_llama":
-        from env_adaptors.webshop_llama_adaptor import WebshopLlamaAdaptor
-        return WebshopLlamaAdaptor(
-            env_name,
+    if base_env == "webshop":
+        from env_adaptors.webshop_adaptor import WebshopAdaptor
+        return WebshopAdaptor(
+            base_env,
+            model_name,
             enable_confirm_purchase=kwargs.get("enable_confirm_purchase"),
             session=kwargs.get("session"),
         )
-    if env_name == "webshop_qwen":
-        from env_adaptors.webshop_qwen_adaptor import WebshopQwenAdaptor
-        return WebshopQwenAdaptor(
-            env_name,
-            enable_confirm_purchase=kwargs.get("enable_confirm_purchase"),
-            session=kwargs.get("session"),
-        )
-    elif env_name == "frozenlake_llama":
-        from env_adaptors.frozenLake_llama_adaptor import FrozenLakeLlamaAdaptor
-        return FrozenLakeLlamaAdaptor(
-            env_name,
+    elif base_env == "frozenlake":
+        from env_adaptors.frozenLake_adaptor import FrozenLakeAdaptor
+        return FrozenLakeAdaptor(
+            base_env,
+            model_name,
             desc=kwargs.get("desc"),
             goal_rewards=kwargs.get("goal_rewards"),
         )
-    elif env_name == "frozenlake_qwen":
-        from env_adaptors.frozenLake_qwen_adaptor import FrozenLakeQwenAdaptor
-        return FrozenLakeQwenAdaptor(
-            env_name,
-            desc=kwargs.get("desc"),
-            goal_rewards=kwargs.get("goal_rewards"),
-        )
-    elif env_name == "cartpole_llama":
-        from env_adaptors.cartPole_llama_adaptor import CartPoleLlamaAdaptor
-        return CartPoleLlamaAdaptor(env_name)
-    elif env_name == "cartpole_qwen":
-        from env_adaptors.cartPole_qwen_adaptor import CartPoleQwenAdaptor
-        return CartPoleQwenAdaptor(env_name)
-    elif env_name == "mountaincar_llama":
-        from env_adaptors.mountainCar_llama_adaptor import MountainCarLlamaAdaptor
-        return MountainCarLlamaAdaptor(env_name, force=kwargs.get("force"))
-    elif env_name == "mountaincar_qwen":
-        from env_adaptors.mountainCar_qwen_adaptor import MountainCarQwenAdaptor
-        return MountainCarQwenAdaptor(env_name, force=kwargs.get("force"))
+    elif base_env == "mountaincar":
+        from env_adaptors.mountainCar_adaptor import MountainCarAdaptor
+        return MountainCarAdaptor(base_env, model_name, force=kwargs.get("force"))
     else:
-        raise Exception(f"In utils.py load_adaptor(), env_name ({env_name}) is not recognized.")
+        raise Exception(f"In utils.py load_adaptor(), env_name ({env_name_raw}) is not recognized.")
 
 
 def load_exp_backend(env_name: str, storage_path: str, depreiciate_exp_store_path: str, explorer_model=None, **kwargs) -> BaseExpBackend:

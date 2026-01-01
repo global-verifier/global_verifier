@@ -3,10 +3,14 @@ import os
 import gym
 from .base_env_adaptor import BaseEnvAdaptor
 from .env_config import webshop_config
-from .adopter_util import extract_visible_text
+from .adopter_util import (
+    extract_visible_text,
+    choose_format_full_prompt,
+)
 import re
 import random
 from utils import get_timestamp_ms
+from .adaptor_prompt_factory import build_webshop_user_prompt, WEBSHOP_SYSTEM_PROMPT
 
 _webshop_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'webshop')
 _webshop_path = os.path.abspath(_webshop_path)
@@ -20,11 +24,15 @@ SID_PLACEHOLDER = '<session_id>'
 QUERY_PLACEHOLDER = '<query>'
 
 class WebshopAdaptor(BaseEnvAdaptor):
-    def __init__(self, env_name, enable_confirm_purchase=None, session=None):
-        super().__init__(env_name)
+    def __init__(self, env_name, model_name, enable_confirm_purchase=None, session=None):
+        super().__init__(env_name, model_name)
         seed = webshop_config.get('random_seed')
         if seed is not None:
             random.seed(seed)
+        # choose the format_full_xxx_prompt function
+        self.format_full_prompt = choose_format_full_prompt(model_name)
+
+            
         # Prefer caller-provided overrides; fall back to webshop_config defaults
         self.enable_confirm_purchase = (
             enable_confirm_purchase
@@ -141,8 +149,9 @@ Init new environment:
     def is_valid_action(self, action):
         action_status = self.get_available_actions()
         action = action.strip()
-        # pattern: content[content]
-        pattern = r"^[^\[\]\s]+?\[[^\[\]]+?\]$"
+        # pattern: must start with "search[" or "click["
+        # Examples: search[winter jacket], click[search], click[buy now]
+        pattern = r"^(search|click)\[[^\[\]]+?\]$"
         if not bool(re.match(pattern, action)):
             return False
         action = action[:-1].split("[")
@@ -196,6 +205,20 @@ Init new environment:
         if action and '[' in action and ']' not in action and action.count('[') == 1:
             action = action + ']'
         return action
+
+    def get_action_prompt(self, retrieved_experiences=None):
+        """生成用于LLM获取下一个action的prompt"""
+        if retrieved_experiences is None:
+            retrieved_experiences = []
+        user_prompt = build_webshop_user_prompt(
+            state=self.get_state(),
+            instruction=self.get_instruction(),
+            action_status=self.get_available_actions(),
+            action_path=self.get_action_path(),
+            retrieved_experiences=retrieved_experiences,
+        )
+        prompt = self.format_full_prompt(WEBSHOP_SYSTEM_PROMPT, user_prompt)
+        return prompt
 
     def extract_reward_score(self) -> float:
         html = self.env.state.get("html")

@@ -4,12 +4,21 @@ import gymnasium as gym
 from .base_env_adaptor import BaseEnvAdaptor
 from .env_config import mountaincar_config
 from utils import get_timestamp_ms
+import re
+from .adopter_util import (
+    choose_format_full_prompt,
+)
+from .adaptor_prompt_factory import (
+    MOUNTAINCAR_SYSTEM_PROMPT,
+    build_mountaincar_user_prompt,
+)
 
 class MountainCarAdaptor(BaseEnvAdaptor):
-    def __init__(self, env_name, force=None):
-        super().__init__(env_name)
+    def __init__(self, env_name, model_name, force=None):
+        super().__init__(env_name, model_name)
         self.seed = mountaincar_config.get('random_seed')
-        
+
+        self.format_full_prompt = choose_format_full_prompt(model_name)
         # Create MountainCar environment
         self.env = gym.make(mountaincar_config['id'])
         
@@ -226,3 +235,33 @@ Actions:
         # Default to no push if parsing fails
         return 1
 
+    def format_action(self, action):
+        """
+        Format the action from LLM output to valid action integer.
+        Extracts exactly one digit (0, 1, or 2) from the response.
+        """
+        action = action.strip()
+        # Find all numbers that are 0, 1, or 2
+        matches = re.findall(r'[0-2]', action)
+        if len(matches) == 0:
+            raise ValueError(f"Could not extract valid action (0, 1, or 2) from: {action}")
+        elif len(matches) > 1:
+            raise ValueError(f"Multiple actions found ({matches}) in: {action}")
+        else:
+            return int(matches[0])
+
+    # get action prompt
+    def get_action_prompt(self, retrieved_experiences=None):
+        if retrieved_experiences is None:
+            retrieved_experiences = []
+
+        state = self.get_state()
+        user_prompt = build_mountaincar_user_prompt(
+            episode_length=self.episode_length,
+            episode_reward=self.episode_reward,
+            state=state,
+            retrieved_experiences=retrieved_experiences,
+        )
+
+        prompt = self.format_full_prompt(MOUNTAINCAR_SYSTEM_PROMPT, user_prompt)
+        return prompt

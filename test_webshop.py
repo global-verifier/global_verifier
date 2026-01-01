@@ -35,7 +35,7 @@ from explorer import Explorer
 # start_timestep = 0
 # model_name = "llama3.1-8b"
 # model_name = "llama3.2-3b"
-# model_name = "llama3.3-70b"
+model_name = "llama3.3-70b"
 # model_name = "qwen2-7b"
 # model_name = "qwen2.5-7b"
 # model_name = "qwen3-30b"
@@ -43,7 +43,7 @@ from explorer import Explorer
 # model_name = "mistral3.2-24b"
 # model_name = "internlm3-8b"
 # model_name = "deepseek-v2"
-model_name = "openai-gpt-3.5-turbo-instruct"
+# model_name = "openai-gpt-3.5-turbo-instruct"
 env_name = "webshop"
 backend_env = "webshop-vanilla"
 

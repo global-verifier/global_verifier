@@ -259,7 +259,3 @@ Init new environment:
         
         # If URL indicates done but score not found, still return finished but with None score
         raise ValueError(f"Score not found in the HTML")
-
-    # Tobe implemented in the subclass
-    def get_action_prompt(self, instruction, state, retrieved_experiences=None):
-        raise NotImplementedError

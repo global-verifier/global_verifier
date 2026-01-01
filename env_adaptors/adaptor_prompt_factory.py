@@ -1,6 +1,7 @@
 import json
 import urllib.parse
 
+# -- System Prompt --
 WEBSHOP_SYSTEM_PROMPT = "You are an intelligent exploration agent navigating a web shop. Your goal is to understand the task instruction and buy the correct product with the highest possible score of (1.0). Respond with only the action you want to execute, without any additional explanation or formatting."
 FROZENLAKE_SYSTEM_PROMPT = "You are an intelligent exploration agent navigating a frozen lake. Your goal is to reach the destination with highest possible score while avoiding holes. Analyze the current position and decide the next move. Respond with only the action number (0, 1, 2, or 3) without any additional explanation or formatting."
 MOUNTAINCAR_SYSTEM_PROMPT = """You are an intelligent control agent for the Mountain Car environment.
@@ -20,6 +21,7 @@ RULES:
 1. Learn from past experiences to find the optimal strategy
 2. Respond with only the action number (0, 1, or 2) without explanation"""
 
+# -- MountainCar Helper Functions --
 def mountaincar_get_position_description(position: float) -> str:
     """Convert position value to human-readable description (matches old adaptor methods)."""
     # Position ranges from -1.2 (far left) to 0.6 (beyond goal)
@@ -88,6 +90,7 @@ def mountaincar_get_progress_description(position: float) -> str:
     else:
         return "On left hill"
 
+# -- MountainCar User Prompt --
 def build_mountaincar_user_prompt(
     *,
     episode_length: int,
@@ -164,6 +167,7 @@ Action {best_action} can reach the goal. You MUST choose {best_action}.
 """
     return user_prompt
 
+# -- Webshop User Prompt --
 def build_webshop_user_prompt(
     state: dict,
     instruction: str,
@@ -310,6 +314,7 @@ If you want to click, response follow the format: "click[name of the clickable]"
     return user_prompt
 
 
+# -- FrozenLake User Prompt --
 def build_frozenlake_user_prompt(
     *,
     state: dict,

@@ -107,7 +107,7 @@ def main() -> int:
     gr_group = gr_group_1
     env_name = "frozenlake"
 
-    cur_name = f"log_{args.use_memory}_{env_name}_{args.memory_env}_{args.model_name}"
+    cur_name = f"logHidden_{args.use_memory}_{env_name}_{args.memory_env}_{args.model_name}"
     run_root = os.path.join(args.output_root, cur_name)
     log_dir = os.path.join(run_root, "log")
     backend_log_dir = log_dir

@@ -443,13 +443,23 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
 YOU MUST NOT choose {forbidden_list} from this position!
 
 """
-
+  
         user_prompt += """Consider these experiences when deciding your next action.
 ---
 
 """
 
-    user_prompt += """Based on the current position and the destination coordinates:
+
+    assert len(goal_rewards) > 0
+    if len(goal_rewards) == 1:
+        user_prompt += """Based on the current position, task instruction, and past experiences, what is the next action you should take?
+
+REMEMBER: If certain actions lead to holes, you MUST avoid them. Choose the safest action that moves toward the destination.
+
+Respond with only the action number (0, 1, 2, or 3).
+"""
+    else:
+        user_prompt += """Based on the current position and the destination coordinates:
 1. CALCULATE the difference between Current Position and Destinations (Row difference and Column difference).
 2. IDENTIFY which action reduces this difference (e.g., if Goal Row > Current Row, you need to increase Row).
 3. DO NOT simply repeat a "safe" action if it moves you AWAY from the destination. Explore unexplored areas.
@@ -459,13 +469,4 @@ YOU MUST NOT choose {forbidden_list} from this position!
 Which action effectively moves you closer to the HIGHEST SCORE goal? Respond with only the action number (0, 1, 2, or 3).
 """
 
-#     user_prompt += """Based on the current position, task instruction, and past experiences, what is the next action you should take?
-
-# REMEMBER: 
-# 1. If certain actions lead to holes, you MUST avoid them.
-# 2. Choose the safest action that moves toward the destination with the highest possible score (1.0). 
-# 3. One of the destinations has the highest possible score (1.0).
-
-# Which action effectively moves you closer to the HIGHEST SCORE goal? Respond with only the action number (0, 1, 2, or 3).
-# """
     return user_prompt

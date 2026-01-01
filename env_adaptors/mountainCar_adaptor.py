@@ -27,7 +27,10 @@ class MountainCarAdaptor(BaseEnvAdaptor):
             self.env.unwrapped.goal_position = mountaincar_config['goal_position']
         if mountaincar_config.get('goal_velocity'):
             self.env.unwrapped.goal_velocity = mountaincar_config['goal_velocity']
-        force_to_use = force if force is not None else mountaincar_config.get('force')
+        # Support explicit force override; otherwise if config has a force list, take the first value.
+        force_candidates = mountaincar_config.get('forces') or []
+        default_force = force_candidates[0] if force_candidates else mountaincar_config.get('force')
+        force_to_use = force if force is not None else default_force
         if force_to_use is not None:
             self.env.unwrapped.force = force_to_use
         if mountaincar_config.get('gravity'):

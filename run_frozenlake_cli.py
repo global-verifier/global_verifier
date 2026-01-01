@@ -8,6 +8,7 @@ It mirrors `run_frozenLake.py` but accepts key configs from CLI.
 
 import argparse
 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "5"
 import sys
 from typing import Any
 
@@ -141,13 +142,11 @@ def main() -> int:
             e.explore()
 
     # Create a finish marker file to indicate this run completed successfully.
-    marker_dir = os.path.join(args.output_root, "finish_marker")
+    marker_dir = os.path.join(args.output_root, "finish_mark")
     os.makedirs(marker_dir, exist_ok=True)
     marker_path = os.path.join(marker_dir, cur_name)
     with open(marker_path, "w", encoding="utf-8"):
         pass
-    
-    
     
     return 0
 

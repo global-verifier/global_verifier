@@ -458,4 +458,14 @@ YOU MUST NOT choose {forbidden_list} from this position!
 
 Which action effectively moves you closer to the HIGHEST SCORE goal? Respond with only the action number (0, 1, 2, or 3).
 """
+
+#     user_prompt += """Based on the current position, task instruction, and past experiences, what is the next action you should take?
+
+# REMEMBER: 
+# 1. If certain actions lead to holes, you MUST avoid them.
+# 2. Choose the safest action that moves toward the destination with the highest possible score (1.0). 
+# 3. One of the destinations has the highest possible score (1.0).
+
+# Which action effectively moves you closer to the HIGHEST SCORE goal? Respond with only the action number (0, 1, 2, or 3).
+# """
     return user_prompt

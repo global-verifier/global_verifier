@@ -15,6 +15,7 @@ explorer_settings = {
     "backend_env": "frozenlake-memorybank",  # Change backend
     "storage_path": "./storage/exp_store.json",
     "depreiciate_exp_store_path": "./storage/depreiciate_exp_store.json",
+    "alpha": 10,
 }
 model_path = {
     # llama3 models

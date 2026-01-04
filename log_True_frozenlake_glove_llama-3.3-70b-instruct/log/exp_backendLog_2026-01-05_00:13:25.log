@@ -1,0 +1,1943 @@
+########################################################
+Start loading ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json the store at 2026-01-05_00:13:25
+Store not exists, creating a new one at ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, at 2026-01-05_00:13:25
+########################################################
+Start loading ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json the store at 2026-01-05_00:13:25
+Store not exists, creating a new one at ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, at 2026-01-05_00:13:25
+Store validation passed: No overlap between exp_store (0 items) and depreiciate_exp_store (0 items)
+Using algorithm: sameSt_bfs_maxScore
+########################################################
+Start loading ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json the store at 2026-01-05_00:13:25
+Successfully loaded the store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 0, at 2026-01-05_00:13:25
+########################################################
+Start loading ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json the store at 2026-01-05_00:13:25
+Successfully loaded the store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:25
+Store validation passed: No overlap between exp_store (0 items) and depreiciate_exp_store (0 items)
+Using algorithm: sameSt_bfs_maxScore
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 1, at 2026-01-05_00:13:26
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:26
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 0
+Loop detecting conflict pairs
+Number of experience combinations: 0
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:26.191366_3-3_1']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0)]
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 2, at 2026-01-05_00:13:26
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:26
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (3 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 3, at 2026-01-05_00:13:27
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:27
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (4 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 4, at 2026-01-05_00:13:27
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:27
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 0
+Loop detecting conflict pairs
+Number of experience combinations: 6
+0/6: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:26.678566_3-3_2)
+1/6: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.010415_3-3_2-1)
+2/6: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+3/6: 01-05_00:13:26.678566_3-3_2 and 01-05_00:13:27.010415_3-3_2-1)
+4/6: 01-05_00:13:26.678566_3-3_2 and 01-05_00:13:27.492232_3-3_2-1-1)
+5/6: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:27.492232_3-3_2-1-1)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:13:26.678566_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:13:26.678566_3-3_2', 0.0)]
+Store validation passed: No overlap between exp_store (5 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 5, at 2026-01-05_00:13:27
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:27
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:27.010415_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:27.010415_3-3_2-1', 0.0)]
+Store validation passed: No overlap between exp_store (6 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 6, at 2026-01-05_00:13:28
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:28
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0)]
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 7, at 2026-01-05_00:13:28
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:28
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 8, at 2026-01-05_00:13:29
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:29
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 2
+[DEPRECIATE] Experience 01-05_00:13:26.678566_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (1 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 7, at 2026-01-05_00:13:29
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 1, at 2026-01-05_00:13:29
+[DEPRECIATE] Experience 01-05_00:13:28.469139_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (6 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 6, at 2026-01-05_00:13:29
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:29
+Loop detecting conflict pairs
+Number of experience combinations: 15
+0/15: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.010415_3-3_2-1)
+1/15: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+2/15: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.983836_3-3_2)
+3/15: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+4/15: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+5/15: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:27.492232_3-3_2-1-1)
+6/15: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:27.983836_3-3_2)
+7/15: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+8/15: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+9/15: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:27.983836_3-3_2)
+10/15: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+11/15: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+12/15: 01-05_00:13:27.983836_3-3_2 and 01-05_00:13:28.802713_3-3_2-1-2)
+13/15: 01-05_00:13:27.983836_3-3_2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+14/15: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:13:27.983836_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:13:27.983836_3-3_2', 0.0)]
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 7, at 2026-01-05_00:13:29
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:29
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:27.010415_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:27.010415_3-3_2-1', 0.0)]
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 8, at 2026-01-05_00:13:31
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:31
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 0.0)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 9, at 2026-01-05_00:13:31
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:31
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:32
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:32
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:32
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:32
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:33
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:33
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 3
+[DEPRECIATE] Experience 01-05_00:13:31.329660_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (3 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:33
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 3, at 2026-01-05_00:13:33
+[DEPRECIATE] Experience 01-05_00:13:27.983836_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (4 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:33
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 4, at 2026-01-05_00:13:33
+[DEPRECIATE] Experience 01-05_00:13:31.884010_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 9, at 2026-01-05_00:13:33
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_00:13:33
+Loop detecting conflict pairs
+Number of experience combinations: 36
+0/36: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.010415_3-3_2-1)
+1/36: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+2/36: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+3/36: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+4/36: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.530022_3-3_2)
+5/36: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:32.295691_3-3_2-1-2-1)
+6/36: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:32.756402_3-3_2-1-2-1-2)
+7/36: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+8/36: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:27.492232_3-3_2-1-1)
+9/36: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/36: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/36: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:29.530022_3-3_2)
+12/36: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:32.295691_3-3_2-1-2-1)
+13/36: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:32.756402_3-3_2-1-2-1-2)
+14/36: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+15/36: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+16/36: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+17/36: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.530022_3-3_2)
+18/36: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:32.295691_3-3_2-1-2-1)
+19/36: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:32.756402_3-3_2-1-2-1-2)
+20/36: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+21/36: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+22/36: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.530022_3-3_2)
+23/36: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:32.295691_3-3_2-1-2-1)
+24/36: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:32.756402_3-3_2-1-2-1-2)
+25/36: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+26/36: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:29.530022_3-3_2)
+27/36: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:32.295691_3-3_2-1-2-1)
+28/36: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:32.756402_3-3_2-1-2-1-2)
+29/36: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+30/36: 01-05_00:13:29.530022_3-3_2 and 01-05_00:13:32.295691_3-3_2-1-2-1)
+31/36: 01-05_00:13:29.530022_3-3_2 and 01-05_00:13:32.756402_3-3_2-1-2-1-2)
+32/36: 01-05_00:13:29.530022_3-3_2 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+33/36: 01-05_00:13:32.295691_3-3_2-1-2-1 and 01-05_00:13:32.756402_3-3_2-1-2-1-2)
+34/36: 01-05_00:13:32.295691_3-3_2-1-2-1 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+35/36: 01-05_00:13:32.756402_3-3_2-1-2-1-2 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:13:29.530022_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:13:29.530022_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:33
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_00:13:33
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:27.010415_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:27.010415_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:33
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_00:13:33
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:34
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_00:13:34
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:32.295691_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:32.295691_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:34
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_00:13:34
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:32.756402_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:32.756402_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:36
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_00:13:36
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 4
+[DEPRECIATE] Experience 01-05_00:13:33.983470_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (6 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:36
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 6, at 2026-01-05_00:13:36
+[DEPRECIATE] Experience 01-05_00:13:34.559158_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (7 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:36
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 7, at 2026-01-05_00:13:36
+[DEPRECIATE] Experience 01-05_00:13:33.598079_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (8 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:36
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 8, at 2026-01-05_00:13:36
+[DEPRECIATE] Experience 01-05_00:13:32.295691_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:36
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:13:36
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.010415_3-3_2-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.530022_3-3_2)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:32.756402_3-3_2-1-2-1-2)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+9/45: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:27.492232_3-3_2-1-1)
+10/45: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+11/45: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+12/45: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:29.530022_3-3_2)
+13/45: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:32.756402_3-3_2-1-2-1-2)
+14/45: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+15/45: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+16/45: 01-05_00:13:27.010415_3-3_2-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+17/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+18/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+19/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.530022_3-3_2)
+20/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:32.756402_3-3_2-1-2-1-2)
+21/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+22/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+23/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+24/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+25/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.530022_3-3_2)
+26/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:32.756402_3-3_2-1-2-1-2)
+27/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+28/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+29/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+30/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:29.530022_3-3_2)
+31/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:32.756402_3-3_2-1-2-1-2)
+32/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+33/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+34/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+35/45: 01-05_00:13:29.530022_3-3_2 and 01-05_00:13:32.756402_3-3_2-1-2-1-2)
+36/45: 01-05_00:13:29.530022_3-3_2 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+37/45: 01-05_00:13:29.530022_3-3_2 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+38/45: 01-05_00:13:29.530022_3-3_2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+39/45: 01-05_00:13:32.756402_3-3_2-1-2-1-2 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+40/45: 01-05_00:13:32.756402_3-3_2-1-2-1-2 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+41/45: 01-05_00:13:32.756402_3-3_2-1-2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+42/45: 01-05_00:13:33.182967_3-3_2-1-2-1-2-1 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+43/45: 01-05_00:13:33.182967_3-3_2-1-2-1-2-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+44/45: 01-05_00:13:34.990583_3-3_2-1-2-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:13:29.530022_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:13:29.530022_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:36
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:13:36
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:27.010415_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:27.010415_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:36
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:13:36
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:37
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:13:37
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:34.990583_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:34.990583_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:37
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:13:37
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.756402_3-3_2-1-2-1-2', '01-05_00:13:36.075029_3-3_2-1-2-1-1']
+[BFS] Max scores: [('01-05_00:13:32.756402_3-3_2-1-2-1-2', 1.0), ('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:38
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:13:38
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:33.182967_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:33.182967_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:13:38
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:13:38
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:13:27.010415_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (10 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:38
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 10, at 2026-01-05_00:13:38
+[DEPRECIATE] Experience 01-05_00:13:37.285420_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (11 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:38
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 11, at 2026-01-05_00:13:38
+[DEPRECIATE] Experience 01-05_00:13:36.453103_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (12 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:38
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 12, at 2026-01-05_00:13:38
+[DEPRECIATE] Experience 01-05_00:13:32.756402_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (13 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:38
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 13, at 2026-01-05_00:13:38
+[DEPRECIATE] Experience 01-05_00:13:38.534151_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (14 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:38
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 14, at 2026-01-05_00:13:38
+[DEPRECIATE] Experience 01-05_00:13:37.723945_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:38
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:13:38
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.530022_3-3_2)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.880257_3-3_2-1)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:38.198979_3-3_2-1-2-1-2)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.530022_3-3_2)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.880257_3-3_2-1)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:38.198979_3-3_2-1-2-1-2)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.530022_3-3_2)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.880257_3-3_2-1)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:38.198979_3-3_2-1-2-1-2)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:29.530022_3-3_2)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.880257_3-3_2-1)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:38.198979_3-3_2-1-2-1-2)
+30/45: 01-05_00:13:29.530022_3-3_2 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+31/45: 01-05_00:13:29.530022_3-3_2 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+32/45: 01-05_00:13:29.530022_3-3_2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+33/45: 01-05_00:13:29.530022_3-3_2 and 01-05_00:13:36.880257_3-3_2-1)
+34/45: 01-05_00:13:29.530022_3-3_2 and 01-05_00:13:38.198979_3-3_2-1-2-1-2)
+35/45: 01-05_00:13:33.182967_3-3_2-1-2-1-2-1 and 01-05_00:13:34.990583_3-3_2-1-2-1)
+36/45: 01-05_00:13:33.182967_3-3_2-1-2-1-2-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+37/45: 01-05_00:13:33.182967_3-3_2-1-2-1-2-1 and 01-05_00:13:36.880257_3-3_2-1)
+38/45: 01-05_00:13:33.182967_3-3_2-1-2-1-2-1 and 01-05_00:13:38.198979_3-3_2-1-2-1-2)
+39/45: 01-05_00:13:34.990583_3-3_2-1-2-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+40/45: 01-05_00:13:34.990583_3-3_2-1-2-1 and 01-05_00:13:36.880257_3-3_2-1)
+41/45: 01-05_00:13:34.990583_3-3_2-1-2-1 and 01-05_00:13:38.198979_3-3_2-1-2-1-2)
+42/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:36.880257_3-3_2-1)
+43/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:38.198979_3-3_2-1-2-1-2)
+44/45: 01-05_00:13:36.880257_3-3_2-1 and 01-05_00:13:38.198979_3-3_2-1-2-1-2)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:13:29.530022_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:13:29.530022_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:38
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:13:38
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:36.880257_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:36.880257_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:39
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:13:39
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:39
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:13:39
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:34.990583_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:34.990583_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:40
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:13:40
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:38.198979_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:38.198979_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:40
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:13:40
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:33.182967_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:33.182967_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:13:41
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:13:41
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:13:39.756053_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (16 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:41
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 16, at 2026-01-05_00:13:41
+[DEPRECIATE] Experience 01-05_00:13:29.530022_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:41
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_00:13:41
+[DEPRECIATE] Experience 01-05_00:13:41.041704_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (18 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:41
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 18, at 2026-01-05_00:13:41
+[DEPRECIATE] Experience 01-05_00:13:34.990583_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (19 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:41
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 19, at 2026-01-05_00:13:41
+[DEPRECIATE] Experience 01-05_00:13:36.880257_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (20 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:41
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 20, at 2026-01-05_00:13:41
+[DEPRECIATE] Experience 01-05_00:13:38.198979_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:41
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:13:41
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:38.941183_3-3_2)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:39.346129_3-3_2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:40.208860_3-3_2-1-2-1)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:38.941183_3-3_2)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:39.346129_3-3_2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:40.208860_3-3_2-1-2-1)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:38.941183_3-3_2)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:39.346129_3-3_2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:40.208860_3-3_2-1-2-1)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:33.182967_3-3_2-1-2-1-2-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:38.941183_3-3_2)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:39.346129_3-3_2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:40.208860_3-3_2-1-2-1)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+30/45: 01-05_00:13:33.182967_3-3_2-1-2-1-2-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+31/45: 01-05_00:13:33.182967_3-3_2-1-2-1-2-1 and 01-05_00:13:38.941183_3-3_2)
+32/45: 01-05_00:13:33.182967_3-3_2-1-2-1-2-1 and 01-05_00:13:39.346129_3-3_2-1)
+33/45: 01-05_00:13:33.182967_3-3_2-1-2-1-2-1 and 01-05_00:13:40.208860_3-3_2-1-2-1)
+34/45: 01-05_00:13:33.182967_3-3_2-1-2-1-2-1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+35/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:38.941183_3-3_2)
+36/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:39.346129_3-3_2-1)
+37/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:40.208860_3-3_2-1-2-1)
+38/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+39/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:39.346129_3-3_2-1)
+40/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:40.208860_3-3_2-1-2-1)
+41/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+42/45: 01-05_00:13:39.346129_3-3_2-1 and 01-05_00:13:40.208860_3-3_2-1-2-1)
+43/45: 01-05_00:13:39.346129_3-3_2-1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+44/45: 01-05_00:13:40.208860_3-3_2-1-2-1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:13:38.941183_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:13:38.941183_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:41
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:13:41
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:39.346129_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:39.346129_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:41
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:13:41
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:42
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:13:42
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:40.208860_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:40.208860_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:42
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:13:42
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:40.630804_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:40.630804_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:43
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:13:43
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:33.182967_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:33.182967_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:13:43
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:13:43
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:13:42.173071_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:43
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_00:13:43
+[DEPRECIATE] Experience 01-05_00:13:33.182967_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (23 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:43
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 23, at 2026-01-05_00:13:43
+[DEPRECIATE] Experience 01-05_00:13:41.428631_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (24 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:43
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 24, at 2026-01-05_00:13:43
+[DEPRECIATE] Experience 01-05_00:13:39.346129_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (25 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:43
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 25, at 2026-01-05_00:13:43
+[DEPRECIATE] Experience 01-05_00:13:40.208860_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (26 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:43
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 26, at 2026-01-05_00:13:43
+[DEPRECIATE] Experience 01-05_00:13:43.315821_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:43
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:13:43
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:38.941183_3-3_2)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:41.826442_3-3_2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:38.941183_3-3_2)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:38.941183_3-3_2)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:38.941183_3-3_2)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:41.826442_3-3_2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+30/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:38.941183_3-3_2)
+31/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+32/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+33/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+34/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+35/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+36/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:41.826442_3-3_2-1)
+37/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+38/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+39/45: 01-05_00:13:40.630804_3-3_2-1-2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+40/45: 01-05_00:13:40.630804_3-3_2-1-2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+41/45: 01-05_00:13:40.630804_3-3_2-1-2-1-2 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+42/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+43/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+44/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:13:38.941183_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:13:38.941183_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:44
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:13:44
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:41.826442_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:41.826442_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:44
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:13:44
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:44
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:13:44
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:42.520005_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:42.520005_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:45
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:13:45
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:40.630804_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:40.630804_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:46
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:13:46
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:43.680086_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:43.680086_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:13:47
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:13:47
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:13:44.886599_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (28 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:47
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 28, at 2026-01-05_00:13:47
+[DEPRECIATE] Experience 01-05_00:13:44.112658_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (29 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:47
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 29, at 2026-01-05_00:13:47
+[DEPRECIATE] Experience 01-05_00:13:46.649154_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (30 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:47
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 30, at 2026-01-05_00:13:47
+[DEPRECIATE] Experience 01-05_00:13:44.480535_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (31 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:47
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 31, at 2026-01-05_00:13:47
+[DEPRECIATE] Experience 01-05_00:13:45.353295_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (32 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:47
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 32, at 2026-01-05_00:13:47
+[DEPRECIATE] Experience 01-05_00:13:47.053838_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:47
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:13:47
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:38.941183_3-3_2)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:41.826442_3-3_2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:38.941183_3-3_2)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:38.941183_3-3_2)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:38.941183_3-3_2)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:41.826442_3-3_2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+30/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:38.941183_3-3_2)
+31/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+32/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+33/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+34/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+35/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+36/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:41.826442_3-3_2-1)
+37/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+38/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+39/45: 01-05_00:13:40.630804_3-3_2-1-2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+40/45: 01-05_00:13:40.630804_3-3_2-1-2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+41/45: 01-05_00:13:40.630804_3-3_2-1-2-1-2 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+42/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+43/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+44/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:43.680086_3-3_2-1-2-1-2-1)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:13:38.941183_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:13:38.941183_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:47
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:13:47
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:41.826442_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:41.826442_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:48
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:13:48
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:48
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:13:48
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:42.520005_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:42.520005_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:49
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:13:49
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:40.630804_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:40.630804_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:50
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:13:50
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:43.680086_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:43.680086_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:13:50
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:13:50
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:13:48.512737_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (34 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:50
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 34, at 2026-01-05_00:13:50
+[DEPRECIATE] Experience 01-05_00:13:47.597253_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (35 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:50
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 35, at 2026-01-05_00:13:50
+[DEPRECIATE] Experience 01-05_00:13:50.029110_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (36 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:50
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 36, at 2026-01-05_00:13:50
+[DEPRECIATE] Experience 01-05_00:13:48.076948_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (37 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:50
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 37, at 2026-01-05_00:13:50
+[DEPRECIATE] Experience 01-05_00:13:49.611569_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (38 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:50
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 38, at 2026-01-05_00:13:50
+[DEPRECIATE] Experience 01-05_00:13:43.680086_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:50
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:13:50
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:38.941183_3-3_2)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:41.826442_3-3_2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:38.941183_3-3_2)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:38.941183_3-3_2)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:38.941183_3-3_2)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:41.826442_3-3_2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+30/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:38.941183_3-3_2)
+31/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+32/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+33/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+34/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+35/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:40.630804_3-3_2-1-2-1-2)
+36/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:41.826442_3-3_2-1)
+37/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+38/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+39/45: 01-05_00:13:40.630804_3-3_2-1-2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+40/45: 01-05_00:13:40.630804_3-3_2-1-2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+41/45: 01-05_00:13:40.630804_3-3_2-1-2-1-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+42/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+43/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+44/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:13:38.941183_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:13:38.941183_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:51
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:13:51
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:41.826442_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:41.826442_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:52
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:13:52
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:53
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:13:53
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:42.520005_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:42.520005_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:53
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:13:53
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:40.630804_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:40.630804_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:54
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:13:54
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:50.448046_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:50.448046_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:13:54
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:13:54
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:13:53.346827_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (40 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:54
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 40, at 2026-01-05_00:13:54
+[DEPRECIATE] Experience 01-05_00:13:51.199203_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (41 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:54
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 41, at 2026-01-05_00:13:54
+[DEPRECIATE] Experience 01-05_00:13:40.630804_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (42 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:54
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 42, at 2026-01-05_00:13:54
+[DEPRECIATE] Experience 01-05_00:13:52.872747_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (43 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:54
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 43, at 2026-01-05_00:13:54
+[DEPRECIATE] Experience 01-05_00:13:53.782710_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (44 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:54
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 44, at 2026-01-05_00:13:54
+[DEPRECIATE] Experience 01-05_00:13:54.559577_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:54
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:13:54
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:38.941183_3-3_2)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:41.826442_3-3_2-1)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:38.941183_3-3_2)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:38.941183_3-3_2)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:38.941183_3-3_2)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:41.826442_3-3_2-1)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+30/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:38.941183_3-3_2)
+31/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+32/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+33/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+34/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+35/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:41.826442_3-3_2-1)
+36/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+37/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+38/45: 01-05_00:13:38.941183_3-3_2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+39/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+40/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+41/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+42/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+43/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+44/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:13:38.941183_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:13:38.941183_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:54
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:13:54
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:41.826442_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:41.826442_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:55
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:13:55
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:55
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:13:55
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:42.520005_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:42.520005_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:56
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:13:56
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:54.215872_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:54.215872_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:56
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:13:56
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:50.448046_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:50.448046_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:13:57
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:13:57
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:13:55.767826_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (46 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:57
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 46, at 2026-01-05_00:13:57
+[DEPRECIATE] Experience 01-05_00:13:38.941183_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (47 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:57
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 47, at 2026-01-05_00:13:57
+[DEPRECIATE] Experience 01-05_00:13:55.417837_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (48 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:57
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 48, at 2026-01-05_00:13:57
+[DEPRECIATE] Experience 01-05_00:13:56.184525_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (49 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:57
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 49, at 2026-01-05_00:13:57
+[DEPRECIATE] Experience 01-05_00:13:57.131837_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (50 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:57
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 50, at 2026-01-05_00:13:57
+[DEPRECIATE] Experience 01-05_00:13:56.653857_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:57
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:13:57
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:41.826442_3-3_2-1)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:54.983573_3-3_2)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:54.983573_3-3_2)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:54.983573_3-3_2)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:41.826442_3-3_2-1)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:54.983573_3-3_2)
+30/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+31/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+32/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+33/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+34/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:54.983573_3-3_2)
+35/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+36/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+37/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+38/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:54.983573_3-3_2)
+39/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+40/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+41/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:54.983573_3-3_2)
+42/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+43/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:13:54.983573_3-3_2)
+44/45: 01-05_00:13:54.215872_3-3_2-1-2-1-2 and 01-05_00:13:54.983573_3-3_2)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:13:54.983573_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:13:54.983573_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:57
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:13:57
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:41.826442_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:41.826442_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:57
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:13:57
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:58
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:13:58
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:42.520005_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:42.520005_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:59
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:13:59
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:54.215872_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:54.215872_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:13:59
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:13:59
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:50.448046_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:50.448046_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:14:00
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:14:00
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:13:58.803592_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:00
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_00:14:00
+[DEPRECIATE] Experience 01-05_00:13:57.898996_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (53 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:00
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 53, at 2026-01-05_00:14:00
+[DEPRECIATE] Experience 01-05_00:13:59.172720_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (54 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:00
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 54, at 2026-01-05_00:14:00
+[DEPRECIATE] Experience 01-05_00:14:00.052948_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (55 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:00
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 55, at 2026-01-05_00:14:00
+[DEPRECIATE] Experience 01-05_00:13:59.605170_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (56 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:00
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 56, at 2026-01-05_00:14:00
+[DEPRECIATE] Experience 01-05_00:13:57.519232_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:14:00
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:14:00
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:41.826442_3-3_2-1)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:54.983573_3-3_2)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:54.983573_3-3_2)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:54.983573_3-3_2)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:41.826442_3-3_2-1)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:54.983573_3-3_2)
+30/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+31/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+32/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+33/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+34/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:54.983573_3-3_2)
+35/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+36/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+37/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+38/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:54.983573_3-3_2)
+39/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+40/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+41/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:54.983573_3-3_2)
+42/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+43/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:13:54.983573_3-3_2)
+44/45: 01-05_00:13:54.215872_3-3_2-1-2-1-2 and 01-05_00:13:54.983573_3-3_2)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:13:54.983573_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:13:54.983573_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:00
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:14:00
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:41.826442_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:41.826442_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:00
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:14:00
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:01
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:14:01
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:42.520005_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:42.520005_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:01
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:14:01
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:54.215872_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:54.215872_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:02
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:14:02
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:50.448046_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:50.448046_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:14:02
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:14:02
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:14:01.280289_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (58 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:02
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 58, at 2026-01-05_00:14:02
+[DEPRECIATE] Experience 01-05_00:14:00.893031_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (59 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:02
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 59, at 2026-01-05_00:14:02
+[DEPRECIATE] Experience 01-05_00:14:01.703045_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (60 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:02
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 60, at 2026-01-05_00:14:02
+[DEPRECIATE] Experience 01-05_00:14:02.663354_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (61 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:02
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 61, at 2026-01-05_00:14:02
+[DEPRECIATE] Experience 01-05_00:14:02.249807_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (62 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:02
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 62, at 2026-01-05_00:14:02
+[DEPRECIATE] Experience 01-05_00:14:00.458387_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:14:02
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:14:02
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:41.826442_3-3_2-1)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:54.983573_3-3_2)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:54.983573_3-3_2)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:54.983573_3-3_2)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:41.826442_3-3_2-1)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:54.983573_3-3_2)
+30/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+31/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+32/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+33/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+34/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:54.983573_3-3_2)
+35/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+36/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+37/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+38/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:54.983573_3-3_2)
+39/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+40/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+41/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:54.983573_3-3_2)
+42/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+43/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:13:54.983573_3-3_2)
+44/45: 01-05_00:13:54.215872_3-3_2-1-2-1-2 and 01-05_00:13:54.983573_3-3_2)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:13:54.983573_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:13:54.983573_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:03
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:14:03
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:41.826442_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:41.826442_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:04
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:14:04
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:04
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:14:04
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:42.520005_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:42.520005_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:05
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:14:05
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:54.215872_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:54.215872_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:05
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:14:05
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:50.448046_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:50.448046_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:14:06
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:14:06
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:14:04.973773_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (64 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:06
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 64, at 2026-01-05_00:14:06
+[DEPRECIATE] Experience 01-05_00:14:04.590472_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (65 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:06
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 65, at 2026-01-05_00:14:06
+[DEPRECIATE] Experience 01-05_00:14:05.412926_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (66 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:06
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 66, at 2026-01-05_00:14:06
+[DEPRECIATE] Experience 01-05_00:14:06.667846_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (67 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:06
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 67, at 2026-01-05_00:14:06
+[DEPRECIATE] Experience 01-05_00:14:05.892984_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (68 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:06
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 68, at 2026-01-05_00:14:06
+[DEPRECIATE] Experience 01-05_00:13:54.983573_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:14:06
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:14:06
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:41.826442_3-3_2-1)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:14:03.075186_3-3_2)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:14:03.075186_3-3_2)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:14:03.075186_3-3_2)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:41.826442_3-3_2-1)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:14:03.075186_3-3_2)
+30/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+31/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+32/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+33/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+34/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:14:03.075186_3-3_2)
+35/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+36/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+37/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+38/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:14:03.075186_3-3_2)
+39/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+40/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+41/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:14:03.075186_3-3_2)
+42/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+43/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:14:03.075186_3-3_2)
+44/45: 01-05_00:13:54.215872_3-3_2-1-2-1-2 and 01-05_00:14:03.075186_3-3_2)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:14:03.075186_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:14:03.075186_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:07
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:14:07
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:41.826442_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:41.826442_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:08
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:14:08
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:09
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:14:09
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:42.520005_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:42.520005_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:10
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:14:10
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:54.215872_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:54.215872_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:10
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:14:10
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:50.448046_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:50.448046_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:14:11
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:14:09.519743_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (70 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 70, at 2026-01-05_00:14:11
+[DEPRECIATE] Experience 01-05_00:14:08.924602_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (71 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 71, at 2026-01-05_00:14:11
+[DEPRECIATE] Experience 01-05_00:14:10.261592_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (72 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 72, at 2026-01-05_00:14:11
+[DEPRECIATE] Experience 01-05_00:14:11.652202_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (73 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 73, at 2026-01-05_00:14:11
+[DEPRECIATE] Experience 01-05_00:14:10.820416_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (74 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 74, at 2026-01-05_00:14:11
+[DEPRECIATE] Experience 01-05_00:14:07.548550_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:14:11
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:41.826442_3-3_2-1)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:14:03.075186_3-3_2)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:14:03.075186_3-3_2)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:14:03.075186_3-3_2)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:41.826442_3-3_2-1)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:14:03.075186_3-3_2)
+30/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+31/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+32/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+33/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+34/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:14:03.075186_3-3_2)
+35/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+36/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+37/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+38/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:14:03.075186_3-3_2)
+39/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+40/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+41/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:14:03.075186_3-3_2)
+42/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+43/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:14:03.075186_3-3_2)
+44/45: 01-05_00:13:54.215872_3-3_2-1-2-1-2 and 01-05_00:14:03.075186_3-3_2)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:14:03.075186_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:14:03.075186_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:12
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:14:12
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:41.826442_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:41.826442_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:12
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:14:12
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:13
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:14:13
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:42.520005_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:42.520005_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:13
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:14:13
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:54.215872_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:54.215872_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:14
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:14:14
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:50.448046_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:50.448046_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:14:15
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:14:15
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:14:13.016513_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (76 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:15
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 76, at 2026-01-05_00:14:15
+[DEPRECIATE] Experience 01-05_00:14:12.584390_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (77 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:15
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 77, at 2026-01-05_00:14:15
+[DEPRECIATE] Experience 01-05_00:14:13.843483_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (78 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:15
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 78, at 2026-01-05_00:14:15
+[DEPRECIATE] Experience 01-05_00:14:15.007174_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (79 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:15
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 79, at 2026-01-05_00:14:15
+[DEPRECIATE] Experience 01-05_00:14:14.608224_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (80 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:15
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 80, at 2026-01-05_00:14:15
+[DEPRECIATE] Experience 01-05_00:14:12.072480_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:14:15
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:14:15
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:41.826442_3-3_2-1)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:14:03.075186_3-3_2)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:14:03.075186_3-3_2)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:14:03.075186_3-3_2)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:41.826442_3-3_2-1)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:14:03.075186_3-3_2)
+30/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+31/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+32/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+33/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+34/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:14:03.075186_3-3_2)
+35/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+36/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+37/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+38/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:14:03.075186_3-3_2)
+39/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+40/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+41/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:14:03.075186_3-3_2)
+42/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+43/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:14:03.075186_3-3_2)
+44/45: 01-05_00:13:54.215872_3-3_2-1-2-1-2 and 01-05_00:14:03.075186_3-3_2)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:14:03.075186_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:14:03.075186_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:15
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:14:15
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:41.826442_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:41.826442_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:15
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:14:15
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:16
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:14:16
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:42.520005_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:42.520005_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:17
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:14:17
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:54.215872_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:54.215872_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:17
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:14:17
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:50.448046_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:50.448046_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:14:18
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:14:18
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:14:16.602806_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (82 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:18
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 82, at 2026-01-05_00:14:18
+[DEPRECIATE] Experience 01-05_00:14:15.976795_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (83 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:18
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 83, at 2026-01-05_00:14:18
+[DEPRECIATE] Experience 01-05_00:14:17.139932_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (84 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:18
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 84, at 2026-01-05_00:14:18
+[DEPRECIATE] Experience 01-05_00:14:18.770733_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (85 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:18
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 85, at 2026-01-05_00:14:18
+[DEPRECIATE] Experience 01-05_00:14:17.632378_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (86 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:18
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 86, at 2026-01-05_00:14:18
+[DEPRECIATE] Experience 01-05_00:14:15.533778_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:14:18
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:14:18
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:41.826442_3-3_2-1)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:14:03.075186_3-3_2)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:14:03.075186_3-3_2)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:14:03.075186_3-3_2)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:41.826442_3-3_2-1)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:14:03.075186_3-3_2)
+30/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+31/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+32/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+33/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+34/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:14:03.075186_3-3_2)
+35/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+36/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+37/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+38/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:14:03.075186_3-3_2)
+39/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+40/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+41/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:14:03.075186_3-3_2)
+42/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+43/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:14:03.075186_3-3_2)
+44/45: 01-05_00:13:54.215872_3-3_2-1-2-1-2 and 01-05_00:14:03.075186_3-3_2)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:14:03.075186_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:14:03.075186_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:19
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:14:19
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:41.826442_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:41.826442_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:19
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:14:19
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:20
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:14:20
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:42.520005_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:42.520005_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:20
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:14:20
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:54.215872_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:54.215872_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:21
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:14:21
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:50.448046_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:50.448046_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:14:21
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:14:21
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:14:20.244700_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (88 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:21
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 88, at 2026-01-05_00:14:21
+[DEPRECIATE] Experience 01-05_00:14:19.800109_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (89 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:21
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 89, at 2026-01-05_00:14:21
+[DEPRECIATE] Experience 01-05_00:14:20.813973_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (90 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:21
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 90, at 2026-01-05_00:14:21
+[DEPRECIATE] Experience 01-05_00:14:21.880914_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (91 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:21
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 91, at 2026-01-05_00:14:21
+[DEPRECIATE] Experience 01-05_00:14:21.354849_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (92 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:21
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 92, at 2026-01-05_00:14:21
+[DEPRECIATE] Experience 01-05_00:14:19.393369_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:14:21
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:14:21
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:41.826442_3-3_2-1)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:14:03.075186_3-3_2)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:14:03.075186_3-3_2)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:14:03.075186_3-3_2)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:41.826442_3-3_2-1)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:14:03.075186_3-3_2)
+30/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+31/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+32/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+33/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+34/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:14:03.075186_3-3_2)
+35/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+36/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+37/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+38/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:14:03.075186_3-3_2)
+39/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+40/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+41/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:14:03.075186_3-3_2)
+42/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+43/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:14:03.075186_3-3_2)
+44/45: 01-05_00:13:54.215872_3-3_2-1-2-1-2 and 01-05_00:14:03.075186_3-3_2)
+Loop finish, num conflict pairs detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:26.191366_3-3_1', '01-05_00:14:03.075186_3-3_2']
+[BFS] Max scores: [('01-05_00:13:26.191366_3-3_1', 0.0), ('01-05_00:14:03.075186_3-3_2', 1.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:23
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:14:23
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:41.826442_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:41.826442_3-3_2-1', 1.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:24
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:14:24
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:27.492232_3-3_2-1-1', '01-05_00:13:28.802713_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:27.492232_3-3_2-1-1', 0.0), ('01-05_00:13:28.802713_3-3_2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:24
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:14:24
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:29.135367_3-3_2-1-2-2', '01-05_00:13:42.520005_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:29.135367_3-3_2-1-2-2', 0.0), ('01-05_00:13:42.520005_3-3_2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:25
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:14:25
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:36.075029_3-3_2-1-2-1-1', '01-05_00:13:54.215872_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:36.075029_3-3_2-1-2-1-1', 0.0), ('01-05_00:13:54.215872_3-3_2-1-2-1-2', 1.0)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:26
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:14:26
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:50.448046_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:50.448046_3-3_2-1-2-1-2-1', 1.0)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:14:26
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:14:26
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:14:24.696143_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (94 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:26
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 94, at 2026-01-05_00:14:26
+[DEPRECIATE] Experience 01-05_00:14:24.190560_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (95 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:26
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 95, at 2026-01-05_00:14:26
+[DEPRECIATE] Experience 01-05_00:14:25.448458_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (96 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:26
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 96, at 2026-01-05_00:14:26
+[DEPRECIATE] Experience 01-05_00:14:26.944290_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (97 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:26
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 97, at 2026-01-05_00:14:26
+[DEPRECIATE] Experience 01-05_00:14:26.220312_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (98 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:26
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 98, at 2026-01-05_00:14:26
+[DEPRECIATE] Experience 01-05_00:14:23.520341_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (99 items)
+Save store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:14:26
+Save depreiciate store, path: ./log_True_frozenlake_glove_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 99, at 2026-01-05_00:14:27
+Loop detecting conflict pairs
+Number of experience combinations: 45
+0/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:27.492232_3-3_2-1-1)
+1/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:28.802713_3-3_2-1-2)
+2/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+3/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+4/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:41.826442_3-3_2-1)
+5/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+6/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+7/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+8/45: 01-05_00:13:26.191366_3-3_1 and 01-05_00:14:03.075186_3-3_2)
+9/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:28.802713_3-3_2-1-2)
+10/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+11/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+12/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+13/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+14/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+15/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+16/45: 01-05_00:13:27.492232_3-3_2-1-1 and 01-05_00:14:03.075186_3-3_2)
+17/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:29.135367_3-3_2-1-2-2)
+18/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+19/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:41.826442_3-3_2-1)
+20/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+21/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+22/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+23/45: 01-05_00:13:28.802713_3-3_2-1-2 and 01-05_00:14:03.075186_3-3_2)
+24/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:36.075029_3-3_2-1-2-1-1)
+25/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:41.826442_3-3_2-1)
+26/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+27/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+28/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+29/45: 01-05_00:13:29.135367_3-3_2-1-2-2 and 01-05_00:14:03.075186_3-3_2)
+30/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:41.826442_3-3_2-1)
+31/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+32/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+33/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+34/45: 01-05_00:13:36.075029_3-3_2-1-2-1-1 and 01-05_00:14:03.075186_3-3_2)
+35/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:42.520005_3-3_2-1-2-1)
+36/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+37/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+38/45: 01-05_00:13:41.826442_3-3_2-1 and 01-05_00:14:03.075186_3-3_2)
+39/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:50.448046_3-3_2-1-2-1-2-1)
+40/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+41/45: 01-05_00:13:42.520005_3-3_2-1-2-1 and 01-05_00:14:03.075186_3-3_2)
+42/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:13:54.215872_3-3_2-1-2-1-2)
+43/45: 01-05_00:13:50.448046_3-3_2-1-2-1-2-1 and 01-05_00:14:03.075186_3-3_2)
+44/45: 01-05_00:13:54.215872_3-3_2-1-2-1-2 and 01-05_00:14:03.075186_3-3_2)
+Loop finish, num conflict pairs detected: 0

@@ -1,0 +1,1448 @@
+########################################################
+Start exploring at 2026-01-05_00:44:54
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 0, exps: []
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:44:55.945741_3-3_1
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 1
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:44:55
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 0, groups: []
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:44:55
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 0, 'max_score': 0.0, 'retention': 0.9900498337491681}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:44:56.599231_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 0, exps: []
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:44:56.927547_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 0, exps: []
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:44:57.287700_3-3_2-1-1
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [2, 1], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 3
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [2, 1, 1]
+End exploring at 2026-01-05_00:44:57
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [2, 1], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 0, groups: []
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:44:57
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:56.599231_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 1, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 0, 'max_score': 0.0, 'retention': 0.9607894391523232}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:44:57.656447_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:56.927547_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 2, 'max_score': 0.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:44:58.019882_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 3, 'max_score': 0.0, 'retention': 0.9704455335485082}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:44:58.450036_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 0, exps: []
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:44:58.860700_3-3_2-1-2-2
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [1, 3], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 4
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 4
+Final score: 0
+Action path: [2, 1, 2, 2]
+End exploring at 2026-01-05_00:44:58
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [1, 3], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 2, groups: [{'01-05_00:44:57.656447_3-3_2', '01-05_00:44:56.599231_3-3_2'}, {'01-05_00:44:56.927547_3-3_2-1', '01-05_00:44:58.019882_3-3_2-1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:44:58
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.656447_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 4, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 0, 'max_score': 0.0, 'retention': 0.9231163463866358}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:44:59.307728_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:56.927547_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 2, 'max_score': 0.0, 'retention': 0.9323938199059483}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:44:59.830872_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.450036_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 6, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 3, 'max_score': 0.0, 'retention': 0.9323938199059483}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:00.196251_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 7, 'max_score': 0.0, 'retention': 0.9607894391523232}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:00.638892_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 0, exps: []
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:01.174603_3-3_2-1-2-1-1
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [3, 2], 'tile_type': 'H'}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 5
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 5
+Final score: 0
+Action path: [2, 1, 2, 1, 1]
+End exploring at 2026-01-05_00:45:01
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'H'}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 3, groups: [{'01-05_00:44:59.830872_3-3_2-1', '01-05_00:44:56.927547_3-3_2-1'}, {'01-05_00:44:59.307728_3-3_2', '01-05_00:44:57.656447_3-3_2'}, {'01-05_00:45:00.196251_3-3_2-1-2', '01-05_00:44:58.450036_3-3_2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:01
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 8, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 0, 'max_score': 0.0, 'retention': 0.8780954309205613}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:01.581806_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 9, 'max_score': 0.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:01.940049_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:00.196251_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 10, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 3, 'max_score': 0.0, 'retention': 0.8869204367171575}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:02.373652_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:00.638892_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 11, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 7, 'max_score': 0.0, 'retention': 0.9139311852712282}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:02.850221_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 12, 'max_score': 0.0, 'retention': 0.951229424500714}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:03.226424_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 0, exps: []
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:03.563352_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 8 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:03
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 4, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:01.581806_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:01.940049_3-3_2-1'}, {'01-05_00:45:00.196251_3-3_2-1-2', '01-05_00:45:02.373652_3-3_2-1-2'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:00.638892_3-3_2-1-2-1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:03
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 19, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 19, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:03.992357_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 19, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:04.410460_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 19, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:00.196251_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 19, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:04.832237_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 19, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 16, 'max_score': 1.0, 'retention': 0.9417645335842487}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:05.185215_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 19, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:03.226424_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 17, 'max_score': 1.0, 'retention': 0.9417645335842487}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:05.601543_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 18, 'max_score': 1.0, 'retention': 0.9417645335842487}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:05.936181_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:05
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:03.992357_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:04.410460_3-3_2-1'}, {'01-05_00:45:00.196251_3-3_2-1-2', '01-05_00:45:04.832237_3-3_2-1-2'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:05.185215_3-3_2-1-2-1'}, {'01-05_00:45:03.226424_3-3_2-1-2-1-2', '01-05_00:45:05.601543_3-3_2-1-2-1-2'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:05.936181_3-3_2-1-2-1-2-1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:05
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 25, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 25, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:06.368311_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 25, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:06.892484_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 25, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:00.196251_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 25, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:07.263345_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 25, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 25, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:07.641085_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 25, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:03.226424_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 25, 'max_score': 1.0, 'retention': 0.9607894391523232}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:07.968780_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 25, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:08.399474_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:08
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:06.368311_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:06.892484_3-3_2-1'}, {'01-05_00:45:00.196251_3-3_2-1-2', '01-05_00:45:07.263345_3-3_2-1-2'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:07.641085_3-3_2-1-2-1'}, {'01-05_00:45:07.968780_3-3_2-1-2-1-2', '01-05_00:45:03.226424_3-3_2-1-2-1-2'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:08.399474_3-3_2-1-2-1-2-1'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:08
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 31, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 31, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:08.903233_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 31, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:09.338189_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 31, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:00.196251_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 31, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:09.676629_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 31, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 31, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:10.230992_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 31, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:07.968780_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 29, 'max_score': 1.0, 'retention': 0.9417645335842487}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:10.663061_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 31, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:11.070957_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:11
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:08.903233_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:09.338189_3-3_2-1'}, {'01-05_00:45:09.676629_3-3_2-1-2', '01-05_00:45:00.196251_3-3_2-1-2'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:10.230992_3-3_2-1-2-1'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:11.070957_3-3_2-1-2-1-2-1'}, {'01-05_00:45:10.663061_3-3_2-1-2-1-2', '01-05_00:45:07.968780_3-3_2-1-2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:11
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 37, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 37, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:11.521613_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 37, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:12.247919_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 37, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:09.676629_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 33, 'max_score': 1.0, 'retention': 0.9417645335842487}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:12.714034_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 37, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 37, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:14.121586_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 37, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:10.663061_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 35, 'max_score': 1.0, 'retention': 0.9417645335842487}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:14.468348_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 37, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:14.797013_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:14
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:11.521613_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:12.247919_3-3_2-1'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:14.121586_3-3_2-1-2-1'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:14.797013_3-3_2-1-2-1-2-1'}, {'01-05_00:45:09.676629_3-3_2-1-2', '01-05_00:45:12.714034_3-3_2-1-2'}, {'01-05_00:45:10.663061_3-3_2-1-2-1-2', '01-05_00:45:14.468348_3-3_2-1-2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:14
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 43, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 43, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:15.493720_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 43, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:15.838218_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 43, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:09.676629_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 43, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:16.267672_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 43, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 43, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:16.673338_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 43, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:10.663061_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 43, 'max_score': 1.0, 'retention': 0.9607894391523232}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:17.092426_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 43, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:17.488559_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:17
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:15.493720_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:15.838218_3-3_2-1'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:16.673338_3-3_2-1-2-1'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:17.488559_3-3_2-1-2-1-2-1'}, {'01-05_00:45:09.676629_3-3_2-1-2', '01-05_00:45:16.267672_3-3_2-1-2'}, {'01-05_00:45:10.663061_3-3_2-1-2-1-2', '01-05_00:45:17.092426_3-3_2-1-2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:17
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 49, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 49, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:17.935059_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 49, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:18.388984_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 49, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:09.676629_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 49, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:18.718550_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 49, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 49, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:19.132396_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 49, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:10.663061_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 49, 'max_score': 1.0, 'retention': 0.9607894391523232}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:20.353318_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 49, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:20.846082_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:20
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:17.935059_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:18.388984_3-3_2-1'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:19.132396_3-3_2-1-2-1'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:20.846082_3-3_2-1-2-1-2-1'}, {'01-05_00:45:09.676629_3-3_2-1-2', '01-05_00:45:18.718550_3-3_2-1-2'}, {'01-05_00:45:10.663061_3-3_2-1-2-1-2', '01-05_00:45:20.353318_3-3_2-1-2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:20
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 55, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 55, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:22.215821_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 55, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:22.661125_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 55, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:09.676629_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 55, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:23.095578_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 55, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 55, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:23.463005_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 55, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:10.663061_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 55, 'max_score': 1.0, 'retention': 0.9607894391523232}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:23.830335_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 55, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:24.162341_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:24
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:22.215821_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:22.661125_3-3_2-1'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:23.463005_3-3_2-1-2-1'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:24.162341_3-3_2-1-2-1-2-1'}, {'01-05_00:45:09.676629_3-3_2-1-2', '01-05_00:45:23.095578_3-3_2-1-2'}, {'01-05_00:45:10.663061_3-3_2-1-2-1-2', '01-05_00:45:23.830335_3-3_2-1-2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:24
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 61, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 61, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:24.681097_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 61, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:25.045846_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 61, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:09.676629_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 61, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:25.470611_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 61, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 61, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:25.827677_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 61, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:10.663061_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 61, 'max_score': 1.0, 'retention': 0.9607894391523232}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:26.168592_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 61, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:26.507779_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:26
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:24.681097_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:25.045846_3-3_2-1'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:25.827677_3-3_2-1-2-1'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:26.507779_3-3_2-1-2-1-2-1'}, {'01-05_00:45:09.676629_3-3_2-1-2', '01-05_00:45:25.470611_3-3_2-1-2'}, {'01-05_00:45:10.663061_3-3_2-1-2-1-2', '01-05_00:45:26.168592_3-3_2-1-2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:26
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 67, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 67, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:27.024791_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 67, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:27.448437_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 67, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:09.676629_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 67, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:27.857549_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 67, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 67, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:28.235718_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 67, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:10.663061_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 67, 'max_score': 1.0, 'retention': 0.9607894391523232}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:28.586042_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 67, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:29.030589_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:29
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:27.024791_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:27.448437_3-3_2-1'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:28.235718_3-3_2-1-2-1'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:29.030589_3-3_2-1-2-1-2-1'}, {'01-05_00:45:09.676629_3-3_2-1-2', '01-05_00:45:27.857549_3-3_2-1-2'}, {'01-05_00:45:10.663061_3-3_2-1-2-1-2', '01-05_00:45:28.586042_3-3_2-1-2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:29
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 73, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 73, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:29.471165_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 73, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:29.832911_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 73, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:09.676629_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 73, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:30.162536_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 73, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 73, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:30.675660_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 73, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:10.663061_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 73, 'max_score': 1.0, 'retention': 0.9607894391523232}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:31.005696_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 73, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:31.430186_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:31
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:29.471165_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:29.832911_3-3_2-1'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:30.675660_3-3_2-1-2-1'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:31.430186_3-3_2-1-2-1-2-1'}, {'01-05_00:45:09.676629_3-3_2-1-2', '01-05_00:45:30.162536_3-3_2-1-2'}, {'01-05_00:45:10.663061_3-3_2-1-2-1-2', '01-05_00:45:31.005696_3-3_2-1-2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:31
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 79, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 79, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:31.839374_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 79, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:32.329030_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 79, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:09.676629_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 79, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:32.757692_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 79, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 79, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:33.145382_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 79, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:10.663061_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 79, 'max_score': 1.0, 'retention': 0.9607894391523232}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:33.478175_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 79, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:33.885186_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:33
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:31.839374_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:32.329030_3-3_2-1'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:33.145382_3-3_2-1-2-1'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:33.885186_3-3_2-1-2-1-2-1'}, {'01-05_00:45:09.676629_3-3_2-1-2', '01-05_00:45:32.757692_3-3_2-1-2'}, {'01-05_00:45:10.663061_3-3_2-1-2-1-2', '01-05_00:45:33.478175_3-3_2-1-2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:33
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 85, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 85, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:34.260903_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 85, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:34.668546_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 85, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:09.676629_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 85, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:35.122845_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 85, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 85, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:35.488903_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 85, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:10.663061_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 85, 'max_score': 1.0, 'retention': 0.9607894391523232}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:35.897536_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 85, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:36.313361_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:36
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:34.260903_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:34.668546_3-3_2-1'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:35.488903_3-3_2-1-2-1'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:36.313361_3-3_2-1-2-1-2-1'}, {'01-05_00:45:09.676629_3-3_2-1-2', '01-05_00:45:35.122845_3-3_2-1-2'}, {'01-05_00:45:10.663061_3-3_2-1-2-1-2', '01-05_00:45:35.897536_3-3_2-1-2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:36
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 91, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 91, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:36.690566_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 91, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:37.151621_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 91, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:09.676629_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 91, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:37.831938_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 91, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 91, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:38.281592_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 91, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:10.663061_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 91, 'max_score': 1.0, 'retention': 0.9607894391523232}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:39.417160_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 91, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:39.960024_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:39
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:36.690566_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:37.151621_3-3_2-1'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:38.281592_3-3_2-1-2-1'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:39.960024_3-3_2-1-2-1-2-1'}, {'01-05_00:45:09.676629_3-3_2-1-2', '01-05_00:45:37.831938_3-3_2-1-2'}, {'01-05_00:45:10.663061_3-3_2-1-2-1-2', '01-05_00:45:39.417160_3-3_2-1-2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:40
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 97, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 97, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:40.375080_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 97, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:40.699531_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 97, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:09.676629_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 97, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:41.093453_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 97, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 97, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:41.683720_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 97, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:10.663061_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 97, 'max_score': 1.0, 'retention': 0.9607894391523232}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:42.044871_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 97, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:42.437183_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:42
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:40.375080_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:40.699531_3-3_2-1'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:41.683720_3-3_2-1-2-1'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:42.437183_3-3_2-1-2-1-2-1'}, {'01-05_00:45:09.676629_3-3_2-1-2', '01-05_00:45:41.093453_3-3_2-1-2'}, {'01-05_00:45:10.663061_3-3_2-1-2-1-2', '01-05_00:45:42.044871_3-3_2-1-2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------
+########################################################
+Start exploring at 2026-01-05_00:45:42
+-----
+Init new environment:
+[ENV] FrozenLake
+[Destinations]: [(3, 3)]
+[Map]:
+SFHH
+HFFH
+HHFF
+HHHG
+-----
+--------------------------------------------------------
+Step 0 / 20
+- Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:55.945741_3-3_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 103, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_00:44:59.307728_3-3_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 103, 'max_score': 1.0, 'retention': 1.0}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:42.853796_3-3_2
+--------------------------------------------------------
+Step 1 / 20
+- Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:44:59.830872_3-3_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'mb_timestep': 103, 'max_score': 1.0, 'retention': 0.9900498337491681}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:43.308039_3-3_2-1
+--------------------------------------------------------
+Step 2 / 20
+- Current state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:57.287700_3-3_2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 1], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 103, 'max_score': 0.0, 'retention': 0.9801986733067553}, {'id': '01-05_00:45:09.676629_3-3_2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2], 'st': {'cur_pos': [1, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 103, 'max_score': 1.0, 'retention': 0.9801986733067553}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:43.719380_3-3_2-1-2
+--------------------------------------------------------
+Step 3 / 20
+- Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:44:58.860700_3-3_2-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 103, 'max_score': 0.0, 'retention': 0.9704455335485082}, {'id': '01-05_00:45:02.850221_3-3_2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 103, 'max_score': 1.0, 'retention': 0.9704455335485082}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:44.130797_3-3_2-1-2-1
+--------------------------------------------------------
+Step 4 / 20
+- Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 2, exps: [{'id': '01-05_00:45:01.174603_3-3_2-1-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'H'}, 'mb_timestep': 103, 'max_score': 0.0, 'retention': 0.9607894391523232}, {'id': '01-05_00:45:10.663061_3-3_2-1-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'mb_timestep': 103, 'max_score': 1.0, 'retention': 0.9607894391523232}]
+- Todo action: 2
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:45.177950_3-3_2-1-2-1-2
+--------------------------------------------------------
+Step 5 / 20
+- Current state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+- Action status: [0, 1, 2, 3]
+- Retrieved experience, len: 1, exps: [{'id': '01-05_00:45:03.563352_3-3_2-1-2-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1, 2, 1, 2, 1], 'st': {'cur_pos': [2, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 103, 'max_score': 1.0, 'retention': 0.951229424500714}]
+- Todo action: 1
+- Action is valid after 0 retries
+- Experience stored: 01-05_00:45:45.632684_3-3_2-1-2-1-2-1
+--------------------------------------------------------
+Step 6 / 20
+- Current state: {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}
+- Action status: [0, 1, 2, 3]
+- Episode is done at step 6
+- Success trail! Updated timestamps for 10 experiences
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 6
+Final score: 1.0
+Action path: [2, 1, 2, 1, 2, 1]
+End exploring at 2026-01-05_00:45:45
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+[POST-EXPLORE] Running redundancy removal only
+---------------- Remove Redundant Experiences ----------------
+Redundant experience len: 6, groups: [{'01-05_00:44:59.307728_3-3_2', '01-05_00:45:42.853796_3-3_2'}, {'01-05_00:44:59.830872_3-3_2-1', '01-05_00:45:43.308039_3-3_2-1'}, {'01-05_00:45:02.850221_3-3_2-1-2-1', '01-05_00:45:44.130797_3-3_2-1-2-1'}, {'01-05_00:45:03.563352_3-3_2-1-2-1-2-1', '01-05_00:45:45.632684_3-3_2-1-2-1-2-1'}, {'01-05_00:45:09.676629_3-3_2-1-2', '01-05_00:45:43.719380_3-3_2-1-2'}, {'01-05_00:45:10.663061_3-3_2-1-2-1-2', '01-05_00:45:45.177950_3-3_2-1-2-1-2'}]
+---------------- Finished Remove Redundant Experiences ----------------

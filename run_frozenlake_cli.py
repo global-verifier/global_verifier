@@ -44,7 +44,7 @@ def build_argparser() -> argparse.ArgumentParser:
 
     # Optional QoL flags (defaults mirror `run_frozenLake.py`)
     p.add_argument("--max-steps", type=int, default=20)
-    p.add_argument("--threshold", type=float, default=0.3)
+    p.add_argument("--threshold", type=float, default=0.25)
     p.add_argument("--decay-rate", type=float, default=100.0)
     p.add_argument("--episodes-per-map", type=int, default=20)
     p.add_argument("--output-root", type=str, default=".")
@@ -93,7 +93,7 @@ def main() -> int:
     maps_to_run = [map_0, map_1, map_2]
     env_name = "frozenlake"
 
-    cur_name = f"log_{args.use_memory}_{env_name}_{args.memory_env}_{args.model_name}"
+    cur_name = f"log_{env_name}_{args.model_name}_{args.use_memory}_{args.memory_env}"
     run_root = os.path.join(args.output_root, cur_name)
     log_dir = os.path.join(run_root, "log")
     backend_log_dir = log_dir
@@ -146,7 +146,7 @@ def main() -> int:
             e.explore()
 
     # Create a finish marker file to indicate this run completed successfully.
-    marker_dir = os.path.join(args.output_root, "finish_marker")
+    marker_dir = os.path.join(args.output_root, "finish_mark")
     os.makedirs(marker_dir, exist_ok=True)
     marker_path = os.path.join(marker_dir, cur_name)
     with open(marker_path, "w", encoding="utf-8"):

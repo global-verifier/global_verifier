@@ -1,0 +1,1326 @@
+########################################################
+Start loading ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json the store at 2026-01-05_00:13:15
+Store not exists, creating a new one at ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, at 2026-01-05_00:13:15
+########################################################
+Start loading ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json the store at 2026-01-05_00:13:15
+Store not exists, creating a new one at ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, at 2026-01-05_00:13:15
+Store validation passed: No overlap between exp_store (0 items) and depreiciate_exp_store (0 items)
+Using algorithm: sameSt_bfs_maxScore
+[Voyager] Initialized with explorer_model
+########################################################
+Start loading ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json the store at 2026-01-05_00:13:15
+Successfully loaded the store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 0, at 2026-01-05_00:13:15
+########################################################
+Start loading ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json the store at 2026-01-05_00:13:15
+Successfully loaded the store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:15
+Store validation passed: No overlap between exp_store (0 items) and depreiciate_exp_store (0 items)
+Using algorithm: sameSt_bfs_maxScore
+[Voyager] Initialized with explorer_model
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+[Voyager] Generated summary: Moved down from start position 0, resulting in a FAIL as it landed on a hole, outcome is UNSAFE....
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 1, at 2026-01-05_00:13:16
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:16
+[Voyager] Experience 01-05_00:13:15.996928_3-3_1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:15.996928_3-3_1']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0)]
+[Voyager] Generated summary: Starting at position 0, taking action Right (2) resulted in no position change, remaining on the ice...
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 2, at 2026-01-05_00:13:18
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:18
+[Voyager] Experience 01-05_00:13:17.170270_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in no movement, still on a safe Frozen tile, which is...
+Store validation passed: No overlap between exp_store (3 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 3, at 2026-01-05_00:13:21
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:21
+[Voyager] Experience 01-05_00:13:18.929389_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+[Voyager] Generated summary: Starting from position 0, taking action Down (1) resulted in staying at position 0 but falling into ...
+Store validation passed: No overlap between exp_store (4 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 4, at 2026-01-05_00:13:26
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:26
+[Voyager] Experience 01-05_00:13:21.553705_3-3_2-1-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:13:17.170270_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:13:17.170270_3-3_2', 0.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in no movement, staying on the Start position, which...
+Store validation passed: No overlap between exp_store (5 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 5, at 2026-01-05_00:13:27
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:27
+[Voyager] Experience 01-05_00:13:26.823015_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:18.929389_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:18.929389_3-3_2-1', 0.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in no change, still on a frozen tile, which is a SAFE...
+Store validation passed: No overlap between exp_store (6 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 6, at 2026-01-05_00:13:29
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:29
+[Voyager] Experience 01-05_00:13:28.538053_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0)]
+[Voyager] Generated summary: Started at position 0 on a Frozen tile, took action Right, and remained at position 0 on a Frozen ti...
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 7, at 2026-01-05_00:13:32
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:32
+[Voyager] Experience 01-05_00:13:31.311194_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+[Voyager] Generated summary: Starting at position 0 on a frozen tile, taking action Right (2) resulted in falling into a hole at ...
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 8, at 2026-01-05_00:13:33
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_00:13:33
+[Voyager] Experience 01-05_00:13:32.828208_3-3_2-1-2-2 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 2
+[DEPRECIATE] Experience 01-05_00:13:17.170270_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (1 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 7, at 2026-01-05_00:13:33
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 1, at 2026-01-05_00:13:33
+[DEPRECIATE] Experience 01-05_00:13:28.538053_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (6 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 6, at 2026-01-05_00:13:33
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:33
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:13:26.823015_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:13:26.823015_3-3_2', 0.0)]
+[Voyager] Generated summary: Starting at position 0 on the Start tile, taking action Right (2) resulted in no movement, staying o...
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 7, at 2026-01-05_00:13:35
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:35
+[Voyager] Experience 01-05_00:13:34.554049_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:18.929389_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:18.929389_3-3_2-1', 0.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 on a Frozen (F) tile, which ...
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 8, at 2026-01-05_00:13:37
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:37
+[Voyager] Experience 01-05_00:13:36.251431_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:13:31.311194_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:13:31.311194_3-3_2-1-2', 0.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, staying at position 0...
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 9, at 2026-01-05_00:13:39
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:39
+[Voyager] Experience 01-05_00:13:37.799254_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in no movement, and the outcome was SAFE, remaining o...
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:40
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:40
+[Voyager] Experience 01-05_00:13:39.538448_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, ending still at posit...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:41
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:41
+[Voyager] Experience 01-05_00:13:40.817016_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+[Voyager] Generated summary: Starting at position 0 on a frozen tile, taking Down action resulted in staying at position 0 but re...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:43
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_00:13:43
+[Voyager] Experience 01-05_00:13:42.272529_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 3
+[DEPRECIATE] Experience 01-05_00:13:36.251431_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (3 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:43
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 3, at 2026-01-05_00:13:43
+[DEPRECIATE] Experience 01-05_00:13:34.554049_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (4 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:43
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 4, at 2026-01-05_00:13:43
+[DEPRECIATE] Experience 01-05_00:13:37.799254_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 9, at 2026-01-05_00:13:43
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_00:13:43
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:13:26.823015_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:13:26.823015_3-3_2', 1.0)]
+[Voyager] Generated summary: Starting from position 0 at S, taking action Right (2) resulted in no position change, remaining SAF...
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:46
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_00:13:46
+[Voyager] Experience 01-05_00:13:43.818070_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:18.929389_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:18.929389_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 on a frozen tile F, which wa...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:48
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_00:13:48
+[Voyager] Experience 01-05_00:13:46.808117_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:13:31.311194_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:13:31.311194_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no position change, yielding a S...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:51
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_00:13:51
+[Voyager] Experience 01-05_00:13:49.695315_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:13:39.538448_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:13:39.538448_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at the same position on a frozen tile, and...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:53
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_00:13:53
+[Voyager] Experience 01-05_00:13:52.188831_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:40.817016_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:40.817016_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Down (1) resulted in staying at position 0 but falling...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:13:55
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_00:13:55
+[Voyager] Experience 01-05_00:13:53.967870_3-3_2-1-2-1-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 4
+[DEPRECIATE] Experience 01-05_00:13:46.808117_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (6 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:13:55
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 6, at 2026-01-05_00:13:55
+[DEPRECIATE] Experience 01-05_00:13:43.818070_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (7 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:55
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 7, at 2026-01-05_00:13:55
+[DEPRECIATE] Experience 01-05_00:13:49.695315_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (8 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:55
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 8, at 2026-01-05_00:13:55
+[DEPRECIATE] Experience 01-05_00:13:52.188831_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:13:55
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:13:55
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:13:26.823015_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:13:26.823015_3-3_2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in staying at position 0 but transitioning from S to...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:13:56
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:13:56
+[Voyager] Experience 01-05_00:13:55.686980_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:18.929389_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:18.929389_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in no movement, staying on a frozen tile, which is a ...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:13:58
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:13:58
+[Voyager] Experience 01-05_00:13:57.291035_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:13:31.311194_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:13:31.311194_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in no change, still on a Frozen tile, this move was ...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:00
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:14:00
+[Voyager] Experience 01-05_00:13:59.239112_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:13:39.538448_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:13:39.538448_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 on a Frozen tile, which is a...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:04
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:14:04
+[Voyager] Experience 01-05_00:14:00.579683_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:40.817016_3-3_2-1-2-1-2', '01-05_00:13:53.967870_3-3_2-1-2-1-1']
+[BFS] Max scores: [('01-05_00:13:40.817016_3-3_2-1-2-1-2', 1.0), ('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, and the move was SAFE...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:06
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:14:06
+[Voyager] Experience 01-05_00:14:04.875753_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:42.272529_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:42.272529_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 but reaching the Goal tile, ...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_00:14:11
+[Voyager] Experience 01-05_00:14:07.692925_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:13:57.291035_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (10 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 10, at 2026-01-05_00:14:11
+[DEPRECIATE] Experience 01-05_00:13:55.686980_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (11 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 11, at 2026-01-05_00:14:11
+[DEPRECIATE] Experience 01-05_00:13:59.239112_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (12 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 12, at 2026-01-05_00:14:11
+[DEPRECIATE] Experience 01-05_00:14:00.579683_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (13 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 13, at 2026-01-05_00:14:11
+[DEPRECIATE] Experience 01-05_00:13:40.817016_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (14 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 14, at 2026-01-05_00:14:11
+[DEPRECIATE] Experience 01-05_00:13:42.272529_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:14:11
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:14:11
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:13:26.823015_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:13:26.823015_3-3_2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in no position change, landing on a Frozen tile, whi...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:14
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:14:14
+[Voyager] Experience 01-05_00:14:11.802674_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:18.929389_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:18.929389_3-3_2-1', 1.0)]
+[Voyager] Generated summary: Starting at position 0 on frozen ice, moving down resulted in no change, still on frozen ice, this m...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:17
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:14:17
+[Voyager] Experience 01-05_00:14:14.944669_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:13:31.311194_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:13:31.311194_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no movement, keeping the agent S...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:20
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:14:20
+[Voyager] Experience 01-05_00:14:17.532327_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:13:39.538448_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:13:39.538448_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in no change, remaining on a frozen tile, this move w...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:25
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:14:25
+[Voyager] Experience 01-05_00:14:21.353268_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:14:04.875753_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:14:04.875753_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: Starting at position 0 on a frozen tile, taking action "Right" resulted in no position change, and t...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:29
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:14:29
+[Voyager] Experience 01-05_00:14:26.221368_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:07.692925_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:07.692925_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: Starting at position 0 on a safe Frozen tile, taking action Down (1) surprisingly didn't move but ac...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:14:34
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_00:14:34
+[Voyager] Experience 01-05_00:14:31.406120_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:14:14.944669_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (16 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:34
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 16, at 2026-01-05_00:14:34
+[DEPRECIATE] Experience 01-05_00:14:11.802674_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:34
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_00:14:34
+[DEPRECIATE] Experience 01-05_00:14:17.532327_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (18 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:34
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 18, at 2026-01-05_00:14:34
+[DEPRECIATE] Experience 01-05_00:13:39.538448_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (19 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:34
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 19, at 2026-01-05_00:14:34
+[DEPRECIATE] Experience 01-05_00:14:04.875753_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (20 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:34
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 20, at 2026-01-05_00:14:34
+[DEPRECIATE] Experience 01-05_00:14:07.692925_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:14:34
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:14:34
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:13:26.823015_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:13:26.823015_3-3_2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in staying at position 0 but moving to a Frozen (F) ...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:14:40
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:14:40
+[Voyager] Experience 01-05_00:14:35.318185_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:13:18.929389_3-3_2-1']
+[BFS] Max scores: [('01-05_00:13:18.929389_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 on a Frozen tile, which was ...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:14:43
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:14:43
+[Voyager] Experience 01-05_00:14:40.982037_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:13:31.311194_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:13:31.311194_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no movement, and the outcome was...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:14:46
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:14:46
+[Voyager] Experience 01-05_00:14:43.950542_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:14:21.353268_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:14:21.353268_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking the action Down (1) resulted in no change, and the move was S...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:14:49
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:14:49
+[Voyager] Experience 01-05_00:14:47.084518_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:14:26.221368_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:14:26.221368_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, and the move was SAFE...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:14:57
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:14:57
+[Voyager] Experience 01-05_00:14:49.641693_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:31.406120_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:31.406120_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: Starting at position 0 on a frozen tile, taking action Down (1) surprisingly didn't move but still r...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:15:02
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_00:15:02
+[Voyager] Experience 01-05_00:14:58.736591_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:13:18.929389_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:15:02
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_00:15:02
+[DEPRECIATE] Experience 01-05_00:14:35.318185_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (23 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:15:02
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 23, at 2026-01-05_00:15:02
+[DEPRECIATE] Experience 01-05_00:14:43.950542_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (24 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:15:02
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 24, at 2026-01-05_00:15:02
+[DEPRECIATE] Experience 01-05_00:14:21.353268_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (25 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:15:02
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 25, at 2026-01-05_00:15:02
+[DEPRECIATE] Experience 01-05_00:14:49.641693_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (26 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:15:02
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 26, at 2026-01-05_00:15:02
+[DEPRECIATE] Experience 01-05_00:14:58.736591_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:15:02
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:15:02
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:13:26.823015_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:13:26.823015_3-3_2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in no position change, remaining on a safe tile, thi...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:15:05
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:15:05
+[Voyager] Experience 01-05_00:15:03.398947_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:40.982037_3-3_2-1']
+[BFS] Max scores: [('01-05_00:14:40.982037_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 on a Frozen (F) tile, which ...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:15:07
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:15:07
+[Voyager] Experience 01-05_00:15:05.556015_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:13:31.311194_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:13:31.311194_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no movement, and the outcome was...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:15:10
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:15:10
+[Voyager] Experience 01-05_00:15:08.160639_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:14:47.084518_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:14:47.084518_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: Starting at position 0 on a frozen tile, taking action Down (1) resulted in no movement, ending at t...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:15:17
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:15:17
+[Voyager] Experience 01-05_00:15:10.652848_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:14:26.221368_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:14:26.221368_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in remaining at position 0 on a Frozen (F) tile, whi...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:15:20
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:15:20
+[Voyager] Experience 01-05_00:15:17.699365_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:31.406120_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:31.406120_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 but reaching the Goal tile, ...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:15:22
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_00:15:22
+[Voyager] Experience 01-05_00:15:20.698711_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:13:26.823015_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (28 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:15:22
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 28, at 2026-01-05_00:15:22
+[DEPRECIATE] Experience 01-05_00:15:08.160639_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (29 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:15:22
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 29, at 2026-01-05_00:15:22
+[DEPRECIATE] Experience 01-05_00:15:17.699365_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (30 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:15:22
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 30, at 2026-01-05_00:15:22
+[DEPRECIATE] Experience 01-05_00:15:20.698711_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (31 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:15:22
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 31, at 2026-01-05_00:15:22
+[DEPRECIATE] Experience 01-05_00:15:05.556015_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (32 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:15:22
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 32, at 2026-01-05_00:15:22
+[DEPRECIATE] Experience 01-05_00:15:10.652848_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:15:22
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:15:22
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:15:03.398947_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:15:03.398947_3-3_2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in staying at position 0 but changing from Start (S)...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:15:26
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:15:26
+[Voyager] Experience 01-05_00:15:23.321789_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:40.982037_3-3_2-1']
+[BFS] Max scores: [('01-05_00:14:40.982037_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 on a Frozen (F) tile, which ...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:15:29
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:15:29
+[Voyager] Experience 01-05_00:15:27.205826_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:13:31.311194_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:13:31.311194_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: Starting at position 0 on a frozen tile, taking action Right (2) resulted in no movement, still at p...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:15:33
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:15:33
+[Voyager] Experience 01-05_00:15:30.373683_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:14:47.084518_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:14:47.084518_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in no change, still on a frozen tile, and the move wa...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:15:36
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:15:36
+[Voyager] Experience 01-05_00:15:34.096809_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:14:26.221368_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:14:26.221368_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, still at position 0 o...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:15:41
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:15:41
+[Voyager] Experience 01-05_00:15:37.108031_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:31.406120_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:31.406120_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: Starting from position 0 on a frozen tile, taking action Down (1) surprisingly didn't move but still...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:15:49
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_00:15:49
+[Voyager] Experience 01-05_00:15:41.858241_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:15:30.373683_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (34 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:15:49
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 34, at 2026-01-05_00:15:49
+[DEPRECIATE] Experience 01-05_00:14:26.221368_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (35 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:15:49
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 35, at 2026-01-05_00:15:49
+[DEPRECIATE] Experience 01-05_00:15:41.858241_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (36 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:15:49
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 36, at 2026-01-05_00:15:49
+[DEPRECIATE] Experience 01-05_00:15:27.205826_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (37 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:15:49
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 37, at 2026-01-05_00:15:49
+[DEPRECIATE] Experience 01-05_00:15:34.096809_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (38 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:15:49
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 38, at 2026-01-05_00:15:49
+[DEPRECIATE] Experience 01-05_00:15:23.321789_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:15:49
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:15:49
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:15:03.398947_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:15:03.398947_3-3_2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in no movement, staying on the Start tile, which is ...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:15:54
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:15:54
+[Voyager] Experience 01-05_00:15:50.181118_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:40.982037_3-3_2-1']
+[BFS] Max scores: [('01-05_00:14:40.982037_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 on a Frozen (F) tile, which ...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:15:56
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:15:56
+[Voyager] Experience 01-05_00:15:54.924303_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:13:31.311194_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:13:31.311194_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no movement, and the agent remai...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:15:59
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:15:59
+[Voyager] Experience 01-05_00:15:57.454577_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:14:47.084518_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:14:47.084518_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Down (1) resulted in no change, and the move was SAFE,...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:16:00
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:16:00
+[Voyager] Experience 01-05_00:15:59.779942_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:15:37.108031_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:15:37.108031_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in staying at the same position on a Frozen (F) tile...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:16:02
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:16:02
+[Voyager] Experience 01-05_00:16:01.103676_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:31.406120_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:31.406120_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: Moved down from position 0 on a frozen tile and reached the goal, resulting in a SUCCESS outcome....
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:16:04
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_00:16:04
+[Voyager] Experience 01-05_00:16:02.600961_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:15:57.454577_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (40 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:16:04
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 40, at 2026-01-05_00:16:04
+[DEPRECIATE] Experience 01-05_00:16:02.600961_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (41 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:16:04
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 41, at 2026-01-05_00:16:04
+[DEPRECIATE] Experience 01-05_00:15:54.924303_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (42 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:16:04
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 42, at 2026-01-05_00:16:04
+[DEPRECIATE] Experience 01-05_00:15:59.779942_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (43 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:16:04
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 43, at 2026-01-05_00:16:04
+[DEPRECIATE] Experience 01-05_00:15:50.181118_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (44 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:16:04
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 44, at 2026-01-05_00:16:04
+[DEPRECIATE] Experience 01-05_00:16:01.103676_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:16:04
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:16:04
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:15:03.398947_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:15:03.398947_3-3_2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in staying at position 0 but moving to a Frozen (F) ...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:16:05
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:16:05
+[Voyager] Experience 01-05_00:16:04.562565_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:40.982037_3-3_2-1']
+[BFS] Max scores: [('01-05_00:14:40.982037_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 on a Frozen (F) tile, which ...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:16:07
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:16:07
+[Voyager] Experience 01-05_00:16:06.356069_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:13:31.311194_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:13:31.311194_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, and the move was SAFE...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:16:09
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:16:09
+[Voyager] Experience 01-05_00:16:08.001797_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:14:47.084518_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:14:47.084518_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 on a Frozen (F) tile, which ...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:16:10
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:16:10
+[Voyager] Experience 01-05_00:16:09.683751_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:15:37.108031_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:15:37.108031_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, keeping the state SAF...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:16:12
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:16:12
+[Voyager] Experience 01-05_00:16:11.117194_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:31.406120_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:31.406120_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 but landing on tile G, which...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:16:14
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_00:16:14
+[Voyager] Experience 01-05_00:16:12.672284_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:16:08.001797_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (46 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:16:14
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 46, at 2026-01-05_00:16:14
+[DEPRECIATE] Experience 01-05_00:16:12.672284_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (47 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:16:14
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 47, at 2026-01-05_00:16:14
+[DEPRECIATE] Experience 01-05_00:16:06.356069_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (48 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:16:14
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 48, at 2026-01-05_00:16:14
+[DEPRECIATE] Experience 01-05_00:16:09.683751_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (49 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:16:14
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 49, at 2026-01-05_00:16:14
+[DEPRECIATE] Experience 01-05_00:16:04.562565_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (50 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:16:14
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 50, at 2026-01-05_00:16:14
+[DEPRECIATE] Experience 01-05_00:16:11.117194_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:16:14
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:16:14
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:15:03.398947_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:15:03.398947_3-3_2', 1.0)]
+[Voyager] Generated summary: Starting at position 0, taking action Right (2) resulted in no position change, remaining on the ice...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:16:16
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:16:16
+[Voyager] Experience 01-05_00:16:14.976877_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:40.982037_3-3_2-1']
+[BFS] Max scores: [('01-05_00:14:40.982037_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in no change, remaining on a frozen tile, and the mov...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:16:17
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:16:17
+[Voyager] Experience 01-05_00:16:16.533525_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:13:31.311194_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:13:31.311194_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no position change, staying on t...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:16:19
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:16:19
+[Voyager] Experience 01-05_00:16:18.034923_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:14:47.084518_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:14:47.084518_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in no change, staying on a frozen tile, which is a SA...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:16:20
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:16:20
+[Voyager] Experience 01-05_00:16:19.727159_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:15:37.108031_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:15:37.108031_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, staying at position 0...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:16:22
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:16:22
+[Voyager] Experience 01-05_00:16:21.073260_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:31.406120_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:31.406120_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: From position 0 on a frozen tile, taking action Down (1) surprisingly stayed at position 0 but lande...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:16:24
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_00:16:24
+[Voyager] Experience 01-05_00:16:23.155759_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:16:18.034923_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:16:24
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_00:16:24
+[DEPRECIATE] Experience 01-05_00:16:23.155759_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (53 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:16:24
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 53, at 2026-01-05_00:16:24
+[DEPRECIATE] Experience 01-05_00:16:16.533525_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (54 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:16:24
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 54, at 2026-01-05_00:16:24
+[DEPRECIATE] Experience 01-05_00:16:19.727159_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (55 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:16:24
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 55, at 2026-01-05_00:16:24
+[DEPRECIATE] Experience 01-05_00:16:14.976877_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (56 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:16:24
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 56, at 2026-01-05_00:16:24
+[DEPRECIATE] Experience 01-05_00:16:21.073260_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:16:24
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:16:24
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:15:03.398947_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:15:03.398947_3-3_2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in staying at position 0 but moving to a frozen tile...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:16:26
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:16:26
+[Voyager] Experience 01-05_00:16:24.762429_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:40.982037_3-3_2-1']
+[BFS] Max scores: [('01-05_00:14:40.982037_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 on a Frozen (F) tile, which ...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:16:28
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:16:28
+[Voyager] Experience 01-05_00:16:26.543914_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:13:31.311194_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:13:31.311194_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no movement, and the outcome was...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:16:30
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:16:30
+[Voyager] Experience 01-05_00:16:29.039767_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:14:47.084518_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:14:47.084518_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0 on a Frozen tile, taking action Down (1) resulted in no position change, still on a Fr...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:16:32
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:16:32
+[Voyager] Experience 01-05_00:16:31.231509_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:15:37.108031_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:15:37.108031_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: Moved right from position 0 on a frozen tile and stayed at position 0 on the frozen tile, the move w...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:16:34
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:16:34
+[Voyager] Experience 01-05_00:16:33.051350_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:31.406120_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:31.406120_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 but reaching the Goal tile, ...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:16:35
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_00:16:35
+[Voyager] Experience 01-05_00:16:34.416615_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:16:29.039767_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (58 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:16:35
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 58, at 2026-01-05_00:16:35
+[DEPRECIATE] Experience 01-05_00:16:34.416615_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (59 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:16:35
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 59, at 2026-01-05_00:16:35
+[DEPRECIATE] Experience 01-05_00:16:26.543914_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (60 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:16:35
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 60, at 2026-01-05_00:16:35
+[DEPRECIATE] Experience 01-05_00:16:31.231509_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (61 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:16:35
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 61, at 2026-01-05_00:16:35
+[DEPRECIATE] Experience 01-05_00:16:24.762429_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (62 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:16:35
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 62, at 2026-01-05_00:16:35
+[DEPRECIATE] Experience 01-05_00:16:33.051350_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:16:35
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:16:35
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:15:03.398947_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:15:03.398947_3-3_2', 1.0)]
+[Voyager] Generated summary: Starting at position 0, taking action Right (2) resulted in no position change, staying on the Froze...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:16:37
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:16:37
+[Voyager] Experience 01-05_00:16:36.206671_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:40.982037_3-3_2-1']
+[BFS] Max scores: [('01-05_00:14:40.982037_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 on a Frozen (F) tile, which ...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:16:39
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:16:39
+[Voyager] Experience 01-05_00:16:37.928661_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:13:31.311194_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:13:31.311194_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, staying SAFE on the f...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:16:41
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:16:41
+[Voyager] Experience 01-05_00:16:39.935244_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:14:47.084518_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:14:47.084518_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in no change, staying on a frozen tile, which is a SA...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:16:42
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:16:42
+[Voyager] Experience 01-05_00:16:41.583065_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:15:37.108031_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:15:37.108031_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, and the move was SAFE...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:16:44
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:16:44
+[Voyager] Experience 01-05_00:16:43.446840_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:31.406120_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:31.406120_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: Starting at position 0 on a frozen tile, taking action Down (1) surprisingly kept the position at 0 ...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:16:46
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_00:16:46
+[Voyager] Experience 01-05_00:16:44.880351_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:13:31.311194_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (64 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:16:46
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 64, at 2026-01-05_00:16:46
+[DEPRECIATE] Experience 01-05_00:16:44.880351_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (65 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:16:46
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 65, at 2026-01-05_00:16:46
+[DEPRECIATE] Experience 01-05_00:16:37.928661_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (66 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:16:46
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 66, at 2026-01-05_00:16:46
+[DEPRECIATE] Experience 01-05_00:16:41.583065_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (67 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:16:46
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 67, at 2026-01-05_00:16:46
+[DEPRECIATE] Experience 01-05_00:15:03.398947_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (68 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:16:46
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 68, at 2026-01-05_00:16:46
+[DEPRECIATE] Experience 01-05_00:16:43.446840_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:16:46
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:16:46
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:16:36.206671_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:16:36.206671_3-3_2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in no change, staying on the frozen lake, which is a...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:16:47
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:16:47
+[Voyager] Experience 01-05_00:16:46.395286_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:40.982037_3-3_2-1']
+[BFS] Max scores: [('01-05_00:14:40.982037_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 on a Frozen tile, which was ...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:16:49
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:16:49
+[Voyager] Experience 01-05_00:16:48.358207_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:16:39.935244_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:16:39.935244_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: Starting at position 0 on a frozen tile, taking action "Right" resulted in no position change, and t...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:16:50
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:16:50
+[Voyager] Experience 01-05_00:16:49.650275_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:14:47.084518_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:14:47.084518_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking the action Down (1) resulted in no change, still at position ...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:16:52
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:16:52
+[Voyager] Experience 01-05_00:16:51.117839_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:15:37.108031_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:15:37.108031_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: Starting at position 0 on a Frozen tile, taking action Right (2) resulted in no position change, sti...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:16:53
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:16:53
+[Voyager] Experience 01-05_00:16:52.662714_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:31.406120_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:31.406120_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: Moved down from position 0 on a frozen tile and ended at the same position but on the goal tile, whi...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:16:55
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_00:16:55
+[Voyager] Experience 01-05_00:16:54.140972_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:16:54.140972_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (70 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:16:55
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 70, at 2026-01-05_00:16:55
+[DEPRECIATE] Experience 01-05_00:16:48.358207_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (71 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:16:55
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 71, at 2026-01-05_00:16:55
+[DEPRECIATE] Experience 01-05_00:16:51.117839_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (72 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:16:55
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 72, at 2026-01-05_00:16:55
+[DEPRECIATE] Experience 01-05_00:16:52.662714_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (73 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:16:55
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 73, at 2026-01-05_00:16:55
+[DEPRECIATE] Experience 01-05_00:16:46.395286_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (74 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:16:55
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 74, at 2026-01-05_00:16:55
+[DEPRECIATE] Experience 01-05_00:16:49.650275_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:16:55
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:16:55
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:16:36.206671_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:16:36.206671_3-3_2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in no movement, still being on the frozen lake, whic...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:16:57
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:16:57
+[Voyager] Experience 01-05_00:16:55.881347_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:40.982037_3-3_2-1']
+[BFS] Max scores: [('01-05_00:14:40.982037_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in no change, still on F, which is a SAFE move, remai...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:16:58
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:16:58
+[Voyager] Experience 01-05_00:16:57.592957_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:16:39.935244_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:16:39.935244_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, staying at position 0...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:17:00
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:17:00
+[Voyager] Experience 01-05_00:16:59.304993_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:14:47.084518_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:14:47.084518_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in staying at position 0 on a Frozen tile, this move ...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:17:02
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:17:02
+[Voyager] Experience 01-05_00:17:01.083348_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:15:37.108031_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:15:37.108031_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen (F) tile, taking action Right (2) resulted in no change, staying at positi...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:17:04
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:17:04
+[Voyager] Experience 01-05_00:17:02.828259_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:31.406120_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:31.406120_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: Starting from position 0 on a Frozen tile, taking Down action resulted in staying at position 0 but ...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:17:06
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_00:17:06
+[Voyager] Experience 01-05_00:17:05.153935_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:17:05.153935_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (76 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:17:06
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 76, at 2026-01-05_00:17:06
+[DEPRECIATE] Experience 01-05_00:16:57.592957_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (77 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:17:06
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 77, at 2026-01-05_00:17:06
+[DEPRECIATE] Experience 01-05_00:17:01.083348_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (78 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:17:06
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 78, at 2026-01-05_00:17:06
+[DEPRECIATE] Experience 01-05_00:17:02.828259_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (79 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:17:06
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 79, at 2026-01-05_00:17:06
+[DEPRECIATE] Experience 01-05_00:16:55.881347_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (80 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:17:06
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 80, at 2026-01-05_00:17:06
+[DEPRECIATE] Experience 01-05_00:16:59.304993_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:17:06
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:17:06
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:16:36.206671_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:16:36.206671_3-3_2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in no change, staying on the Start position but on a...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:17:07
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:17:07
+[Voyager] Experience 01-05_00:17:06.852539_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:40.982037_3-3_2-1']
+[BFS] Max scores: [('01-05_00:14:40.982037_3-3_2-1', 1.0)]
+[Voyager] Generated summary: From position 0 on a frozen tile, taking action Down (1) resulted in no change, still at position 0 ...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:17:12
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:17:12
+[Voyager] Experience 01-05_00:17:10.346524_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:16:39.935244_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:16:39.935244_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, still at position 0 o...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:17:13
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:17:13
+[Voyager] Experience 01-05_00:17:12.696400_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:14:47.084518_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:14:47.084518_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in no change, still on Frozen (F) ice, this move was ...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:17:15
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:17:15
+[Voyager] Experience 01-05_00:17:14.259298_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:15:37.108031_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:15:37.108031_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, ending still at posit...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:17:17
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:17:17
+[Voyager] Experience 01-05_00:17:15.848526_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:31.406120_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:31.406120_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: Starting at position 0 on a Frozen tile, taking action Down (1) surprisingly didn't move but achieve...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:17:19
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_00:17:19
+[Voyager] Experience 01-05_00:17:17.568115_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:17:17.568115_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (82 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:17:19
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 82, at 2026-01-05_00:17:19
+[DEPRECIATE] Experience 01-05_00:17:10.346524_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (83 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:17:19
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 83, at 2026-01-05_00:17:19
+[DEPRECIATE] Experience 01-05_00:17:14.259298_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (84 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:17:19
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 84, at 2026-01-05_00:17:19
+[DEPRECIATE] Experience 01-05_00:17:15.848526_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (85 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:17:19
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 85, at 2026-01-05_00:17:19
+[DEPRECIATE] Experience 01-05_00:17:06.852539_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (86 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:17:19
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 86, at 2026-01-05_00:17:19
+[DEPRECIATE] Experience 01-05_00:17:12.696400_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:17:19
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:17:19
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:16:36.206671_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:16:36.206671_3-3_2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in staying at position 0 and landing on a Frozen (F)...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:17:20
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:17:20
+[Voyager] Experience 01-05_00:17:19.739106_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:40.982037_3-3_2-1']
+[BFS] Max scores: [('01-05_00:14:40.982037_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in no change, staying on a frozen tile, and the move ...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:17:22
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:17:22
+[Voyager] Experience 01-05_00:17:21.329449_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:16:39.935244_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:16:39.935244_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Right (2) resulted in staying at position 0 on a Frozen (F) tile, which...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:17:23
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:17:23
+[Voyager] Experience 01-05_00:17:22.919909_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:14:47.084518_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:14:47.084518_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen lake tile, taking the action Down (1) resulted in no movement, still at po...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:17:25
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:17:25
+[Voyager] Experience 01-05_00:17:24.420117_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:15:37.108031_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:15:37.108031_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no change, and the move was SAFE...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:17:27
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:17:27
+[Voyager] Experience 01-05_00:17:26.080851_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:31.406120_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:31.406120_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: Moved down from position 0 on a frozen tile and reached the goal, this move was a SUCCESS, ending at...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:17:29
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_00:17:29
+[Voyager] Experience 01-05_00:17:27.994521_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:17:27.994521_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (88 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:17:29
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 88, at 2026-01-05_00:17:29
+[DEPRECIATE] Experience 01-05_00:17:21.329449_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (89 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:17:29
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 89, at 2026-01-05_00:17:29
+[DEPRECIATE] Experience 01-05_00:17:24.420117_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (90 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:17:29
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 90, at 2026-01-05_00:17:29
+[DEPRECIATE] Experience 01-05_00:17:26.080851_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (91 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:17:29
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 91, at 2026-01-05_00:17:29
+[DEPRECIATE] Experience 01-05_00:17:19.739106_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (92 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:17:29
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 92, at 2026-01-05_00:17:29
+[DEPRECIATE] Experience 01-05_00:17:22.919909_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:17:29
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:17:29
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:15.996928_3-3_1', '01-05_00:16:36.206671_3-3_2']
+[BFS] Max scores: [('01-05_00:13:15.996928_3-3_1', 0.0), ('01-05_00:16:36.206671_3-3_2', 1.0)]
+[Voyager] Generated summary: Starting at position 0, taking action Right (2) resulted in no position change, staying on the Froze...
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:17:31
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:17:31
+[Voyager] Experience 01-05_00:17:30.221241_3-3_2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:40.982037_3-3_2-1']
+[BFS] Max scores: [('01-05_00:14:40.982037_3-3_2-1', 1.0)]
+[Voyager] Generated summary: At position 0, taking action Down (1) resulted in no change, staying on a Frozen tile, which is a SA...
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:17:32
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:17:32
+[Voyager] Experience 01-05_00:17:31.535850_3-3_2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:21.553705_3-3_2-1-1', '01-05_00:16:39.935244_3-3_2-1-2']
+[BFS] Max scores: [('01-05_00:13:21.553705_3-3_2-1-1', 0.0), ('01-05_00:16:39.935244_3-3_2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in staying at position 0 on the fro...
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:17:34
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:17:34
+[Voyager] Experience 01-05_00:17:32.851966_3-3_2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:32.828208_3-3_2-1-2-2', '01-05_00:14:47.084518_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_00:13:32.828208_3-3_2-1-2-2', 0.0), ('01-05_00:14:47.084518_3-3_2-1-2-1', 1.0)]
+[Voyager] Generated summary: At position 0 on a Frozen tile, taking action Down (1) resulted in no change, remaining at position ...
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:17:35
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:17:35
+[Voyager] Experience 01-05_00:17:34.460665_3-3_2-1-2-1 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_00:13:53.967870_3-3_2-1-2-1-1', '01-05_00:15:37.108031_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_00:13:53.967870_3-3_2-1-2-1-1', 0.0), ('01-05_00:15:37.108031_3-3_2-1-2-1-2', 1.0)]
+[Voyager] Generated summary: At position 0 on a frozen tile, taking action Right (2) resulted in no position change, remaining on...
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:17:36
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:17:36
+[Voyager] Experience 01-05_00:17:35.778400_3-3_2-1-2-1-2 stored with summary
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_00:14:31.406120_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_00:14:31.406120_3-3_2-1-2-1-2-1', 1.0)]
+[Voyager] Generated summary: Moved down from position 0 on a frozen tile and ended up at the same position but on the goal tile, ...
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_00:17:38
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_00:17:38
+[Voyager] Experience 01-05_00:17:37.337318_3-3_2-1-2-1-2-1 stored with summary
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_00:17:37.337318_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (94 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_00:17:38
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 94, at 2026-01-05_00:17:38
+[DEPRECIATE] Experience 01-05_00:17:31.535850_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (95 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_00:17:38
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 95, at 2026-01-05_00:17:38
+[DEPRECIATE] Experience 01-05_00:17:34.460665_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (96 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_00:17:38
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 96, at 2026-01-05_00:17:38
+[DEPRECIATE] Experience 01-05_00:17:35.778400_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (97 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_00:17:38
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 97, at 2026-01-05_00:17:38
+[DEPRECIATE] Experience 01-05_00:17:30.221241_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (98 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_00:17:38
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 98, at 2026-01-05_00:17:38
+[DEPRECIATE] Experience 01-05_00:17:32.851966_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (99 items)
+Save store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_00:17:38
+Save depreiciate store, path: ./log_True_frozenlake_voyager_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 99, at 2026-01-05_00:17:38

@@ -1,0 +1,1197 @@
+nohup: ignoring input
+--- map 0 | episode 0/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:10
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 1/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:10
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 2/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:11
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 3/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:11
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 4/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:12
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 5/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:12
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 6/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:12
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 7/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:13
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 8/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:13
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 9/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:14
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 10/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:14
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 11/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:15
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 12/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:15
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 13/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:15
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 14/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:16
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 15/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:16
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 16/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:17
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 17/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:17
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 18/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:18
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 0 | episode 19/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'F', 'H', 'H'], ['H', 'F', 'F', 'H'], ['H', 'H', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_00:13:18
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 0/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:20
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 1/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:21
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 2/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:22
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 3/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:24
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 4/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:25
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 5/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:26
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 6/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:26
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 7/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:27
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 8/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:28
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 9/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:29
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 10/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:31
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 11/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:32
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 12/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:33
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 13/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 1
+Final score: 0
+Action path: [2]
+End exploring at 2026-01-05_00:13:34
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 14/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:35
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 15/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:36
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 16/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:36
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 17/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:37
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 18/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:38
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 1 | episode 19/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 2
+Final score: 0
+Action path: [1, 1]
+End exploring at 2026-01-05_00:13:39
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 0/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:40
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 1/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:41
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 2/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:43
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 3/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:44
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 4/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:47
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 5/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:48
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 6/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:50
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 7/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:51
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 8/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:52
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 9/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:53
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 10/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:55
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 11/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:56
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 12/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:58
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 13/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:13:59
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 14/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:14:00
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 15/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:14:02
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 16/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:14:04
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 17/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:14:05
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 18/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:14:07
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- map 2 | episode 19/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [2, 0], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [3, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 3)]; Map: [['S', 'H', 'H', 'H'], ['F', 'H', 'H', 'H'], ['F', 'F', 'F', 'F'], ['H', 'H', 'H', 'G']]
+Step count: 3
+Final score: 0
+Action path: [1, 1, 1]
+End exploring at 2026-01-05_00:14:10
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'F'}, {'cur_pos': [2, 0], 'tile_type': 'F'}, {'cur_pos': [3, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []

@@ -8,7 +8,6 @@ It mirrors `run_frozenLake.py` but accepts key configs from CLI.
 
 import argparse
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "5"
 import sys
 from typing import Any
 
@@ -47,7 +46,6 @@ def build_argparser() -> argparse.ArgumentParser:
     p.add_argument("--max-steps", type=int, default=20)
     p.add_argument("--threshold", type=float, default=0.25)
     p.add_argument("--decay-rate", type=float, default=100.0)
-    p.add_argument("--start-timestep", type=int, default=0)
     p.add_argument("--episodes-per-map", type=int, default=20)
     p.add_argument("--output-root", type=str, default=".")
     p.add_argument("--cuda-visible-devices", type=str, default=None)
@@ -103,13 +101,14 @@ def main() -> int:
     depreiciate_exp_store_path = os.path.join(run_root, "storage", "depreiciate_exp_store.json")
 
     # Initialize once (model load happens here); per-map we call init_after_model to avoid reload.
+    ts = 0
     e = Explorer(
         model_name=args.model_name,
         env_name=env_name,
         memory_env=args.memory_env,
         max_steps=args.max_steps,
         use_memory=args.use_memory,
-        start_timestep=args.start_timestep,
+        start_timestep=ts,
         threshold=args.threshold,
         decay_rate=args.decay_rate,
         log_dir=log_dir,
@@ -121,13 +120,18 @@ def main() -> int:
     )
 
     for map_idx, cur_map in enumerate(maps_to_run):
+        # MemoryBank keeps an integer timestep for forgetting; when we re-init the backend
+        # (switching maps), carry forward the latest timestep so forgetting continues.
+        status = e.exp_backend.export_status()
+        if status is not None:
+            ts = status.get("mb_current_timestep", ts)
         e.init_after_model(
             model_name=args.model_name,
             env_name=env_name,
             memory_env=args.memory_env,
             max_steps=args.max_steps,
             use_memory=args.use_memory,
-            start_timestep=args.start_timestep,
+            start_timestep=ts,
             threshold=args.threshold,
             decay_rate=args.decay_rate,
             log_dir=log_dir,
@@ -142,7 +146,7 @@ def main() -> int:
             e.explore()
 
     # Create a finish marker file to indicate this run completed successfully.
-    marker_dir = os.path.join(args.output_root, "finish_mark")
+    marker_dir = os.path.join(args.output_root, "finish_marker")
     os.makedirs(marker_dir, exist_ok=True)
     marker_path = os.path.join(marker_dir, cur_name)
     with open(marker_path, "w", encoding="utf-8"):

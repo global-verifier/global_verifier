@@ -39,7 +39,7 @@ api_model_name = {
     # openai models
     "gpt-4o": "gpt-4o",
     # llama
-    "llama-3-70b-instruct": "llama-3-70b-instruct",
+    "llama-3.3-70b-instruct": "llama-3.3-70b-instruct",
     "llama-3.1-8b-instruct": "llama-3.1-8b-instruct",
     # gemini
     "gemini-2.0-flash": "gemini-2.0-flash",

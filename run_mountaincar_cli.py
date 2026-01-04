@@ -96,13 +96,15 @@ def main() -> int:
         raise ValueError("No force specified and env_config.mountaincar_config missing force/forces.")
 
     # Initialize once (model load happens here) with the first force, then reuse model via init_after_model.
+    # For MemoryBank backend, carry forward mb_current_timestep across re-init so forgetting continues.
+    ts = 0
     e = Explorer(
         model_name=args.model_name,
         env_name=env_name,
         memory_env=args.memory_env,
         max_steps=args.max_steps,
         use_memory=args.use_memory,
-        start_timestep=args.start_timestep,
+        start_timestep=ts,
         threshold=args.threshold,
         decay_rate=args.decay_rate,
         log_dir=log_dir,
@@ -115,13 +117,16 @@ def main() -> int:
 
     for force_idx, force_value in enumerate(force_values):
         # Re-init without reloading model, switching force each loop.
+        status = e.exp_backend.export_status()
+        if status is not None:
+            ts = status.get("mb_current_timestep", ts)
         e.init_after_model(
             model_name=args.model_name,
             env_name=env_name,
             memory_env=args.memory_env,
             max_steps=args.max_steps,
             use_memory=args.use_memory,
-            start_timestep=args.start_timestep,
+            start_timestep=ts,
             threshold=args.threshold,
             decay_rate=args.decay_rate,
             log_dir=log_dir,

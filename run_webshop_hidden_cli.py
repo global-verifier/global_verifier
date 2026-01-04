@@ -142,12 +142,20 @@ def main() -> int:
         print(f"--- episode {i}/{args.episodes} ---")
         e.explore()
 
+    status = e.exp_backend.export_status()
+    ts = args.start_timestep
+    if status is not None:
+        ts = status.get("mb_current_timestep", ts)
+
     # Create a finish marker file to indicate this run completed successfully.
     marker_dir = os.path.join(args.output_root, "finish_mark")
     os.makedirs(marker_dir, exist_ok=True)
     marker_path = os.path.join(marker_dir, cur_name)
-    with open(marker_path, "w", encoding="utf-8"):
-        pass
+    with open(marker_path, "w", encoding="utf-8") as f:
+        if status is not None:
+            f.write(str(ts))
+        else:
+            f.write("Not memorybank")
 
     return 0
 

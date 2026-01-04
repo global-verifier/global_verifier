@@ -1,0 +1,1081 @@
+--- reward group 0 | episode 0/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 3
+Current state: {'cur_pos': [0, 3], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 3
+Final score: 0
+Action path: [2, 2, 2]
+End exploring at 2026-01-05_03:03:21
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [0, 3], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- reward group 0 | episode 1/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:19.576206_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 0, 'max_score': 0.0, 'retention': 0.951229424500714}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:20.687063_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 1, 'max_score': 0.0, 'retention': 0.951229424500714}]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [1, 1], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 2
+Final score: 0
+Action path: [2, 1]
+End exploring at 2026-01-05_03:03:24
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 1, groups: [{'01-05_03:03:19.576206_3-5|5-5_2', '01-05_03:03:24.295892_3-5|5-5_2'}]
+--- reward group 0 | episode 2/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:19.576206_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 0, 'max_score': 0.0, 'retention': 0.9200444146293233}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:20.687063_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 1, 'max_score': 0.0, 'retention': 0.9200444146293233}, {'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 4, 'max_score': 0.0, 'retention': 0.9672161004820059}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 2, 'max_score': 0.0, 'retention': 0.9200444146293233}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 4
+Current state: {'cur_pos': [1, 3], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 4
+Final score: 0
+Action path: [2, 2, 1, 2]
+End exploring at 2026-01-05_03:03:28
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [1, 3], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 2, groups: [{'01-05_03:03:25.954586_3-5|5-5_2', '01-05_03:03:19.576206_3-5|5-5_2'}, {'01-05_03:03:20.687063_3-5|5-5_2-2', '01-05_03:03:26.697298_3-5|5-5_2-2'}]
+--- reward group 0 | episode 3/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:25.954586_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 5, 'max_score': 0.0, 'retention': 0.9355069850316178}]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_03:03:29
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- reward group 0 | episode 4/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:25.954586_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 5, 'max_score': 0.0, 'retention': 0.9200444146293233}, {'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 9, 'max_score': 0.0, 'retention': 0.9834714538216175}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:20.687063_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 1, 'max_score': 0.0, 'retention': 0.8464817248906141}, {'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 4, 'max_score': 0.0, 'retention': 0.8898817709880238}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 2, 'max_score': 0.0, 'retention': 0.8464817248906141}, {'id': '01-05_03:03:27.757324_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 7, 'max_score': 0.0, 'retention': 0.9200444146293233}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 8, 'max_score': 0.0, 'retention': 0.9200444146293233}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 6
+Current state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 7
+Current state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 8
+Final score: 0.5
+Action path: [2, 2, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:03:34
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'F'}, {'cur_pos': [3, 4], 'tile_type': 'F'}, {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}]
+########################################################
+Redundant experience len: 3, groups: [{'01-05_03:03:20.687063_3-5|5-5_2-2', '01-05_03:03:30.522786_3-5|5-5_2-2'}, {'01-05_03:03:25.954586_3-5|5-5_2', '01-05_03:03:29.749457_3-5|5-5_2'}, {'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:03:27.757324_3-5|5-5_2-2-1'}]
+--- reward group 0 | episode 5/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:25.954586_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 18, 'max_score': 0.5, 'retention': 1.0}, {'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 1.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:20.687063_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 18, 'max_score': 0.5, 'retention': 0.9834714538216175}, {'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.9834714538216175}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.9672161004820059}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 12, 'max_score': 0.5, 'retention': 0.8751733190429475}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_03:03:31.936299_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 13, 'max_score': 0.5, 'retention': 0.8751733190429475}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:32.587465_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 14, 'max_score': 0.5, 'retention': 0.8751733190429475}]
+Action '2' is taken
+Step 5
+Current state: {'cur_pos': [2, 3], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 5
+Final score: 0
+Action path: [2, 2, 1, 1, 2]
+End exploring at 2026-01-05_03:03:38
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 4, groups: [{'01-05_03:03:36.326867_3-5|5-5_2-2', '01-05_03:03:20.687063_3-5|5-5_2-2'}, {'01-05_03:03:25.954586_3-5|5-5_2', '01-05_03:03:35.387537_3-5|5-5_2'}, {'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:03:37.062381_3-5|5-5_2-2-1'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:03:31.936299_3-5|5-5_2-2-1-1'}]
+--- reward group 0 | episode 6/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:25.954586_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 18, 'max_score': 0.5, 'retention': 0.9200444146293233}, {'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.9200444146293233}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.9048374180359595}, {'id': '01-05_03:03:36.326867_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 19, 'max_score': 0.5, 'retention': 0.9200444146293233}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.8898817709880238}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 12, 'max_score': 0.5, 'retention': 0.8051983240180706}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.8751733190429475}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 21, 'max_score': 0.5, 'retention': 0.9200444146293233}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:32.587465_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 14, 'max_score': 0.5, 'retention': 0.8051983240180706}, {'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 22, 'max_score': 0.0, 'retention': 0.9200444146293233}]
+Action '0' is taken
+Step 5
+Current state: {'cur_pos': [2, 1], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 5
+Final score: 0
+Action path: [2, 2, 1, 1, 0]
+End exploring at 2026-01-05_03:03:42
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 1], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 4, groups: [{'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:03:25.954586_3-5|5-5_2'}, {'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:03:40.523077_3-5|5-5_2-2-1'}, {'01-05_03:03:36.326867_3-5|5-5_2-2', '01-05_03:03:39.855554_3-5|5-5_2-2'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:03:41.220462_3-5|5-5_2-2-1-1'}]
+--- reward group 0 | episode 7/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.8464817248906141}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 23, 'max_score': 0.5, 'retention': 0.9200444146293233}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.8324906126116027}, {'id': '01-05_03:03:36.326867_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 19, 'max_score': 0.5, 'retention': 0.8464817248906141}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.8187307530779818}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 12, 'max_score': 0.5, 'retention': 0.7408182206817179}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.8051983240180706}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 21, 'max_score': 0.5, 'retention': 0.8464817248906141}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:32.587465_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 14, 'max_score': 0.5, 'retention': 0.7408182206817179}, {'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 22, 'max_score': 0.0, 'retention': 0.8464817248906141}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 27, 'max_score': 0.0, 'retention': 0.9200444146293233}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 15, 'max_score': 0.5, 'retention': 0.7408182206817179}]
+Action '1' is taken
+Step 6
+Current state: {'cur_pos': [4, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 7
+Current state: {'cur_pos': [4, 3], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 7
+Final score: 0
+Action path: [2, 2, 1, 1, 1, 1, 2]
+End exploring at 2026-01-05_03:03:47
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [4, 2], 'tile_type': 'F'}, {'cur_pos': [4, 3], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 5, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:03:44.430352_3-5|5-5_2-2-1'}, {'01-05_03:03:45.831870_3-5|5-5_2-2-1-1-1', '01-05_03:03:32.587465_3-5|5-5_2-2-1-1-1'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:03:36.326867_3-5|5-5_2-2'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:03:45.121589_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:03:42.978268_3-5|5-5_2'}]
+--- reward group 0 | episode 8/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.7532686564546568}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 23, 'max_score': 0.5, 'retention': 0.8187307530779818}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.7408182206817179}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 29, 'max_score': 0.5, 'retention': 0.8898817709880238}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.728573572511393}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 12, 'max_score': 0.5, 'retention': 0.6592406302004438}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.7165313105737893}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 21, 'max_score': 0.5, 'retention': 0.7532686564546568}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 22, 'max_score': 0.0, 'retention': 0.7532686564546568}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 27, 'max_score': 0.0, 'retention': 0.8187307530779818}, {'id': '01-05_03:03:45.831870_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 32, 'max_score': 0.5, 'retention': 0.8898817709880238}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 15, 'max_score': 0.5, 'retention': 0.6592406302004438}, {'id': '01-05_03:03:46.502654_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 33, 'max_score': 0.0, 'retention': 0.8898817709880238}]
+Action '2' is taken
+Step 6
+Current state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:34.016341_3-5|5-5_2-2-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'mb_timestep': 16, 'max_score': 0.5, 'retention': 0.6592406302004438}]
+Action '1' is taken
+Step 7
+Current state: {'cur_pos': [4, 3], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 7
+Final score: 0
+Action path: [2, 2, 1, 1, 1, 2, 1]
+End exploring at 2026-01-05_03:03:53
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'F'}, {'cur_pos': [4, 3], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 6, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:03:49.877951_3-5|5-5_2-2-1'}, {'01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', '01-05_03:03:52.514633_3-5|5-5_2-2-1-1-1-2'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:03:51.053415_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:03:47.938189_3-5|5-5_2'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:03:48.652617_3-5|5-5_2-2'}, {'01-05_03:03:45.831870_3-5|5-5_2-2-1-1-1', '01-05_03:03:51.772550_3-5|5-5_2-2-1-1-1'}]
+--- reward group 0 | episode 9/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.6703200460356393}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 23, 'max_score': 0.5, 'retention': 0.728573572511393}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.6592406302004438}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 29, 'max_score': 0.5, 'retention': 0.7918895663367816}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.6483443410015097}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 12, 'max_score': 0.5, 'retention': 0.5866462195100318}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.6376281516217733}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 21, 'max_score': 0.5, 'retention': 0.6703200460356393}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 22, 'max_score': 0.0, 'retention': 0.6703200460356393}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 27, 'max_score': 0.0, 'retention': 0.728573572511393}, {'id': '01-05_03:03:45.831870_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 32, 'max_score': 0.5, 'retention': 0.7918895663367816}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 15, 'max_score': 0.5, 'retention': 0.5866462195100318}, {'id': '01-05_03:03:46.502654_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 33, 'max_score': 0.0, 'retention': 0.7918895663367816}]
+Action '2' is taken
+Step 6
+Current state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:34.016341_3-5|5-5_2-2-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'mb_timestep': 16, 'max_score': 0.5, 'retention': 0.5866462195100318}, {'id': '01-05_03:03:53.263781_3-5|5-5_2-2-1-1-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 1], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'mb_timestep': 41, 'max_score': 0.0, 'retention': 0.8898817709880238}]
+Action '2' is taken
+Step 7
+Current state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:34.656729_3-5|5-5_2-2-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}, 'mb_timestep': 17, 'max_score': 0.5, 'retention': 0.5866462195100318}]
+Action '1' is taken
+Step 8
+Current state: {'cur_pos': [4, 4], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 8
+Final score: 0
+Action path: [2, 2, 1, 1, 1, 2, 2, 1]
+End exploring at 2026-01-05_03:03:59
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'F'}, {'cur_pos': [3, 4], 'tile_type': 'F'}, {'cur_pos': [4, 4], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 7, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:03:55.353017_3-5|5-5_2-2-1'}, {'01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', '01-05_03:03:58.304566_3-5|5-5_2-2-1-1-1-2'}, {'01-05_03:03:58.968872_3-5|5-5_2-2-1-1-1-2-2', '01-05_03:03:34.016341_3-5|5-5_2-2-1-1-1-2-2'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:03:56.461649_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:03:53.971188_3-5|5-5_2'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:03:54.688184_3-5|5-5_2-2'}, {'01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', '01-05_03:03:45.831870_3-5|5-5_2-2-1-1-1'}]
+--- reward group 0 | episode 10/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.5866462195100318}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 23, 'max_score': 0.5, 'retention': 0.6376281516217733}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.5769498103804866}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 29, 'max_score': 0.5, 'retention': 0.6930406200864415}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.5674136687970038}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 12, 'max_score': 0.5, 'retention': 0.513417119032592}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 18, 'max_score': 0.0, 'retention': 0.5580351457700471}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 21, 'max_score': 0.5, 'retention': 0.5866462195100318}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 22, 'max_score': 0.0, 'retention': 0.5866462195100318}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 27, 'max_score': 0.0, 'retention': 0.6376281516217733}, {'id': '01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 46, 'max_score': 0.5, 'retention': 0.8751733190429475}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 15, 'max_score': 0.5, 'retention': 0.513417119032592}, {'id': '01-05_03:03:46.502654_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 33, 'max_score': 0.0, 'retention': 0.6930406200864415}]
+Action '1' is taken
+Step 6
+Current state: {'cur_pos': [4, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:47.260399_3-5|5-5_2-2-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 2], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'mb_timestep': 34, 'max_score': 0.0, 'retention': 0.6930406200864415}]
+Action '1' is taken
+Step 7
+Current state: {'cur_pos': [5, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [5, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 9
+Current state: {'cur_pos': [5, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 10
+Current state: {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 10
+Final score: 1.0
+Action path: [2, 2, 1, 1, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:04:08
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [4, 2], 'tile_type': 'F'}, {'cur_pos': [5, 2], 'tile_type': 'F'}, {'cur_pos': [5, 3], 'tile_type': 'F'}, {'cur_pos': [5, 4], 'tile_type': 'F'}, {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+Redundant experience len: 6, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:04:02.856121_3-5|5-5_2-2-1'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:04:03.639334_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:04:00.522733_3-5|5-5_2'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:04:01.276795_3-5|5-5_2-2'}, {'01-05_03:04:05.201177_3-5|5-5_2-2-1-1-1-1', '01-05_03:03:46.502654_3-5|5-5_2-2-1-1-1-1'}, {'01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', '01-05_03:04:04.481981_3-5|5-5_2-2-1-1-1'}]
+--- reward group 0 | episode 11/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 60, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 60, 'max_score': 1.0, 'retention': 1.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 60, 'max_score': 0.0, 'retention': 0.9834714538216175}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 60, 'max_score': 1.0, 'retention': 0.9834714538216175}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 60, 'max_score': 0.0, 'retention': 0.9672161004820059}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 60, 'max_score': 1.0, 'retention': 0.9672161004820059}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 60, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 60, 'max_score': 1.0, 'retention': 0.951229424500714}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 60, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 60, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 60, 'max_score': 1.0, 'retention': 0.9355069850316178}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 60, 'max_score': 0.5, 'retention': 0.9200444146293233}, {'id': '01-05_03:04:05.201177_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 55, 'max_score': 1.0, 'retention': 0.8464817248906141}]
+Action '1' is taken
+Step 6
+Current state: {'cur_pos': [4, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:47.260399_3-5|5-5_2-2-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 2], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'mb_timestep': 60, 'max_score': 0.0, 'retention': 0.9048374180359595}, {'id': '01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'mb_timestep': 56, 'max_score': 1.0, 'retention': 0.8464817248906141}]
+Action '1' is taken
+Step 7
+Current state: {'cur_pos': [5, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:06.679117_3-5|5-5_2-2-1-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2], 'st': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'mb_timestep': 57, 'max_score': 1.0, 'retention': 0.8464817248906141}]
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [5, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:07.441061_3-5|5-5_2-2-1-1-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2], 'st': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'mb_timestep': 58, 'max_score': 1.0, 'retention': 0.8464817248906141}]
+Action '2' is taken
+Step 9
+Current state: {'cur_pos': [5, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:08.108560_3-5|5-5_2-2-1-1-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 59, 'max_score': 1.0, 'retention': 0.8464817248906141}]
+Action '2' is taken
+Step 10
+Current state: {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 10
+Final score: 1.0
+Action path: [2, 2, 1, 1, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:04:14
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [4, 2], 'tile_type': 'F'}, {'cur_pos': [5, 2], 'tile_type': 'F'}, {'cur_pos': [5, 3], 'tile_type': 'F'}, {'cur_pos': [5, 4], 'tile_type': 'F'}, {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+Redundant experience len: 10, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:04:10.315977_3-5|5-5_2-2-1'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:04:10.929409_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:04:08.866058_3-5|5-5_2'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:04:09.595964_3-5|5-5_2-2'}, {'01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', '01-05_03:04:11.540173_3-5|5-5_2-2-1-1-1'}, {'01-05_03:04:12.201440_3-5|5-5_2-2-1-1-1-1', '01-05_03:04:05.201177_3-5|5-5_2-2-1-1-1-1'}, {'01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', '01-05_03:04:12.828828_3-5|5-5_2-2-1-1-1-1-1'}, {'01-05_03:04:06.679117_3-5|5-5_2-2-1-1-1-1-1-2', '01-05_03:04:13.527160_3-5|5-5_2-2-1-1-1-1-1-2'}, {'01-05_03:04:07.441061_3-5|5-5_2-2-1-1-1-1-1-2-2', '01-05_03:04:14.222263_3-5|5-5_2-2-1-1-1-1-1-2-2'}, {'01-05_03:04:14.886697_3-5|5-5_2-2-1-1-1-1-1-2-2-2', '01-05_03:04:08.108560_3-5|5-5_2-2-1-1-1-1-1-2-2-2'}]
+--- reward group 0 | episode 12/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 70, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 70, 'max_score': 1.0, 'retention': 1.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 70, 'max_score': 0.0, 'retention': 0.9834714538216175}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 70, 'max_score': 1.0, 'retention': 0.9834714538216175}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 70, 'max_score': 0.0, 'retention': 0.9672161004820059}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 70, 'max_score': 1.0, 'retention': 0.9672161004820059}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 70, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 70, 'max_score': 1.0, 'retention': 0.951229424500714}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 70, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 70, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 70, 'max_score': 1.0, 'retention': 0.9355069850316178}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 70, 'max_score': 0.5, 'retention': 0.9200444146293233}, {'id': '01-05_03:04:12.201440_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 65, 'max_score': 1.0, 'retention': 0.8464817248906141}]
+Action '1' is taken
+Step 6
+Current state: {'cur_pos': [4, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:47.260399_3-5|5-5_2-2-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 2], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'mb_timestep': 70, 'max_score': 0.0, 'retention': 0.9048374180359595}, {'id': '01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'mb_timestep': 70, 'max_score': 1.0, 'retention': 0.9048374180359595}]
+Action '1' is taken
+Step 7
+Current state: {'cur_pos': [5, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:06.679117_3-5|5-5_2-2-1-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2], 'st': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'mb_timestep': 70, 'max_score': 1.0, 'retention': 0.8898817709880238}]
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [5, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:07.441061_3-5|5-5_2-2-1-1-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2], 'st': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'mb_timestep': 70, 'max_score': 1.0, 'retention': 0.8751733190429475}]
+Action '2' is taken
+Step 9
+Current state: {'cur_pos': [5, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:14.886697_3-5|5-5_2-2-1-1-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 69, 'max_score': 1.0, 'retention': 0.8464817248906141}]
+Action '2' is taken
+Step 10
+Current state: {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 10
+Final score: 1.0
+Action path: [2, 2, 1, 1, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:04:22
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [4, 2], 'tile_type': 'F'}, {'cur_pos': [5, 2], 'tile_type': 'F'}, {'cur_pos': [5, 3], 'tile_type': 'F'}, {'cur_pos': [5, 4], 'tile_type': 'F'}, {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+Redundant experience len: 10, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:04:17.081884_3-5|5-5_2-2-1'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:04:17.747286_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:04:15.709645_3-5|5-5_2'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:04:16.380788_3-5|5-5_2-2'}, {'01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', '01-05_03:04:18.356442_3-5|5-5_2-2-1-1-1'}, {'01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', '01-05_03:04:19.765047_3-5|5-5_2-2-1-1-1-1-1'}, {'01-05_03:04:20.896308_3-5|5-5_2-2-1-1-1-1-1-2', '01-05_03:04:06.679117_3-5|5-5_2-2-1-1-1-1-1-2'}, {'01-05_03:04:21.661329_3-5|5-5_2-2-1-1-1-1-1-2-2', '01-05_03:04:07.441061_3-5|5-5_2-2-1-1-1-1-1-2-2'}, {'01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', '01-05_03:04:12.201440_3-5|5-5_2-2-1-1-1-1'}, {'01-05_03:04:14.886697_3-5|5-5_2-2-1-1-1-1-1-2-2-2', '01-05_03:04:22.391672_3-5|5-5_2-2-1-1-1-1-1-2-2-2'}]
+--- reward group 0 | episode 13/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 80, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 80, 'max_score': 1.0, 'retention': 1.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 80, 'max_score': 0.0, 'retention': 0.9834714538216175}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 80, 'max_score': 1.0, 'retention': 0.9834714538216175}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 80, 'max_score': 0.0, 'retention': 0.9672161004820059}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 80, 'max_score': 1.0, 'retention': 0.9672161004820059}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 80, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 80, 'max_score': 1.0, 'retention': 0.951229424500714}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 80, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 80, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 80, 'max_score': 1.0, 'retention': 0.9355069850316178}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 80, 'max_score': 0.5, 'retention': 0.9200444146293233}, {'id': '01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 75, 'max_score': 1.0, 'retention': 0.8464817248906141}]
+Action '1' is taken
+Step 6
+Current state: {'cur_pos': [4, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:47.260399_3-5|5-5_2-2-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 2], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'mb_timestep': 80, 'max_score': 0.0, 'retention': 0.9048374180359595}, {'id': '01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'mb_timestep': 80, 'max_score': 1.0, 'retention': 0.9048374180359595}]
+Action '1' is taken
+Step 7
+Current state: {'cur_pos': [5, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:20.896308_3-5|5-5_2-2-1-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2], 'st': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'mb_timestep': 77, 'max_score': 1.0, 'retention': 0.8464817248906141}]
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [5, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:21.661329_3-5|5-5_2-2-1-1-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2], 'st': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'mb_timestep': 78, 'max_score': 1.0, 'retention': 0.8464817248906141}]
+Action '2' is taken
+Step 9
+Current state: {'cur_pos': [5, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:14.886697_3-5|5-5_2-2-1-1-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 80, 'max_score': 1.0, 'retention': 0.8607079764250578}]
+Action '2' is taken
+Step 10
+Current state: {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 10
+Final score: 1.0
+Action path: [2, 2, 1, 1, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:04:30
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [4, 2], 'tile_type': 'F'}, {'cur_pos': [5, 2], 'tile_type': 'F'}, {'cur_pos': [5, 3], 'tile_type': 'F'}, {'cur_pos': [5, 4], 'tile_type': 'F'}, {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+Redundant experience len: 10, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:04:25.205913_3-5|5-5_2-2-1'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:04:25.877081_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:04:23.100777_3-5|5-5_2'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:04:24.421701_3-5|5-5_2-2'}, {'01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', '01-05_03:04:26.589251_3-5|5-5_2-2-1-1-1'}, {'01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', '01-05_03:04:28.076103_3-5|5-5_2-2-1-1-1-1-1'}, {'01-05_03:04:14.886697_3-5|5-5_2-2-1-1-1-1-1-2-2-2', '01-05_03:04:30.237354_3-5|5-5_2-2-1-1-1-1-1-2-2-2'}, {'01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', '01-05_03:04:27.253384_3-5|5-5_2-2-1-1-1-1'}, {'01-05_03:04:28.752877_3-5|5-5_2-2-1-1-1-1-1-2', '01-05_03:04:20.896308_3-5|5-5_2-2-1-1-1-1-1-2'}, {'01-05_03:04:21.661329_3-5|5-5_2-2-1-1-1-1-1-2-2', '01-05_03:04:29.510936_3-5|5-5_2-2-1-1-1-1-1-2-2'}]
+--- reward group 0 | episode 14/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 90, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 90, 'max_score': 1.0, 'retention': 1.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 90, 'max_score': 0.0, 'retention': 0.9834714538216175}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 90, 'max_score': 1.0, 'retention': 0.9834714538216175}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 90, 'max_score': 0.0, 'retention': 0.9672161004820059}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 90, 'max_score': 1.0, 'retention': 0.9672161004820059}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 90, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 90, 'max_score': 1.0, 'retention': 0.951229424500714}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 90, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 90, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 90, 'max_score': 1.0, 'retention': 0.9355069850316178}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 90, 'max_score': 0.0, 'retention': 0.9200444146293233}, {'id': '01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 90, 'max_score': 1.0, 'retention': 0.9200444146293233}]
+Action '2' is taken
+Step 6
+Current state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:53.263781_3-5|5-5_2-2-1-1-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 1], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'mb_timestep': 41, 'max_score': 0.0, 'retention': 0.39984965434484737}, {'id': '01-05_03:03:58.968872_3-5|5-5_2-2-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'mb_timestep': 48, 'max_score': 0.0, 'retention': 0.44932896411722156}]
+Action '2' is taken
+Step 7
+Current state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:59.661079_3-5|5-5_2-2-1-1-1-2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 1], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 4], 'tile_type': 'H'}, 'mb_timestep': 49, 'max_score': 0.0, 'retention': 0.44932896411722156}]
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 8
+Final score: 0.5
+Action path: [2, 2, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:04:36
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'F'}, {'cur_pos': [3, 4], 'tile_type': 'F'}, {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}]
+########################################################
+Redundant experience len: 7, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:04:32.507717_3-5|5-5_2-2-1'}, {'01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', '01-05_03:04:34.717210_3-5|5-5_2-2-1-1-1-2'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:04:33.193976_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:04:31.085353_3-5|5-5_2'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:04:31.860615_3-5|5-5_2-2'}, {'01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', '01-05_03:04:34.036414_3-5|5-5_2-2-1-1-1'}, {'01-05_03:04:35.464558_3-5|5-5_2-2-1-1-1-2-2', '01-05_03:03:58.968872_3-5|5-5_2-2-1-1-1-2-2'}]
+--- reward group 0 | episode 15/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 98, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 98, 'max_score': 1.0, 'retention': 1.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 98, 'max_score': 0.0, 'retention': 0.9834714538216175}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 98, 'max_score': 1.0, 'retention': 0.9834714538216175}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 98, 'max_score': 0.0, 'retention': 0.9672161004820059}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 98, 'max_score': 1.0, 'retention': 0.9672161004820059}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 98, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 98, 'max_score': 1.0, 'retention': 0.951229424500714}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 98, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 98, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 98, 'max_score': 1.0, 'retention': 0.9355069850316178}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 98, 'max_score': 0.5, 'retention': 0.9200444146293233}, {'id': '01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 98, 'max_score': 1.0, 'retention': 0.9200444146293233}]
+Action '1' is taken
+Step 6
+Current state: {'cur_pos': [4, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:47.260399_3-5|5-5_2-2-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 2], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'mb_timestep': 90, 'max_score': 0.0, 'retention': 0.7918895663367816}, {'id': '01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'mb_timestep': 90, 'max_score': 1.0, 'retention': 0.7918895663367816}]
+Action '1' is taken
+Step 7
+Current state: {'cur_pos': [5, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:28.752877_3-5|5-5_2-2-1-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2], 'st': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'mb_timestep': 87, 'max_score': 1.0, 'retention': 0.7408182206817179}]
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [5, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:21.661329_3-5|5-5_2-2-1-1-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2], 'st': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'mb_timestep': 90, 'max_score': 1.0, 'retention': 0.7659283383646487}]
+Action '2' is taken
+Step 9
+Current state: {'cur_pos': [5, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:14.886697_3-5|5-5_2-2-1-1-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 90, 'max_score': 1.0, 'retention': 0.7532686564546568}]
+Action '2' is taken
+Step 10
+Current state: {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 10
+Final score: 1.0
+Action path: [2, 2, 1, 1, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:04:43
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [4, 2], 'tile_type': 'F'}, {'cur_pos': [5, 2], 'tile_type': 'F'}, {'cur_pos': [5, 3], 'tile_type': 'F'}, {'cur_pos': [5, 4], 'tile_type': 'F'}, {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+Redundant experience len: 10, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:04:38.089764_3-5|5-5_2-2-1'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:04:38.884240_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:04:36.723670_3-5|5-5_2'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:04:37.349450_3-5|5-5_2-2'}, {'01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', '01-05_03:04:39.439485_3-5|5-5_2-2-1-1-1'}, {'01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', '01-05_03:04:41.127089_3-5|5-5_2-2-1-1-1-1-1'}, {'01-05_03:04:43.302040_3-5|5-5_2-2-1-1-1-1-1-2-2-2', '01-05_03:04:14.886697_3-5|5-5_2-2-1-1-1-1-1-2-2-2'}, {'01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', '01-05_03:04:40.345011_3-5|5-5_2-2-1-1-1-1'}, {'01-05_03:04:21.661329_3-5|5-5_2-2-1-1-1-1-1-2-2', '01-05_03:04:42.631130_3-5|5-5_2-2-1-1-1-1-1-2-2'}, {'01-05_03:04:28.752877_3-5|5-5_2-2-1-1-1-1-1-2', '01-05_03:04:41.995798_3-5|5-5_2-2-1-1-1-1-1-2'}]
+--- reward group 0 | episode 16/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 108, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 108, 'max_score': 1.0, 'retention': 1.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 108, 'max_score': 0.0, 'retention': 0.9834714538216175}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 108, 'max_score': 1.0, 'retention': 0.9834714538216175}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 108, 'max_score': 0.0, 'retention': 0.9672161004820059}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 108, 'max_score': 1.0, 'retention': 0.9672161004820059}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 108, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 108, 'max_score': 1.0, 'retention': 0.951229424500714}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 108, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 108, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 108, 'max_score': 1.0, 'retention': 0.9355069850316178}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 108, 'max_score': 0.5, 'retention': 0.9200444146293233}, {'id': '01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 108, 'max_score': 1.0, 'retention': 0.9200444146293233}]
+Action '1' is taken
+Step 6
+Current state: {'cur_pos': [4, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:47.260399_3-5|5-5_2-2-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 2], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'mb_timestep': 108, 'max_score': 0.0, 'retention': 0.9048374180359595}, {'id': '01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'mb_timestep': 108, 'max_score': 1.0, 'retention': 0.9048374180359595}]
+Action '1' is taken
+Step 7
+Current state: {'cur_pos': [5, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:28.752877_3-5|5-5_2-2-1-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2], 'st': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'mb_timestep': 108, 'max_score': 1.0, 'retention': 0.8898817709880238}]
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [5, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:21.661329_3-5|5-5_2-2-1-1-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2], 'st': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'mb_timestep': 108, 'max_score': 1.0, 'retention': 0.8751733190429475}]
+Action '2' is taken
+Step 9
+Current state: {'cur_pos': [5, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:43.302040_3-5|5-5_2-2-1-1-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 107, 'max_score': 1.0, 'retention': 0.8464817248906141}]
+Action '2' is taken
+Step 10
+Current state: {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 10
+Final score: 1.0
+Action path: [2, 2, 1, 1, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:04:50
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [4, 2], 'tile_type': 'F'}, {'cur_pos': [5, 2], 'tile_type': 'F'}, {'cur_pos': [5, 3], 'tile_type': 'F'}, {'cur_pos': [5, 4], 'tile_type': 'F'}, {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+Redundant experience len: 10, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:04:46.139542_3-5|5-5_2-2-1'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:04:46.765703_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:04:44.291329_3-5|5-5_2'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:04:45.393854_3-5|5-5_2-2'}, {'01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', '01-05_03:04:47.439078_3-5|5-5_2-2-1-1-1'}, {'01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', '01-05_03:04:48.777787_3-5|5-5_2-2-1-1-1-1-1'}, {'01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', '01-05_03:04:48.142178_3-5|5-5_2-2-1-1-1-1'}, {'01-05_03:04:21.661329_3-5|5-5_2-2-1-1-1-1-1-2-2', '01-05_03:04:50.061948_3-5|5-5_2-2-1-1-1-1-1-2-2'}, {'01-05_03:04:28.752877_3-5|5-5_2-2-1-1-1-1-1-2', '01-05_03:04:49.408683_3-5|5-5_2-2-1-1-1-1-1-2'}, {'01-05_03:04:43.302040_3-5|5-5_2-2-1-1-1-1-1-2-2-2', '01-05_03:04:50.885456_3-5|5-5_2-2-1-1-1-1-1-2-2-2'}]
+--- reward group 0 | episode 17/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 118, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 118, 'max_score': 1.0, 'retention': 1.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 118, 'max_score': 0.0, 'retention': 0.9834714538216175}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 118, 'max_score': 1.0, 'retention': 0.9834714538216175}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 118, 'max_score': 0.0, 'retention': 0.9672161004820059}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 118, 'max_score': 1.0, 'retention': 0.9672161004820059}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 118, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 118, 'max_score': 1.0, 'retention': 0.951229424500714}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 118, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 118, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 118, 'max_score': 1.0, 'retention': 0.9355069850316178}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 118, 'max_score': 0.5, 'retention': 0.9200444146293233}, {'id': '01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 118, 'max_score': 1.0, 'retention': 0.9200444146293233}]
+Action '1' is taken
+Step 6
+Current state: {'cur_pos': [4, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:47.260399_3-5|5-5_2-2-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 2], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'mb_timestep': 118, 'max_score': 0.0, 'retention': 0.9048374180359595}, {'id': '01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'mb_timestep': 118, 'max_score': 1.0, 'retention': 0.9048374180359595}]
+Action '1' is taken
+Step 7
+Current state: {'cur_pos': [5, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:28.752877_3-5|5-5_2-2-1-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2], 'st': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'mb_timestep': 118, 'max_score': 1.0, 'retention': 0.8898817709880238}]
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [5, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:21.661329_3-5|5-5_2-2-1-1-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2], 'st': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'mb_timestep': 118, 'max_score': 1.0, 'retention': 0.8751733190429475}]
+Action '2' is taken
+Step 9
+Current state: {'cur_pos': [5, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:43.302040_3-5|5-5_2-2-1-1-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 118, 'max_score': 1.0, 'retention': 0.8607079764250578}]
+Action '2' is taken
+Step 10
+Current state: {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 10
+Final score: 1.0
+Action path: [2, 2, 1, 1, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:04:57
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [4, 2], 'tile_type': 'F'}, {'cur_pos': [5, 2], 'tile_type': 'F'}, {'cur_pos': [5, 3], 'tile_type': 'F'}, {'cur_pos': [5, 4], 'tile_type': 'F'}, {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+Redundant experience len: 10, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:04:53.034537_3-5|5-5_2-2-1'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:04:53.899299_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:04:51.680120_3-5|5-5_2'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:04:52.388838_3-5|5-5_2-2'}, {'01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', '01-05_03:04:54.563056_3-5|5-5_2-2-1-1-1'}, {'01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', '01-05_03:04:55.751823_3-5|5-5_2-2-1-1-1-1-1'}, {'01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', '01-05_03:04:55.148087_3-5|5-5_2-2-1-1-1-1'}, {'01-05_03:04:57.108165_3-5|5-5_2-2-1-1-1-1-1-2-2', '01-05_03:04:21.661329_3-5|5-5_2-2-1-1-1-1-1-2-2'}, {'01-05_03:04:56.413456_3-5|5-5_2-2-1-1-1-1-1-2', '01-05_03:04:28.752877_3-5|5-5_2-2-1-1-1-1-1-2'}, {'01-05_03:04:43.302040_3-5|5-5_2-2-1-1-1-1-1-2-2-2', '01-05_03:04:57.751393_3-5|5-5_2-2-1-1-1-1-1-2-2-2'}]
+--- reward group 0 | episode 18/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 128, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 128, 'max_score': 1.0, 'retention': 1.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 128, 'max_score': 0.0, 'retention': 0.9834714538216175}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 128, 'max_score': 1.0, 'retention': 0.9834714538216175}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 128, 'max_score': 0.0, 'retention': 0.9672161004820059}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 128, 'max_score': 1.0, 'retention': 0.9672161004820059}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 128, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 128, 'max_score': 1.0, 'retention': 0.951229424500714}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 128, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 128, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 128, 'max_score': 1.0, 'retention': 0.9355069850316178}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 128, 'max_score': 0.5, 'retention': 0.9200444146293233}, {'id': '01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 128, 'max_score': 1.0, 'retention': 0.9200444146293233}]
+Action '1' is taken
+Step 6
+Current state: {'cur_pos': [4, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:47.260399_3-5|5-5_2-2-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 2], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'mb_timestep': 128, 'max_score': 0.0, 'retention': 0.9048374180359595}, {'id': '01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'mb_timestep': 128, 'max_score': 1.0, 'retention': 0.9048374180359595}]
+Action '1' is taken
+Step 7
+Current state: {'cur_pos': [5, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:56.413456_3-5|5-5_2-2-1-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2], 'st': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'mb_timestep': 125, 'max_score': 1.0, 'retention': 0.8464817248906141}]
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [5, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:57.108165_3-5|5-5_2-2-1-1-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2], 'st': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'mb_timestep': 126, 'max_score': 1.0, 'retention': 0.8464817248906141}]
+Action '2' is taken
+Step 9
+Current state: {'cur_pos': [5, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:43.302040_3-5|5-5_2-2-1-1-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 128, 'max_score': 1.0, 'retention': 0.8607079764250578}]
+Action '2' is taken
+Step 10
+Current state: {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 10
+Final score: 1.0
+Action path: [2, 2, 1, 1, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:05:04
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [4, 2], 'tile_type': 'F'}, {'cur_pos': [5, 2], 'tile_type': 'F'}, {'cur_pos': [5, 3], 'tile_type': 'F'}, {'cur_pos': [5, 4], 'tile_type': 'F'}, {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+Redundant experience len: 10, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:04:59.813827_3-5|5-5_2-2-1'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:05:00.527293_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:04:58.432810_3-5|5-5_2'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:04:59.072365_3-5|5-5_2-2'}, {'01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', '01-05_03:05:01.222044_3-5|5-5_2-2-1-1-1'}, {'01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', '01-05_03:05:02.530465_3-5|5-5_2-2-1-1-1-1-1'}, {'01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', '01-05_03:05:01.805273_3-5|5-5_2-2-1-1-1-1'}, {'01-05_03:04:43.302040_3-5|5-5_2-2-1-1-1-1-1-2-2-2', '01-05_03:05:04.603895_3-5|5-5_2-2-1-1-1-1-1-2-2-2'}, {'01-05_03:04:56.413456_3-5|5-5_2-2-1-1-1-1-1-2', '01-05_03:05:03.273813_3-5|5-5_2-2-1-1-1-1-1-2'}, {'01-05_03:04:57.108165_3-5|5-5_2-2-1-1-1-1-1-2-2', '01-05_03:05:03.990465_3-5|5-5_2-2-1-1-1-1-1-2-2'}]
+--- reward group 0 | episode 19/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 138, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 138, 'max_score': 1.0, 'retention': 1.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 138, 'max_score': 0.0, 'retention': 0.9834714538216175}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 138, 'max_score': 1.0, 'retention': 0.9834714538216175}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 138, 'max_score': 0.0, 'retention': 0.9672161004820059}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 138, 'max_score': 1.0, 'retention': 0.9672161004820059}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 138, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 138, 'max_score': 1.0, 'retention': 0.951229424500714}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 138, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 138, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 138, 'max_score': 1.0, 'retention': 0.9355069850316178}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 138, 'max_score': 0.5, 'retention': 0.9200444146293233}, {'id': '01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 138, 'max_score': 1.0, 'retention': 0.9200444146293233}]
+Action '1' is taken
+Step 6
+Current state: {'cur_pos': [4, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:47.260399_3-5|5-5_2-2-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 2], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'mb_timestep': 138, 'max_score': 0.0, 'retention': 0.9048374180359595}, {'id': '01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'mb_timestep': 138, 'max_score': 1.0, 'retention': 0.9048374180359595}]
+Action '1' is taken
+Step 7
+Current state: {'cur_pos': [5, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:56.413456_3-5|5-5_2-2-1-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2], 'st': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'mb_timestep': 138, 'max_score': 1.0, 'retention': 0.8898817709880238}]
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [5, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:57.108165_3-5|5-5_2-2-1-1-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2], 'st': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'mb_timestep': 138, 'max_score': 1.0, 'retention': 0.8751733190429475}]
+Action '2' is taken
+Step 9
+Current state: {'cur_pos': [5, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:43.302040_3-5|5-5_2-2-1-1-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 138, 'max_score': 1.0, 'retention': 0.8607079764250578}]
+Action '2' is taken
+Step 10
+Current state: {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 10
+Final score: 1.0
+Action path: [2, 2, 1, 1, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:05:12
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [4, 2], 'tile_type': 'F'}, {'cur_pos': [5, 2], 'tile_type': 'F'}, {'cur_pos': [5, 3], 'tile_type': 'F'}, {'cur_pos': [5, 4], 'tile_type': 'F'}, {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}]
+########################################################
+Redundant experience len: 10, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:05:06.762004_3-5|5-5_2-2-1'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:05:07.676868_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:05:05.389299_3-5|5-5_2'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:05:06.091441_3-5|5-5_2-2'}, {'01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', '01-05_03:05:08.597581_3-5|5-5_2-2-1-1-1'}, {'01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', '01-05_03:05:10.532884_3-5|5-5_2-2-1-1-1-1-1'}, {'01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', '01-05_03:05:09.787775_3-5|5-5_2-2-1-1-1-1'}, {'01-05_03:04:43.302040_3-5|5-5_2-2-1-1-1-1-1-2-2-2', '01-05_03:05:12.570461_3-5|5-5_2-2-1-1-1-1-1-2-2-2'}, {'01-05_03:04:56.413456_3-5|5-5_2-2-1-1-1-1-1-2', '01-05_03:05:11.207275_3-5|5-5_2-2-1-1-1-1-1-2'}, {'01-05_03:04:57.108165_3-5|5-5_2-2-1-1-1-1-1-2-2', '01-05_03:05:11.860395_3-5|5-5_2-2-1-1-1-1-1-2-2'}]
+--- reward group 1 | episode 0/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 148, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 148, 'max_score': 1.0, 'retention': 1.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 148, 'max_score': 0.0, 'retention': 0.9834714538216175}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 148, 'max_score': 1.0, 'retention': 0.9834714538216175}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 148, 'max_score': 0.0, 'retention': 0.9672161004820059}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 148, 'max_score': 1.0, 'retention': 0.9672161004820059}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 148, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 148, 'max_score': 1.0, 'retention': 0.951229424500714}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 148, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 148, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 148, 'max_score': 1.0, 'retention': 0.9355069850316178}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 148, 'max_score': 0.5, 'retention': 0.9200444146293233}, {'id': '01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 148, 'max_score': 1.0, 'retention': 0.9200444146293233}]
+Action '1' is taken
+Step 6
+Current state: {'cur_pos': [4, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:47.260399_3-5|5-5_2-2-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 2], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'mb_timestep': 148, 'max_score': 0.0, 'retention': 0.9048374180359595}, {'id': '01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'mb_timestep': 148, 'max_score': 1.0, 'retention': 0.9048374180359595}]
+Action '1' is taken
+Step 7
+Current state: {'cur_pos': [5, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:56.413456_3-5|5-5_2-2-1-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2], 'st': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'mb_timestep': 148, 'max_score': 1.0, 'retention': 0.8898817709880238}]
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [5, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:57.108165_3-5|5-5_2-2-1-1-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2], 'st': {'cur_pos': [5, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'mb_timestep': 148, 'max_score': 1.0, 'retention': 0.8751733190429475}]
+Action '2' is taken
+Step 9
+Current state: {'cur_pos': [5, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:04:43.302040_3-5|5-5_2-2-1-1-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [5, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 1.0}, 'mb_timestep': 148, 'max_score': 1.0, 'retention': 0.8607079764250578}]
+Action '2' is taken
+Step 10
+Current state: {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 0.5}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 10
+Final score: 0.5
+Action path: [2, 2, 1, 1, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:05:19
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [4, 2], 'tile_type': 'F'}, {'cur_pos': [5, 2], 'tile_type': 'F'}, {'cur_pos': [5, 3], 'tile_type': 'F'}, {'cur_pos': [5, 4], 'tile_type': 'F'}, {'cur_pos': [5, 5], 'tile_type': 'G', 'score': 0.5}]
+########################################################
+Redundant experience len: 9, groups: [{'01-05_03:03:31.284787_3-5|5-5_2-2-1', '01-05_03:05:14.620130_3-5|5-5_2-2-1'}, {'01-05_03:03:37.765779_3-5|5-5_2-2-1-1', '01-05_03:05:15.272470_3-5|5-5_2-2-1-1'}, {'01-05_03:03:39.177998_3-5|5-5_2', '01-05_03:05:13.242724_3-5|5-5_2'}, {'01-05_03:03:43.695997_3-5|5-5_2-2', '01-05_03:05:13.910031_3-5|5-5_2-2'}, {'01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', '01-05_03:05:16.224369_3-5|5-5_2-2-1-1-1'}, {'01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', '01-05_03:05:17.709365_3-5|5-5_2-2-1-1-1-1-1'}, {'01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', '01-05_03:05:16.960472_3-5|5-5_2-2-1-1-1-1'}, {'01-05_03:04:56.413456_3-5|5-5_2-2-1-1-1-1-1-2', '01-05_03:05:18.444343_3-5|5-5_2-2-1-1-1-1-1-2'}, {'01-05_03:04:57.108165_3-5|5-5_2-2-1-1-1-1-1-2-2', '01-05_03:05:19.170267_3-5|5-5_2-2-1-1-1-1-1-2-2'}]
+--- reward group 1 | episode 1/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.074836_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'mb_timestep': 158, 'max_score': 0.0, 'retention': 1.0}, {'id': '01-05_03:03:39.177998_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'mb_timestep': 158, 'max_score': 1.0, 'retention': 1.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:24.946864_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'mb_timestep': 158, 'max_score': 0.0, 'retention': 0.9834714538216175}, {'id': '01-05_03:03:43.695997_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'mb_timestep': 158, 'max_score': 1.0, 'retention': 0.9834714538216175}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.422182_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'mb_timestep': 158, 'max_score': 0.0, 'retention': 0.9672161004820059}, {'id': '01-05_03:03:31.284787_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'mb_timestep': 158, 'max_score': 1.0, 'retention': 0.9672161004820059}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:28.464364_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'mb_timestep': 158, 'max_score': 0.0, 'retention': 0.951229424500714}, {'id': '01-05_03:03:37.765779_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'mb_timestep': 158, 'max_score': 1.0, 'retention': 0.951229424500714}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:38.434087_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'mb_timestep': 158, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:42.297848_3-5|5-5_2-2-1-1-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 0], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [2, 1], 'tile_type': 'H'}, 'mb_timestep': 158, 'max_score': 0.0, 'retention': 0.9355069850316178}, {'id': '01-05_03:03:57.088267_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'mb_timestep': 158, 'max_score': 1.0, 'retention': 0.9355069850316178}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:33.300780_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'mb_timestep': 158, 'max_score': 0.5, 'retention': 0.9200444146293233}, {'id': '01-05_03:04:18.986303_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'mb_timestep': 158, 'max_score': 1.0, 'retention': 0.9200444146293233}]
+Action '1' is taken
+Step 6
+Current state: {'cur_pos': [4, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:47.260399_3-5|5-5_2-2-1-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 2], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'mb_timestep': 158, 'max_score': 0.0, 'retention': 0.9048374180359595}, {'id': '01-05_03:04:05.933978_3-5|5-5_2-2-1-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1, 1], 'st': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [5, 2], 'tile_type': 'F'}, 'mb_timestep': 158, 'max_score': 1.0, 'retention': 0.9048374180359595}]
+Action '1' is taken
+Step 7
+Current state: {'cur_pos': [5, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]

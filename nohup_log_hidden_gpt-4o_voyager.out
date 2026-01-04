@@ -1,0 +1,464 @@
+--- reward group 0 | episode 0/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 3
+Current state: {'cur_pos': [0, 3], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 3
+Final score: 0
+Action path: [2, 2, 2]
+End exploring at 2026-01-05_03:03:23
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [0, 3], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- reward group 0 | episode 1/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:19.756456_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on tile S, moved right to position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:21.568393_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, moved Right to position 0, landed on F (SAFE).', 'max_score': 0.0}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:23.120408_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'voyager_summary': 'Starting from position 0 on a Frozen tile, the action taken was moving Right with the result being a FAIL after landing on a Hole at position 0.', 'max_score': 0.0}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 4
+Current state: {'cur_pos': [1, 3], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 4
+Final score: 0
+Action path: [2, 2, 1, 2]
+End exploring at 2026-01-05_03:03:30
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [1, 3], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 2, groups: [{'01-05_03:03:19.756456_3-5|5-5_2', '01-05_03:03:24.625019_3-5|5-5_2'}, {'01-05_03:03:21.568393_3-5|5-5_2-2', '01-05_03:03:26.196520_3-5|5-5_2-2'}]
+--- reward group 0 | episode 2/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:19.756456_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on tile S, moved right to position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:21.568393_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, moved Right to position 0, landed on F (SAFE).', 'max_score': 0.0}]
+Action '1' is taken
+Step 2
+Current state: {'cur_pos': [1, 1], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 2
+Final score: 0
+Action path: [2, 1]
+End exploring at 2026-01-05_03:03:33
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [1, 1], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 1, groups: [{'01-05_03:03:19.756456_3-5|5-5_2', '01-05_03:03:30.942232_3-5|5-5_2'}]
+--- reward group 0 | episode 3/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:19.756456_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on tile S, moved right to position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.0}]
+Action '1' is taken
+Step 1
+Current state: {'cur_pos': [1, 0], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 1
+Final score: 0
+Action path: [1]
+End exploring at 2026-01-05_03:03:35
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [1, 0], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 0, groups: []
+--- reward group 0 | episode 4/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:19.756456_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on tile S, moved right to position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.0}, {'id': '01-05_03:03:34.283146_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'voyager_summary': 'Starting at position 0 on tile S, the action taken was Down (1), leading to position 0 on tile H, resulting in FAIL (hole).', 'max_score': 0.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:21.568393_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, moved Right to position 0, landed on F (SAFE).', 'max_score': 0.0}, {'id': '01-05_03:03:32.676374_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'voyager_summary': 'Current Position: 0, Action: Down, Result: Moved to Position 0 on Hole; FAIL.', 'max_score': 0.0}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:23.120408_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'voyager_summary': 'Starting from position 0 on a Frozen tile, the action taken was moving Right with the result being a FAIL after landing on a Hole at position 0.', 'max_score': 0.0}, {'id': '01-05_03:03:27.845129_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'voyager_summary': 'Started at position 0 on a Frozen tile, took action Down leading to position 0 remaining on a Frozen tile, resulting in a SAFE move.', 'max_score': 0.0}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:29.356600_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'voyager_summary': 'Position 0, moved Right to Position 0 landing on Hole; Outcome: FAIL (H).', 'max_score': 0.0}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 5
+Current state: {'cur_pos': [2, 3], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 5
+Final score: 0
+Action path: [2, 2, 1, 1, 2]
+End exploring at 2026-01-05_03:03:43
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [2, 3], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 3, groups: [{'01-05_03:03:19.756456_3-5|5-5_2', '01-05_03:03:35.889401_3-5|5-5_2'}, {'01-05_03:03:37.517169_3-5|5-5_2-2', '01-05_03:03:21.568393_3-5|5-5_2-2'}, {'01-05_03:03:27.845129_3-5|5-5_2-2-1', '01-05_03:03:39.153433_3-5|5-5_2-2-1'}]
+--- reward group 0 | episode 5/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:19.756456_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on tile S, moved right to position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.0}, {'id': '01-05_03:03:34.283146_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'voyager_summary': 'Starting at position 0 on tile S, the action taken was Down (1), leading to position 0 on tile H, resulting in FAIL (hole).', 'max_score': 0.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:32.676374_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'voyager_summary': 'Current Position: 0, Action: Down, Result: Moved to Position 0 on Hole; FAIL.', 'max_score': 0.0}, {'id': '01-05_03:03:37.517169_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0 with action Right resulted in position 0 on tile F, move was SAFE (on ice).', 'max_score': 0.0}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:23.120408_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'voyager_summary': 'Starting from position 0 on a Frozen tile, the action taken was moving Right with the result being a FAIL after landing on a Hole at position 0.', 'max_score': 0.0}, {'id': '01-05_03:03:27.845129_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'voyager_summary': 'Started at position 0 on a Frozen tile, took action Down leading to position 0 remaining on a Frozen tile, resulting in a SAFE move.', 'max_score': 0.0}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.356600_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'voyager_summary': 'Position 0, moved Right to Position 0 landing on Hole; Outcome: FAIL (H).', 'max_score': 0.0}, {'id': '01-05_03:03:40.668477_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, took action Down, and remained on tile F; move was SAFE.', 'max_score': 0.0}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:42.150994_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'voyager_summary': 'Position 0, took action Right to move to position 0 landing on a Hole; result: FAIL.', 'max_score': 0.0}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 6
+Current state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 7
+Current state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 8
+Final score: 0.5
+Action path: [2, 2, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:03:59
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'F'}, {'cur_pos': [3, 4], 'tile_type': 'F'}, {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}]
+########################################################
+Redundant experience len: 4, groups: [{'01-05_03:03:19.756456_3-5|5-5_2', '01-05_03:03:44.349930_3-5|5-5_2'}, {'01-05_03:03:27.845129_3-5|5-5_2-2-1', '01-05_03:03:47.412242_3-5|5-5_2-2-1'}, {'01-05_03:03:37.517169_3-5|5-5_2-2', '01-05_03:03:45.778247_3-5|5-5_2-2'}, {'01-05_03:03:49.416451_3-5|5-5_2-2-1-1', '01-05_03:03:40.668477_3-5|5-5_2-2-1-1'}]
+--- reward group 0 | episode 6/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:19.756456_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on tile S, moved right to position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.5}, {'id': '01-05_03:03:34.283146_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'voyager_summary': 'Starting at position 0 on tile S, the action taken was Down (1), leading to position 0 on tile H, resulting in FAIL (hole).', 'max_score': 0.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:32.676374_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'voyager_summary': 'Current Position: 0, Action: Down, Result: Moved to Position 0 on Hole; FAIL.', 'max_score': 0.0}, {'id': '01-05_03:03:37.517169_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0 with action Right resulted in position 0 on tile F, move was SAFE (on ice).', 'max_score': 0.5}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:23.120408_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'voyager_summary': 'Starting from position 0 on a Frozen tile, the action taken was moving Right with the result being a FAIL after landing on a Hole at position 0.', 'max_score': 0.0}, {'id': '01-05_03:03:27.845129_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'voyager_summary': 'Started at position 0 on a Frozen tile, took action Down leading to position 0 remaining on a Frozen tile, resulting in a SAFE move.', 'max_score': 0.5}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.356600_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'voyager_summary': 'Position 0, moved Right to Position 0 landing on Hole; Outcome: FAIL (H).', 'max_score': 0.0}, {'id': '01-05_03:03:49.416451_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0 to 0, action Down (1), still on tile F, SAFE.', 'max_score': 0.5}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:42.150994_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'voyager_summary': 'Position 0, took action Right to move to position 0 landing on a Hole; result: FAIL.', 'max_score': 0.0}, {'id': '01-05_03:03:52.756229_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'voyager_summary': 'Starting at position 0 on tile F, moved Down to position 0 onto tile F, resulting in a SAFE move (still on ice).', 'max_score': 0.5}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:54.662063_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on tile F, took a Right action, remained at position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.5}]
+Action '1' is taken
+Step 6
+Current state: {'cur_pos': [4, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 0 experiences: []
+Action '2' is taken
+Step 7
+Current state: {'cur_pos': [4, 3], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 7
+Final score: 0
+Action path: [2, 2, 1, 1, 1, 1, 2]
+End exploring at 2026-01-05_03:04:12
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [4, 2], 'tile_type': 'F'}, {'cur_pos': [4, 3], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 5, groups: [{'01-05_03:03:19.756456_3-5|5-5_2', '01-05_03:04:00.044685_3-5|5-5_2'}, {'01-05_03:03:27.845129_3-5|5-5_2-2-1', '01-05_03:04:03.193675_3-5|5-5_2-2-1'}, {'01-05_03:04:01.722990_3-5|5-5_2-2', '01-05_03:03:37.517169_3-5|5-5_2-2'}, {'01-05_03:03:49.416451_3-5|5-5_2-2-1-1', '01-05_03:04:04.824192_3-5|5-5_2-2-1-1'}, {'01-05_03:03:52.756229_3-5|5-5_2-2-1-1-1', '01-05_03:04:06.638866_3-5|5-5_2-2-1-1-1'}]
+--- reward group 0 | episode 7/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:19.756456_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on tile S, moved right to position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.5}, {'id': '01-05_03:03:34.283146_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'voyager_summary': 'Starting at position 0 on tile S, the action taken was Down (1), leading to position 0 on tile H, resulting in FAIL (hole).', 'max_score': 0.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:32.676374_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'voyager_summary': 'Current Position: 0, Action: Down, Result: Moved to Position 0 on Hole; FAIL.', 'max_score': 0.0}, {'id': '01-05_03:04:01.722990_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, moved Right, remained on F; move was SAFE.', 'max_score': 0.5}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:23.120408_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'voyager_summary': 'Starting from position 0 on a Frozen tile, the action taken was moving Right with the result being a FAIL after landing on a Hole at position 0.', 'max_score': 0.0}, {'id': '01-05_03:03:27.845129_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'voyager_summary': 'Started at position 0 on a Frozen tile, took action Down leading to position 0 remaining on a Frozen tile, resulting in a SAFE move.', 'max_score': 0.5}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.356600_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'voyager_summary': 'Position 0, moved Right to Position 0 landing on Hole; Outcome: FAIL (H).', 'max_score': 0.0}, {'id': '01-05_03:03:49.416451_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0 to 0, action Down (1), still on tile F, SAFE.', 'max_score': 0.5}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:42.150994_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'voyager_summary': 'Position 0, took action Right to move to position 0 landing on a Hole; result: FAIL.', 'max_score': 0.0}, {'id': '01-05_03:03:52.756229_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'voyager_summary': 'Starting at position 0 on tile F, moved Down to position 0 onto tile F, resulting in a SAFE move (still on ice).', 'max_score': 0.5}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:54.662063_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on tile F, took a Right action, remained at position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.5}, {'id': '01-05_03:04:09.221240_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'voyager_summary': 'Starting at position 0 on tile F, moved Down (1) to remain on position 0 on tile F; move was SAFE (still on F).', 'max_score': 0.0}]
+Action '2' is taken
+Step 6
+Current state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:56.311110_3-5|5-5_2-2-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, took action Right, moved to position 0 on tile F; SAFE (still on F).', 'max_score': 0.5}]
+Action '1' is taken
+Step 7
+Current state: {'cur_pos': [4, 3], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 7
+Final score: 0
+Action path: [2, 2, 1, 1, 1, 2, 1]
+End exploring at 2026-01-05_03:04:26
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'F'}, {'cur_pos': [4, 3], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 6, groups: [{'01-05_03:03:19.756456_3-5|5-5_2', '01-05_03:04:13.340771_3-5|5-5_2'}, {'01-05_03:03:27.845129_3-5|5-5_2-2-1', '01-05_03:04:17.365513_3-5|5-5_2-2-1'}, {'01-05_03:03:49.416451_3-5|5-5_2-2-1-1', '01-05_03:04:19.093280_3-5|5-5_2-2-1-1'}, {'01-05_03:03:52.756229_3-5|5-5_2-2-1-1-1', '01-05_03:04:20.694237_3-5|5-5_2-2-1-1-1'}, {'01-05_03:04:22.721151_3-5|5-5_2-2-1-1-1-2', '01-05_03:03:54.662063_3-5|5-5_2-2-1-1-1-2'}, {'01-05_03:04:01.722990_3-5|5-5_2-2', '01-05_03:04:15.357797_3-5|5-5_2-2'}]
+--- reward group 0 | episode 8/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:19.756456_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on tile S, moved right to position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.5}, {'id': '01-05_03:03:34.283146_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'voyager_summary': 'Starting at position 0 on tile S, the action taken was Down (1), leading to position 0 on tile H, resulting in FAIL (hole).', 'max_score': 0.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:32.676374_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'voyager_summary': 'Current Position: 0, Action: Down, Result: Moved to Position 0 on Hole; FAIL.', 'max_score': 0.0}, {'id': '01-05_03:04:01.722990_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, moved Right, remained on F; move was SAFE.', 'max_score': 0.5}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:23.120408_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'voyager_summary': 'Starting from position 0 on a Frozen tile, the action taken was moving Right with the result being a FAIL after landing on a Hole at position 0.', 'max_score': 0.0}, {'id': '01-05_03:03:27.845129_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'voyager_summary': 'Started at position 0 on a Frozen tile, took action Down leading to position 0 remaining on a Frozen tile, resulting in a SAFE move.', 'max_score': 0.5}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.356600_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'voyager_summary': 'Position 0, moved Right to Position 0 landing on Hole; Outcome: FAIL (H).', 'max_score': 0.0}, {'id': '01-05_03:03:49.416451_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0 to 0, action Down (1), still on tile F, SAFE.', 'max_score': 0.5}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:42.150994_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'voyager_summary': 'Position 0, took action Right to move to position 0 landing on a Hole; result: FAIL.', 'max_score': 0.0}, {'id': '01-05_03:03:52.756229_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'voyager_summary': 'Starting at position 0 on tile F, moved Down to position 0 onto tile F, resulting in a SAFE move (still on ice).', 'max_score': 0.5}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:04:09.221240_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'voyager_summary': 'Starting at position 0 on tile F, moved Down (1) to remain on position 0 on tile F; move was SAFE (still on F).', 'max_score': 0.0}, {'id': '01-05_03:04:22.721151_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'voyager_summary': 'Current Position: 0, Action: Right (2), Result: SAFE (still on F).', 'max_score': 0.5}]
+Action '2' is taken
+Step 6
+Current state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:56.311110_3-5|5-5_2-2-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, took action Right, moved to position 0 on tile F; SAFE (still on F).', 'max_score': 0.5}, {'id': '01-05_03:04:25.611866_3-5|5-5_2-2-1-1-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 1], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'voyager_summary': 'The player moved from position 0 on a Frozen tile (F) to a Hole (H) by going Down (1), resulting in a FAIL outcome.', 'max_score': 0.0}]
+Action '2' is taken
+Step 7
+Current state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 1 experiences: [{'id': '01-05_03:03:58.027542_3-5|5-5_2-2-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}, 'voyager_summary': 'Starting at position 0 on a Frozen tile, the action taken was Right (2), resulting in moving to position 0 on the Goal tile, marking the move as SUCCESS (G).', 'max_score': 0.5}]
+Action '1' is taken
+Step 8
+Current state: {'cur_pos': [4, 4], 'tile_type': 'H'}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 8
+Final score: 0
+Action path: [2, 2, 1, 1, 1, 2, 2, 1]
+End exploring at 2026-01-05_03:04:40
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'F'}, {'cur_pos': [3, 4], 'tile_type': 'F'}, {'cur_pos': [4, 4], 'tile_type': 'H'}]
+########################################################
+Redundant experience len: 7, groups: [{'01-05_03:03:19.756456_3-5|5-5_2', '01-05_03:04:27.551756_3-5|5-5_2'}, {'01-05_03:03:27.845129_3-5|5-5_2-2-1', '01-05_03:04:30.943488_3-5|5-5_2-2-1'}, {'01-05_03:03:49.416451_3-5|5-5_2-2-1-1', '01-05_03:04:32.575618_3-5|5-5_2-2-1-1'}, {'01-05_03:03:52.756229_3-5|5-5_2-2-1-1-1', '01-05_03:04:34.271421_3-5|5-5_2-2-1-1-1'}, {'01-05_03:03:56.311110_3-5|5-5_2-2-1-1-1-2-2', '01-05_03:04:37.718313_3-5|5-5_2-2-1-1-1-2-2'}, {'01-05_03:04:01.722990_3-5|5-5_2-2', '01-05_03:04:29.235363_3-5|5-5_2-2'}, {'01-05_03:04:35.887010_3-5|5-5_2-2-1-1-1-2', '01-05_03:04:22.721151_3-5|5-5_2-2-1-1-1-2'}]
+--- reward group 0 | episode 9/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:19.756456_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on tile S, moved right to position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.5}, {'id': '01-05_03:03:34.283146_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'voyager_summary': 'Starting at position 0 on tile S, the action taken was Down (1), leading to position 0 on tile H, resulting in FAIL (hole).', 'max_score': 0.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:32.676374_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'voyager_summary': 'Current Position: 0, Action: Down, Result: Moved to Position 0 on Hole; FAIL.', 'max_score': 0.0}, {'id': '01-05_03:04:01.722990_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, moved Right, remained on F; move was SAFE.', 'max_score': 0.5}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:23.120408_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'voyager_summary': 'Starting from position 0 on a Frozen tile, the action taken was moving Right with the result being a FAIL after landing on a Hole at position 0.', 'max_score': 0.0}, {'id': '01-05_03:03:27.845129_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'voyager_summary': 'Started at position 0 on a Frozen tile, took action Down leading to position 0 remaining on a Frozen tile, resulting in a SAFE move.', 'max_score': 0.5}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.356600_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'voyager_summary': 'Position 0, moved Right to Position 0 landing on Hole; Outcome: FAIL (H).', 'max_score': 0.0}, {'id': '01-05_03:03:49.416451_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0 to 0, action Down (1), still on tile F, SAFE.', 'max_score': 0.5}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:42.150994_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'voyager_summary': 'Position 0, took action Right to move to position 0 landing on a Hole; result: FAIL.', 'max_score': 0.0}, {'id': '01-05_03:03:52.756229_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'voyager_summary': 'Starting at position 0 on tile F, moved Down to position 0 onto tile F, resulting in a SAFE move (still on ice).', 'max_score': 0.5}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:04:09.221240_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'voyager_summary': 'Starting at position 0 on tile F, moved Down (1) to remain on position 0 on tile F; move was SAFE (still on F).', 'max_score': 0.0}, {'id': '01-05_03:04:35.887010_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'voyager_summary': 'Starting at position 0 on tile F, moved right to remain on position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.5}]
+Action '2' is taken
+Step 6
+Current state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:56.311110_3-5|5-5_2-2-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, took action Right, moved to position 0 on tile F; SAFE (still on F).', 'max_score': 0.5}, {'id': '01-05_03:04:25.611866_3-5|5-5_2-2-1-1-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 1], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'voyager_summary': 'The player moved from position 0 on a Frozen tile (F) to a Hole (H) by going Down (1), resulting in a FAIL outcome.', 'max_score': 0.0}]
+Action '2' is taken
+Step 7
+Current state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:58.027542_3-5|5-5_2-2-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}, 'voyager_summary': 'Starting at position 0 on a Frozen tile, the action taken was Right (2), resulting in moving to position 0 on the Goal tile, marking the move as SUCCESS (G).', 'max_score': 0.5}, {'id': '01-05_03:04:39.604053_3-5|5-5_2-2-1-1-1-2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 1], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 4], 'tile_type': 'H'}, 'voyager_summary': 'Starting at position 0 on a Frozen tile, the action Down (1) led to the same position on a Hole, resulting in a FAIL.', 'max_score': 0.0}]
+Action '2' is taken
+Step 8
+Current state: {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 8
+Final score: 0.5
+Action path: [2, 2, 1, 1, 1, 2, 2, 2]
+End exploring at 2026-01-05_03:04:53
+State trace: [{'cur_pos': [0, 0], 'tile_type': 'S'}, {'cur_pos': [0, 1], 'tile_type': 'F'}, {'cur_pos': [0, 2], 'tile_type': 'F'}, {'cur_pos': [1, 2], 'tile_type': 'F'}, {'cur_pos': [2, 2], 'tile_type': 'F'}, {'cur_pos': [3, 2], 'tile_type': 'F'}, {'cur_pos': [3, 3], 'tile_type': 'F'}, {'cur_pos': [3, 4], 'tile_type': 'F'}, {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}]
+########################################################
+Redundant experience len: 8, groups: [{'01-05_03:03:19.756456_3-5|5-5_2', '01-05_03:04:41.275314_3-5|5-5_2'}, {'01-05_03:04:44.395908_3-5|5-5_2-2-1', '01-05_03:03:27.845129_3-5|5-5_2-2-1'}, {'01-05_03:03:49.416451_3-5|5-5_2-2-1-1', '01-05_03:04:46.254800_3-5|5-5_2-2-1-1'}, {'01-05_03:03:52.756229_3-5|5-5_2-2-1-1-1', '01-05_03:04:47.808022_3-5|5-5_2-2-1-1-1'}, {'01-05_03:03:56.311110_3-5|5-5_2-2-1-1-1-2-2', '01-05_03:04:51.454658_3-5|5-5_2-2-1-1-1-2-2'}, {'01-05_03:03:58.027542_3-5|5-5_2-2-1-1-1-2-2-2', '01-05_03:04:53.081037_3-5|5-5_2-2-1-1-1-2-2-2'}, {'01-05_03:04:01.722990_3-5|5-5_2-2', '01-05_03:04:42.807959_3-5|5-5_2-2'}, {'01-05_03:04:35.887010_3-5|5-5_2-2-1-1-1-2', '01-05_03:04:49.784581_3-5|5-5_2-2-1-1-1-2'}]
+--- reward group 0 | episode 10/20 ---
+Step 0
+Current state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:19.756456_3-5|5-5_2', 'reproduce_method': 'action_path', 'action_path': [2], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 2, 'st1': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on tile S, moved right to position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.5}, {'id': '01-05_03:03:34.283146_3-5|5-5_1', 'reproduce_method': 'action_path', 'action_path': [1], 'st': {'cur_pos': [0, 0], 'tile_type': 'S'}, 'action': 1, 'st1': {'cur_pos': [1, 0], 'tile_type': 'H'}, 'voyager_summary': 'Starting at position 0 on tile S, the action taken was Down (1), leading to position 0 on tile H, resulting in FAIL (hole).', 'max_score': 0.0}]
+Action '2' is taken
+Step 1
+Current state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:32.676374_3-5|5-5_2-1', 'reproduce_method': 'action_path', 'action_path': [2, 1], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 1], 'tile_type': 'H'}, 'voyager_summary': 'Current Position: 0, Action: Down, Result: Moved to Position 0 on Hole; FAIL.', 'max_score': 0.0}, {'id': '01-05_03:04:01.722990_3-5|5-5_2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2], 'st': {'cur_pos': [0, 1], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, moved Right, remained on F; move was SAFE.', 'max_score': 0.5}]
+Action '2' is taken
+Step 2
+Current state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:23.120408_3-5|5-5_2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 2], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [0, 3], 'tile_type': 'H'}, 'voyager_summary': 'Starting from position 0 on a Frozen tile, the action taken was moving Right with the result being a FAIL after landing on a Hole at position 0.', 'max_score': 0.0}, {'id': '01-05_03:04:44.395908_3-5|5-5_2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1], 'st': {'cur_pos': [0, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0 took action Down, stayed on tile F, resulting in a SAFE move.', 'max_score': 0.5}]
+Action '1' is taken
+Step 3
+Current state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:29.356600_3-5|5-5_2-2-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 2], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [1, 3], 'tile_type': 'H'}, 'voyager_summary': 'Position 0, moved Right to Position 0 landing on Hole; Outcome: FAIL (H).', 'max_score': 0.0}, {'id': '01-05_03:03:49.416451_3-5|5-5_2-2-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1], 'st': {'cur_pos': [1, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'voyager_summary': 'Position 0 to 0, action Down (1), still on tile F, SAFE.', 'max_score': 0.5}]
+Action '1' is taken
+Step 4
+Current state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:42.150994_3-5|5-5_2-2-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 2], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [2, 3], 'tile_type': 'H'}, 'voyager_summary': 'Position 0, took action Right to move to position 0 landing on a Hole; result: FAIL.', 'max_score': 0.0}, {'id': '01-05_03:03:52.756229_3-5|5-5_2-2-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1], 'st': {'cur_pos': [2, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'voyager_summary': 'Starting at position 0 on tile F, moved Down to position 0 onto tile F, resulting in a SAFE move (still on ice).', 'max_score': 0.5}]
+Action '1' is taken
+Step 5
+Current state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:04:09.221240_3-5|5-5_2-2-1-1-1-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 1], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 2], 'tile_type': 'F'}, 'voyager_summary': 'Starting at position 0 on tile F, moved Down (1) to remain on position 0 on tile F; move was SAFE (still on F).', 'max_score': 0.0}, {'id': '01-05_03:04:35.887010_3-5|5-5_2-2-1-1-1-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2], 'st': {'cur_pos': [3, 2], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'voyager_summary': 'Starting at position 0 on tile F, moved right to remain on position 0 on tile F, resulting in a SAFE move.', 'max_score': 0.5}]
+Action '2' is taken
+Step 6
+Current state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:56.311110_3-5|5-5_2-2-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, took action Right, moved to position 0 on tile F; SAFE (still on F).', 'max_score': 0.5}, {'id': '01-05_03:04:25.611866_3-5|5-5_2-2-1-1-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 1], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'voyager_summary': 'The player moved from position 0 on a Frozen tile (F) to a Hole (H) by going Down (1), resulting in a FAIL outcome.', 'max_score': 0.0}]
+Action '2' is taken
+Step 7
+Current state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 2 experiences: [{'id': '01-05_03:03:58.027542_3-5|5-5_2-2-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}, 'voyager_summary': 'Starting at position 0 on a Frozen tile, the action taken was Right (2), resulting in moving to position 0 on the Goal tile, marking the move as SUCCESS (G).', 'max_score': 0.5}, {'id': '01-05_03:04:39.604053_3-5|5-5_2-2-1-1-1-2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 1], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 4], 'tile_type': 'H'}, 'voyager_summary': 'Starting at position 0 on a Frozen tile, the action Down (1) led to the same position on a Hole, resulting in a FAIL.', 'max_score': 0.0}]
+Action '0' is taken
+Step 8
+Current state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:56.311110_3-5|5-5_2-2-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, took action Right, moved to position 0 on tile F; SAFE (still on F).', 'max_score': 0.5}, {'id': '01-05_03:04:25.611866_3-5|5-5_2-2-1-1-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 1], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'voyager_summary': 'The player moved from position 0 on a Frozen tile (F) to a Hole (H) by going Down (1), resulting in a FAIL outcome.', 'max_score': 0.0}, {'id': '01-05_03:05:07.883205_3-5|5-5_2-2-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, moved Right to position 0 and remained on tile F; the move was SAFE.', 'max_score': 0.5}]
+Action '2' is taken
+Step 9
+Current state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 3 experiences: [{'id': '01-05_03:03:58.027542_3-5|5-5_2-2-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}, 'voyager_summary': 'Starting at position 0 on a Frozen tile, the action taken was Right (2), resulting in moving to position 0 on the Goal tile, marking the move as SUCCESS (G).', 'max_score': 0.5}, {'id': '01-05_03:04:39.604053_3-5|5-5_2-2-1-1-1-2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 1], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 4], 'tile_type': 'H'}, 'voyager_summary': 'Starting at position 0 on a Frozen tile, the action Down (1) led to the same position on a Hole, resulting in a FAIL.', 'max_score': 0.0}, {'id': '01-05_03:05:10.152229_3-5|5-5_2-2-1-1-1-2-2-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 0], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on a Frozen tile, took the action to move Left, remained at position 0 on a Frozen tile, resulting in a SAFE move.', 'max_score': 0.0}]
+Action '0' is taken
+Step 10
+Current state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 4 experiences: [{'id': '01-05_03:03:56.311110_3-5|5-5_2-2-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, took action Right, moved to position 0 on tile F; SAFE (still on F).', 'max_score': 0.5}, {'id': '01-05_03:04:25.611866_3-5|5-5_2-2-1-1-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 1], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'voyager_summary': 'The player moved from position 0 on a Frozen tile (F) to a Hole (H) by going Down (1), resulting in a FAIL outcome.', 'max_score': 0.0}, {'id': '01-05_03:05:07.883205_3-5|5-5_2-2-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, moved Right to position 0 and remained on tile F; the move was SAFE.', 'max_score': 0.5}, {'id': '01-05_03:05:11.923367_3-5|5-5_2-2-1-1-1-2-2-0-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 0, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, moved Right to position 0, landing on tile F; the move was SAFE (still on F).', 'max_score': 0.5}]
+Action '2' is taken
+Step 11
+Current state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 4 experiences: [{'id': '01-05_03:03:58.027542_3-5|5-5_2-2-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}, 'voyager_summary': 'Starting at position 0 on a Frozen tile, the action taken was Right (2), resulting in moving to position 0 on the Goal tile, marking the move as SUCCESS (G).', 'max_score': 0.5}, {'id': '01-05_03:04:39.604053_3-5|5-5_2-2-1-1-1-2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 1], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 4], 'tile_type': 'H'}, 'voyager_summary': 'Starting at position 0 on a Frozen tile, the action Down (1) led to the same position on a Hole, resulting in a FAIL.', 'max_score': 0.0}, {'id': '01-05_03:05:10.152229_3-5|5-5_2-2-1-1-1-2-2-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 0], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on a Frozen tile, took the action to move Left, remained at position 0 on a Frozen tile, resulting in a SAFE move.', 'max_score': 0.0}, {'id': '01-05_03:05:13.635164_3-5|5-5_2-2-1-1-1-2-2-0-2-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 0, 2, 0], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'voyager_summary': 'Starting at position 0 on tile F, the action Left (0) resulted in staying at position 0 on tile F, deemed SAFE (still on ice).', 'max_score': 0.0}]
+Action '0' is taken
+Step 12
+Current state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 5 experiences: [{'id': '01-05_03:03:56.311110_3-5|5-5_2-2-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, took action Right, moved to position 0 on tile F; SAFE (still on F).', 'max_score': 0.5}, {'id': '01-05_03:04:25.611866_3-5|5-5_2-2-1-1-1-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 1], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 3], 'tile_type': 'H'}, 'voyager_summary': 'The player moved from position 0 on a Frozen tile (F) to a Hole (H) by going Down (1), resulting in a FAIL outcome.', 'max_score': 0.0}, {'id': '01-05_03:05:07.883205_3-5|5-5_2-2-1-1-1-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, moved Right to position 0 and remained on tile F; the move was SAFE.', 'max_score': 0.5}, {'id': '01-05_03:05:11.923367_3-5|5-5_2-2-1-1-1-2-2-0-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 0, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'voyager_summary': 'Position 0, moved Right to position 0, landing on tile F; the move was SAFE (still on F).', 'max_score': 0.5}, {'id': '01-05_03:05:15.270187_3-5|5-5_2-2-1-1-1-2-2-0-2-0-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 0, 2, 0, 2], 'st': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'voyager_summary': 'The agent was at position 0 on tile F, moved Right (2) to position 0 on tile F, resulting in a SAFE move (still on ice).', 'max_score': 0.5}]
+Action '2' is taken
+Step 13
+Current state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+Action status: [0, 1, 2, 3]
+Retrieved 5 experiences: [{'id': '01-05_03:03:58.027542_3-5|5-5_2-2-1-1-1-2-2-2', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 2], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 2, 'st1': {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}, 'voyager_summary': 'Starting at position 0 on a Frozen tile, the action taken was Right (2), resulting in moving to position 0 on the Goal tile, marking the move as SUCCESS (G).', 'max_score': 0.5}, {'id': '01-05_03:04:39.604053_3-5|5-5_2-2-1-1-1-2-2-1', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 1], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 1, 'st1': {'cur_pos': [4, 4], 'tile_type': 'H'}, 'voyager_summary': 'Starting at position 0 on a Frozen tile, the action Down (1) led to the same position on a Hole, resulting in a FAIL.', 'max_score': 0.0}, {'id': '01-05_03:05:10.152229_3-5|5-5_2-2-1-1-1-2-2-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 0], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'voyager_summary': 'The player started at position 0 on a Frozen tile, took the action to move Left, remained at position 0 on a Frozen tile, resulting in a SAFE move.', 'max_score': 0.0}, {'id': '01-05_03:05:13.635164_3-5|5-5_2-2-1-1-1-2-2-0-2-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 0, 2, 0], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'voyager_summary': 'Starting at position 0 on tile F, the action Left (0) resulted in staying at position 0 on tile F, deemed SAFE (still on ice).', 'max_score': 0.0}, {'id': '01-05_03:05:17.275446_3-5|5-5_2-2-1-1-1-2-2-0-2-0-2-0', 'reproduce_method': 'action_path', 'action_path': [2, 2, 1, 1, 1, 2, 2, 0, 2, 0, 2, 0], 'st': {'cur_pos': [3, 4], 'tile_type': 'F'}, 'action': 0, 'st1': {'cur_pos': [3, 3], 'tile_type': 'F'}, 'voyager_summary': 'Position 0 with Tile F, took action Left resulting in Position 0 with Tile F; Outcome is SAFE.', 'max_score': 0.0}]
+Action '2' is taken
+Step 14
+Current state: {'cur_pos': [3, 5], 'tile_type': 'G', 'score': 0.5}
+Action status: [0, 1, 2, 3]
+Insturction: Destinations: [(3, 5), (5, 5)]; Map: [['S', 'F', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G'], ['H', 'H', 'F', 'H', 'H', 'H'], ['H', 'H', 'F', 'F', 'F', 'G']]
+Step count: 14
+Final score: 0.5
+Action path: [2, 2, 1, 1, 1, 2, 2, 0, 2, 0, 2, 0, 2, 2]
+End exploring at 2026-01-05_03:05:21

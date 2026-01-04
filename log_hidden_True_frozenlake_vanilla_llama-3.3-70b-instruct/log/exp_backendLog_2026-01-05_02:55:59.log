@@ -1,0 +1,1492 @@
+########################################################
+Start loading ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json the store at 2026-01-05_02:55:59
+Store not exists, creating a new one at ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, at 2026-01-05_02:55:59
+########################################################
+Start loading ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json the store at 2026-01-05_02:55:59
+Store not exists, creating a new one at ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, at 2026-01-05_02:55:59
+Store validation passed: No overlap between exp_store (0 items) and depreiciate_exp_store (0 items)
+Using algorithm: sameSt_bfs_maxScore
+########################################################
+Start loading ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json the store at 2026-01-05_02:55:59
+Successfully loaded the store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 0, at 2026-01-05_02:55:59
+########################################################
+Start loading ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json the store at 2026-01-05_02:55:59
+Successfully loaded the store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:55:59
+Store validation passed: No overlap between exp_store (0 items) and depreiciate_exp_store (0 items)
+Using algorithm: sameSt_bfs_maxScore
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 1, at 2026-01-05_02:56:01
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:56:01
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 2, at 2026-01-05_02:56:02
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:56:02
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (3 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 3, at 2026-01-05_02:56:02
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:56:02
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:01.532271_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:01.532271_3-5|5-5_2', 0.0)]
+Store validation passed: No overlap between exp_store (4 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 4, at 2026-01-05_02:56:03
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:56:03
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.0)]
+Store validation passed: No overlap between exp_store (5 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 5, at 2026-01-05_02:56:03
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:56:03
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0)]
+Store validation passed: No overlap between exp_store (6 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 6, at 2026-01-05_02:56:04
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:56:04
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 7, at 2026-01-05_02:56:04
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:56:04
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 2
+[DEPRECIATE] Experience 01-05_02:56:01.532271_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (6 items) and depreiciate_exp_store (1 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 6, at 2026-01-05_02:56:04
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 1, at 2026-01-05_02:56:04
+[DEPRECIATE] Experience 01-05_02:56:03.806255_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (5 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 5, at 2026-01-05_02:56:04
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_02:56:04
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.0)]
+Store validation passed: No overlap between exp_store (6 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 6, at 2026-01-05_02:56:05
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_02:56:05
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.0)]
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 7, at 2026-01-05_02:56:05
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_02:56:05
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:04.265313_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:04.265313_3-5|5-5_2-2-1', 0.0)]
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 8, at 2026-01-05_02:56:06
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_02:56:06
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 9, at 2026-01-05_02:56:06
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_02:56:06
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_02:56:06
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_02:56:06
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 3
+[DEPRECIATE] Experience 01-05_02:56:05.833144_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (3 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 9, at 2026-01-05_02:56:07
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 3, at 2026-01-05_02:56:07
+[DEPRECIATE] Experience 01-05_02:56:05.419851_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (4 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 8, at 2026-01-05_02:56:07
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 4, at 2026-01-05_02:56:07
+[DEPRECIATE] Experience 01-05_02:56:04.265313_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 7, at 2026-01-05_02:56:07
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_02:56:07
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.0)]
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 8, at 2026-01-05_02:56:07
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_02:56:07
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.0)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 9, at 2026-01-05_02:56:07
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_02:56:07
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:06.193758_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:06.193758_3-5|5-5_2-2-1', 0.0)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 10, at 2026-01-05_02:56:08
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_02:56:08
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:06.511797_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:06.511797_3-5|5-5_2-2-1-1', 0.0)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:08
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_02:56:08
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:08
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_02:56:08
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:09
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_02:56:09
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:09
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_02:56:09
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_02:56:10
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 4
+[DEPRECIATE] Experience 01-05_02:56:07.711319_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (6 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 6, at 2026-01-05_02:56:10
+[DEPRECIATE] Experience 01-05_02:56:07.374753_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (7 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 7, at 2026-01-05_02:56:10
+[DEPRECIATE] Experience 01-05_02:56:08.059533_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (8 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 8, at 2026-01-05_02:56:10
+[DEPRECIATE] Experience 01-05_02:56:06.511797_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_02:56:10
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_02:56:10
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:11
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_02:56:11
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:06.193758_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:06.193758_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:11
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_02:56:11
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:08.574748_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:08.574748_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:11
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_02:56:11
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:08.986960_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:08.986960_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:12
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_02:56:12
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:09.402761_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:09.402761_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:12
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_02:56:12
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:09.796856_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:09.796856_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:13
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_02:56:13
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:56:13
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_02:56:13
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:56:11.050931_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (10 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:13
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 10, at 2026-01-05_02:56:13
+[DEPRECIATE] Experience 01-05_02:56:10.607150_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (11 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:13
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 11, at 2026-01-05_02:56:13
+[DEPRECIATE] Experience 01-05_02:56:11.423162_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (12 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:13
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 12, at 2026-01-05_02:56:13
+[DEPRECIATE] Experience 01-05_02:56:11.841086_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (13 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:13
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 13, at 2026-01-05_02:56:13
+[DEPRECIATE] Experience 01-05_02:56:12.282000_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (14 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:13
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 14, at 2026-01-05_02:56:13
+[DEPRECIATE] Experience 01-05_02:56:12.719790_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:13
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_02:56:13
+[DEPRECIATE] Experience 01-05_02:56:13.147570_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (16 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:13
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 16, at 2026-01-05_02:56:13
+[DEPRECIATE] Experience 01-05_02:56:13.677217_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:13
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_02:56:13
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:14
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_02:56:14
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:14
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_02:56:14
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:06.193758_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:06.193758_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:14
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_02:56:14
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:08.574748_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:08.574748_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:15
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_02:56:15
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:08.986960_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:08.986960_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:15
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_02:56:15
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:09.402761_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:09.402761_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:16
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_02:56:16
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:09.796856_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:09.796856_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:16
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_02:56:16
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:56:17
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_02:56:17
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:56:14.462111_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (18 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:17
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 18, at 2026-01-05_02:56:17
+[DEPRECIATE] Experience 01-05_02:56:14.103823_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (19 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:17
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 19, at 2026-01-05_02:56:17
+[DEPRECIATE] Experience 01-05_02:56:14.874608_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (20 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:17
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 20, at 2026-01-05_02:56:17
+[DEPRECIATE] Experience 01-05_02:56:15.303349_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:17
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_02:56:17
+[DEPRECIATE] Experience 01-05_02:56:15.875999_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:17
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_02:56:17
+[DEPRECIATE] Experience 01-05_02:56:16.315537_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (23 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:17
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 23, at 2026-01-05_02:56:17
+[DEPRECIATE] Experience 01-05_02:56:09.796856_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (24 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:17
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 24, at 2026-01-05_02:56:17
+[DEPRECIATE] Experience 01-05_02:56:17.148274_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (25 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:17
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 25, at 2026-01-05_02:56:17
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (25 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:17
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 25, at 2026-01-05_02:56:17
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (25 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:17
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 25, at 2026-01-05_02:56:17
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:06.193758_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:06.193758_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (25 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:18
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 25, at 2026-01-05_02:56:18
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:08.574748_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:08.574748_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (25 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:18
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 25, at 2026-01-05_02:56:18
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:08.986960_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:08.986960_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (25 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:19
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 25, at 2026-01-05_02:56:19
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:09.402761_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:09.402761_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (25 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:19
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 25, at 2026-01-05_02:56:19
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (25 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:20
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 25, at 2026-01-05_02:56:20
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (25 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:56:20
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 25, at 2026-01-05_02:56:20
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:56:17.944972_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (26 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:20
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 26, at 2026-01-05_02:56:20
+[DEPRECIATE] Experience 01-05_02:56:17.606124_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:20
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_02:56:20
+[DEPRECIATE] Experience 01-05_02:56:18.412787_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (28 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:20
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 28, at 2026-01-05_02:56:20
+[DEPRECIATE] Experience 01-05_02:56:18.973976_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (29 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:20
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 29, at 2026-01-05_02:56:20
+[DEPRECIATE] Experience 01-05_02:56:19.397513_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (30 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:20
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 30, at 2026-01-05_02:56:20
+[DEPRECIATE] Experience 01-05_02:56:09.402761_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (31 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:20
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 31, at 2026-01-05_02:56:20
+[DEPRECIATE] Experience 01-05_02:56:20.565484_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (32 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:20
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 32, at 2026-01-05_02:56:20
+[DEPRECIATE] Experience 01-05_02:56:20.205909_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:20
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_02:56:20
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:21
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_02:56:21
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:21
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_02:56:21
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:06.193758_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:06.193758_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:21
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_02:56:21
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:08.574748_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:08.574748_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:22
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_02:56:22
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:08.986960_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:08.986960_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:22
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_02:56:22
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:19.799971_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:19.799971_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:23
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_02:56:23
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:23
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_02:56:23
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:56:24
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_02:56:24
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:56:21.485569_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (34 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:24
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 34, at 2026-01-05_02:56:24
+[DEPRECIATE] Experience 01-05_02:56:21.014546_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (35 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:24
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 35, at 2026-01-05_02:56:24
+[DEPRECIATE] Experience 01-05_02:56:21.932736_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (36 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:24
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 36, at 2026-01-05_02:56:24
+[DEPRECIATE] Experience 01-05_02:56:22.437177_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (37 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:24
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 37, at 2026-01-05_02:56:24
+[DEPRECIATE] Experience 01-05_02:56:08.986960_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (38 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:24
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 38, at 2026-01-05_02:56:24
+[DEPRECIATE] Experience 01-05_02:56:24.410224_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:24
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_02:56:24
+[DEPRECIATE] Experience 01-05_02:56:23.804614_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (40 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:24
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 40, at 2026-01-05_02:56:24
+[DEPRECIATE] Experience 01-05_02:56:19.799971_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (41 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:24
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 41, at 2026-01-05_02:56:24
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (41 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:24
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 41, at 2026-01-05_02:56:24
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (41 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:25
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 41, at 2026-01-05_02:56:25
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:06.193758_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:06.193758_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (41 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:25
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 41, at 2026-01-05_02:56:25
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:08.574748_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:08.574748_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (41 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:26
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 41, at 2026-01-05_02:56:26
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:22.869032_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:22.869032_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (41 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:26
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 41, at 2026-01-05_02:56:26
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:23.465626_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:23.465626_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (41 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:27
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 41, at 2026-01-05_02:56:27
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (41 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:27
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 41, at 2026-01-05_02:56:27
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (41 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:56:27
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 41, at 2026-01-05_02:56:27
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:56:25.261125_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (42 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:27
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 42, at 2026-01-05_02:56:27
+[DEPRECIATE] Experience 01-05_02:56:24.823070_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (43 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:27
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 43, at 2026-01-05_02:56:27
+[DEPRECIATE] Experience 01-05_02:56:06.193758_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (44 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:27
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 44, at 2026-01-05_02:56:27
+[DEPRECIATE] Experience 01-05_02:56:26.065041_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:27
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_02:56:27
+[DEPRECIATE] Experience 01-05_02:56:27.853541_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (46 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:27
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 46, at 2026-01-05_02:56:27
+[DEPRECIATE] Experience 01-05_02:56:27.394317_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (47 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:27
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 47, at 2026-01-05_02:56:27
+[DEPRECIATE] Experience 01-05_02:56:26.538715_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (48 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:27
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 48, at 2026-01-05_02:56:27
+[DEPRECIATE] Experience 01-05_02:56:27.012307_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (49 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:27
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 49, at 2026-01-05_02:56:27
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (49 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:28
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 49, at 2026-01-05_02:56:28
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (49 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:28
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 49, at 2026-01-05_02:56:28
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:25.649656_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:25.649656_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (49 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:29
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 49, at 2026-01-05_02:56:29
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:08.574748_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:08.574748_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (49 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:29
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 49, at 2026-01-05_02:56:29
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:22.869032_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:22.869032_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (49 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:30
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 49, at 2026-01-05_02:56:30
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:23.465626_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:23.465626_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (49 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:30
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 49, at 2026-01-05_02:56:30
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (49 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:30
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 49, at 2026-01-05_02:56:30
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (49 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:56:31
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 49, at 2026-01-05_02:56:31
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:56:28.773310_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (50 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:31
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 50, at 2026-01-05_02:56:31
+[DEPRECIATE] Experience 01-05_02:56:28.353159_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:31
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_02:56:31
+[DEPRECIATE] Experience 01-05_02:56:29.627123_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:31
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_02:56:31
+[DEPRECIATE] Experience 01-05_02:56:31.273375_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (53 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:31
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 53, at 2026-01-05_02:56:31
+[DEPRECIATE] Experience 01-05_02:56:30.816309_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (54 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:31
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 54, at 2026-01-05_02:56:31
+[DEPRECIATE] Experience 01-05_02:56:30.001933_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (55 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:31
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 55, at 2026-01-05_02:56:31
+[DEPRECIATE] Experience 01-05_02:56:30.459414_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (56 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:31
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 56, at 2026-01-05_02:56:31
+[DEPRECIATE] Experience 01-05_02:56:29.205949_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:31
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_02:56:31
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:31
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_02:56:31
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:32
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_02:56:32
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:25.649656_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:25.649656_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:32
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_02:56:32
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:08.574748_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:08.574748_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:33
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_02:56:33
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:22.869032_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:22.869032_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:33
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_02:56:33
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:23.465626_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:23.465626_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:34
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_02:56:34
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:34
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_02:56:34
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:56:34
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_02:56:34
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:56:32.102286_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (58 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:34
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 58, at 2026-01-05_02:56:34
+[DEPRECIATE] Experience 01-05_02:56:31.765620_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (59 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:34
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 59, at 2026-01-05_02:56:35
+[DEPRECIATE] Experience 01-05_02:56:33.393260_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (60 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:35
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 60, at 2026-01-05_02:56:35
+[DEPRECIATE] Experience 01-05_02:56:34.978578_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (61 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:35
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 61, at 2026-01-05_02:56:35
+[DEPRECIATE] Experience 01-05_02:56:34.648317_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (62 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:35
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 62, at 2026-01-05_02:56:35
+[DEPRECIATE] Experience 01-05_02:56:22.869032_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:35
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_02:56:35
+[DEPRECIATE] Experience 01-05_02:56:34.234005_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (64 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:35
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 64, at 2026-01-05_02:56:35
+[DEPRECIATE] Experience 01-05_02:56:32.930988_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (65 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:35
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 65, at 2026-01-05_02:56:35
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (65 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:35
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 65, at 2026-01-05_02:56:35
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (65 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:35
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 65, at 2026-01-05_02:56:35
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:25.649656_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:25.649656_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (65 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:36
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 65, at 2026-01-05_02:56:36
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:08.574748_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:08.574748_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (65 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:36
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 65, at 2026-01-05_02:56:36
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:33.806213_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:33.806213_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (65 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:36
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 65, at 2026-01-05_02:56:36
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:23.465626_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:23.465626_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (65 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:37
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 65, at 2026-01-05_02:56:37
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (65 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:37
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 65, at 2026-01-05_02:56:37
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (65 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:56:38
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 65, at 2026-01-05_02:56:38
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:56:35.688783_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (66 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:38
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 66, at 2026-01-05_02:56:38
+[DEPRECIATE] Experience 01-05_02:56:35.364569_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (67 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:38
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 67, at 2026-01-05_02:56:38
+[DEPRECIATE] Experience 01-05_02:56:36.496870_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (68 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:38
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 68, at 2026-01-05_02:56:38
+[DEPRECIATE] Experience 01-05_02:56:38.048338_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:38
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_02:56:38
+[DEPRECIATE] Experience 01-05_02:56:37.686586_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (70 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:38
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 70, at 2026-01-05_02:56:38
+[DEPRECIATE] Experience 01-05_02:56:37.248634_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (71 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:38
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 71, at 2026-01-05_02:56:38
+[DEPRECIATE] Experience 01-05_02:56:36.098469_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (72 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:38
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 72, at 2026-01-05_02:56:38
+[DEPRECIATE] Experience 01-05_02:56:33.806213_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (73 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:38
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 73, at 2026-01-05_02:56:38
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (73 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:38
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 73, at 2026-01-05_02:56:38
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (73 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:38
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 73, at 2026-01-05_02:56:38
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:25.649656_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:25.649656_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (73 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:39
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 73, at 2026-01-05_02:56:39
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:08.574748_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:08.574748_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (73 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:39
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 73, at 2026-01-05_02:56:39
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:36.823592_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:36.823592_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (73 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:40
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 73, at 2026-01-05_02:56:40
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:23.465626_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:23.465626_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (73 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:40
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 73, at 2026-01-05_02:56:40
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (73 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:40
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 73, at 2026-01-05_02:56:40
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (73 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:56:41
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 73, at 2026-01-05_02:56:41
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:56:38.748448_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (74 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:41
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 74, at 2026-01-05_02:56:41
+[DEPRECIATE] Experience 01-05_02:56:38.423640_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:41
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_02:56:41
+[DEPRECIATE] Experience 01-05_02:56:08.574748_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (76 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:41
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 76, at 2026-01-05_02:56:41
+[DEPRECIATE] Experience 01-05_02:56:41.335915_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (77 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:41
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 77, at 2026-01-05_02:56:41
+[DEPRECIATE] Experience 01-05_02:56:40.912152_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (78 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:41
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 78, at 2026-01-05_02:56:41
+[DEPRECIATE] Experience 01-05_02:56:40.455901_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (79 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:41
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 79, at 2026-01-05_02:56:41
+[DEPRECIATE] Experience 01-05_02:56:39.162566_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (80 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:41
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 80, at 2026-01-05_02:56:41
+[DEPRECIATE] Experience 01-05_02:56:36.823592_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:41
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_02:56:41
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:41
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_02:56:41
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:42
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_02:56:42
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:25.649656_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:25.649656_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:42
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_02:56:42
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:39.556163_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:39.556163_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:43
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_02:56:43
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:40.050242_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:40.050242_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:43
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_02:56:43
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:23.465626_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:23.465626_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:44
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_02:56:44
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:44
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_02:56:44
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:56:45
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_02:56:45
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:56:42.126361_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (82 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:45
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 82, at 2026-01-05_02:56:45
+[DEPRECIATE] Experience 01-05_02:56:41.726789_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (83 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:45
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 83, at 2026-01-05_02:56:45
+[DEPRECIATE] Experience 01-05_02:56:45.044378_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (84 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:45
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 84, at 2026-01-05_02:56:45
+[DEPRECIATE] Experience 01-05_02:56:44.606390_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (85 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:45
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 85, at 2026-01-05_02:56:45
+[DEPRECIATE] Experience 01-05_02:56:23.465626_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (86 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:45
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 86, at 2026-01-05_02:56:45
+[DEPRECIATE] Experience 01-05_02:56:42.668147_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:45
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_02:56:45
+[DEPRECIATE] Experience 01-05_02:56:39.556163_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (88 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:45
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 88, at 2026-01-05_02:56:45
+[DEPRECIATE] Experience 01-05_02:56:43.790934_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (89 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:45
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 89, at 2026-01-05_02:56:45
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (89 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:45
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 89, at 2026-01-05_02:56:45
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (89 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:45
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 89, at 2026-01-05_02:56:45
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:25.649656_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:25.649656_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (89 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:46
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 89, at 2026-01-05_02:56:46
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:43.307486_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:43.307486_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (89 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:46
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 89, at 2026-01-05_02:56:46
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:40.050242_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:40.050242_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (89 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:47
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 89, at 2026-01-05_02:56:47
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:44.154325_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:44.154325_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (89 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:47
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 89, at 2026-01-05_02:56:47
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (89 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:48
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 89, at 2026-01-05_02:56:48
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (89 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:56:49
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 89, at 2026-01-05_02:56:49
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:56:45.928478_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (90 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:49
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 90, at 2026-01-05_02:56:49
+[DEPRECIATE] Experience 01-05_02:56:45.511381_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (91 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:49
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 91, at 2026-01-05_02:56:49
+[DEPRECIATE] Experience 01-05_02:56:49.524574_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (92 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:49
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 92, at 2026-01-05_02:56:49
+[DEPRECIATE] Experience 01-05_02:56:48.448075_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:49
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_02:56:49
+[DEPRECIATE] Experience 01-05_02:56:46.451827_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (94 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:49
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 94, at 2026-01-05_02:56:49
+[DEPRECIATE] Experience 01-05_02:56:40.050242_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (95 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:49
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 95, at 2026-01-05_02:56:49
+[DEPRECIATE] Experience 01-05_02:56:46.790744_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (96 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:49
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 96, at 2026-01-05_02:56:49
+[DEPRECIATE] Experience 01-05_02:56:47.901753_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (97 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:49
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 97, at 2026-01-05_02:56:49
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (97 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:50
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 97, at 2026-01-05_02:56:50
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (97 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:52
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 97, at 2026-01-05_02:56:52
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:25.649656_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:25.649656_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (97 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:53
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 97, at 2026-01-05_02:56:53
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:43.307486_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:43.307486_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (97 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:53
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 97, at 2026-01-05_02:56:53
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:47.219128_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:47.219128_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (97 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:54
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 97, at 2026-01-05_02:56:54
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:44.154325_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:44.154325_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (97 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:55
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 97, at 2026-01-05_02:56:55
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (97 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:55
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 97, at 2026-01-05_02:56:55
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (97 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:56:56
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 97, at 2026-01-05_02:56:56
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:56:52.786743_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (98 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:56
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 98, at 2026-01-05_02:56:56
+[DEPRECIATE] Experience 01-05_02:56:50.026470_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (99 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:56
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 99, at 2026-01-05_02:56:56
+[DEPRECIATE] Experience 01-05_02:56:56.311601_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (100 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:56
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 100, at 2026-01-05_02:56:56
+[DEPRECIATE] Experience 01-05_02:56:55.746638_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (101 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:56
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 101, at 2026-01-05_02:56:56
+[DEPRECIATE] Experience 01-05_02:56:53.201012_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (102 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:56
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 102, at 2026-01-05_02:56:56
+[DEPRECIATE] Experience 01-05_02:56:53.632479_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (103 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:56
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 103, at 2026-01-05_02:56:56
+[DEPRECIATE] Experience 01-05_02:56:55.367189_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (104 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:56
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 104, at 2026-01-05_02:56:56
+[DEPRECIATE] Experience 01-05_02:56:54.958559_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (105 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:56
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 105, at 2026-01-05_02:56:56
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (105 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:56
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 105, at 2026-01-05_02:56:56
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (105 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:57
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 105, at 2026-01-05_02:56:57
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:25.649656_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:25.649656_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (105 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:57
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 105, at 2026-01-05_02:56:57
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:43.307486_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:43.307486_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (105 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:57
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 105, at 2026-01-05_02:56:57
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:47.219128_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:47.219128_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (105 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:58
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 105, at 2026-01-05_02:56:58
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:44.154325_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:44.154325_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (105 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:59
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 105, at 2026-01-05_02:56:59
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (105 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:59
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 105, at 2026-01-05_02:56:59
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (105 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:56:59
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 105, at 2026-01-05_02:56:59
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:56:57.142110_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (106 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:56:59
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 106, at 2026-01-05_02:56:59
+[DEPRECIATE] Experience 01-05_02:56:56.709660_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (107 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:56:59
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 107, at 2026-01-05_02:56:59
+[DEPRECIATE] Experience 01-05_02:56:59.915954_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (108 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:56:59
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 108, at 2026-01-05_02:56:59
+[DEPRECIATE] Experience 01-05_02:56:59.432452_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (109 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:56:59
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 109, at 2026-01-05_02:56:59
+[DEPRECIATE] Experience 01-05_02:56:57.545298_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (110 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:56:59
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 110, at 2026-01-05_02:56:59
+[DEPRECIATE] Experience 01-05_02:56:57.979858_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (111 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:56:59
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 111, at 2026-01-05_02:56:59
+[DEPRECIATE] Experience 01-05_02:56:59.023036_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (112 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:56:59
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 112, at 2026-01-05_02:56:59
+[DEPRECIATE] Experience 01-05_02:56:58.539135_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (113 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:56:59
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 113, at 2026-01-05_02:56:59
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (113 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:57:00
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 113, at 2026-01-05_02:57:00
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (113 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:57:00
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 113, at 2026-01-05_02:57:00
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:25.649656_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:25.649656_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (113 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:57:01
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 113, at 2026-01-05_02:57:01
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:43.307486_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:43.307486_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (113 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:57:01
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 113, at 2026-01-05_02:57:01
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:56:47.219128_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:56:47.219128_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (113 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:57:02
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 113, at 2026-01-05_02:57:02
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:44.154325_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:44.154325_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (113 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:57:02
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 113, at 2026-01-05_02:57:02
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (113 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:57:02
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 113, at 2026-01-05_02:57:02
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (113 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:57:03
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 113, at 2026-01-05_02:57:03
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:57:00.776257_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (114 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:57:03
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 114, at 2026-01-05_02:57:03
+[DEPRECIATE] Experience 01-05_02:57:00.307706_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (115 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:57:03
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 115, at 2026-01-05_02:57:03
+[DEPRECIATE] Experience 01-05_02:57:03.197073_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (116 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:57:03
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 116, at 2026-01-05_02:57:03
+[DEPRECIATE] Experience 01-05_02:57:02.785563_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (117 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:57:03
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 117, at 2026-01-05_02:57:03
+[DEPRECIATE] Experience 01-05_02:57:01.174461_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (118 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:57:03
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 118, at 2026-01-05_02:57:03
+[DEPRECIATE] Experience 01-05_02:57:01.701121_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (119 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:57:03
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 119, at 2026-01-05_02:57:03
+[DEPRECIATE] Experience 01-05_02:57:02.380016_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (120 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:57:03
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 120, at 2026-01-05_02:57:03
+[DEPRECIATE] Experience 01-05_02:56:47.219128_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (121 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:57:03
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 121, at 2026-01-05_02:57:03
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (121 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:57:03
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 121, at 2026-01-05_02:57:03
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (121 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:57:04
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 121, at 2026-01-05_02:57:04
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:25.649656_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:25.649656_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (121 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:57:04
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 121, at 2026-01-05_02:57:04
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:43.307486_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:43.307486_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (121 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:57:04
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 121, at 2026-01-05_02:57:04
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:57:02.041256_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:57:02.041256_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (121 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:57:05
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 121, at 2026-01-05_02:57:05
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:44.154325_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:44.154325_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (121 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:57:05
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 121, at 2026-01-05_02:57:05
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (121 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:57:06
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 121, at 2026-01-05_02:57:06
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (121 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:57:06
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 121, at 2026-01-05_02:57:06
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:57:04.061040_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (122 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:57:06
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 122, at 2026-01-05_02:57:06
+[DEPRECIATE] Experience 01-05_02:57:03.730910_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (123 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:57:06
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 123, at 2026-01-05_02:57:06
+[DEPRECIATE] Experience 01-05_02:57:06.942271_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (124 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:57:06
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 124, at 2026-01-05_02:57:06
+[DEPRECIATE] Experience 01-05_02:57:06.427199_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (125 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:57:06
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 125, at 2026-01-05_02:57:06
+[DEPRECIATE] Experience 01-05_02:57:04.579294_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (126 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:57:06
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 126, at 2026-01-05_02:57:07
+[DEPRECIATE] Experience 01-05_02:57:04.946456_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (127 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:57:07
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 127, at 2026-01-05_02:57:07
+[DEPRECIATE] Experience 01-05_02:57:05.799672_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (128 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:57:07
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 128, at 2026-01-05_02:57:07
+[DEPRECIATE] Experience 01-05_02:57:05.327453_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (129 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:57:07
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 129, at 2026-01-05_02:57:07
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:03.338204_3-5|5-5_2']
+[BFS] Max scores: [('01-05_02:56:03.338204_3-5|5-5_2', 0.5)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (129 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:57:07
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 129, at 2026-01-05_02:57:07
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:02.563612_3-5|5-5_2-2']
+[BFS] Max scores: [('01-05_02:56:02.563612_3-5|5-5_2-2', 0.5)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (129 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:57:07
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 129, at 2026-01-05_02:57:07
+[BFS] Retrieving experience for state: {'cur_pos': [0, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:02.917857_3-5|5-5_2-2-2', '01-05_02:56:25.649656_3-5|5-5_2-2-1']
+[BFS] Max scores: [('01-05_02:56:02.917857_3-5|5-5_2-2-2', 0.0), ('01-05_02:56:25.649656_3-5|5-5_2-2-1', 0.5)]
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (129 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:57:08
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 129, at 2026-01-05_02:57:08
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:04.916512_3-5|5-5_2-2-1-2', '01-05_02:56:43.307486_3-5|5-5_2-2-1-1']
+[BFS] Max scores: [('01-05_02:56:04.916512_3-5|5-5_2-2-1-2', 0.0), ('01-05_02:56:43.307486_3-5|5-5_2-2-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (129 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:57:08
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 129, at 2026-01-05_02:57:08
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', '01-05_02:57:02.041256_3-5|5-5_2-2-1-1-1']
+[BFS] Max scores: [('01-05_02:56:06.994801_3-5|5-5_2-2-1-1-2', 0.0), ('01-05_02:57:02.041256_3-5|5-5_2-2-1-1-1', 0.5)]
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (129 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:57:09
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 129, at 2026-01-05_02:57:09
+[BFS] Retrieving experience for state: {'cur_pos': [3, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:44.154325_3-5|5-5_2-2-1-1-1-2']
+[BFS] Max scores: [('01-05_02:56:44.154325_3-5|5-5_2-2-1-1-1-2', 0.5)]
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (129 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:57:09
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 129, at 2026-01-05_02:57:09
+[BFS] Retrieving experience for state: {'cur_pos': [3, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2']
+[BFS] Max scores: [('01-05_02:56:16.725170_3-5|5-5_2-2-1-1-1-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (129 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:57:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 129, at 2026-01-05_02:57:10
+[BFS] Retrieving experience for state: {'cur_pos': [3, 4], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2']
+[BFS] Max scores: [('01-05_02:56:10.174818_3-5|5-5_2-2-1-1-1-2-2-2', 0.5)]
+Store validation passed: No overlap between exp_store (19 items) and depreiciate_exp_store (129 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 19, at 2026-01-05_02:57:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 129, at 2026-01-05_02:57:10
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 8
+[DEPRECIATE] Experience 01-05_02:57:07.841704_3-5|5-5_2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (18 items) and depreiciate_exp_store (130 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 18, at 2026-01-05_02:57:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 130, at 2026-01-05_02:57:10
+[DEPRECIATE] Experience 01-05_02:57:07.427065_3-5|5-5_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (17 items) and depreiciate_exp_store (131 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 17, at 2026-01-05_02:57:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 131, at 2026-01-05_02:57:10
+[DEPRECIATE] Experience 01-05_02:57:10.420108_3-5|5-5_2-2-1-1-1-2-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (16 items) and depreiciate_exp_store (132 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 16, at 2026-01-05_02:57:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 132, at 2026-01-05_02:57:10
+[DEPRECIATE] Experience 01-05_02:57:10.062335_3-5|5-5_2-2-1-1-1-2-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (133 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 15, at 2026-01-05_02:57:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 133, at 2026-01-05_02:57:10
+[DEPRECIATE] Experience 01-05_02:57:08.202094_3-5|5-5_2-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (134 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 14, at 2026-01-05_02:57:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 134, at 2026-01-05_02:57:10
+[DEPRECIATE] Experience 01-05_02:57:08.718420_3-5|5-5_2-2-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (135 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 13, at 2026-01-05_02:57:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 135, at 2026-01-05_02:57:10
+[DEPRECIATE] Experience 01-05_02:57:09.582974_3-5|5-5_2-2-1-1-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (136 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 12, at 2026-01-05_02:57:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 136, at 2026-01-05_02:57:10
+[DEPRECIATE] Experience 01-05_02:57:09.149533_3-5|5-5_2-2-1-1-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (137 items)
+Save store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/exp_store.json, size: 11, at 2026-01-05_02:57:10
+Save depreiciate store, path: ./log_hidden_True_frozenlake_vanilla_llama-3.3-70b-instruct/storage/depreiciate_exp_store.json, size: 137, at 2026-01-05_02:57:10

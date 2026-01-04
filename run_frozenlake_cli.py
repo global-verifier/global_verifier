@@ -44,8 +44,8 @@ def build_argparser() -> argparse.ArgumentParser:
 
     # Optional QoL flags (defaults mirror `run_frozenLake.py`)
     p.add_argument("--max-steps", type=int, default=20)
-    p.add_argument("--threshold", type=float, default=0.25)
-    p.add_argument("--decay-rate", type=float, default=100.0)
+    p.add_argument("--threshold", type=float, default=0.3)
+    p.add_argument("--decay-rate", type=float, default=60.0)
     p.add_argument("--episodes-per-map", type=int, default=20)
     p.add_argument("--output-root", type=str, default=".")
     p.add_argument("--cuda-visible-devices", type=str, default=None)

@@ -231,9 +231,8 @@ Init new environment:
         if len(matches) == 0:
             raise ValueError(f"Could not extract valid action (0-3) from: {action}")
         elif len(matches) > 1:
-            raise ValueError(f"Multiple actions found ({matches}) in: {action}")
-        else:
-            return int(matches[0])
+            print(f"[PROBLEM] Multiple actions found ({matches}) in: {action}")
+        return int(matches[0])
 
     # get action prompt
     def get_action_prompt(self, retrieved_experiences=None):

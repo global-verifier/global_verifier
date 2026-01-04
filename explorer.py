@@ -2,7 +2,7 @@ import os
 
 from analyzer.explorer_run_analyzer import ExplorerRunAnalyzer
 from plugin_loader import load_explorer_model, load_adaptor, load_exp_backend
-from utils import log_flush, get_timestamp, is_success_trail, extract_exp_ids
+from utils import log_flush, get_timestamp, get_timestamp_ms, is_success_trail, extract_exp_ids
 from config import explorer_settings
 import time
 
@@ -173,6 +173,7 @@ class Explorer:
         self.used_exp_ids = set()
         self.in_process = False
         self.conflict_soultion = explorer_settings["conflict_soultion"]
+        self.alpha = explorer_settings["alpha"]
 
     def process_memory_env(self, memory_env: str):
         if memory_env not in ["vanilla", "generative", "memorybank", "voyager", "glove"]:
@@ -364,6 +365,81 @@ class Explorer:
             self.in_process = False
         log_flush(self.logIO, f"---------------- Finished Resolve Experience Conflict ----------------")
 
+    def _mdp_reproduce_st(self, action_path, st, exp_id):
+        """
+        Try to reproduce st via action_path.
+        Returns True if successful, False otherwise.
+        """
+        self.adaptor.initialize_env()
+        try:
+            for a in action_path:
+                self.adaptor.step(a)
+        except Exception as e:
+            log_flush(self.logIO, f"[MDP] Failed to reproduce st for {exp_id}: {e}")
+            return False
+        
+        if not self.adaptor.is_same_state(self.adaptor.get_state(), st):
+            log_flush(self.logIO, f"[MDP] State mismatch for {exp_id}, skipping")
+            return False
+        return True
+
+    def _mdp_collect_st1_distribution(self, action_path, action):
+        """
+        Run action alpha times to collect st1 distribution.
+        Returns dict: state_str -> (st1, count)
+        """
+        st1_counts = {}
+        for _ in range(self.alpha):
+            self.adaptor.initialize_env()
+            for a in action_path:
+                self.adaptor.step(a)
+            self.adaptor.step(action)
+            st1 = self.adaptor.get_state()
+            st1_key = self.adaptor.get_state_str(st1) if hasattr(self.adaptor, 'get_state_str') else str(st1)
+            if st1_key not in st1_counts:
+                st1_counts[st1_key] = (st1, 0)
+            st1_counts[st1_key] = (st1_counts[st1_key][0], st1_counts[st1_key][1] + 1)
+        return st1_counts
+
+    def _mdp_store_experiences_with_probability(self, st, action, action_path, exp_id, st1_counts):
+        """
+        Create and store experiences with probability for each unique st1.
+        """
+        full_action_path = action_path + [action]
+        for st1_key, (st1, count) in st1_counts.items():
+            probability = count / self.alpha
+            new_exp = {
+                "id": f"{get_timestamp_ms()}_{exp_id}_prob{probability:.2f}",
+                "reproduce_method": "action_path",
+                "action_path": full_action_path,
+                "st": st,
+                "action": action,
+                "st1": st1,
+                "probability": probability,
+            }
+            self.exp_backend.store_experience(new_exp)
+            log_flush(self.logIO, f"[MDP] Stored new exp with probability {probability:.2f}")
+
+    def resolve_all_exp_conflict_mdp(self):
+        """Resolve the conflict pairs using MDP distribution estimation."""
+        log_flush(self.logIO, f"---------------- Resolve Experience Conflict ----------------")
+        conflict_pair_ids = self._detect_experience_conflict()
+        conflict_exp_ids = self.exp_backend.get_all_expIds_from_conflict_st(conflict_pair_ids)
+        print(f"Conflict exp len: {len(conflict_exp_ids)}, ids: {conflict_exp_ids}")
+        log_flush(self.logIO, f"Conflict exp len: {len(conflict_exp_ids)}, ids: {conflict_exp_ids}")
+        to_get_distributions = self.exp_backend.get_unique_st_action_pairs(conflict_exp_ids)
+
+        for (st, action, exp_id, action_path) in to_get_distributions:
+            if not self._mdp_reproduce_st(action_path, st, exp_id):
+                continue
+            st1_counts = self._mdp_collect_st1_distribution(action_path, action)
+            self._mdp_store_experiences_with_probability(st, action, action_path, exp_id, st1_counts)
+        
+        # Deprecate all original conflict experiences
+        for exp_id in conflict_exp_ids:
+            self.exp_backend._deprecate_experience(exp_id)
+        log_flush(self.logIO, f"---------------- Finished Resolve Experience Conflict ----------------")
+
     def remove_redundant_experiences(self):
         """Remove redundant experiences."""
         log_flush(self.logIO, f"---------------- Remove Redundant Experiences ----------------")
@@ -390,6 +466,8 @@ class Explorer:
             self.resolve_all_experience_conflict()
         elif self.conflict_soultion == "st":
             self.resolve_all_exp_conflict_st()
+        elif self.conflict_soultion == "mdp":
+            self.resolve_all_exp_conflict_mdp()
         else:
             raise ValueError(f"Invalid conflict solution: {self.conflict_soultion}")
         log_flush(self.logIO, f"[AFTER] number of experiences: {len(self.exp_backend.exp_store)}")

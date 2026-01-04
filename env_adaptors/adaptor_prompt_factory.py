@@ -136,14 +136,18 @@ You have been at this state before. Here are {len(retrieved_experiences)} previo
             path_length = exp.get('path_length', None)
             summary = exp.get('voyager_summary')
             gen_score = exp.get('generative_score')
+            probability = exp.get('probability')
 
             user_prompt += f"""Experience {idx}:
   Action taken: {action}
   Result state: pos={st1.get('position', 0):.3f}, vel={st1.get('velocity', 0):.4f}
   Can reach goal: {reachable if reachable is not None else 'Unknown'}
   Steps to goal: {path_length if path_length is not None else 'Unknown'}
-
 """
+            if probability is not None:
+                user_prompt += f"""  Probability: {probability:.2f}
+"""
+            user_prompt += "\n"
             if summary:
                 user_prompt += f"""  Summary for this step is: {summary}
 """
@@ -225,9 +229,13 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
             max_score = exp.get('max_score', None)
             summary = exp.get('voyager_summary')
             gen_score = exp.get('generative_score')
+            probability = exp.get('probability')
             user_prompt += f"""Experience {idx}:
   Action taken: {action_taken}
   Result URL: {next_url}
+"""
+            if probability is not None:
+                user_prompt += f"""  Probability: {probability:.2f}
 """
             # 修改逻辑开始
             if max_score is None or max_score == 0:
@@ -404,6 +412,7 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
             summary = exp.get('voyager_summary')
             max_score = exp.get('max_score')
             gen_score = exp.get('generative_score')
+            probability = exp.get('probability')
 
             tile_warning = ""
             if next_tile == 'H':
@@ -419,6 +428,9 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
             user_prompt += f"""  Action taken: {action_taken}
   Result Position: {next_pos}
   Result Tile: {next_tile}{tile_warning}
+"""
+            if probability is not None:
+                user_prompt += f"""  Probability: {probability:.2f}
 """
             if max_score is not None and max_score > 0:
                 user_prompt += f"""  Max score achievable from this path: {max_score}

@@ -6,6 +6,7 @@ from utils import get_timestamp
 from .backend_config import base_backend_config
 from utils import log_flush
 from env_adaptors.base_env_adaptor import BaseEnvAdaptor
+from .backend_config import mdp_config
 
 class BaseExpBackend:
     def __init__(self, env_name: str, storage_path: str ="./storage/exp_store.json", depreiciate_exp_store_path: str ="./storage/depreiciate_exp_store.json", log_dir: str = None) -> None:
@@ -17,6 +18,8 @@ class BaseExpBackend:
         log_dir = log_dir or base_backend_config["log_dir"]
         os.makedirs(log_dir, exist_ok=True)
         self.logIO = open(f'{log_dir}/exp_backendLog_{get_timestamp()}.log', 'a')
+
+        self.theta = mdp_config["theta"]
         
         self.exp_store = self._load_store(self.storage_path)
         self.depreiciate_exp_store = self._load_store(self.depreiciate_exp_store_path)
@@ -199,6 +202,21 @@ class BaseExpBackend:
                 results.append(exp_id)
         return results
 
+    def retrieve_experience_theta(self, state, theta: float) -> list:
+        """
+        Retrieve experiences that start from the same state.
+        Filters out experiences with probability < theta.
+        """
+        results = []
+        for exp_id in self.exp_store.keys():
+            exp = self.exp_store[exp_id]
+            if BaseEnvAdaptor.two_states_equal(state, exp['st']):
+                # Skip if probability exists and is below theta
+                if 'probability' in exp and exp['probability'] < theta:
+                    continue
+                results.append(exp)
+        return results
+
     def get_conflict_states(self, conflict_pair_ids: list) -> list:
         """
         Get all unique st from the conflict pairs.
@@ -230,6 +248,26 @@ class BaseExpBackend:
             exp_ids = self.get_exp_ids_by_state(st)
             all_exp_ids.update(exp_ids)
         return list(all_exp_ids)
+
+    def get_unique_st_action_pairs(self, exp_ids: list) -> list:
+        """
+        Get all unique (st, action, exp_id, action_path) tuples. 
+        For duplicate (st, action), keeps the exp_id with shortest action_path.
+        """
+        # key: (state_str, action) -> (st, action, exp_id, action_path)
+        pair_map = {}
+        for exp_id in exp_ids:
+            exp = self.exp_store[exp_id]
+            st, action = exp['st'], exp['action']
+            action_path = exp['action_path']
+            assert action == action_path[-1]
+            action_path = action_path[:-1]
+            key = (BaseEnvAdaptor.get_state_str(st), action)
+            
+            if key not in pair_map or len(action_path) < len(pair_map[key][3]):
+                pair_map[key] = (st, action, exp_id, action_path)
+        
+        return list(pair_map.values())
 
     def _has_conflict(self, e1, e2) -> bool:
         return BaseEnvAdaptor.has_conflict(e1, e2)

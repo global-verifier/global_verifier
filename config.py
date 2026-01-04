@@ -46,6 +46,9 @@ api_model_name = {
     # deepseek
     "deepseek-chat": "deepseek-chat",
     "deepseek-r1": "deepseek-r1",  # ok, but slow
+    # qwen
+    "qwen3-235b-a22b": "qwen3-235b-a22b",
+    "qwen3-235b-a22b-instruct-2507": "qwen3-235b-a22b-instruct-2507",
     # claude models
     "claude-3-5-haiku-20241022": "claude-3-5-haiku-20241022",
     # "gpt-5-nano": "gpt-5-nano",  # no

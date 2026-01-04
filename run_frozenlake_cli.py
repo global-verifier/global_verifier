@@ -84,10 +84,10 @@ def main() -> int:
         "HHHG",
     ]
     map_2 = [
-        "SHHH",
-        "FFFF",
-        "HHHF",
-        "HHHG",
+        "SFFH",
+        "HHFH",
+        "HHFH",
+        "HHFG",
     ]
 
     maps_to_run = [map_0, map_1, map_2]

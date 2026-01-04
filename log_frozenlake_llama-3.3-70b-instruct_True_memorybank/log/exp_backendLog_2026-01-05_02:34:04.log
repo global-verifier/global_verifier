@@ -1,0 +1,1842 @@
+########################################################
+Start loading ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json the store at 2026-01-05_02:34:04
+Store not exists, creating a new one at ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, at 2026-01-05_02:34:04
+########################################################
+Start loading ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json the store at 2026-01-05_02:34:04
+Store not exists, creating a new one at ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, at 2026-01-05_02:34:04
+Store validation passed: No overlap between exp_store (0 items) and depreiciate_exp_store (0 items)
+Using algorithm: sameSt_bfs_maxScore
+[MemoryBank] Initialized with threshold=0.3, decay_rate=60.0, start_timestep=0
+########################################################
+Start loading ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json the store at 2026-01-05_02:34:04
+Successfully loaded the store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 0, at 2026-01-05_02:34:04
+########################################################
+Start loading ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json the store at 2026-01-05_02:34:04
+Successfully loaded the store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:34:04
+Store validation passed: No overlap between exp_store (0 items) and depreiciate_exp_store (0 items)
+Using algorithm: sameSt_bfs_maxScore
+[MemoryBank] Initialized with threshold=0.3, decay_rate=60.0, start_timestep=0
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 0
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+[MemoryBank] Retrieved 0/0 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:05.586529_3-3_1 at timestep 0
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 1, at 2026-01-05_02:34:05
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:34:05
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 1}
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 0
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 1
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:05.586529_3-3_1']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:06.023860_3-3_2 at timestep 1
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 2, at 2026-01-05_02:34:06
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:34:06
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 2}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 2
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+[MemoryBank] Retrieved 0/0 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:06.362343_3-3_2-1 at timestep 2
+Store validation passed: No overlap between exp_store (3 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 3, at 2026-01-05_02:34:06
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:34:06
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 3}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 3
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+[MemoryBank] Retrieved 0/0 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:06.825035_3-3_2-1-2 at timestep 3
+Store validation passed: No overlap between exp_store (4 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 4, at 2026-01-05_02:34:06
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:34:06
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 4}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 4
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+[MemoryBank] Retrieved 0/0 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:07.222573_3-3_2-1-2-1 at timestep 4
+Store validation passed: No overlap between exp_store (5 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 5, at 2026-01-05_02:34:07
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:34:07
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 5}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 5
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+[MemoryBank] Retrieved 0/0 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 at timestep 5
+Store validation passed: No overlap between exp_store (6 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 6, at 2026-01-05_02:34:09
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:34:09
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 6}
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 0
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 6
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:06.023860_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:06.023860_3-3_2', 0.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:10.074557_3-3_2 at timestep 6
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 7, at 2026-01-05_02:34:10
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:34:10
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 7}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 7
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.362343_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:06.362343_3-3_2-1', 0.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:10.432118_3-3_2-1 at timestep 7
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:10
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:34:10
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 8}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 8
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 0.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:10.841883_3-3_2-1-2 at timestep 8
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:10
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:34:10
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 9}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 9
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:07.222573_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:07.222573_3-3_2-1-2-1', 0.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:11.217038_3-3_2-1-2-1 at timestep 9
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:11
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:34:11
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 10}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 10
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:11.561302_3-3_2-1-2-1-2 at timestep 10
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:11
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:34:11
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 11}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 11
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+[MemoryBank] Retrieved 0/0 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:11.935812_3-3_2-1-2-1-2-1 at timestep 11
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:11
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_02:34:11
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 12}
+[MemoryBank] Updated exp 01-05_02:34:06.023860_3-3_2 timestep: 1 -> 12
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 5 -> 12
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 3 -> 12
+[MemoryBank] Updated exp 01-05_02:34:06.362343_3-3_2-1 timestep: 2 -> 12
+[MemoryBank] Updated exp 01-05_02:34:07.222573_3-3_2-1-2-1 timestep: 4 -> 12
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 0 -> 12
+[MemoryBank] finish_explore_trail: updated 6/6 experiences to timestep 12
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 4
+[DEPRECIATE] Experience 01-05_02:34:06.023860_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (1 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:11
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 1, at 2026-01-05_02:34:11
+[DEPRECIATE] Experience 01-05_02:34:06.362343_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:11
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_02:34:11
+[DEPRECIATE] Experience 01-05_02:34:10.841883_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (3 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:11
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 3, at 2026-01-05_02:34:11
+[DEPRECIATE] Experience 01-05_02:34:11.217038_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (4 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:11
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 4, at 2026-01-05_02:34:11
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 12
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:12.291634_3-3_2 at timestep 12
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (4 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:12
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 4, at 2026-01-05_02:34:12
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 13}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 13
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:12.738083_3-3_2-1 at timestep 13
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (4 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:12
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 4, at 2026-01-05_02:34:12
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 14}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 14
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:13.100093_3-3_2-1-2 at timestep 14
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (4 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:13
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 4, at 2026-01-05_02:34:13
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 15}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 15
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:07.222573_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:07.222573_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:13.514157_3-3_2-1-2-1 at timestep 15
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (4 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:13
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 4, at 2026-01-05_02:34:13
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 16}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 16
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:11.561302_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:11.561302_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:13.844521_3-3_2-1-2-1-2 at timestep 16
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (4 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:13
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 4, at 2026-01-05_02:34:13
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 17}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 17
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:11.935812_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:11.935812_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 at timestep 17
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (4 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:14
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 4, at 2026-01-05_02:34:14
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 18}
+[MemoryBank] Updated exp 01-05_02:34:11.935812_3-3_2-1-2-1-2-1 timestep: 11 -> 18
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 12 -> 18
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 12 -> 18
+[MemoryBank] Updated exp 01-05_02:34:07.222573_3-3_2-1-2-1 timestep: 12 -> 18
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 7 -> 18
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 12 -> 18
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 6 -> 18
+[MemoryBank] Updated exp 01-05_02:34:11.561302_3-3_2-1-2-1-2 timestep: 10 -> 18
+[MemoryBank] finish_explore_trail: updated 8/8 experiences to timestep 18
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:13.100093_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:14
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_02:34:14
+[DEPRECIATE] Experience 01-05_02:34:07.222573_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (6 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:14
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 6, at 2026-01-05_02:34:14
+[DEPRECIATE] Experience 01-05_02:34:12.291634_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (7 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:14
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 7, at 2026-01-05_02:34:14
+[DEPRECIATE] Experience 01-05_02:34:12.738083_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (8 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:14
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 8, at 2026-01-05_02:34:14
+[DEPRECIATE] Experience 01-05_02:34:13.844521_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:14
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_02:34:14
+[DEPRECIATE] Experience 01-05_02:34:11.935812_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (10 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:14
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 10, at 2026-01-05_02:34:14
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 18
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:14.657520_3-3_2 at timestep 18
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (10 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:14
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 10, at 2026-01-05_02:34:14
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 19}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 19
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:14.996278_3-3_2-1 at timestep 19
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (10 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:14
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 10, at 2026-01-05_02:34:14
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 20}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 20
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:15.415372_3-3_2-1-2 at timestep 20
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (10 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:15
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 10, at 2026-01-05_02:34:15
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 21}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 21
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:13.514157_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:13.514157_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:15.866913_3-3_2-1-2-1 at timestep 21
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (10 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:15
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 10, at 2026-01-05_02:34:15
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 22}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 22
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:11.561302_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:11.561302_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 at timestep 22
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (10 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:16
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 10, at 2026-01-05_02:34:16
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 23}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 23
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:16.783588_3-3_2-1-2-1-2-1 at timestep 23
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (10 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:16
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 10, at 2026-01-05_02:34:16
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 24}
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 17 -> 24
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 18 -> 24
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 18 -> 24
+[MemoryBank] Updated exp 01-05_02:34:13.514157_3-3_2-1-2-1 timestep: 15 -> 24
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 18 -> 24
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 18 -> 24
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 18 -> 24
+[MemoryBank] Updated exp 01-05_02:34:11.561302_3-3_2-1-2-1-2 timestep: 18 -> 24
+[MemoryBank] finish_explore_trail: updated 8/8 experiences to timestep 24
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:15.415372_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (11 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:16
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 11, at 2026-01-05_02:34:16
+[DEPRECIATE] Experience 01-05_02:34:14.657520_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (12 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:16
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 12, at 2026-01-05_02:34:16
+[DEPRECIATE] Experience 01-05_02:34:14.996278_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (13 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:16
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 13, at 2026-01-05_02:34:16
+[DEPRECIATE] Experience 01-05_02:34:11.561302_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (14 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:16
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 14, at 2026-01-05_02:34:16
+[DEPRECIATE] Experience 01-05_02:34:13.514157_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:16
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_02:34:16
+[DEPRECIATE] Experience 01-05_02:34:16.783588_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (16 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:16
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 16, at 2026-01-05_02:34:16
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 24
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:17.159822_3-3_2 at timestep 24
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (16 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:17
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 16, at 2026-01-05_02:34:17
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 25}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 25
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:17.585858_3-3_2-1 at timestep 25
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (16 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:17
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 16, at 2026-01-05_02:34:17
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 26}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 26
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:17.933724_3-3_2-1-2 at timestep 26
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (16 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:17
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 16, at 2026-01-05_02:34:17
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 27}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 27
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:15.866913_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:15.866913_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:18.311698_3-3_2-1-2-1 at timestep 27
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (16 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:18
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 16, at 2026-01-05_02:34:18
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 28}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 28
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:18.674922_3-3_2-1-2-1-2 at timestep 28
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (16 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:18
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 16, at 2026-01-05_02:34:18
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 29}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 29
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:19.056869_3-3_2-1-2-1-2-1 at timestep 29
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (16 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:19
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 16, at 2026-01-05_02:34:19
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 30}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 22 -> 30
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 24 -> 30
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 24 -> 30
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 24 -> 30
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 24 -> 30
+[MemoryBank] Updated exp 01-05_02:34:15.866913_3-3_2-1-2-1 timestep: 21 -> 30
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 24 -> 30
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 24 -> 30
+[MemoryBank] finish_explore_trail: updated 8/8 experiences to timestep 30
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:17.933724_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:19
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_02:34:19
+[DEPRECIATE] Experience 01-05_02:34:17.159822_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (18 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:19
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 18, at 2026-01-05_02:34:19
+[DEPRECIATE] Experience 01-05_02:34:17.585858_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (19 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:19
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 19, at 2026-01-05_02:34:19
+[DEPRECIATE] Experience 01-05_02:34:19.056869_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (20 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:19
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 20, at 2026-01-05_02:34:19
+[DEPRECIATE] Experience 01-05_02:34:18.311698_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:19
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_02:34:19
+[DEPRECIATE] Experience 01-05_02:34:18.674922_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:19
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_02:34:19
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 30
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:19.531525_3-3_2 at timestep 30
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:19
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_02:34:19
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 31}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 31
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:19.941108_3-3_2-1 at timestep 31
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:19
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_02:34:19
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 32}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 32
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:20.758162_3-3_2-1-2 at timestep 32
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:20
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_02:34:20
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 33}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 33
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:15.866913_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:15.866913_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:21.388986_3-3_2-1-2-1 at timestep 33
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:21
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_02:34:21
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 34}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 34
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:21.818594_3-3_2-1-2-1-2 at timestep 34
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:21
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_02:34:21
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 35}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 35
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:22.224832_3-3_2-1-2-1-2-1 at timestep 35
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:22
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_02:34:22
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 36}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 30 -> 36
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 30 -> 36
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 30 -> 36
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 30 -> 36
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 30 -> 36
+[MemoryBank] Updated exp 01-05_02:34:15.866913_3-3_2-1-2-1 timestep: 30 -> 36
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 30 -> 36
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 30 -> 36
+[MemoryBank] finish_explore_trail: updated 8/8 experiences to timestep 36
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:20.758162_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (23 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:22
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 23, at 2026-01-05_02:34:22
+[DEPRECIATE] Experience 01-05_02:34:19.531525_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (24 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:22
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 24, at 2026-01-05_02:34:22
+[DEPRECIATE] Experience 01-05_02:34:19.941108_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (25 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:22
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 25, at 2026-01-05_02:34:22
+[DEPRECIATE] Experience 01-05_02:34:22.224832_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (26 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:22
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 26, at 2026-01-05_02:34:22
+[DEPRECIATE] Experience 01-05_02:34:15.866913_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:22
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_02:34:22
+[DEPRECIATE] Experience 01-05_02:34:21.818594_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (28 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:22
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 28, at 2026-01-05_02:34:22
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 36
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:22.690675_3-3_2 at timestep 36
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (28 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:22
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 28, at 2026-01-05_02:34:22
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 37}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 37
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:23.438112_3-3_2-1 at timestep 37
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (28 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:23
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 28, at 2026-01-05_02:34:23
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 38}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 38
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:23.852609_3-3_2-1-2 at timestep 38
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (28 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:23
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 28, at 2026-01-05_02:34:23
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 39}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 39
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:21.388986_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:21.388986_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:24.307110_3-3_2-1-2-1 at timestep 39
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (28 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:24
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 28, at 2026-01-05_02:34:24
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 40}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 40
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:24.739591_3-3_2-1-2-1-2 at timestep 40
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (28 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:24
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 28, at 2026-01-05_02:34:24
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 41}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 41
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:25.102244_3-3_2-1-2-1-2-1 at timestep 41
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (28 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:25
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 28, at 2026-01-05_02:34:25
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 42}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 36 -> 42
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 36 -> 42
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 36 -> 42
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 36 -> 42
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 36 -> 42
+[MemoryBank] Updated exp 01-05_02:34:21.388986_3-3_2-1-2-1 timestep: 33 -> 42
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 36 -> 42
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 36 -> 42
+[MemoryBank] finish_explore_trail: updated 8/8 experiences to timestep 42
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:23.852609_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (29 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:25
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 29, at 2026-01-05_02:34:25
+[DEPRECIATE] Experience 01-05_02:34:22.690675_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (30 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:25
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 30, at 2026-01-05_02:34:25
+[DEPRECIATE] Experience 01-05_02:34:23.438112_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (31 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:25
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 31, at 2026-01-05_02:34:25
+[DEPRECIATE] Experience 01-05_02:34:25.102244_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (32 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:25
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 32, at 2026-01-05_02:34:25
+[DEPRECIATE] Experience 01-05_02:34:24.739591_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:25
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_02:34:25
+[DEPRECIATE] Experience 01-05_02:34:24.307110_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (34 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:25
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 34, at 2026-01-05_02:34:25
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 42
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:25.589321_3-3_2 at timestep 42
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (34 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:25
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 34, at 2026-01-05_02:34:25
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 43}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 43
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:26.092794_3-3_2-1 at timestep 43
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (34 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:26
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 34, at 2026-01-05_02:34:26
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 44}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 44
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:26.577216_3-3_2-1-2 at timestep 44
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (34 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:26
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 34, at 2026-01-05_02:34:26
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 45}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 45
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:21.388986_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:21.388986_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:27.022761_3-3_2-1-2-1 at timestep 45
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (34 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:27
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 34, at 2026-01-05_02:34:27
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 46}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 46
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:28.053930_3-3_2-1-2-1-2 at timestep 46
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (34 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:28
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 34, at 2026-01-05_02:34:28
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 47}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 47
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:28.849794_3-3_2-1-2-1-2-1 at timestep 47
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (34 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:28
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 34, at 2026-01-05_02:34:28
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 48}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 42 -> 48
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 42 -> 48
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 42 -> 48
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 42 -> 48
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 42 -> 48
+[MemoryBank] Updated exp 01-05_02:34:21.388986_3-3_2-1-2-1 timestep: 42 -> 48
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 42 -> 48
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 42 -> 48
+[MemoryBank] finish_explore_trail: updated 8/8 experiences to timestep 48
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:26.577216_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (35 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:28
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 35, at 2026-01-05_02:34:28
+[DEPRECIATE] Experience 01-05_02:34:25.589321_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (36 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:28
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 36, at 2026-01-05_02:34:28
+[DEPRECIATE] Experience 01-05_02:34:26.092794_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (37 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:28
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 37, at 2026-01-05_02:34:28
+[DEPRECIATE] Experience 01-05_02:34:28.849794_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (38 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:28
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 38, at 2026-01-05_02:34:28
+[DEPRECIATE] Experience 01-05_02:34:28.053930_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:28
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_02:34:28
+[DEPRECIATE] Experience 01-05_02:34:27.022761_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (40 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:28
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 40, at 2026-01-05_02:34:28
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 48
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:29.366881_3-3_2 at timestep 48
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (40 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:29
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 40, at 2026-01-05_02:34:29
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 49}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 49
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:29.858102_3-3_2-1 at timestep 49
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (40 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:29
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 40, at 2026-01-05_02:34:29
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 50}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 50
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:30.273280_3-3_2-1-2 at timestep 50
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (40 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:30
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 40, at 2026-01-05_02:34:30
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 51}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 51
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:21.388986_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:21.388986_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:30.694859_3-3_2-1-2-1 at timestep 51
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (40 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:30
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 40, at 2026-01-05_02:34:30
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 52}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 52
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:31.124396_3-3_2-1-2-1-2 at timestep 52
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (40 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:31
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 40, at 2026-01-05_02:34:31
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 53}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 53
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:31.540960_3-3_2-1-2-1-2-1 at timestep 53
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (40 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:31
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 40, at 2026-01-05_02:34:31
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 54}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 48 -> 54
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 48 -> 54
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 48 -> 54
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 48 -> 54
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 48 -> 54
+[MemoryBank] Updated exp 01-05_02:34:21.388986_3-3_2-1-2-1 timestep: 48 -> 54
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 48 -> 54
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 48 -> 54
+[MemoryBank] finish_explore_trail: updated 8/8 experiences to timestep 54
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:30.273280_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (41 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:31
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 41, at 2026-01-05_02:34:31
+[DEPRECIATE] Experience 01-05_02:34:29.366881_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (42 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:31
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 42, at 2026-01-05_02:34:31
+[DEPRECIATE] Experience 01-05_02:34:29.858102_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (43 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:31
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 43, at 2026-01-05_02:34:31
+[DEPRECIATE] Experience 01-05_02:34:31.540960_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (44 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:31
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 44, at 2026-01-05_02:34:31
+[DEPRECIATE] Experience 01-05_02:34:31.124396_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:31
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_02:34:31
+[DEPRECIATE] Experience 01-05_02:34:30.694859_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (46 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:31
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 46, at 2026-01-05_02:34:31
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 54
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:31.918208_3-3_2 at timestep 54
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (46 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:31
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 46, at 2026-01-05_02:34:31
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 55}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 55
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:32.316098_3-3_2-1 at timestep 55
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (46 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:32
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 46, at 2026-01-05_02:34:32
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 56}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 56
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:32.751663_3-3_2-1-2 at timestep 56
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (46 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:32
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 46, at 2026-01-05_02:34:32
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 57}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 57
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:21.388986_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:21.388986_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:33.164938_3-3_2-1-2-1 at timestep 57
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (46 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:33
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 46, at 2026-01-05_02:34:33
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 58}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 58
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:33.595378_3-3_2-1-2-1-2 at timestep 58
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (46 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:33
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 46, at 2026-01-05_02:34:33
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 59}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 59
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:34.090773_3-3_2-1-2-1-2-1 at timestep 59
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (46 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:34
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 46, at 2026-01-05_02:34:34
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 60}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 54 -> 60
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 54 -> 60
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 54 -> 60
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 54 -> 60
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 54 -> 60
+[MemoryBank] Updated exp 01-05_02:34:21.388986_3-3_2-1-2-1 timestep: 54 -> 60
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 54 -> 60
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 54 -> 60
+[MemoryBank] finish_explore_trail: updated 8/8 experiences to timestep 60
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:32.751663_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (47 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:34
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 47, at 2026-01-05_02:34:34
+[DEPRECIATE] Experience 01-05_02:34:31.918208_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (48 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:34
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 48, at 2026-01-05_02:34:34
+[DEPRECIATE] Experience 01-05_02:34:32.316098_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (49 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:34
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 49, at 2026-01-05_02:34:34
+[DEPRECIATE] Experience 01-05_02:34:34.090773_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (50 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:34
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 50, at 2026-01-05_02:34:34
+[DEPRECIATE] Experience 01-05_02:34:33.595378_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:34
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_02:34:34
+[DEPRECIATE] Experience 01-05_02:34:33.164938_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:34
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_02:34:34
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 60
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:34.469755_3-3_2 at timestep 60
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:34
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_02:34:34
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 61}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 61
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:35.187179_3-3_2-1 at timestep 61
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:35
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_02:34:35
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 62}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 62
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:35.637537_3-3_2-1-2 at timestep 62
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:35
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_02:34:35
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 63}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 63
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:21.388986_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:21.388986_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:36.004420_3-3_2-1-2-1 at timestep 63
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:36
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_02:34:36
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 64}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 64
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:36.337871_3-3_2-1-2-1-2 at timestep 64
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:36
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_02:34:36
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 65}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 65
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:36.680270_3-3_2-1-2-1-2-1 at timestep 65
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:36
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_02:34:36
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 66}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 60 -> 66
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 60 -> 66
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 60 -> 66
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 60 -> 66
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 60 -> 66
+[MemoryBank] Updated exp 01-05_02:34:21.388986_3-3_2-1-2-1 timestep: 60 -> 66
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 60 -> 66
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 60 -> 66
+[MemoryBank] finish_explore_trail: updated 8/8 experiences to timestep 66
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:35.637537_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (53 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:36
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 53, at 2026-01-05_02:34:36
+[DEPRECIATE] Experience 01-05_02:34:34.469755_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (54 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:36
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 54, at 2026-01-05_02:34:36
+[DEPRECIATE] Experience 01-05_02:34:35.187179_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (55 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:36
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 55, at 2026-01-05_02:34:36
+[DEPRECIATE] Experience 01-05_02:34:36.680270_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (56 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:36
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 56, at 2026-01-05_02:34:36
+[DEPRECIATE] Experience 01-05_02:34:36.337871_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:36
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_02:34:36
+[DEPRECIATE] Experience 01-05_02:34:36.004420_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (58 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:36
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 58, at 2026-01-05_02:34:36
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 66
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:37.214813_3-3_2 at timestep 66
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (58 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:37
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 58, at 2026-01-05_02:34:37
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 67}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 67
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:37.547212_3-3_2-1 at timestep 67
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (58 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:37
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 58, at 2026-01-05_02:34:37
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 68}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 68
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:37.900261_3-3_2-1-2 at timestep 68
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (58 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:37
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 58, at 2026-01-05_02:34:37
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 69}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 69
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:21.388986_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:21.388986_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:38.802842_3-3_2-1-2-1 at timestep 69
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (58 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:38
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 58, at 2026-01-05_02:34:38
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 70}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 70
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:39.215360_3-3_2-1-2-1-2 at timestep 70
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (58 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:39
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 58, at 2026-01-05_02:34:39
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 71}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 71
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:39.888233_3-3_2-1-2-1-2-1 at timestep 71
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (58 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:39
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 58, at 2026-01-05_02:34:39
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 72}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 66 -> 72
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 66 -> 72
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 66 -> 72
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 66 -> 72
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 66 -> 72
+[MemoryBank] Updated exp 01-05_02:34:21.388986_3-3_2-1-2-1 timestep: 66 -> 72
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 66 -> 72
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 66 -> 72
+[MemoryBank] finish_explore_trail: updated 8/8 experiences to timestep 72
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:37.900261_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (59 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:39
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 59, at 2026-01-05_02:34:39
+[DEPRECIATE] Experience 01-05_02:34:37.214813_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (60 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:39
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 60, at 2026-01-05_02:34:39
+[DEPRECIATE] Experience 01-05_02:34:37.547212_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (61 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:39
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 61, at 2026-01-05_02:34:39
+[DEPRECIATE] Experience 01-05_02:34:39.888233_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (62 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:39
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 62, at 2026-01-05_02:34:39
+[DEPRECIATE] Experience 01-05_02:34:39.215360_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:39
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_02:34:39
+[DEPRECIATE] Experience 01-05_02:34:38.802842_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (64 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:39
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 64, at 2026-01-05_02:34:39
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 72
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:40.349408_3-3_2 at timestep 72
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (64 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:40
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 64, at 2026-01-05_02:34:40
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 73}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 73
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:40.691045_3-3_2-1 at timestep 73
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (64 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:40
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 64, at 2026-01-05_02:34:40
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 74}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 74
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:41.056900_3-3_2-1-2 at timestep 74
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (64 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:41
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 64, at 2026-01-05_02:34:41
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 75}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 75
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:21.388986_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:21.388986_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:41.467281_3-3_2-1-2-1 at timestep 75
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (64 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:41
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 64, at 2026-01-05_02:34:41
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 76}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 76
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:42.072963_3-3_2-1-2-1-2 at timestep 76
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (64 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:42
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 64, at 2026-01-05_02:34:42
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 77}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 77
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:42.420228_3-3_2-1-2-1-2-1 at timestep 77
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (64 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:42
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 64, at 2026-01-05_02:34:42
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 78}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 72 -> 78
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 72 -> 78
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 72 -> 78
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 72 -> 78
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 72 -> 78
+[MemoryBank] Updated exp 01-05_02:34:21.388986_3-3_2-1-2-1 timestep: 72 -> 78
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 72 -> 78
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 72 -> 78
+[MemoryBank] finish_explore_trail: updated 8/8 experiences to timestep 78
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:41.056900_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (65 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:42
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 65, at 2026-01-05_02:34:42
+[DEPRECIATE] Experience 01-05_02:34:40.349408_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (66 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:42
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 66, at 2026-01-05_02:34:42
+[DEPRECIATE] Experience 01-05_02:34:40.691045_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (67 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:42
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 67, at 2026-01-05_02:34:42
+[DEPRECIATE] Experience 01-05_02:34:42.420228_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (68 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:42
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 68, at 2026-01-05_02:34:42
+[DEPRECIATE] Experience 01-05_02:34:42.072963_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:42
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_02:34:42
+[DEPRECIATE] Experience 01-05_02:34:41.467281_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (70 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:42
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 70, at 2026-01-05_02:34:42
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 78
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:42.975725_3-3_2 at timestep 78
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (70 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:42
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 70, at 2026-01-05_02:34:42
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 79}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 79
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:43.388384_3-3_2-1 at timestep 79
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (70 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:43
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 70, at 2026-01-05_02:34:43
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 80}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 80
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:43.831506_3-3_2-1-2 at timestep 80
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (70 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:43
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 70, at 2026-01-05_02:34:43
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 81}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 81
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:21.388986_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:21.388986_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:44.265306_3-3_2-1-2-1 at timestep 81
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (70 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:44
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 70, at 2026-01-05_02:34:44
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 82}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 82
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:44.731006_3-3_2-1-2-1-2 at timestep 82
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (70 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:44
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 70, at 2026-01-05_02:34:44
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 83}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 83
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:45.219773_3-3_2-1-2-1-2-1 at timestep 83
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (70 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:45
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 70, at 2026-01-05_02:34:45
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 84}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 78 -> 84
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 78 -> 84
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 78 -> 84
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 78 -> 84
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 78 -> 84
+[MemoryBank] Updated exp 01-05_02:34:21.388986_3-3_2-1-2-1 timestep: 78 -> 84
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 78 -> 84
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 78 -> 84
+[MemoryBank] finish_explore_trail: updated 8/8 experiences to timestep 84
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:43.831506_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (71 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:45
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 71, at 2026-01-05_02:34:45
+[DEPRECIATE] Experience 01-05_02:34:42.975725_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (72 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:45
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 72, at 2026-01-05_02:34:45
+[DEPRECIATE] Experience 01-05_02:34:43.388384_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (73 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:45
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 73, at 2026-01-05_02:34:45
+[DEPRECIATE] Experience 01-05_02:34:45.219773_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (74 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:45
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 74, at 2026-01-05_02:34:45
+[DEPRECIATE] Experience 01-05_02:34:44.731006_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:45
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_02:34:45
+[DEPRECIATE] Experience 01-05_02:34:44.265306_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (76 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 8, at 2026-01-05_02:34:45
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 76, at 2026-01-05_02:34:45
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 84
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:45.665381_3-3_2 at timestep 84
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (76 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:45
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 76, at 2026-01-05_02:34:45
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 85}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 85
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:46.003879_3-3_2-1 at timestep 85
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (76 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:46
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 76, at 2026-01-05_02:34:46
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 86}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 86
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:46.374671_3-3_2-1-1 at timestep 86
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (76 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:46
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 76, at 2026-01-05_02:34:46
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 87}
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 2
+[DEPRECIATE] Experience 01-05_02:34:45.665381_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (77 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:46
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 77, at 2026-01-05_02:34:46
+[DEPRECIATE] Experience 01-05_02:34:46.003879_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (78 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:46
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 78, at 2026-01-05_02:34:46
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 87
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:46.724793_3-3_2 at timestep 87
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (78 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:46
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 78, at 2026-01-05_02:34:46
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 88}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 88
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:47.064920_3-3_2-1 at timestep 88
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (78 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:47
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 78, at 2026-01-05_02:34:47
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 89}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 89
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2', '01-05_02:34:46.374671_3-3_2-1-1']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0), ('01-05_02:34:46.374671_3-3_2-1-1', 0.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:47.417636_3-3_2-1-2 at timestep 89
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (78 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:47
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 78, at 2026-01-05_02:34:47
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 90}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 90
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:21.388986_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:21.388986_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:47.816857_3-3_2-1-2-1 at timestep 90
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (78 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:47
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 78, at 2026-01-05_02:34:47
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 91}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 91
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:48.138661_3-3_2-1-2-1-2 at timestep 91
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (78 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:48
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 78, at 2026-01-05_02:34:48
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 92}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 92
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:48.463156_3-3_2-1-2-1-2-1 at timestep 92
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (78 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 15, at 2026-01-05_02:34:48
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 78, at 2026-01-05_02:34:48
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 93}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 84 -> 93
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 84 -> 93
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 84 -> 93
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 84 -> 93
+[MemoryBank] Updated exp 01-05_02:34:46.374671_3-3_2-1-1 timestep: 86 -> 93
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 84 -> 93
+[MemoryBank] Updated exp 01-05_02:34:21.388986_3-3_2-1-2-1 timestep: 84 -> 93
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 84 -> 93
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 84 -> 93
+[MemoryBank] finish_explore_trail: updated 9/9 experiences to timestep 93
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:47.417636_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (79 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:48
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 79, at 2026-01-05_02:34:48
+[DEPRECIATE] Experience 01-05_02:34:46.724793_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (80 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:48
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 80, at 2026-01-05_02:34:48
+[DEPRECIATE] Experience 01-05_02:34:47.064920_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:48
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_02:34:48
+[DEPRECIATE] Experience 01-05_02:34:48.463156_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (82 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:48
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 82, at 2026-01-05_02:34:48
+[DEPRECIATE] Experience 01-05_02:34:48.138661_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (83 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:48
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 83, at 2026-01-05_02:34:48
+[DEPRECIATE] Experience 01-05_02:34:47.816857_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (84 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:48
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 84, at 2026-01-05_02:34:48
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 93
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:48.876031_3-3_2 at timestep 93
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (84 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:48
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 84, at 2026-01-05_02:34:48
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 94}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 94
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:49.269626_3-3_2-1 at timestep 94
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (84 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:49
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 84, at 2026-01-05_02:34:49
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 95}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 95
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2', '01-05_02:34:46.374671_3-3_2-1-1']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0), ('01-05_02:34:46.374671_3-3_2-1-1', 0.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:49.767974_3-3_2-1-2 at timestep 95
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (84 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:49
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 84, at 2026-01-05_02:34:49
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 96}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 96
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:21.388986_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:21.388986_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:50.140544_3-3_2-1-2-1 at timestep 96
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (84 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:50
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 84, at 2026-01-05_02:34:50
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 97}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 97
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:50.629981_3-3_2-1-2-1-2 at timestep 97
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (84 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:50
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 84, at 2026-01-05_02:34:50
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 98}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 98
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:50.990627_3-3_2-1-2-1-2-1 at timestep 98
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (84 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 15, at 2026-01-05_02:34:50
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 84, at 2026-01-05_02:34:50
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 99}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 93 -> 99
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 93 -> 99
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 93 -> 99
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 93 -> 99
+[MemoryBank] Updated exp 01-05_02:34:46.374671_3-3_2-1-1 timestep: 93 -> 99
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 93 -> 99
+[MemoryBank] Updated exp 01-05_02:34:21.388986_3-3_2-1-2-1 timestep: 93 -> 99
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 93 -> 99
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 93 -> 99
+[MemoryBank] finish_explore_trail: updated 9/9 experiences to timestep 99
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:49.767974_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (85 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:51
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 85, at 2026-01-05_02:34:51
+[DEPRECIATE] Experience 01-05_02:34:48.876031_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (86 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:51
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 86, at 2026-01-05_02:34:51
+[DEPRECIATE] Experience 01-05_02:34:49.269626_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:51
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_02:34:51
+[DEPRECIATE] Experience 01-05_02:34:50.990627_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (88 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:51
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 88, at 2026-01-05_02:34:51
+[DEPRECIATE] Experience 01-05_02:34:50.629981_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (89 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:51
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 89, at 2026-01-05_02:34:51
+[DEPRECIATE] Experience 01-05_02:34:50.140544_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (90 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:51
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 90, at 2026-01-05_02:34:51
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 99
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:51.460143_3-3_2 at timestep 99
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (90 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:51
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 90, at 2026-01-05_02:34:51
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 100}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 100
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:51.872076_3-3_2-1 at timestep 100
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (90 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:51
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 90, at 2026-01-05_02:34:51
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 101}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 101
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2', '01-05_02:34:46.374671_3-3_2-1-1']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0), ('01-05_02:34:46.374671_3-3_2-1-1', 0.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:52.338977_3-3_2-1-2 at timestep 101
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (90 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:52
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 90, at 2026-01-05_02:34:52
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 102}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 102
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:21.388986_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:21.388986_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:52.737265_3-3_2-1-2-1 at timestep 102
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (90 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:52
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 90, at 2026-01-05_02:34:52
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 103}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 103
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:53.092350_3-3_2-1-2-1-2 at timestep 103
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (90 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:53
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 90, at 2026-01-05_02:34:53
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 104}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 104
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:53.521126_3-3_2-1-2-1-2-1 at timestep 104
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (90 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 15, at 2026-01-05_02:34:53
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 90, at 2026-01-05_02:34:53
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 105}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 99 -> 105
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 99 -> 105
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 99 -> 105
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 99 -> 105
+[MemoryBank] Updated exp 01-05_02:34:46.374671_3-3_2-1-1 timestep: 99 -> 105
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 99 -> 105
+[MemoryBank] Updated exp 01-05_02:34:21.388986_3-3_2-1-2-1 timestep: 99 -> 105
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 99 -> 105
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 99 -> 105
+[MemoryBank] finish_explore_trail: updated 9/9 experiences to timestep 105
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:52.338977_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (91 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:53
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 91, at 2026-01-05_02:34:53
+[DEPRECIATE] Experience 01-05_02:34:51.460143_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (92 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:53
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 92, at 2026-01-05_02:34:53
+[DEPRECIATE] Experience 01-05_02:34:51.872076_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (93 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:53
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 93, at 2026-01-05_02:34:53
+[DEPRECIATE] Experience 01-05_02:34:53.521126_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (94 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:53
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 94, at 2026-01-05_02:34:53
+[DEPRECIATE] Experience 01-05_02:34:53.092350_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (95 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:53
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 95, at 2026-01-05_02:34:53
+[DEPRECIATE] Experience 01-05_02:34:52.737265_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (96 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:53
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 96, at 2026-01-05_02:34:53
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 0], 'tile_type': 'S'}, timestep: 105
+[BFS] Retrieving experience for state: {'cur_pos': [0, 0], 'tile_type': 'S'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:05.586529_3-3_1', '01-05_02:34:10.074557_3-3_2']
+[BFS] Max scores: [('01-05_02:34:05.586529_3-3_1', 0.0), ('01-05_02:34:10.074557_3-3_2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:54.084640_3-3_2 at timestep 105
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (96 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:54
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 96, at 2026-01-05_02:34:54
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 106}
+[MemoryBank] Retrieving for state: {'cur_pos': [0, 1], 'tile_type': 'F'}, timestep: 106
+[BFS] Retrieving experience for state: {'cur_pos': [0, 1], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:10.432118_3-3_2-1']
+[BFS] Max scores: [('01-05_02:34:10.432118_3-3_2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:54.421798_3-3_2-1 at timestep 106
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (96 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:54
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 96, at 2026-01-05_02:34:54
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 107}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 1], 'tile_type': 'F'}, timestep: 107
+[BFS] Retrieving experience for state: {'cur_pos': [1, 1], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:06.825035_3-3_2-1-2', '01-05_02:34:46.374671_3-3_2-1-1']
+[BFS] Max scores: [('01-05_02:34:06.825035_3-3_2-1-2', 1.0), ('01-05_02:34:46.374671_3-3_2-1-1', 0.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:54.755305_3-3_2-1-2 at timestep 107
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (96 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:54
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 96, at 2026-01-05_02:34:54
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 108}
+[MemoryBank] Retrieving for state: {'cur_pos': [1, 2], 'tile_type': 'F'}, timestep: 108
+[BFS] Retrieving experience for state: {'cur_pos': [1, 2], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:21.388986_3-3_2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:21.388986_3-3_2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:55.185601_3-3_2-1-2-1 at timestep 108
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (96 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:55
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 96, at 2026-01-05_02:34:55
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 109}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 2], 'tile_type': 'F'}, timestep: 109
+[BFS] Retrieving experience for state: {'cur_pos': [2, 2], 'tile_type': 'F'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_02:34:09.590766_3-3_2-1-2-1-1', '01-05_02:34:16.453071_3-3_2-1-2-1-2']
+[BFS] Max scores: [('01-05_02:34:09.590766_3-3_2-1-2-1-1', 0.0), ('01-05_02:34:16.453071_3-3_2-1-2-1-2', 1.0)]
+[MemoryBank] Retrieved 2/2 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:55.551071_3-3_2-1-2-1-2 at timestep 109
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (96 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:55
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 96, at 2026-01-05_02:34:55
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 110}
+[MemoryBank] Retrieving for state: {'cur_pos': [2, 3], 'tile_type': 'F'}, timestep: 110
+[BFS] Retrieving experience for state: {'cur_pos': [2, 3], 'tile_type': 'F'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_02:34:14.275829_3-3_2-1-2-1-2-1']
+[BFS] Max scores: [('01-05_02:34:14.275829_3-3_2-1-2-1-2-1', 1.0)]
+[MemoryBank] Retrieved 1/1 after forgetting filter
+[MemoryBank] Stored exp 01-05_02:34:55.895139_3-3_2-1-2-1-2-1 at timestep 110
+Store validation passed: No overlap between exp_store (15 items) and depreiciate_exp_store (96 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 15, at 2026-01-05_02:34:55
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 96, at 2026-01-05_02:34:55
+[MemoryBank] Cleanup done: 0 experiences deprecated
+[MemoryBank] Status: {'mb_current_timestep': 111}
+[MemoryBank] Updated exp 01-05_02:34:16.453071_3-3_2-1-2-1-2 timestep: 105 -> 111
+[MemoryBank] Updated exp 01-05_02:34:14.275829_3-3_2-1-2-1-2-1 timestep: 105 -> 111
+[MemoryBank] Updated exp 01-05_02:34:09.590766_3-3_2-1-2-1-1 timestep: 105 -> 111
+[MemoryBank] Updated exp 01-05_02:34:06.825035_3-3_2-1-2 timestep: 105 -> 111
+[MemoryBank] Updated exp 01-05_02:34:46.374671_3-3_2-1-1 timestep: 105 -> 111
+[MemoryBank] Updated exp 01-05_02:34:10.432118_3-3_2-1 timestep: 105 -> 111
+[MemoryBank] Updated exp 01-05_02:34:21.388986_3-3_2-1-2-1 timestep: 105 -> 111
+[MemoryBank] Updated exp 01-05_02:34:05.586529_3-3_1 timestep: 105 -> 111
+[MemoryBank] Updated exp 01-05_02:34:10.074557_3-3_2 timestep: 105 -> 111
+[MemoryBank] finish_explore_trail: updated 9/9 experiences to timestep 111
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 6
+[DEPRECIATE] Experience 01-05_02:34:54.755305_3-3_2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (14 items) and depreiciate_exp_store (97 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 14, at 2026-01-05_02:34:55
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 97, at 2026-01-05_02:34:55
+[DEPRECIATE] Experience 01-05_02:34:54.084640_3-3_2 moved to deprecated store
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (98 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 13, at 2026-01-05_02:34:55
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 98, at 2026-01-05_02:34:55
+[DEPRECIATE] Experience 01-05_02:34:54.421798_3-3_2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (99 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 12, at 2026-01-05_02:34:55
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 99, at 2026-01-05_02:34:55
+[DEPRECIATE] Experience 01-05_02:34:55.895139_3-3_2-1-2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (100 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 11, at 2026-01-05_02:34:55
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 100, at 2026-01-05_02:34:55
+[DEPRECIATE] Experience 01-05_02:34:55.551071_3-3_2-1-2-1-2 moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (101 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 10, at 2026-01-05_02:34:55
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 101, at 2026-01-05_02:34:55
+[DEPRECIATE] Experience 01-05_02:34:55.185601_3-3_2-1-2-1 moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (102 items)
+Save store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/exp_store.json, size: 9, at 2026-01-05_02:34:55
+Save depreiciate store, path: ./log_frozenlake_llama-3.3-70b-instruct_True_memorybank/storage/depreiciate_exp_store.json, size: 102, at 2026-01-05_02:34:55

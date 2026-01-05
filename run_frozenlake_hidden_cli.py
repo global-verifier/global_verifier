@@ -50,6 +50,7 @@ def build_argparser() -> argparse.ArgumentParser:
     p.add_argument("--episodes-per-map", type=int, default=20)
     p.add_argument("--output-root", type=str, default=".")
     p.add_argument("--cuda-visible-devices", type=str, default=None)
+    p.add_argument("--use-global-verifier", type=str2bool, default=None)
     p.add_argument(
         "--use-api",
         type=str2bool,
@@ -106,7 +107,7 @@ def main() -> int:
     gr_group = gr_group_1
     env_name = "frozenlake"
 
-    cur_name = f"log_hidden_{args.use_memory}_{env_name}_{args.memory_env}_{args.model_name}"
+    cur_name = f"log_hidden_{env_name}_{args.model_name}_{args.memory_env}_{args.use_memory}_{args.use_global_verifier}"
     run_root = os.path.join(args.output_root, cur_name)
     log_dir = os.path.join(run_root, "log")
     backend_log_dir = log_dir
@@ -132,6 +133,7 @@ def main() -> int:
         desc=big_map,
         use_api=args.use_api,
         goal_rewards=gr_group[0],
+        use_global_verifier=args.use_global_verifier,
     )
 
     for reward_group_idx, reward_group in enumerate(gr_group):
@@ -153,6 +155,7 @@ def main() -> int:
             depreiciate_exp_store_path=depreiciate_exp_store_path,
             desc=big_map,
             goal_rewards=reward_group,
+            use_global_verifier=args.use_global_verifier,
         )
 
         for i in range(args.episodes_per_map):

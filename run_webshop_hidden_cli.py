@@ -83,6 +83,7 @@ def build_argparser() -> argparse.ArgumentParser:
         default=True,
         help="Whether to enable confirm purchase flow (webshop-specific).",
     )
+    p.add_argument("--use-global-verifier", type=str2bool, default=None)
     p.add_argument(
         "--use-api",
         type=str2bool,
@@ -110,7 +111,7 @@ def main() -> int:
 
     env_name = "webshop"
 
-    cur_name = f"log_{args.use_memory}_{env_name}_{args.memory_env}_{args.model_name}"
+    cur_name = f"log_hidden_{env_name}_{args.model_name}_{args.memory_env}_{args.use_memory}_{args.use_global_verifier}"
     run_root = os.path.join(args.output_root, cur_name)
     log_dir = os.path.join(run_root, "log")
     backend_log_dir = log_dir
@@ -136,6 +137,7 @@ def main() -> int:
         enable_confirm_purchase=args.enable_confirm_purchase,
         session=session,
         use_api=args.use_api,
+        use_global_verifier=args.use_global_verifier,
     )
 
     for i in range(args.episodes):

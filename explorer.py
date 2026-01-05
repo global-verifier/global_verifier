@@ -29,6 +29,7 @@ class Explorer:
         enable_confirm_purchase=None,
         session=None,
         use_api=False,
+        use_global_verifier=False,
         ):
         # Add plug in
         self.explorer_model = load_explorer_model(model_name or explorer_settings["model_name"], use_api=use_api)
@@ -52,6 +53,7 @@ class Explorer:
             goal_rewards=goal_rewards,
             enable_confirm_purchase=enable_confirm_purchase,
             session=session,
+            use_global_verifier=use_global_verifier,
         )
 
     def init_after_model(
@@ -73,6 +75,7 @@ class Explorer:
         goal_rewards=None,
         enable_confirm_purchase=None,
         session=None,
+        use_global_verifier=False,
     ):
         """
         Finish initialization steps that do not require reloading the explorer_model.
@@ -127,7 +130,7 @@ class Explorer:
             if session is not None
             else getattr(self, "session", None)
         )
-
+        self.use_global_verifier = use_global_verifier
         assert use_memory is not None, "use_memory must be provided"
         if use_memory:
             self.use_experience = True
@@ -176,14 +179,9 @@ class Explorer:
         self.alpha = explorer_settings["alpha"]
 
     def process_memory_env(self, memory_env: str):
-        if memory_env not in ["vanilla", "generative", "memorybank", "voyager", "glove"]:
+        if memory_env not in ["vanilla", "generative", "memorybank", "voyager"]:
             raise ValueError(f"Invalid memory environment: {memory_env}")
-        self.use_global_verifier = False
         self.backend_env = f"{self.env_name}-{memory_env}"
-        if memory_env == "glove":
-            self.use_global_verifier = True
-            self.backend_env = f"{self.env_name}-vanilla"
-        
 
     def get_next_action(self, retrieved_experiences: list = None) -> str:
         if retrieved_experiences is None:

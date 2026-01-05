@@ -70,8 +70,8 @@ def build_argparser() -> argparse.ArgumentParser:
 
     # Optional QoL flags (defaults mirror `test_webshop.py` where applicable)
     p.add_argument("--max-steps", type=int, default=20)
-    p.add_argument("--threshold", type=float, default=0.25)
-    p.add_argument("--decay-rate", type=float, default=300.0)
+    p.add_argument("--threshold", type=float, default=0.3)
+    p.add_argument("--decay-rate", type=float, default=60.0)
     p.add_argument("--start-timestep", type=int, default=0)
     p.add_argument("--episodes", type=int, default=20, help="Episodes to run.")
     p.add_argument("--output-root", type=str, default=".")
@@ -80,7 +80,7 @@ def build_argparser() -> argparse.ArgumentParser:
         "--enable-confirm-purchase",
         type=str2bool,
         # TODO: whether to change to false
-        default=True,
+        default=False,
         help="Whether to enable confirm purchase flow (webshop-specific).",
     )
     p.add_argument("--use-global-verifier", type=str2bool, default=None)

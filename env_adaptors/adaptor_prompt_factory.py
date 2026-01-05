@@ -193,6 +193,16 @@ def build_webshop_user_prompt(
         available_actions = "[search]"
     else:
         available_actions = "[click]"
+    
+    # -----------------------------------------------------------
+    # [Modify] Identify the current page type
+    # -----------------------------------------------------------
+    curr_url = state.get('url', '')
+    # If URL contains 'item_page', we are in the product detail/options page.
+    is_item_page = 'item_page' in curr_url
+    
+    # Otherwise, we are likely in search results or homepage (selecting a product)
+    # -----------------------------------------------------------
 
     user_prompt = f"""Task Instruction: {instruction}
 
@@ -237,25 +247,39 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
             if probability is not None:
                 user_prompt += f"""  Probability: {probability:.2f}
 """
-            # 修改逻辑开始
+            # -----------------------------------------------------------
+            # [Modify] Enhanced logic for Max Score analysis
+            # -----------------------------------------------------------
             if max_score is None or max_score == 0:
                 if show_failed_result:
                     user_prompt += f"""  Result: Score 0.0 (Failed). \n"""
                 else:
-                    user_prompt += f""" \n"""
-            elif max_score == 1:
+                    user_prompt += f"""  Result: Score 0.0 (WRONG).
+  This action led to failure. Do NOT repeat '{action_taken}'.
+"""
+            elif max_score == 1.0:
                 user_prompt += f"""  Result: Score 1.0 (PERFECT).
   Max score this action can achieve is 1.0. You SHOULD take the same action: {action_taken}.
 
 """
-            else:
-                # 针对 0.75 等非满分情况
-                user_prompt += f"""  Result: Score {max_score} (SUBOPTIMAL).
-  Max score is {max_score}, which is NOT 1.0. This means '{action_taken}' is NOT the best choice (e.g. wrong color or size).
-  Do NOT repeat '{action_taken}'. You MUST select a different option to aim for score 1.0!
+            else: # max_score > 0 and max_score < 1.0
+                if is_item_page:
+                    # Case 1: In Item Page (Selecting options)
+                    user_prompt += f"""  Result: Score {max_score} (CORRECT PRODUCT, BUT INCOMPLETE OPTIONS).
+  The product is correct (score > 0), but you previously missed some requirements (wrong color/size).
+  You SHOULD continue with this product, BUT you MUST select ALL required options (check instruction carefully) before clicking 'Buy Now'!
+  Do NOT simply repeat the previous incomplete path. Select the correct requirements first.
 
 """
-            # 修改逻辑结束
+                else:
+                    # Case 2: In Search/List Page (Selecting Product)
+                    user_prompt += f"""  Result: Score {max_score} (CORRECT PRODUCT).
+  This action selects a correct product (score > 0). You SHOULD choose '{action_taken}' again.
+  The previous score was not 1.0 only because you missed some options later in the item page.
+  So, SELECT this product, but remember to choose correct attributes in the next steps!
+
+"""
+            # -----------------------------------------------------------
 
             if summary:
                 user_prompt += f"""  Summary for this step is: {summary}
@@ -287,12 +311,16 @@ The following actions have been confirmed to result in a score of 0.0 in this sp
         selected_option_blacklist = []
         selected_part = str(state.get("url", "")).rsplit("/", 1)[-1]
         decoded_part = urllib.parse.unquote(selected_part)
-        selected_dict = json.loads(decoded_part)
-        assert isinstance(selected_dict, dict), "selected_dict is not a dict"
-        for value in selected_dict.values():
-            action = f"click[{str(value).lower()}]"
-            if action not in selected_option_blacklist:
-                selected_option_blacklist.append(action)
+        try:
+            selected_dict = json.loads(decoded_part)
+            if isinstance(selected_dict, dict):
+                for value in selected_dict.values():
+                    action = f"click[{str(value).lower()}]"
+                    if action not in selected_option_blacklist:
+                        selected_option_blacklist.append(action)
+        except:
+            pass
+            
         if selected_option_blacklist:
             user_prompt += """IMPORTANT: CURRENTLY SELECTED OPTIONS
 The following options are already selected on this item page. Do NOT click them again; pick a different option to progress:
@@ -307,7 +335,8 @@ The following options are already selected on this item page. Do NOT click them 
     user_prompt += """IMPORTANT STRATEGY:
 1. SCORE 1.0 IS THE ONLY GOAL.
 2. If a previous action got 1.0 -> REPEAT IT.
-3. If a previous action got anything less than 1.0 (e.g. 0.5, 0.75) -> IT IS WRONG. DO NOT REPEAT IT. CHOOSE A DIFFERENT OPTION.
+3. If a previous action got score > 0 (e.g. 0.5) -> THE PRODUCT IS CORRECT. REPEAT THE PRODUCT SELECTION, BUT FIX THE OPTIONS (Size/Color).
+4. Only if a previous action got 0.0 -> IT IS WRONG. CHOOSE A DIFFERENT OPTION.
 ---
 
 """

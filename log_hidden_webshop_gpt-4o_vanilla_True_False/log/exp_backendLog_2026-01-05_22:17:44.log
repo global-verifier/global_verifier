@@ -1,0 +1,1016 @@
+########################################################
+Start loading ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json the store at 2026-01-05_22:17:44
+Store not exists, creating a new one at ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, at 2026-01-05_22:17:44
+########################################################
+Start loading ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json the store at 2026-01-05_22:17:44
+Store not exists, creating a new one at ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, at 2026-01-05_22:17:44
+Store validation passed: No overlap between exp_store (0 items) and depreiciate_exp_store (0 items)
+Using algorithm: sameSt_bfs_maxScore
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (1 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 1, at 2026-01-05_22:17:45
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_22:17:45
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (2 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 2, at 2026-01-05_22:17:46
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_22:17:46
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (3 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 3, at 2026-01-05_22:17:47
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_22:17:47
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (4 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 4, at 2026-01-05_22:17:48
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_22:17:48
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (5 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 5, at 2026-01-05_22:17:49
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_22:17:49
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 0
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:45.869002_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:45.869002_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (6 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 6, at 2026-01-05_22:17:51
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_22:17:51
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:46.778603_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:17:46.778603_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 7, at 2026-01-05_22:17:53
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_22:17:53
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:47.515342_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]']
+[BFS] Max scores: [('01-05_22:17:47.515342_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75)]
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:17:54
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_22:17:54
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:48.986822_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:17:48.986822_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:17:55
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_22:17:55
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:49.805902_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:17:49.805902_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (0 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:17:56
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 0, at 2026-01-05_22:17:56
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:17:45.869002_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (1 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:17:56
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 1, at 2026-01-05_22:17:56
+[DEPRECIATE] Experience 01-05_22:17:46.778603_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (2 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:17:56
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 2, at 2026-01-05_22:17:56
+[DEPRECIATE] Experience 01-05_22:17:47.515342_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (3 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 7, at 2026-01-05_22:17:56
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 3, at 2026-01-05_22:17:56
+[DEPRECIATE] Experience 01-05_22:17:55.373553_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (6 items) and depreiciate_exp_store (4 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 6, at 2026-01-05_22:17:56
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 4, at 2026-01-05_22:17:56
+[DEPRECIATE] Experience 01-05_22:17:49.805902_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (5 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 5, at 2026-01-05_22:17:56
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_22:17:56
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (6 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 6, at 2026-01-05_22:17:57
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_22:17:57
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:53.258178_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:17:53.258178_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (7 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 7, at 2026-01-05_22:17:58
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_22:17:58
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:54.156947_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]']
+[BFS] Max scores: [('01-05_22:17:54.156947_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75)]
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:17:59
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_22:17:59
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:00
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_22:18:00
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"color": "yellow", "size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 0 experiences, ids: []
+[BFS] Max scores: []
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (5 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:00
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 5, at 2026-01-05_22:18:00
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 2
+[DEPRECIATE] Experience 01-05_22:17:57.515096_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (6 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:00
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 6, at 2026-01-05_22:18:00
+[DEPRECIATE] Experience 01-05_22:17:58.554966_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (7 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:18:00
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 7, at 2026-01-05_22:18:00
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (7 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:02
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 7, at 2026-01-05_22:18:02
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:53.258178_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:17:53.258178_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (7 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:02
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 7, at 2026-01-05_22:18:02
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:17:54.156947_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:17:59.306976_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:17:54.156947_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:17:59.306976_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (7 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:03
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 7, at 2026-01-05_22:18:03
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:48.986822_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:17:48.986822_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (7 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:05
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 7, at 2026-01-05_22:18:05
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:56.688706_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:17:56.688706_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (7 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:18:07
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 7, at 2026-01-05_22:18:07
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:18:05.660382_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (8 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:07
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 8, at 2026-01-05_22:18:07
+[DEPRECIATE] Experience 01-05_22:18:02.088656_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (9 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:07
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 9, at 2026-01-05_22:18:07
+[DEPRECIATE] Experience 01-05_22:18:02.956119_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (10 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:07
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 10, at 2026-01-05_22:18:07
+[DEPRECIATE] Experience 01-05_22:18:03.881456_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (11 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:07
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 11, at 2026-01-05_22:18:07
+[DEPRECIATE] Experience 01-05_22:17:56.688706_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (12 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:18:07
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 12, at 2026-01-05_22:18:07
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (12 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:08
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 12, at 2026-01-05_22:18:08
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:53.258178_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:17:53.258178_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (12 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:09
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 12, at 2026-01-05_22:18:09
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:17:54.156947_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:17:59.306976_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:17:54.156947_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:17:59.306976_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (12 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:10
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 12, at 2026-01-05_22:18:10
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:48.986822_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:17:48.986822_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (12 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:15
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 12, at 2026-01-05_22:18:15
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (12 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:18:16
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 12, at 2026-01-05_22:18:16
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:17:48.986822_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (13 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:16
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 13, at 2026-01-05_22:18:16
+[DEPRECIATE] Experience 01-05_22:18:08.744760_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (14 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:16
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 14, at 2026-01-05_22:18:16
+[DEPRECIATE] Experience 01-05_22:18:09.517903_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (15 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:16
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 15, at 2026-01-05_22:18:16
+[DEPRECIATE] Experience 01-05_22:17:54.156947_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (16 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:16
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 16, at 2026-01-05_22:18:16
+[DEPRECIATE] Experience 01-05_22:18:16.652603_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:18:16
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_22:18:16
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:17
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_22:18:17
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:53.258178_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:17:53.258178_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:19
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_22:18:19
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:17:59.306976_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', '01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]']
+[BFS] Max scores: [('01-05_22:17:59.306976_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75), ('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:20
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_22:18:20
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:00.110433_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]-click[x-large]']
+[BFS] Max scores: [('01-05_22:18:00.110433_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]-click[x-large]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:21
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_22:18:21
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"color": "yellow", "size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:00.903090_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]-click[x-large]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:00.903090_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]-click[x-large]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (17 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:18:22
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 17, at 2026-01-05_22:18:22
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:18:17.549853_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (18 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:22
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 18, at 2026-01-05_22:18:22
+[DEPRECIATE] Experience 01-05_22:17:53.258178_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (19 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:22
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 19, at 2026-01-05_22:18:22
+[DEPRECIATE] Experience 01-05_22:18:20.650268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (20 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:22
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 20, at 2026-01-05_22:18:22
+[DEPRECIATE] Experience 01-05_22:18:21.577071_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (21 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:22
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 21, at 2026-01-05_22:18:22
+[DEPRECIATE] Experience 01-05_22:18:00.903090_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]-click[x-large]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:18:22
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_22:18:22
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:23
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_22:18:23
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:24
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_22:18:24
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:17:59.306976_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', '01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]']
+[BFS] Max scores: [('01-05_22:17:59.306976_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75), ('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:25
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_22:18:25
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:00.110433_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]-click[x-large]']
+[BFS] Max scores: [('01-05_22:18:00.110433_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]-click[x-large]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:27
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_22:18:27
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"color": "yellow", "size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:22.620347_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]-click[x-large]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:22.620347_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]-click[x-large]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (22 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:18:28
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 22, at 2026-01-05_22:18:28
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:18:23.945026_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (23 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:28
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 23, at 2026-01-05_22:18:28
+[DEPRECIATE] Experience 01-05_22:17:59.306976_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (24 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:28
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 24, at 2026-01-05_22:18:28
+[DEPRECIATE] Experience 01-05_22:18:00.110433_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (25 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:28
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 25, at 2026-01-05_22:18:28
+[DEPRECIATE] Experience 01-05_22:18:24.860173_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (26 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:28
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 26, at 2026-01-05_22:18:28
+[DEPRECIATE] Experience 01-05_22:18:28.251452_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]-click[x-large]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:18:28
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_22:18:28
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:29
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_22:18:29
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:30
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_22:18:30
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:30
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_22:18:30
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:15.771045_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:15.771045_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:31
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_22:18:31
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (27 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:18:32
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 27, at 2026-01-05_22:18:32
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:18:29.166985_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (28 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:32
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 28, at 2026-01-05_22:18:32
+[DEPRECIATE] Experience 01-05_22:18:32.653281_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (29 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:32
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 29, at 2026-01-05_22:18:32
+[DEPRECIATE] Experience 01-05_22:18:30.976634_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (30 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:32
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 30, at 2026-01-05_22:18:32
+[DEPRECIATE] Experience 01-05_22:18:31.703426_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (31 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:32
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 31, at 2026-01-05_22:18:32
+[DEPRECIATE] Experience 01-05_22:18:30.108713_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (32 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:18:32
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 32, at 2026-01-05_22:18:32
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (32 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:33
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 32, at 2026-01-05_22:18:33
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (32 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:34
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 32, at 2026-01-05_22:18:34
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (32 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:35
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 32, at 2026-01-05_22:18:35
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:15.771045_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:15.771045_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (32 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:36
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 32, at 2026-01-05_22:18:36
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (32 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:18:37
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 32, at 2026-01-05_22:18:37
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:18:33.577254_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (33 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:37
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 33, at 2026-01-05_22:18:37
+[DEPRECIATE] Experience 01-05_22:18:37.318970_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (34 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:37
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 34, at 2026-01-05_22:18:37
+[DEPRECIATE] Experience 01-05_22:18:35.254958_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (35 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:37
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 35, at 2026-01-05_22:18:37
+[DEPRECIATE] Experience 01-05_22:18:36.224277_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (36 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:37
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 36, at 2026-01-05_22:18:37
+[DEPRECIATE] Experience 01-05_22:18:34.447994_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (37 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:18:37
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 37, at 2026-01-05_22:18:37
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (37 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:40
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 37, at 2026-01-05_22:18:40
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (37 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:42
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 37, at 2026-01-05_22:18:42
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (37 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:43
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 37, at 2026-01-05_22:18:43
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:15.771045_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:15.771045_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (37 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:44
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 37, at 2026-01-05_22:18:44
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (37 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:18:47
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 37, at 2026-01-05_22:18:47
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:18:40.348912_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (38 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:47
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 38, at 2026-01-05_22:18:47
+[DEPRECIATE] Experience 01-05_22:18:47.537814_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (39 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:47
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 39, at 2026-01-05_22:18:47
+[DEPRECIATE] Experience 01-05_22:18:43.431528_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (40 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:47
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 40, at 2026-01-05_22:18:47
+[DEPRECIATE] Experience 01-05_22:18:44.894627_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (41 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:47
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 41, at 2026-01-05_22:18:47
+[DEPRECIATE] Experience 01-05_22:18:42.651142_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (42 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:18:47
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 42, at 2026-01-05_22:18:47
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (42 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:48
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 42, at 2026-01-05_22:18:48
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (42 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:49
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 42, at 2026-01-05_22:18:49
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (42 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:50
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 42, at 2026-01-05_22:18:50
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:15.771045_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:15.771045_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (42 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:51
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 42, at 2026-01-05_22:18:51
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (42 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:18:52
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 42, at 2026-01-05_22:18:52
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:18:48.379329_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (43 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:52
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 43, at 2026-01-05_22:18:52
+[DEPRECIATE] Experience 01-05_22:18:52.361760_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (44 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:52
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 44, at 2026-01-05_22:18:52
+[DEPRECIATE] Experience 01-05_22:18:50.121862_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (45 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:52
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 45, at 2026-01-05_22:18:52
+[DEPRECIATE] Experience 01-05_22:18:15.771045_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (46 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:52
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 46, at 2026-01-05_22:18:52
+[DEPRECIATE] Experience 01-05_22:18:49.303346_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (47 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:18:52
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 47, at 2026-01-05_22:18:52
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (47 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:53
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 47, at 2026-01-05_22:18:53
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (47 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:54
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 47, at 2026-01-05_22:18:54
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (47 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:54
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 47, at 2026-01-05_22:18:54
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:51.082972_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:51.082972_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (47 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:58
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 47, at 2026-01-05_22:18:58
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (47 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:18:58
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 47, at 2026-01-05_22:18:58
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:18:53.225111_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (48 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:18:58
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 48, at 2026-01-05_22:18:58
+[DEPRECIATE] Experience 01-05_22:18:58.911256_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (49 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:18:58
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 49, at 2026-01-05_22:18:58
+[DEPRECIATE] Experience 01-05_22:18:54.827751_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (50 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:18:58
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 50, at 2026-01-05_22:18:58
+[DEPRECIATE] Experience 01-05_22:18:54.156098_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (51 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:58
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 51, at 2026-01-05_22:18:58
+[DEPRECIATE] Experience 01-05_22:18:58.015906_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:18:58
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_22:18:58
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:18:59
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_22:18:59
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:00
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_22:19:00
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:01
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_22:19:01
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:51.082972_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:51.082972_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:02
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_22:19:02
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (52 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:19:04
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 52, at 2026-01-05_22:19:04
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:18:59.842721_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (53 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:04
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 53, at 2026-01-05_22:19:04
+[DEPRECIATE] Experience 01-05_22:19:04.057009_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (54 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:04
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 54, at 2026-01-05_22:19:04
+[DEPRECIATE] Experience 01-05_22:19:01.691252_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (55 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:04
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 55, at 2026-01-05_22:19:04
+[DEPRECIATE] Experience 01-05_22:19:00.919337_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (56 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:04
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 56, at 2026-01-05_22:19:04
+[DEPRECIATE] Experience 01-05_22:19:02.646516_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:19:04
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_22:19:04
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:05
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_22:19:05
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:05
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_22:19:05
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:07
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_22:19:07
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:51.082972_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:51.082972_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:08
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_22:19:08
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (57 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:19:08
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 57, at 2026-01-05_22:19:08
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:19:05.068811_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (58 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:08
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 58, at 2026-01-05_22:19:08
+[DEPRECIATE] Experience 01-05_22:19:08.761293_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (59 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:08
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 59, at 2026-01-05_22:19:08
+[DEPRECIATE] Experience 01-05_22:19:07.159950_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (60 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:08
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 60, at 2026-01-05_22:19:08
+[DEPRECIATE] Experience 01-05_22:19:05.983723_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (61 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:08
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 61, at 2026-01-05_22:19:08
+[DEPRECIATE] Experience 01-05_22:19:08.036957_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (62 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:19:08
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 62, at 2026-01-05_22:19:08
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (62 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:09
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 62, at 2026-01-05_22:19:09
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (62 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:10
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 62, at 2026-01-05_22:19:10
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (62 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:11
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 62, at 2026-01-05_22:19:11
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:51.082972_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:51.082972_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (62 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:12
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 62, at 2026-01-05_22:19:12
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (62 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:19:13
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 62, at 2026-01-05_22:19:13
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:19:09.693712_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (63 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:13
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 63, at 2026-01-05_22:19:13
+[DEPRECIATE] Experience 01-05_22:19:13.474363_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (64 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:13
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 64, at 2026-01-05_22:19:13
+[DEPRECIATE] Experience 01-05_22:19:11.378668_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (65 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:13
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 65, at 2026-01-05_22:19:13
+[DEPRECIATE] Experience 01-05_22:18:19.800296_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (66 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:13
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 66, at 2026-01-05_22:19:13
+[DEPRECIATE] Experience 01-05_22:19:12.541590_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (67 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:19:13
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 67, at 2026-01-05_22:19:13
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (67 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:14
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 67, at 2026-01-05_22:19:14
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:19:10.592274_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:19:10.592274_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (67 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:15
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 67, at 2026-01-05_22:19:15
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (67 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:16
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 67, at 2026-01-05_22:19:16
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:51.082972_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:51.082972_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (67 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:17
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 67, at 2026-01-05_22:19:17
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (67 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:19:20
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 67, at 2026-01-05_22:19:20
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:19:14.464856_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (68 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:20
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 68, at 2026-01-05_22:19:20
+[DEPRECIATE] Experience 01-05_22:19:20.622203_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (69 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:20
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 69, at 2026-01-05_22:19:20
+[DEPRECIATE] Experience 01-05_22:19:16.489946_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (70 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:20
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 70, at 2026-01-05_22:19:20
+[DEPRECIATE] Experience 01-05_22:19:17.890036_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (71 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:20
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 71, at 2026-01-05_22:19:20
+[DEPRECIATE] Experience 01-05_22:19:15.604621_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (72 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:19:20
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 72, at 2026-01-05_22:19:20
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (72 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:21
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 72, at 2026-01-05_22:19:21
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:19:10.592274_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:19:10.592274_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (72 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:23
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 72, at 2026-01-05_22:19:23
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (72 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:25
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 72, at 2026-01-05_22:19:25
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:51.082972_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:51.082972_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (72 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:26
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 72, at 2026-01-05_22:19:26
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (72 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:19:27
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 72, at 2026-01-05_22:19:27
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:19:21.540575_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (73 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:27
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 73, at 2026-01-05_22:19:27
+[DEPRECIATE] Experience 01-05_22:19:27.765072_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (74 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:27
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 74, at 2026-01-05_22:19:27
+[DEPRECIATE] Experience 01-05_22:19:25.676113_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (75 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:27
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 75, at 2026-01-05_22:19:27
+[DEPRECIATE] Experience 01-05_22:18:51.082972_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (76 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:27
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 76, at 2026-01-05_22:19:27
+[DEPRECIATE] Experience 01-05_22:19:23.316681_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (77 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:19:27
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 77, at 2026-01-05_22:19:27
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (77 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:28
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 77, at 2026-01-05_22:19:28
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:19:10.592274_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:19:10.592274_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (77 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:29
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 77, at 2026-01-05_22:19:29
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (77 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:32
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 77, at 2026-01-05_22:19:32
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:19:26.984781_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:19:26.984781_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (77 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:34
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 77, at 2026-01-05_22:19:34
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (77 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:19:35
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 77, at 2026-01-05_22:19:35
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:19:28.744446_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (78 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:35
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 78, at 2026-01-05_22:19:35
+[DEPRECIATE] Experience 01-05_22:19:35.259316_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (79 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:35
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 79, at 2026-01-05_22:19:35
+[DEPRECIATE] Experience 01-05_22:19:32.894556_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (80 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:35
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 80, at 2026-01-05_22:19:35
+[DEPRECIATE] Experience 01-05_22:19:29.710417_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (81 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:35
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 81, at 2026-01-05_22:19:35
+[DEPRECIATE] Experience 01-05_22:19:34.458062_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (82 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:19:35
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 82, at 2026-01-05_22:19:35
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (82 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:36
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 82, at 2026-01-05_22:19:36
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:19:10.592274_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:19:10.592274_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (82 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:37
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 82, at 2026-01-05_22:19:37
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (82 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:38
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 82, at 2026-01-05_22:19:38
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:19:26.984781_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:19:26.984781_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (82 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:39
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 82, at 2026-01-05_22:19:39
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (82 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:19:40
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 82, at 2026-01-05_22:19:40
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:19:36.201058_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (83 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:40
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 83, at 2026-01-05_22:19:40
+[DEPRECIATE] Experience 01-05_22:19:40.572204_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (84 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:40
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 84, at 2026-01-05_22:19:40
+[DEPRECIATE] Experience 01-05_22:19:38.523359_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (85 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:40
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 85, at 2026-01-05_22:19:40
+[DEPRECIATE] Experience 01-05_22:19:37.776861_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (86 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:40
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 86, at 2026-01-05_22:19:40
+[DEPRECIATE] Experience 01-05_22:19:39.723079_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:19:40
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_22:19:40
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/<session_id>', 'html': 'WebShop Search'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]']
+[BFS] Max scores: [('01-05_22:17:51.682365_9_search[x-large warm color women faux fur lined winter warm jacket coat]', 0.75)]
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:41
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_22:19:41
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/search_results/<session_id>/<query>/1', 'html': "Back to Search Page 1 (Total results: 50) Next > B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B09KP78G37 Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat $47.41 to $59.07 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B07ZXBGDXF Women's Coat, FORUU Winter Faux Fur Fleece Outwear Warm Lapel Biker Motor Aviator Jacket $21.49 to $24.99 B09MSZ4VS8 Goldweather Women Winter Leggings Printed Warm Fleece Lined Yoga Pants Trousers Thermal High Waist Thicken Cashmere Tights (Navy, L) $20.99 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B09C8YNWWB Clarks Womens Suede Leather Slipper with Gore and Bungee JMH2213 - Warm Plush Faux Fur Lining - Indoor Outdoor House Slippers For Women $44.95 B07DKGJR74 Amazon Brand - Daily Ritual Women's 100% Cotton Oversized Fit V-Neck Pullover Sweater $20.66 to $29.2 B09S3BN15C Mens Linen Shirt,Men's Striped Shirts Casual Short Sleeve Button Down Shirts Regular Fit Hawaiian Shirts Beach Tees Tops $3.78 to $11.38 B08Q43LJKJ Womens Winter Plus Velvet Thick Lamb Velvet Leggings Trousers High-Waisted Leggings Warm Pants $19.43 to $22.31"}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:19:10.592274_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]']
+[BFS] Max scores: [('01-05_22:19:10.592274_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]', 0.75)]
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:42
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_22:19:42
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 2 experiences, ids: ['01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', '01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]']
+[BFS] Max scores: [('01-05_22:18:10.972999_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]', 0.75), ('01-05_22:18:25.809268_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:43
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_22:19:43
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:19:26.984781_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]']
+[BFS] Max scores: [('01-05_22:19:26.984781_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]', 0.75)]
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:43
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_22:19:43
+[BFS] Retrieving experience for state: {'url': 'http://127.0.0.1:3000/item_page/<session_id>/B09KP78G37/<query>/1/{"size": "x-large", "color": "yellow"}', 'html': 'Back to Search < Prev color black navy red yellow size small medium large x-large xx-large 3x-large Women Faux Fur Lined Jacket Coat Winter Warm Thick Fleece Outwear Trench Zipper Plus Size Long Sleeve Plush Overcoat Price: $47.41 to $59.07 Rating: N.A. Description Features Reviews Buy Now'}
+[BFS] Retrieved 1 experiences, ids: ['01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]']
+[BFS] Max scores: [('01-05_22:18:07.199137_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now]', 0.75)]
+Store validation passed: No overlap between exp_store (13 items) and depreiciate_exp_store (87 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 13, at 2026-01-05_22:19:44
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 87, at 2026-01-05_22:19:44
+Loop detecting redundant experiences
+Loop finish, num redundant experience groups detected: 5
+[DEPRECIATE] Experience 01-05_22:19:41.524999_9_search[x-large warm color women faux fur lined winter warm jacket coat] moved to deprecated store
+Store validation passed: No overlap between exp_store (12 items) and depreiciate_exp_store (88 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 12, at 2026-01-05_22:19:44
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 88, at 2026-01-05_22:19:44
+[DEPRECIATE] Experience 01-05_22:19:44.733292_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow]-click[buy now] moved to deprecated store
+Store validation passed: No overlap between exp_store (11 items) and depreiciate_exp_store (89 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 11, at 2026-01-05_22:19:44
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 89, at 2026-01-05_22:19:44
+[DEPRECIATE] Experience 01-05_22:19:43.253529_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large] moved to deprecated store
+Store validation passed: No overlap between exp_store (10 items) and depreiciate_exp_store (90 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 10, at 2026-01-05_22:19:44
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 90, at 2026-01-05_22:19:44
+[DEPRECIATE] Experience 01-05_22:19:42.428542_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37] moved to deprecated store
+Store validation passed: No overlap between exp_store (9 items) and depreiciate_exp_store (91 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 9, at 2026-01-05_22:19:44
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 91, at 2026-01-05_22:19:44
+[DEPRECIATE] Experience 01-05_22:19:43.958198_9_search[x-large warm color women faux fur lined winter warm jacket coat]-click[b09kp78g37]-click[x-large]-click[yellow] moved to deprecated store
+Store validation passed: No overlap between exp_store (8 items) and depreiciate_exp_store (92 items)
+Save store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/exp_store.json, size: 8, at 2026-01-05_22:19:44
+Save depreiciate store, path: ./log_hidden_webshop_gpt-4o_vanilla_True_False/storage/depreiciate_exp_store.json, size: 92, at 2026-01-05_22:19:44

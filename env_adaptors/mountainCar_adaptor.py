@@ -247,10 +247,10 @@ Actions:
         # Find all numbers that are 0, 1, or 2
         matches = re.findall(r'[0-2]', action)
         if len(matches) == 0:
-            return 999
+            return action
             # raise ValueError(f"Could not extract valid action (0, 1, or 2) from: {action}")
         elif len(matches) > 1:
-            return 999
+            return action
             # raise ValueError(f"Multiple actions found ({matches}) in: {action}")
         else:
             return int(matches[0])

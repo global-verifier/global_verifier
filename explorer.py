@@ -27,6 +27,7 @@ class Explorer:
         force=None,
         goal_rewards=None,
         enable_confirm_purchase=None,
+        correct_index=None,
         session=None,
         use_api=False,
         use_global_verifier=False,
@@ -52,6 +53,7 @@ class Explorer:
             force=force,
             goal_rewards=goal_rewards,
             enable_confirm_purchase=enable_confirm_purchase,
+            correct_index=correct_index,
             session=session,
             use_global_verifier=use_global_verifier,
         )
@@ -74,6 +76,7 @@ class Explorer:
         force=None,
         goal_rewards=None,
         enable_confirm_purchase=None,
+        correct_index=None,
         session=None,
         use_global_verifier=False,
     ):
@@ -125,6 +128,11 @@ class Explorer:
             if enable_confirm_purchase is not None
             else getattr(self, "enable_confirm_purchase", None)
         )
+        self.correct_index = (
+            correct_index
+            if correct_index is not None
+            else getattr(self, "correct_index", None)
+        )
         self.session = (
             session
             if session is not None
@@ -147,6 +155,7 @@ class Explorer:
             adaptor_kwargs["force"] = force
         if "webshop" in self.env_name:
             adaptor_kwargs["enable_confirm_purchase"] = self.enable_confirm_purchase
+            adaptor_kwargs["correct_index"] = self.correct_index
             adaptor_kwargs["session"] = self.session
         self.adaptor = load_adaptor(self.env_name, self.model_name, **adaptor_kwargs)
         # 传入 explorer_model 给 backend（voyager backend 需要用它生成总结）

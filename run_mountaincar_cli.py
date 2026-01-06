@@ -47,7 +47,7 @@ def build_argparser() -> argparse.ArgumentParser:
     # Optional QoL flags
     p.add_argument("--max-steps", type=int, default=200)
     p.add_argument("--threshold", type=float, default=0.25)
-    p.add_argument("--decay-rate", type=float, default=150.0)
+    p.add_argument("--decay-rate", type=float, default=600.0)
     p.add_argument("--start-timestep", type=int, default=0)
     p.add_argument("--episodes", type=int, default=20, help="Episodes to run.")
     p.add_argument("--output-root", type=str, default=".")

@@ -259,7 +259,7 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
 """
             elif max_score == 1.0:
                 user_prompt += f"""  Result: Score 1.0 (PERFECT).
-  Max score this action can achieve is 1.0. You SHOULD take the same action: {action_taken}.
+  Max score this action can achieve is 1.0. You MUST take the same action: {action_taken}.
 
 """
             else: # max_score > 0 and max_score < 1.0
@@ -290,12 +290,20 @@ You have visited this state before. Here are {len(retrieved_experiences)} previo
 
         if "confirm_purchase" in str(state.get("url", "")):
             blacklisted_actions = []
+            fullScore_actions = []
             for exp in retrieved_experiences:
                 max_score = exp.get("max_score", None)
                 action = exp.get("action", None)
-                if max_score in (0, 0.0) and isinstance(action, str) and action.startswith("click["):
-                    if action not in blacklisted_actions:
-                        blacklisted_actions.append(action)
+                if isinstance(action, str) and action.startswith("click["):
+                    if max_score == 1.0:
+                        if action not in fullScore_actions:
+                            fullScore_actions.append(action)
+                    if max_score in (0, 0.0):
+                        if action not in blacklisted_actions:
+                            blacklisted_actions.append(action)
+            blacklisted_actions = [a for a in blacklisted_actions if a not in fullScore_actions]
+            
+                        
             if blacklisted_actions:
                 user_prompt += """IMPORTANT: BLACKLISTED ACTIONS
 The following actions have been confirmed to result in a score of 0.0 in this specific state. You MUST NOT select them:
@@ -303,6 +311,15 @@ The following actions have been confirmed to result in a score of 0.0 in this sp
 """
                 for action in blacklisted_actions:
                     user_prompt += f"""{action} (Score: 0.0) Please choose a different action from the remaining Clickables to explore potential success.
+"""
+                user_prompt += "\n"
+            if fullScore_actions:
+                user_prompt += """IMPORTANT: FULL SCORE ACTIONS
+The following actions have been confirmed to result in a score of 1.0 in this specific state. You MUST select them:
+
+"""
+                for action in fullScore_actions:
+                    user_prompt += f"""{action} (Score: 1.0) Please choose this action to progress.
 """
                 user_prompt += "\n"
 

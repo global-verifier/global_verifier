@@ -48,6 +48,7 @@ api_model_name = {
     # qwen
     "qwen3-235b-a22b": "qwen3-235b-a22b",
     "qwen3-235b-a22b-instruct-2507": "qwen3-235b-a22b-instruct-2507",
+    "qwen2.5-7b-instruct": "qwen2.5-7b-instruct",
     # claude models
     "claude-3-5-haiku-20241022": "claude-3-5-haiku-20241022",
     # "gpt-5-nano": "gpt-5-nano",  # no

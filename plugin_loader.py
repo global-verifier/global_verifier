@@ -45,6 +45,7 @@ def load_adaptor(env_name: str, model_name: str, **kwargs) -> BaseEnvAdaptor:
             base_env,
             model_name,
             enable_confirm_purchase=kwargs.get("enable_confirm_purchase"),
+            correct_index=kwargs.get("correct_index"),
             session=kwargs.get("session"),
         )
     elif base_env == "frozenlake":

@@ -19,33 +19,35 @@ explorer_settings = {
 }
 model_path = {
     # llama3 models
-    "llama3-8b": "/data/xingkun/local_model/Meta-Llama-3-8B-Instruct",
+    # "llama3-8b": "/data/xingkun/local_model/Meta-Llama-3-8B-Instruct",
     "llama3.1-8b": "/data/xingkun/local_model/Meta-Llama-3.1-8B-Instruct",
-    "llama3.2-3b": "/data/xingkun/local_model/Llama-3.2-3B-Instruct",
+    # "llama3.2-3b": "/data/xingkun/local_model/Llama-3.2-3B-Instruct",
     "llama3.3-70b": "/data/xingkun/local_model/Llama-3.3-70B-Instruct",
     # qwen models
-    "qwen2-7b": "/data/xingkun/local_model/Qwen2-7B-Instruct",
+    # "qwen2-7b": "/data/xingkun/local_model/Qwen2-7B-Instruct",
     "qwen2.5-7b": "/data/xingkun/local_model/Qwen2.5-7B-Instruct",
     "qwen3-30b": "/data/xingkun/local_model/Qwen3-30B-A3B-Instruct-2507",
     # mistral models
-    "mistral3-14b": "/data/xingkun/local_model/Ministral-3-14B-Instruct-2512",
-    "mistral3.2-24b": "/data/xingkun/local_model/Mistral-Small-3.2-24B-Instruct-2506",
+    # "mistral3-14b": "/data/xingkun/local_model/Ministral-3-14B-Instruct-2512",
+    # "mistral3.2-24b": "/data/xingkun/local_model/Mistral-Small-3.2-24B-Instruct-2506",
     # internlm models
-    "internlm3-8b": "/data/xingkun/local_model/internlm3-8b-instruct",
+    # "internlm3-8b": "/data/xingkun/local_model/internlm3-8b-instruct",
     # deepseek models
-    "deepseek-v2": "/data/xingkun/local_model/DeepSeek-Coder-V2-Lite-Instruct",
+    # "deepseek-v2": "/data/xingkun/local_model/DeepSeek-Coder-V2-Lite-Instruct",
 }
 api_model_name = {
     # openai models
     "gpt-4o": "gpt-4o",
     # llama
     "llama-3.3-70b-instruct": "llama-3.3-70b-instruct",
-    "llama-3.1-8b-instruct": "llama-3.1-8b-instruct",
     # gemini
     "gemini-2.0-flash": "gemini-2.0-flash",
     # deepseek
     "deepseek-chat": "deepseek-chat",
     "deepseek-r1": "deepseek-r1",  # ok, but slow
+    # qwen
+    "qwen3-235b-a22b": "qwen3-235b-a22b",
+    "qwen3-235b-a22b-instruct-2507": "qwen3-235b-a22b-instruct-2507",
     # claude models
     "claude-3-5-haiku-20241022": "claude-3-5-haiku-20241022",
     # "gpt-5-nano": "gpt-5-nano",  # no

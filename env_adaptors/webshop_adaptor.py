@@ -24,7 +24,7 @@ SID_PLACEHOLDER = '<session_id>'
 QUERY_PLACEHOLDER = '<query>'
 
 class WebshopAdaptor(BaseEnvAdaptor):
-    def __init__(self, env_name, model_name, enable_confirm_purchase=None, session=None):
+    def __init__(self, env_name, model_name, enable_confirm_purchase=None, correct_index=1, session=None):
         super().__init__(env_name, model_name)
         seed = webshop_config.get('random_seed')
         if seed is not None:
@@ -39,6 +39,7 @@ class WebshopAdaptor(BaseEnvAdaptor):
             if enable_confirm_purchase is not None
             else webshop_config.get('enable_confirm_purchase')
         )
+        self.correct_index = correct_index
         self.session = (
             session
             if session is not None
@@ -50,6 +51,7 @@ class WebshopAdaptor(BaseEnvAdaptor):
             num_products = webshop_config['num_products'],
             human_goals = webshop_config['human_goals'],
             enable_confirm_purchase = self.enable_confirm_purchase,
+            correct_index = self.correct_index,
         )
         self.reproduce_method = "action_path"
         self.url_id = None

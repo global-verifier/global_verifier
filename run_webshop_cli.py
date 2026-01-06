@@ -70,8 +70,8 @@ def build_argparser() -> argparse.ArgumentParser:
 
     # Optional QoL flags (defaults mirror `test_webshop.py` where applicable)
     p.add_argument("--max-steps", type=int, default=20)
-    p.add_argument("--threshold", type=float, default=0.25)
-    p.add_argument("--decay-rate", type=float, default=300.0)
+    p.add_argument("--threshold", type=float, default=0.3)
+    p.add_argument("--decay-rate", type=float, default=60.0)
     p.add_argument("--start-timestep", type=int, default=0)
     p.add_argument("--episodes", type=int, default=20, help="Episodes to run.")
     p.add_argument("--output-root", type=str, default=".")
@@ -82,6 +82,7 @@ def build_argparser() -> argparse.ArgumentParser:
         default=True,
         help="Whether to enable confirm purchase flow (webshop-specific).",
     )
+    p.add_argument("--use-global-verifier", type=str2bool, default=None)
     p.add_argument(
         "--use-api",
         type=str2bool,
@@ -108,8 +109,12 @@ def main() -> int:
     from explorer import Explorer  # noqa: E402
 
     env_name = "webshop"
+    
+    # Multiple correct_indices to run (similar to frozenlake's multiple maps)
+    # 3 = 'e', 5 = 'g', 2 = 'c'
+    correct_indices = [3, 5, 2]
 
-    cur_name = f"log_{args.use_memory}_{env_name}_{args.memory_env}_{args.model_name}"
+    cur_name = f"log_{env_name}_{args.model_name}_{args.memory_env}_{args.use_memory}_{args.use_global_verifier}"
     run_root = os.path.join(args.output_root, cur_name)
     log_dir = os.path.join(run_root, "log")
     backend_log_dir = log_dir
@@ -119,13 +124,14 @@ def main() -> int:
     )
 
     # Initialize once (model load happens here).
+    ts = args.start_timestep
     e = Explorer(
         model_name=args.model_name,
         env_name=env_name,
         memory_env=args.memory_env,
         max_steps=args.max_steps,
         use_memory=args.use_memory,
-        start_timestep=args.start_timestep,
+        start_timestep=ts,
         threshold=args.threshold,
         decay_rate=args.decay_rate,
         log_dir=log_dir,
@@ -133,16 +139,42 @@ def main() -> int:
         storage_path=storage_path,
         depreiciate_exp_store_path=depreiciate_exp_store_path,
         enable_confirm_purchase=args.enable_confirm_purchase,
+        correct_index=correct_indices[0],
         session=session,
         use_api=args.use_api,
+        use_global_verifier=args.use_global_verifier,
     )
 
-    for i in range(args.episodes):
-        print(f"--- episode {i}/{args.episodes} ---")
-        e.explore()
+    for idx, correct_index in enumerate(correct_indices):
+        # MemoryBank keeps an integer timestep for forgetting; when we re-init the backend
+        # (switching correct_index), carry forward the latest timestep so forgetting continues.
+        status = e.exp_backend.export_status()
+        if status is not None:
+            ts = status.get("mb_current_timestep", ts)
+        e.init_after_model(
+            model_name=args.model_name,
+            env_name=env_name,
+            memory_env=args.memory_env,
+            max_steps=args.max_steps,
+            use_memory=args.use_memory,
+            start_timestep=ts,
+            threshold=args.threshold,
+            decay_rate=args.decay_rate,
+            log_dir=log_dir,
+            backend_log_dir=backend_log_dir,
+            storage_path=storage_path,
+            depreiciate_exp_store_path=depreiciate_exp_store_path,
+            enable_confirm_purchase=args.enable_confirm_purchase,
+            correct_index=correct_index,
+            session=session,
+            use_global_verifier=args.use_global_verifier,
+        )
+
+        for i in range(args.episodes):
+            print(f"--- correct_index {idx} ({correct_index}) | episode {i}/{args.episodes} ---")
+            e.explore()
 
     status = e.exp_backend.export_status()
-    ts = args.start_timestep
     if status is not None:
         ts = status.get("mb_current_timestep", ts)
 

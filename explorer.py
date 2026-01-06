@@ -27,8 +27,10 @@ class Explorer:
         force=None,
         goal_rewards=None,
         enable_confirm_purchase=None,
+        correct_index=None,
         session=None,
         use_api=False,
+        use_global_verifier=False,
         ):
         # Add plug in
         self.explorer_model = load_explorer_model(model_name or explorer_settings["model_name"], use_api=use_api)
@@ -51,7 +53,9 @@ class Explorer:
             force=force,
             goal_rewards=goal_rewards,
             enable_confirm_purchase=enable_confirm_purchase,
+            correct_index=correct_index,
             session=session,
+            use_global_verifier=use_global_verifier,
         )
 
     def init_after_model(
@@ -72,7 +76,9 @@ class Explorer:
         force=None,
         goal_rewards=None,
         enable_confirm_purchase=None,
+        correct_index=None,
         session=None,
+        use_global_verifier=False,
     ):
         """
         Finish initialization steps that do not require reloading the explorer_model.
@@ -122,12 +128,17 @@ class Explorer:
             if enable_confirm_purchase is not None
             else getattr(self, "enable_confirm_purchase", None)
         )
+        self.correct_index = (
+            correct_index
+            if correct_index is not None
+            else getattr(self, "correct_index", None)
+        )
         self.session = (
             session
             if session is not None
             else getattr(self, "session", None)
         )
-
+        self.use_global_verifier = use_global_verifier
         assert use_memory is not None, "use_memory must be provided"
         if use_memory:
             self.use_experience = True
@@ -144,6 +155,7 @@ class Explorer:
             adaptor_kwargs["force"] = force
         if "webshop" in self.env_name:
             adaptor_kwargs["enable_confirm_purchase"] = self.enable_confirm_purchase
+            adaptor_kwargs["correct_index"] = self.correct_index
             adaptor_kwargs["session"] = self.session
         self.adaptor = load_adaptor(self.env_name, self.model_name, **adaptor_kwargs)
         # 传入 explorer_model 给 backend（voyager backend 需要用它生成总结）
@@ -176,14 +188,9 @@ class Explorer:
         self.alpha = explorer_settings["alpha"]
 
     def process_memory_env(self, memory_env: str):
-        if memory_env not in ["vanilla", "generative", "memorybank", "voyager", "glove"]:
+        if memory_env not in ["vanilla", "generative", "memorybank", "voyager"]:
             raise ValueError(f"Invalid memory environment: {memory_env}")
-        self.use_global_verifier = False
         self.backend_env = f"{self.env_name}-{memory_env}"
-        if memory_env == "glove":
-            self.use_global_verifier = True
-            self.backend_env = f"{self.env_name}-vanilla"
-        
 
     def get_next_action(self, retrieved_experiences: list = None) -> str:
         if retrieved_experiences is None:

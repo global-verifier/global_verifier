@@ -37,7 +37,7 @@ def build_argparser() -> argparse.ArgumentParser:
         "--memory-env",
         type=str,
         required=True,
-        choices=["vanilla", "generative", "memorybank", "voyager", "glove"],
+        choices=["vanilla", "generative", "memorybank", "voyager"],
         help="Memory backend mode. Mirrors Explorer.process_memory_env().",
     )
     p.add_argument("--model-name", type=str, required=True)
@@ -45,10 +45,11 @@ def build_argparser() -> argparse.ArgumentParser:
     # Optional QoL flags (defaults mirror `run_frozenLake.py`)
     p.add_argument("--max-steps", type=int, default=20)
     p.add_argument("--threshold", type=float, default=0.3)
-    p.add_argument("--decay-rate", type=float, default=100.0)
+    p.add_argument("--decay-rate", type=float, default=60.0)
     p.add_argument("--episodes-per-map", type=int, default=20)
     p.add_argument("--output-root", type=str, default=".")
     p.add_argument("--cuda-visible-devices", type=str, default=None)
+    p.add_argument("--use-global-verifier", type=str2bool, default=None)
     p.add_argument(
         "--use-api",
         type=str2bool,
@@ -84,16 +85,16 @@ def main() -> int:
         "HHHG",
     ]
     map_2 = [
-        "SHHH",
-        "FFFF",
-        "HHHF",
-        "HHHG",
+        "SFFH",
+        "HHFH",
+        "HHFH",
+        "HHFG",
     ]
 
     maps_to_run = [map_0, map_1, map_2]
     env_name = "frozenlake"
 
-    cur_name = f"log_{args.use_memory}_{env_name}_{args.memory_env}_{args.model_name}"
+    cur_name = f"log_{env_name}_{args.model_name}_{args.memory_env}_{args.use_memory}_{args.use_global_verifier}"
     run_root = os.path.join(args.output_root, cur_name)
     log_dir = os.path.join(run_root, "log")
     backend_log_dir = log_dir
@@ -117,6 +118,7 @@ def main() -> int:
         depreiciate_exp_store_path=depreiciate_exp_store_path,
         desc=maps_to_run[0],
         use_api=args.use_api,
+        use_global_verifier=args.use_global_verifier,
     )
 
     for map_idx, cur_map in enumerate(maps_to_run):
@@ -139,6 +141,7 @@ def main() -> int:
             storage_path=storage_path,
             depreiciate_exp_store_path=depreiciate_exp_store_path,
             desc=cur_map,
+            use_global_verifier=args.use_global_verifier,
         )
 
         for i in range(args.episodes_per_map):
@@ -146,7 +149,7 @@ def main() -> int:
             e.explore()
 
     # Create a finish marker file to indicate this run completed successfully.
-    marker_dir = os.path.join(args.output_root, "finish_marker")
+    marker_dir = os.path.join(args.output_root, "finish_mark")
     os.makedirs(marker_dir, exist_ok=True)
     marker_path = os.path.join(marker_dir, cur_name)
     with open(marker_path, "w", encoding="utf-8"):
@@ -161,10 +164,12 @@ if __name__ == "__main__":
 # python3 /home/xingkun/global_verifier/run_frozenlake_cli.py \
 #   --use-memory true \
 #   --model-name deepseek-chat \
-#   --memory-env glove
+#   --memory-env vanilla \
+#   --use-global-verifier true
 
 # python3 /home/xingkun/global_verifier/run_frozenlake_cli.py \
 #   --cuda-visible-devices 4 \
 #   --use-memory true \
 #   --model-name deepseek-chat \
-#   --memory-env glove
+#   --memory-env memorybank \
+#   --use-global-verifier true

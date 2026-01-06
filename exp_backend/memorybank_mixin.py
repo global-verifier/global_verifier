@@ -92,9 +92,6 @@ class MemoryBankMixin:
             else:
                 log_flush(self.logIO, f"  [FORGET] exp {exp_id}, retention={retention:.3f}, timestep={exp_timestep}")
         
-        # 按保留度排序（记得越清楚的排前面）
-        results.sort(key=lambda x: x['retention'], reverse=True)
-        
         return results
 
     def mb_tick(self) -> None:

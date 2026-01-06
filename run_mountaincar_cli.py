@@ -47,17 +47,12 @@ def build_argparser() -> argparse.ArgumentParser:
     # Optional QoL flags
     p.add_argument("--max-steps", type=int, default=200)
     p.add_argument("--threshold", type=float, default=0.25)
-    p.add_argument("--decay-rate", type=float, default=150.0)
+    p.add_argument("--decay-rate", type=float, default=600.0)
     p.add_argument("--start-timestep", type=int, default=0)
     p.add_argument("--episodes", type=int, default=20, help="Episodes to run.")
     p.add_argument("--output-root", type=str, default=".")
     p.add_argument("--cuda-visible-devices", type=str, default=None)
-    p.add_argument(
-        "--force",
-        type=float,
-        default=None,
-        help="Override engine force (default falls back to env_config.mountaincar_config).",
-    )
+    p.add_argument("--use-global-verifier", type=str2bool, default=None)
     p.add_argument(
         "--use-api",
         type=str2bool,
@@ -82,7 +77,7 @@ def main() -> int:
 
     env_name = "mountaincar"
 
-    cur_name = f"log_{args.use_memory}_{env_name}_{args.memory_env}_{args.model_name}"
+    cur_name = f"log_{env_name}_{args.model_name}_{args.memory_env}_{args.use_memory}_{args.use_global_verifier}"
     run_root = os.path.join(args.output_root, cur_name)
     log_dir = os.path.join(run_root, "log")
     backend_log_dir = log_dir
@@ -113,6 +108,7 @@ def main() -> int:
         depreiciate_exp_store_path=depreiciate_exp_store_path,
         force=force_values[0],
         use_api=args.use_api,
+        use_global_verifier=args.use_global_verifier,
     )
 
     for force_idx, force_value in enumerate(force_values):
@@ -134,6 +130,7 @@ def main() -> int:
             storage_path=storage_path,
             depreiciate_exp_store_path=depreiciate_exp_store_path,
             force=force_value,
+            use_global_verifier=args.use_global_verifier,
         )
 
         for i in range(args.episodes):

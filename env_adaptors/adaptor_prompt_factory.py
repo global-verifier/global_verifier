@@ -501,6 +501,26 @@ You have been at this position before. Here are {len(retrieved_experiences)} pre
 YOU MUST NOT choose {forbidden_list} from this position!
 
 """
+
+        # Based on max_score, build fullScore_actions
+        fullScore_actions = []
+        for exp in retrieved_experiences:
+            max_score = exp.get("max_score", None)
+            action = exp.get("action", None)
+            if action is not None:
+                if max_score == 1.0:
+                    if action not in fullScore_actions:
+                        fullScore_actions.append(action)
+
+        if fullScore_actions:
+            user_prompt += """IMPORTANT: FULL SCORE ACTIONS
+The following actions have been confirmed to result in a score of 1.0 in this specific state. You MUST select them:
+
+"""
+            for action in fullScore_actions:
+                user_prompt += f"""Action {action} (Score: 1.0) Please choose this action to progress.
+"""
+            user_prompt += "\n"
   
         user_prompt += """Consider these experiences when deciding your next action.
 ---

@@ -229,7 +229,8 @@ Init new environment:
         # Find all numbers in the range 0-3
         matches = re.findall(r'[0-3]', action)
         if len(matches) == 0:
-            raise ValueError(f"Could not extract valid action (0-3) from: {action}")
+            return 999
+            # raise ValueError(f"Could not extract valid action (0-3) from: {action}")
         elif len(matches) > 1:
             print(f"[PROBLEM] Multiple actions found ({matches}) in: {action}")
         return int(matches[0])

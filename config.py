@@ -45,6 +45,8 @@ api_model_name = {
     # deepseek
     "deepseek-chat": "deepseek-chat",
     "deepseek-r1": "deepseek-r1",  # ok, but slow
+    # grok
+    "grok-3": "grok-3",
     # qwen
     "qwen3-235b-a22b": "qwen3-235b-a22b",
     "qwen3-235b-a22b-instruct-2507": "qwen3-235b-a22b-instruct-2507",
@@ -55,5 +57,6 @@ api_model_name = {
     # "deepseek-v3": "deepseek-v3",
 }
 api = {
-    "base_url": "https://hk.yi-zhan.top/v1",
+    # "base_url": "https://hk.yi-zhan.top/v1",
+    "base_url": "https://openrouter.ai/api/v1",
 }

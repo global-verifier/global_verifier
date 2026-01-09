@@ -73,22 +73,25 @@ def main() -> int:
     from explorer import Explorer  # noqa: E402
 
     map_0 = [
-        "SFHH",
-        "HFFH",
-        "HHFF",
-        "HHHG",
+        "SHHHH",
+        "FHHHH",
+        "FHHHH",
+        "FHHHH",
+        "FFFFG",
     ]
     map_1 = [
-        "SHHH",
-        "FHHH",
-        "FFFF",
-        "HHHG",
+        "SFFFH",
+        "HHHFH",
+        "HHHFH",
+        "HHHFF",
+        "HHHHG",
     ]
-    map_2 = [
-        "SFFH",
-        "HHFH",
-        "HHFH",
-        "HHFG",
+    map_2 =[
+        "SHHHH",
+        "FFFHH",
+        "HHFHH",
+        "HHFFH",
+        "HHHFG",
     ]
 
     maps_to_run = [map_0, map_1, map_2]

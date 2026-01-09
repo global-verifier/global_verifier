@@ -80,10 +80,10 @@ def main() -> int:
         "FFFFG",
     ]
     map_1 = [
-        "SFFFH",
-        "HHHFH",
-        "HHHFH",
+        "SFFHH",
+        "HHFFH",
         "HHHFF",
+        "HHHHF",
         "HHHHG",
     ]
     map_2 =[

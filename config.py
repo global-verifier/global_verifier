@@ -57,6 +57,6 @@ api_model_name = {
     # "deepseek-v3": "deepseek-v3",
 }
 api = {
-    # "base_url": "https://hk.yi-zhan.top/v1",
-    "base_url": "https://openrouter.ai/api/v1",
+    "base_url": "https://hk.yi-zhan.top/v1",
+    # "base_url": "https://openrouter.ai/api/v1",
 }

@@ -73,11 +73,11 @@ def main() -> int:
     from explorer import Explorer  # noqa: E402
 
     map_0 = [
-        "SHHHH",
-        "FHHHH",
-        "FHHHH",
-        "FHHHH",
-        "FFFFG",
+        "SFHHH",
+        "HFHHH",
+        "HFHHH",
+        "HFHHH",
+        "HFFFG",
     ]
     map_1 = [
         "SFFHH",

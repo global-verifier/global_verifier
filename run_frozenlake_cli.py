@@ -74,11 +74,11 @@ def main() -> int:
 
     map_0 = [
         "SFHHHH",
+        "HFHHHH",
+        "HFHHHH",
         "HFFHHH",
         "HHFFHH",
-        "HHHFFH",
-        "HHHHFF",
-        "HHHHHG",
+        "HHHFFG",
     ]
     map_1 = [
         "SFHHHH",
@@ -88,21 +88,13 @@ def main() -> int:
         "HHHHFH",
         "HHHHFG",
     ]
-    # map_1 = [
-    #     "SFFFHH",
-    #     "HHHFFH",
-    #     "HHHHFF",
-    #     "HHHHHF",
-    #     "HHHHHF",
-    #     "HHHHHG",
-    # ]
-    map_2 =[
+    map_2 = [
         "SFHHHH",
         "HFHHHH",
         "HFHHHH",
-        "HFFHHH",
-        "HHFFHH",
-        "HHHFFG",
+        "HFHHHH",
+        "HFHHHH",
+        "HFFFFG",
     ]
 
     maps_to_run = [map_0, map_1, map_2]

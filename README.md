@@ -47,3 +47,27 @@ https://huggingface.co/datasets/YWZBrandon/webshop-data/blob/main/items_shuffle_
 
 https://github.com/troyyxk/WebShop
 
+# 环境
+# 方法 1：使用 conda 环境文件（推荐）
+## 1. 复制 environment_webshop_update_py310.yml 到新机器
+## 2. 创建环境
+conda env create -f environment_webshop_update_py310.yml
+## 3. 激活环境
+conda activate webshop_update_py310
+
+# 方法 2：使用 pip requirements（跨平台更兼容）
+## 1. 创建新的 conda 环境
+conda create -n webshop_update_py310 python=3.10.19 openjdk=17 -y
+conda activate webshop_update_py310
+# 2. 安装 pip 依赖
+pip install -r requirements_webshop_update_py310.txt
+## 3. 下载 spacy 模型
+python -m spacy download en_core_web_sm
+
+# 方法 3：精简版安装（只装核心依赖）
+## 创建环境
+conda create -n webshop_update_py310 python=3.10 openjdk=17 -y
+conda activate webshop_update_py310
+## 安装核心依赖
+pip install flask rich pyserini==0.17.0 gym spacy thefuzz beautifulsoup4
+python -m spacy download en_core_web_sm
